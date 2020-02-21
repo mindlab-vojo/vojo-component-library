@@ -1,25 +1,54 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { createGlobalStyle } from 'styled-components';
+
+
+const StyledApp = createGlobalStyle`
+  .App {
+    text-align: center;
+  }
+
+  .App__logo {
+    height: 40vmin;
+    pointer-events: none;
+  }
+
+  .App__header {
+    background-color: #282c34;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(10px + 2vmin);
+    color: white;
+  }
+
+  .App__subtitle {
+    font-size: 20px;
+  }
+
+  .App__subtitle code {
+    color: red;
+  }
+`
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <StyledApp/>
+      <div className="App">
+        <header className="App__header">
+          <img src={logo} className="App__logo" alt="logo" />
+          <p className="App__title">
+            Welcome to Vojo's Component Library
+          </p>
+          <p className="App__subtitle">
+            To test components run: <code>yarn storybook</code>
+          </p>
+        </header>
+      </div>
+    </>
   );
 }
 
