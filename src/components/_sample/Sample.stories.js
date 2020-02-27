@@ -1,14 +1,19 @@
 import React from 'react';
 import Sample from '.';
+import { withKnobs, text } from "@storybook/addon-knobs";
 
 export default {
     title: 'sample',
-    component: Sample
+    component: Sample,
+    decorators: [withKnobs]
 }
 
-export const ToStorybook = () => <Sample name="Leonardo"/>
+export const component = () => {
+    const name = text("name", "VOJO")
+    return <Sample name={name}/>
+}
 
-ToStorybook.story = {
+component.story = {
     name: 'sample',
 };
   
