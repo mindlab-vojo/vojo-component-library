@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const sample = ({name}) => {
+const Sample = ({name}) => {
     return (
         <div>
             <p>
@@ -11,8 +11,8 @@ const sample = ({name}) => {
     )
 }
 
-sample.propTypes = {
+Sample.propTypes = {
     name: PropTypes.string
 }
 
-export default sample
+export default Sample
