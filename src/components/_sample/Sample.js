@@ -1,13 +1,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import classNames from 'classnames'
 
-const Sample = ({name}) => {
+import { SampleCard, SampleText } from './Sample.style'
+
+const Sample = ({ name }) => {
     return (
-        <div>
-            <p>
+        <SampleCard className={classNames('Card')}>
+            <SampleText className={classNames('Card__Text')}>
                 Hello {name}!
-            </p>
-        </div>
+            </SampleText>
+        </SampleCard>
     )
 }
 
