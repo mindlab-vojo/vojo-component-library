@@ -2,15 +2,17 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import classNames from 'classnames'
 
-import { SampleCard, SampleText } from './Sample.style'
+import * as Components from './Sample.style'
 
-const Sample = ({ name }) => {
+const Sample = ({ color, name }) => {
     return (
-        <SampleCard className={classNames('Card')}>
-            <SampleText className={classNames('Card__Text')}>
+        <Components.SampleCard className={classNames('Card')}>
+            <Components.SampleText 
+                className={classNames('Card__Text')}
+                color={color}>
                 Hello {name}!
-            </SampleText>
-        </SampleCard>
+            </Components.SampleText>
+        </Components.SampleCard>
     )
 }
 
