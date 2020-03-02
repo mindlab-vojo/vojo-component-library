@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import * as style from './../../style'
 
 export const SampleCard = styled.div`
     border-radius: 5px;
@@ -8,5 +9,5 @@ export const SampleCard = styled.div`
     width: auto;
 `
 export const SampleText = styled.p`
-    color: ${(props) => props.color ? props.color : "#787878"};
+    color: ${(props) => props.color ? props.color : style.colors.primaryColor};
 `

@@ -10,7 +10,7 @@ export default {
 }
 
 export const component = () => {
-    const textColor = color("color", "#5D5D5D")
+    const textColor = color("color", undefined)
     const name = text("name", "VOJO")
     return <Sample color={textColor} name={name}/>
 }
