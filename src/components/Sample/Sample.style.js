@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import * as style from './../../style'
+import * as style from '../../style'
 
 export const Card = styled.div`
     border-radius: 5px;
