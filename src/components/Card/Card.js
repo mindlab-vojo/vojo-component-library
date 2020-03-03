@@ -1,18 +1,30 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const Card = ({ image, title, description }) => {
+import * as Card from './Card.style'
+
+const CardComponent = ({ image, title, description }) => {
     return (
-        <div>
-            
-        </div>
+        <Card.Wrapper>
+            <Card.UpperBody>
+                <Card.Image src={image}/>
+            </Card.UpperBody>
+            <Card.LowerBody>
+                <Card.Title>
+                    {title}
+                </Card.Title>
+                <Card.Description>
+                    {description}
+                </Card.Description>
+            </Card.LowerBody>
+        </Card.Wrapper>
     )
 }
 
-Card.propTypes = {
+CardComponent.propTypes = {
     image: PropTypes.string,
     title: PropTypes.string,
     description: PropTypes.string,
 }
 
-export default Card
+export default CardComponent
