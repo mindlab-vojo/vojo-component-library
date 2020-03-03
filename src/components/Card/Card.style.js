@@ -6,12 +6,15 @@ export const Wrapper = styled.div`
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    height: 400px;
+    height: auto;
     overflow: hidden;
     width: 100%;
 
-    @media only screen and (min-width: ${style.breakpoints.tablet}){
-        width: 250px
+    ${
+        style.breakpoints.largerThanTablet`
+            height: 400px;
+            width: 250px
+        `
     }
 `
 
