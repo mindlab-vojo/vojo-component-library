@@ -14,5 +14,9 @@
             "jsx": true,
             "modules": true
         }
+    },
+    "rules": {
+        "key-spacing": ["warn", { "afterColon": true }],
+        "object-curly-spacing": ["error", "always"]
     }
 }
