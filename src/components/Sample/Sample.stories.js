@@ -4,18 +4,18 @@ import { withKnobs, text, color } from "@storybook/addon-knobs";
 import { withA11y } from '@storybook/addon-a11y';
 
 export default {
-    title: 'Sample',
-    component: Sample,
-    decorators: [withKnobs, withA11y]
+  title: 'Sample',
+  component: Sample,
+  decorators: [withKnobs, withA11y]
 }
 
 export const component = () => {
-    const textColor = color("color", undefined)
-    const name = text("name", "VOJO")
-    return <Sample color={textColor} name={name}/>
+  const textColor = color("color", undefined)
+  const name = text("name", "VOJO")
+  return <Sample color={textColor} name={name}/>
 }
 
 component.story = {
-    name: 'sample',
+  name: 'sample',
 };
   

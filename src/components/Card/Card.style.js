@@ -11,11 +11,11 @@ export const Wrapper = styled.div`
     width: 100%;
 
     ${
-        style.breakpoints.largerThanTablet`
-            height: 400px;
-            width: 250px
-        `
-    }
+  style.breakpoints.largerThanTablet`
+                height: 400px;
+                width: 250px
+            `
+}
 `
 
 export const Image = styled.div`
