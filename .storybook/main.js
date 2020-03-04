@@ -1,6 +1,7 @@
 module.exports = {
   stories: ['../src/**/*.stories.js'],
   addons: [
+    '@storybook/addon-viewport/register',
     '@storybook/preset-create-react-app',
     '@storybook/addon-knobs/register',
     '@storybook/addon-a11y/register',
