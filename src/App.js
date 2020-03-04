@@ -41,7 +41,7 @@ function App() {
         <header className="App__header">
           <img src={logo} className="App__logo" alt="logo" />
           <p className="App__title">
-            Welcome to Vojo's Component Library
+            Welcome to Vojo&apos;s Component Library
           </p>
           <p className="App__subtitle">
             To test components run: <code>yarn storybook</code>
