@@ -10,7 +10,7 @@ const SampleComponent = ({ color, name }) => {
       <Sample.Text 
         className={classNames('Card__Text')}
         color={color}>
-                Hello {name}!
+        Hello {name}!
       </Sample.Text>
     </Sample.Card>
   )
