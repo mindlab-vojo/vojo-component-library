@@ -7,7 +7,7 @@ Este projeto é dedicado ao desenvolvimento de componentes de interface para os 
 | [Rodando o storybook](./docs/storybook.md)                          |
 | [Estrutura de diretórios](./docs/directories.md)                    | 
 | [Mantenedores](#mantenedores)                                       | 
-| [Licença](#Licença)                                                 |
+| [Licença](#licença)                                                 |
 
 ## **Mantenedores**
 
