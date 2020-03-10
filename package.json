@@ -2,7 +2,7 @@
   "name": "@mindlab-vojo/component-library",
   "version": "0.0.2",
   "private": false,
-  "license": "MIT-0",
+  "license": "MIT",
   "repository": "https://github.com/mindlab-vojo/vojo-component-library",
   "files": ["build"],
   "publishConfig": {
