@@ -1,8 +1,12 @@
 {
-  "name": "@vojo/component-library",
+  "name": "@mindlab-vojo/component-library",
   "version": "0.0.2",
   "private": false,
   "repository": "https://github.com/mindlab-vojo/vojo-component-library",
+  "files": ["build"],
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com"
+  },
   "dependencies": {
     "@testing-library/jest-dom": "^4.2.4",
     "@testing-library/react": "^9.3.2",
