@@ -9,6 +9,7 @@
     ".gitignore",
     "dist",
     "index.js",
+    "LICENSE",
     "package.json",
     "yarn.lock"
   ],
