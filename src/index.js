@@ -1,7 +1,7 @@
-const Card = require('./components/Card')
-const Sample = require('./components/Sample')
+import Card from './components/Card';
+import Sample from './components/Sample';
 
-module.exports = {
+export {
   Card,
-  Sample,
+  Sample
 }
