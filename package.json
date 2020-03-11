@@ -1,10 +1,17 @@
 {
   "name": "@mindlab-vojo/component-library",
   "version": "0.0.9",
+  "main": "dist/index.js",
   "private": false,
   "license": "MIT",
   "repository": "https://github.com/mindlab-vojo/vojo-component-library",
-  "files": ["build"],
+  "files": [
+    ".gitignore",
+    "dist",
+    "index.js",
+    "package.json",
+    "yarn.lock"
+  ],
   "publishConfig": {
     "registry": "https://npm.pkg.github.com"
   },
@@ -16,6 +23,7 @@
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
     "react-scripts": "3.4.0",
+    "rollup": "^2.0.3",
     "styled-components": "^5.0.1"
   },
   "scripts": {
@@ -24,7 +32,9 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "rollup": "rollup -c",
+    "rollup-watch": "rollup -c -w"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -42,6 +52,10 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.8.7",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-stage-1": "^7.8.3",
     "@storybook/addon-a11y": "^5.3.14",
     "@storybook/addon-actions": "^5.3.13",
     "@storybook/addon-knobs": "^5.3.14",
@@ -51,6 +65,11 @@
     "@storybook/preset-create-react-app": "^1.5.2",
     "@storybook/react": "^5.3.14",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.3"
+    "eslint-plugin-react": "^7.18.3",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-copy": "^3.3.0",
+    "rollup-plugin-delete": "^1.2.0",
+    "rollup-plugin-node-resolve": "^5.2.0"
   }
 }
