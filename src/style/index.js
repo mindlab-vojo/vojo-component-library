@@ -1,7 +1,7 @@
 import * as breakpoints from './breakpoints'
 import * as colors from './colors'
 
-export { 
+export default { 
   breakpoints,
   colors,
 }
