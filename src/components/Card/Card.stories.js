@@ -3,8 +3,8 @@ import Card from '.';
 import { withKnobs, text, boolean } from "@storybook/addon-knobs";
 import { withA11y } from '@storybook/addon-a11y';
 
-import { ThemeProvider } from './../../style/themes/ThemeProvider'
-import redVojo from './../../style/themes/redVojo'
+import { ThemeProvider } from './../../ThemeManager/ThemeProvider'
+import { redVojo } from './../../style/themes'
 
 export default {
   title: 'Card',

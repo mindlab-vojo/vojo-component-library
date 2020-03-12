@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 import * as Card from './Card.style'
 
-import ThemeConsumer from '../../style/themes/ThemeProvider'
+import ThemeConsumer from '../../ThemeManager/ThemeProvider'
 
 const CardComponent = ({ image, title, description }) => {
 
