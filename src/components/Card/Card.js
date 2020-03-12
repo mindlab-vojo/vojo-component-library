@@ -6,14 +6,17 @@ import * as Card from './Card.style'
 const CardComponent = ({ image, title, description }) => {
   return (
     <Card.Wrapper className="Card__Wrapper">
-      <Card.UpperBody>
-        <Card.Image src={image}/>
+      <Card.UpperBody className="Card__Wrapper__UpperBody">
+        <Card.Image 
+          className="Card__Wrapper__UpperBody__Image"
+          src={image}
+        />
       </Card.UpperBody>
-      <Card.LowerBody>
-        <Card.Title>
+      <Card.LowerBody className="Card__Wrapper__LowerBody">
+        <Card.Title className="Card__Wrapper__LowerBody__Title">
           {title}
         </Card.Title>
-        <Card.Description>
+        <Card.Description className="Card__Wrapper__LowerBody__Description">
           {description}
         </Card.Description>
       </Card.LowerBody>
