@@ -1,8 +1,7 @@
 import styled from 'styled-components'
-import style from '../../style'
 
 export const Wrapper = styled.div`
-    border: 1px solid ${style.colors.greyColor};
+    border: 1px solid ${props => props.theme.colors.greyColor};
     border-radius: 8px;
     display: flex;
     flex-direction: column;
@@ -10,12 +9,10 @@ export const Wrapper = styled.div`
     overflow: hidden;
     width: 100%;
 
-    ${
-  style.breakpoints.largerThanTablet`
-                height: 400px;
-                width: 250px
-            `
-}
+    ${props => props.theme.breakpoints.largerThanTablet`
+        height: 400px;
+        width: 250px
+    `}
 `
 
 export const Image = styled.div`
@@ -32,13 +29,15 @@ export const UpperBody = styled.div`
 `
 
 export const LowerBody = styled.div`
+    background-color: ${props => props.theme.colors.secondaryColor};
+    height: 100%;
     display: flex;
     flex-direction: column;
     padding: 15px 15px;
 `
 
 export const Title = styled.h1`
-    color: ${style.colors.primaryColor};
+    color: ${props => props.theme.colors.primaryColor};
     font-size: 24px;
     margin: 0 0 10px;
 `

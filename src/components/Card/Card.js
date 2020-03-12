@@ -3,21 +3,39 @@ import PropTypes from 'prop-types'
 
 import * as Card from './Card.style'
 
+import ThemeConsumer from '../../ThemeManager/ThemeProvider'
+
 const CardComponent = ({ image, title, description }) => {
-  return (
-    <Card.Wrapper>
-      <Card.UpperBody>
-        <Card.Image src={image}/>
+
+  const renderComponent = (theme) => (
+    <Card.Wrapper 
+      className="Card__Wrapper"
+      theme={theme}>
+      <Card.UpperBody className="Card__Wrapper__UpperBody">
+        <Card.Image 
+          className="Card__Wrapper__UpperBody__Image"
+          src={image}
+        />
       </Card.UpperBody>
-      <Card.LowerBody>
-        <Card.Title>
+      <Card.LowerBody 
+        className="Card__Wrapper__LowerBody"
+        theme={theme}>
+        <Card.Title
+          className="Card__Wrapper__LowerBody__Title"
+          theme={theme}>
           {title}
         </Card.Title>
-        <Card.Description>
+        <Card.Description className="Card__Wrapper__LowerBody__Description">
           {description}
         </Card.Description>
       </Card.LowerBody>
     </Card.Wrapper>
+  )
+
+  return (
+    <ThemeConsumer>
+      {({ theme }) => renderComponent(theme)}
+    </ThemeConsumer>
   )
 }
 

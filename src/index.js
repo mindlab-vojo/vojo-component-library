@@ -1,12 +1,14 @@
 import Card from './components/Card';
 import Sample from './components/Sample';
 
-import style from './style'
+import ThemeConsumer, { ThemeProvider } from './ThemeManager/ThemeProvider'
+
+import * as themes from './style/themes'
 
 export {
-  // components
   Card,
   Sample,
-  // misc
-  style,
+  ThemeConsumer,
+  ThemeProvider,
+  themes,
 }
