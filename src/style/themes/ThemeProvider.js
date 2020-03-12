@@ -13,7 +13,7 @@ class ThemeProvider extends Component {
   }
 
   state = {
-    themeConfig: ThemeStore()
+    themeConfig: new ThemeStore()
   }
 
   componentDidMount() {
@@ -28,7 +28,7 @@ class ThemeProvider extends Component {
     const { theme } = this.props
     const { themeConfig } = this.state
     const updatedTheme = themeConfig.configure({ theme })
-    this.state({ theme: updatedTheme })
+    this.setState({ theme: updatedTheme })
   }
 
   render() {
