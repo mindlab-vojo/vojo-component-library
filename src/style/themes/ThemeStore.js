@@ -1,4 +1,4 @@
-import vojo from './themes/vojo'
+import vojo from './vojo'
 
 class ThemeStore {
 
@@ -8,7 +8,8 @@ class ThemeStore {
   }
 
   configure = ({ theme }) =>  {
-    if (theme) this.configureDefaultTheme(theme)
+    if (theme) this.configureTheme(theme)
+    else this.configureTheme(this.defaultTheme)
   }
 
   configureTheme = (theme) => {
