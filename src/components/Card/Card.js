@@ -5,7 +5,7 @@ import * as Card from './Card.style'
 
 const CardComponent = ({ image, title, description }) => {
   return (
-    <Card.Wrapper>
+    <Card.Wrapper className="Card__Wrapper">
       <Card.UpperBody>
         <Card.Image src={image}/>
       </Card.UpperBody>
