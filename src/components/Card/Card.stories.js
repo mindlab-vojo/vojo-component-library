@@ -6,7 +6,7 @@ import defaultDecorators from '../../../.storybook/decorators';
 import categories from '../../../.storybook/categories';
 
 export default {
-  title: categories.Card,
+  title: categories.Cards,
   component: Card,
   decorators: [...defaultDecorators]
 }

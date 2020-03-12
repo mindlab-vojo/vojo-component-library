@@ -1,3 +1,5 @@
 export default {
-  Card: 'Card'
+  Buttons: 'Buttons',
+  Cards: 'Cards',
+  Inputs: 'Inputs',
 }
