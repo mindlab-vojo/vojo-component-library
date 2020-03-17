@@ -1,4 +1,4 @@
-import { vojo } from './../style/themes/'
+import { vojo } from './../themes'
 
 class ThemeStore {
 
