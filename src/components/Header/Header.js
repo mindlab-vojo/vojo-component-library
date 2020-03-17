@@ -9,7 +9,7 @@ function HeaderComponent() {
   const renderComponent = (theme) => (
     <Header.Wrapper theme={theme}>
       <Header.Content theme={theme}>
-        <Logo height="16px"/>
+        <Logo height="16px" width="auto"/>
       </Header.Content>
     </Header.Wrapper>
   )
