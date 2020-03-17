@@ -1,6 +1,6 @@
 import Card from './components/Card';
 
-import ThemeConsumer, { ThemeProvider } from './ThemeManager/ThemeProvider'
+import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider'
 
 import * as themes from './style/themes'
 

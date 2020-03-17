@@ -3,7 +3,7 @@ import React from 'react'
 import * as Header from './Header.style'
 
 import Logo from './../Logo'
-import ThemeConsumer from '../../ThemeManager/ThemeProvider'
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 function HeaderComponent() {
   const renderComponent = (theme) => (
