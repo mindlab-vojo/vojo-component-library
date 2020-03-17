@@ -1,11 +1,13 @@
-import Card from './components/Card';
+import Logo from './components/Logo';
+import Header from './components/Header';
 
 import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider'
 
 import * as themes from './style/themes'
 
 export {
-  Card,
+  Logo,
+  Header,
   ThemeConsumer,
   ThemeProvider,
   themes,
