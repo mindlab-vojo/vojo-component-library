@@ -3,4 +3,5 @@ export default {
   Cards: 'Cards',
   Headers: 'Headers',
   Inputs: 'Inputs',
+  Logos: 'Logos',
 }
