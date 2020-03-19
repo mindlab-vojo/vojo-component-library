@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 export const Typography = ({ children, tag, typoColor, typoStyles }) => {
@@ -13,4 +14,12 @@ export const Typography = ({ children, tag, typoColor, typoStyles }) => {
       {children}
     </Component>
   )
+}
+
+Typography.propTypes = {
+  children: PropTypes.string,
+  color: PropTypes.string, 
+  tag: PropTypes.string,
+  typoColor: PropTypes.string,
+  typoStyles: PropTypes.string
 }
