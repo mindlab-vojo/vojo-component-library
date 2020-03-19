@@ -12,3 +12,11 @@ test('Test Header component render', () => {
   );
   expect(component).toMatchSnapshot()
 });
+test('Test Reverse Header component render', () => {
+  const component = render(
+    <ThemeProvider>
+      <Header isReverse/>
+    </ThemeProvider>
+  );
+  expect(component).toMatchSnapshot()
+});
