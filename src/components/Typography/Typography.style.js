@@ -21,5 +21,5 @@ Typography.propTypes = {
   color: PropTypes.string, 
   tag: PropTypes.string,
   typoColor: PropTypes.string,
-  typoStyles: PropTypes.string
+  typoStyles: PropTypes.object,
 }
