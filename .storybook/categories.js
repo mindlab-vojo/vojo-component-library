@@ -5,4 +5,5 @@ export default {
   Headers: 'Headers',
   Inputs: 'Inputs',
   Logos: 'Logos',
+  Typographys: 'Typographys'
 }
