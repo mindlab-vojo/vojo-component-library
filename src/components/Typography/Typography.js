@@ -1,29 +1,31 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import styled from 'styled-components'
+
+import { Typography } from './Typography.style'
 
 function TypographyComponent({ children, color, type, tag }) {
 
   const typographyTypes = {
     default: {
-      fontSize: "15px"
+      fontSize: "20px"
     }
   }
 
-  const Component = styled[tag](`
-    font-size: ${props => props.typoStyles.fontSize}
-    color: ${props => props.typoColor};
-  `)
-
   return (
-    <Component typoColor={color} typoStyles={typographyTypes[type]}>
+    <Typography 
+      tag={tag} 
+      typoColor={color} 
+      typoStyles={typographyTypes[type]}>
       {children}
-    </Component>
+    </Typography>
   )
 }
 
 TypographyComponent.propTypes = {
-
+  children: PropTypes.string,
+  color: PropTypes.string, 
+  type: PropTypes.string,
+  tag: PropTypes.string
 }
 
 export default TypographyComponent
