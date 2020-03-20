@@ -29,6 +29,7 @@ function Logo ({ height, width, isReverse }) {
 
   return (
     <svg 
+      className="Logo"
       width={width} 
       height={height} 
       viewBox="0 0 618 96"
