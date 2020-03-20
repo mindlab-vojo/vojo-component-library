@@ -3,7 +3,14 @@ import PropTypes from 'prop-types'
 
 import { Typography } from './Typography.style'
 
-function TypographyComponent({ children, color, type, tag }) {
+function TypographyComponent({ 
+  additionalProps,
+  children, 
+  color, 
+  type, 
+  tag,
+  isUnderlined,
+}) {
 
   const typographyTypes = {
     default: {
@@ -15,17 +22,21 @@ function TypographyComponent({ children, color, type, tag }) {
     <Typography 
       tag={tag} 
       typoColor={color} 
-      typoStyles={typographyTypes[type]}>
+      typoStyles={typographyTypes[type]}
+      isUnderlined={isUnderlined}
+      additionalProps={additionalProps}>
       {children}
     </Typography>
   )
 }
 
 TypographyComponent.propTypes = {
+  additionalProps: PropTypes.object,
   children: PropTypes.string,
   color: PropTypes.string, 
   type: PropTypes.string,
-  tag: PropTypes.string
+  tag: PropTypes.string,
+  isUnderlined: PropTypes.bool,
 }
 
 export default TypographyComponent
