@@ -1,17 +1,19 @@
 import React from 'react';
-import Footer from '.';
+import { withKnobs } from '@storybook/addon-knobs';
+import { withA11y } from '@storybook/addon-a11y';
 
-import defaultDecorators from '../../../.storybook/decorators';
+import Footer from '.'; 
+import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
-
-export default {
-  title: categories.Footers,
-  component: Footer,
-  decorators: [...defaultDecorators]
-}
 
 export const component = () => {
   return <Footer/>
+}
+
+export default {
+  title: categories.Footers,
+  component: component,
+  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
 }
 
 component.story = {

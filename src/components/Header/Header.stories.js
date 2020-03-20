@@ -1,13 +1,15 @@
 import React from 'react';
-import Header from '.';
+import { withA11y } from '@storybook/addon-a11y';
+import { withKnobs } from '@storybook/addon-knobs';
 
-import defaultDecorators from '../../../.storybook/decorators';
+import Header from '.';
 import categories from '../../../.storybook/categories';
+import { ThemeProvider } from "../../../src";
 
 export default {
   title: categories.Headers,
   component: Header,
-  decorators: [...defaultDecorators]
+  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
 }
 
 export const component = () => {
