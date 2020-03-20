@@ -5,6 +5,7 @@ import * as Footer from './Footer.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Logo from '../Logo'
+import Typography from '../Typography'
 
 function FooterComponent({ termsUrl }) {
 
@@ -16,11 +17,19 @@ function FooterComponent({ termsUrl }) {
       theme={theme}>
       <Footer.Content>
         <Footer.LeftBlock>
-
+          <Typography
+            additionalProps={{ href: { termsUrl } }}
+            color={theme.colors.whiteColor}
+            tag="a"
+            type="default"
+            isUnderlined>
+            Termos de uso
+          </Typography>
         </Footer.LeftBlock>
         <Footer.RightBlock>
           <Logo isReverse
             height="16px"
+            width="103px"
           />
         </Footer.RightBlock>
       </Footer.Content>
