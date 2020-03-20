@@ -10,6 +10,7 @@ import Typography from '../Typography'
 function FooterComponent({ termsUrl }) {
 
   const actualYear = new Date().getFullYear()
+  const linkAdditionalProps = { href: termsUrl, target: "_blank" }
 
   const renderComponent = (theme) => (
     <Footer.Wrapper 
@@ -20,7 +21,7 @@ function FooterComponent({ termsUrl }) {
         <Footer.ContentBlock
           className="Footer_Content__Block">
           <Typography
-            additionalProps={{ href: { termsUrl } }}
+            additionalProps={linkAdditionalProps}
             color={theme.colors.whiteColor}
             tag="a"
             type="default"

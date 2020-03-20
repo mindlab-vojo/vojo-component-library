@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, text } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import Footer from '.'; 
@@ -7,7 +7,9 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const component = () => {
-  return <Footer/>
+  const termsUrl = text('termsUrl', 'https://app.vojo.com.br/terms-of-use')
+  
+  return <Footer termsUrl={termsUrl}/>
 }
 
 export default {
