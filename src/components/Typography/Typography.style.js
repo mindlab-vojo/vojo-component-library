@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import styled from 'styled-components'
 
 export const Typography = ({ additionalProps, children, tag, typoColor, typoStyles, isUnderlined }) => {
-  const Component = styled(tag).attrs({ ...additionalProps })`
+  const Component = styled(tag).attrs(additionalProps)`
     color: ${typoColor};
     font-size: ${typoStyles.fontSize};
     margin: 0;
