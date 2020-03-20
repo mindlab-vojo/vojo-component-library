@@ -5,13 +5,14 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <header
         class="sc-AxjAm fPvugH"
       >
         <div
           class="sc-AxirZ fGZYlT"
         >
           <svg
+            class="Logo"
             height="16px"
             version="1.1"
             viewBox="0 0 618 96"
@@ -43,17 +44,18 @@ Object {
             </g>
           </svg>
         </div>
-      </div>
+      </header>
     </div>
   </body>,
   "container": <div>
-    <div
+    <header
       class="sc-AxjAm fPvugH"
     >
       <div
         class="sc-AxirZ fGZYlT"
       >
         <svg
+          class="Logo"
           height="16px"
           version="1.1"
           viewBox="0 0 618 96"
@@ -85,7 +87,7 @@ Object {
           </g>
         </svg>
       </div>
-    </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
@@ -146,13 +148,14 @@ Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
+      <header
         class="sc-AxjAm fPvugH"
       >
         <div
           class="sc-AxirZ fGZYlT"
         >
           <svg
+            class="Logo"
             height="16px"
             version="1.1"
             viewBox="0 0 618 96"
@@ -184,17 +187,18 @@ Object {
             </g>
           </svg>
         </div>
-      </div>
+      </header>
     </div>
   </body>,
   "container": <div>
-    <div
+    <header
       class="sc-AxjAm fPvugH"
     >
       <div
         class="sc-AxirZ fGZYlT"
       >
         <svg
+          class="Logo"
           height="16px"
           version="1.1"
           viewBox="0 0 618 96"
@@ -226,7 +230,7 @@ Object {
           </g>
         </svg>
       </div>
-    </div>
+    </header>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

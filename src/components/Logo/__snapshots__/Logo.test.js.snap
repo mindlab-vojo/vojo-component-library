@@ -6,6 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <svg
+        class="Logo"
         height="96px"
         version="1.1"
         viewBox="0 0 618 96"
@@ -40,6 +41,7 @@ Object {
   </body>,
   "container": <div>
     <svg
+      class="Logo"
       height="96px"
       version="1.1"
       viewBox="0 0 618 96"
