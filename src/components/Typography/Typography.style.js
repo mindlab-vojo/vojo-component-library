@@ -19,7 +19,7 @@ export const Typography = ({ additionalProps, children, tag, typoColor, typoStyl
 
 Typography.propTypes = {
   additionalProps: PropTypes.object,
-  children: PropTypes.string,
+  children: PropTypes.node,
   color: PropTypes.string, 
   isUnderlined: PropTypes.bool,
   tag: PropTypes.string,

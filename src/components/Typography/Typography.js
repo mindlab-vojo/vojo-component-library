@@ -32,7 +32,7 @@ function TypographyComponent({
 
 TypographyComponent.propTypes = {
   additionalProps: PropTypes.object,
-  children: PropTypes.string,
+  children: PropTypes.node,
   color: PropTypes.string, 
   type: PropTypes.string,
   tag: PropTypes.string,
