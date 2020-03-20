@@ -15,9 +15,16 @@ export const Content = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0 10px;
+  max-width: 960px;
   width: 100%;
 `
 
-export const LeftBlock = styled.div``
+export const ContentBlock = styled.div`
+  align-items: center;
+  display: flex;
+  justify-content:center;
 
-export const RightBlock = styled.div``
+  .Logo {
+    margin-left: 10px;
+  }
+`
