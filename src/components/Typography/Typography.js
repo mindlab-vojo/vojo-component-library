@@ -14,7 +14,7 @@ function TypographyComponent({
 
   const typographyTypes = {
     default: {
-      fontSize: "20px"
+      fontSize: "15px"
     }
   }
 
