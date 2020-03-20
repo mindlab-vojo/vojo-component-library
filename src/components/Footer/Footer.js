@@ -15,8 +15,10 @@ function FooterComponent({ termsUrl }) {
     <Footer.Wrapper 
       className="Footer"
       theme={theme}>
-      <Footer.Content>
-        <Footer.LeftBlock>
+      <Footer.Content
+        className="Footer_Content">
+        <Footer.ContentBlock
+          className="Footer_Content__Block">
           <Typography
             additionalProps={{ href: { termsUrl } }}
             color={theme.colors.whiteColor}
@@ -25,13 +27,20 @@ function FooterComponent({ termsUrl }) {
             isUnderlined>
             Termos de uso
           </Typography>
-        </Footer.LeftBlock>
-        <Footer.RightBlock>
+        </Footer.ContentBlock>
+        <Footer.ContentBlock
+          className="Footer_Content__Block">
+          <Typography
+            color={theme.colors.whiteColor}
+            tag="p"
+            type="default">
+            {actualYear} – Vojo® – Todos os direitos reservados | 
+          </Typography>
           <Logo isReverse
             height="16px"
             width="103px"
           />
-        </Footer.RightBlock>
+        </Footer.ContentBlock>
       </Footer.Content>
     </Footer.Wrapper>
   )
