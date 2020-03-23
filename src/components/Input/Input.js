@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import * as Input from './Input.style'
 import Typography from '../Typography'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import StringValidator, { validatorPatterns, validatorTypes } from '../../utils/validators/StringValidator'
+import StringValidator from '../../utils/validators/StringValidator'
 
 class InputComponent extends Component {
   static propTypes = {
@@ -24,7 +24,7 @@ class InputComponent extends Component {
     value: this.props.value || '',
   }
   
-  validatorType = validatorTypes.alphabeitcalSpaced
+  validatorType = null
 
   handleInputChange = (event) => {
     const inputValue = event.target.value
