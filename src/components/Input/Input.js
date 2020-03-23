@@ -21,7 +21,10 @@ class InputComponent extends Component {
     value: this.props.value || ''
   }
 
-
+  handleInputChange = (event) => {
+    const inputValue = event.target.value
+    
+  }
 
   render() {
     const component = (theme) => (
