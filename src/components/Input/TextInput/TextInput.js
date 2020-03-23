@@ -5,7 +5,6 @@ import Input from './../'
 
 class TextInput extends Input {
   static propTypes = {
-    prop: PropTypes
   }
 }
 

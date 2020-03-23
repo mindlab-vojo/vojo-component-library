@@ -7,7 +7,7 @@ import { ThemeProvider } from "../../../../src";
 import categories from '../../../../.storybook/categories';
 
 export const component = () => {
-  return <TextInput/>
+  return <TextInput id="lol"/>
 }
 
 export default {
