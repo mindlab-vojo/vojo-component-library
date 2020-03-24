@@ -17,9 +17,11 @@ function FooterComponent({ termsUrl }) {
       className="Footer"
       theme={theme}>
       <Footer.Content
-        className="Footer_Content">
+        className="Footer_Content"
+        theme={theme}>
         <Footer.ContentBlock
-          className="Footer_Content__Block">
+          className="Footer_Content__Block"
+          theme={theme}>
           <Typography
             additionalProps={linkAdditionalProps}
             color={theme.colors.whiteColor}
@@ -30,12 +32,13 @@ function FooterComponent({ termsUrl }) {
           </Typography>
         </Footer.ContentBlock>
         <Footer.ContentBlock
-          className="Footer_Content__Block">
+          className="Footer_Content__Block"
+          theme={theme}>
           <Typography
             color={theme.colors.whiteColor}
             tag="p"
             type="default">
-            {actualYear} – Vojo® – Todos os direitos reservados | 
+            {actualYear} – Vojo® – Todos os direitos reservados 
           </Typography>
           <Logo isReverse
             height="16px"
