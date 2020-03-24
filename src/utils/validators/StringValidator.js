@@ -67,7 +67,6 @@ class StringValidator {
     
     for (let i = 0; i < validations.length; i++) {
       const validation = validations[i];
-      console.log(validation)
       validation()
 
       if (!this.isValid) {
