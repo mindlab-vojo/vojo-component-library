@@ -23,7 +23,12 @@ export const component = () => {
 export default {
   title: categories.Buttons,
   component: component,
-  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
+  decorators: [
+    withKnobs, 
+    withA11y, 
+    (story) => <ThemeProvider>{ story() }</ThemeProvider>,
+    (story) => <div style={{ width: "260px" }}>{ story() }</div>,
+  ],
 }
 
 component.story = {
