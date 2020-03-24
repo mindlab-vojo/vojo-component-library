@@ -4,10 +4,20 @@ import PropTypes from 'prop-types'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as Button from './Button.style'
 
-function ButtonComponent({ children, onButtonClick, type }) {
+function ButtonComponent({ 
+  children, 
+  id,
+  name,
+  form,
+  onButtonClick, 
+  type
+}) {
 
   const renderComponent = (theme) => (
     <Button.Button
+      id={id}
+      name={name}
+      form={form}
       onClick={onButtonClick}
       theme={theme}
       type={type}>
@@ -24,6 +34,9 @@ function ButtonComponent({ children, onButtonClick, type }) {
 
 ButtonComponent.propTypes = {
   children: PropTypes.node, 
+  id: PropTypes.string,
+  name: PropTypes.string,
+  form: PropTypes.string,
   onButtonClick: PropTypes.func, 
   type: PropTypes.string
 }
