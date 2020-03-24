@@ -8,3 +8,12 @@ test('Test Logo component render', () => {
   );
   expect(component).toMatchSnapshot()
 });
+test('Test reverse Logo with sizes component render', () => {
+  const component = render(
+    <Logo isReverse
+      width="150px"
+      height="auto"
+    />
+  );
+  expect(component).toMatchSnapshot()
+});

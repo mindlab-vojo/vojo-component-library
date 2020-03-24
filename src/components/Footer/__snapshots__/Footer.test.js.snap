@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <footer
-        class="sc-AxjAm dZnQnG Footer"
+        class="sc-AxjAm cKcji Footer"
       >
         <div
-          class="sc-AxirZ bMvSKX Footer_Content"
+          class="sc-AxirZ cXiIAs Footer_Content"
         >
           <div
-            class="sc-AxiKw hkFqRR Footer_Content__Block"
+            class="sc-AxiKw hzpiMk Footer_Content__Block"
           >
             <a
               class="sc-AxhCb jEGWZk"
@@ -23,13 +23,13 @@ Object {
             </a>
           </div>
           <div
-            class="sc-AxiKw hkFqRR Footer_Content__Block"
+            class="sc-AxiKw hzpiMk Footer_Content__Block"
           >
             <p
               class="sc-AxhUy kEucne"
             >
               2020
-               – Vojo® – Todos os direitos reservados |
+               – Vojo® – Todos os direitos reservados
             </p>
             <svg
               class="Logo"
@@ -70,13 +70,13 @@ Object {
   </body>,
   "container": <div>
     <footer
-      class="sc-AxjAm dZnQnG Footer"
+      class="sc-AxjAm cKcji Footer"
     >
       <div
-        class="sc-AxirZ bMvSKX Footer_Content"
+        class="sc-AxirZ cXiIAs Footer_Content"
       >
         <div
-          class="sc-AxiKw hkFqRR Footer_Content__Block"
+          class="sc-AxiKw hzpiMk Footer_Content__Block"
         >
           <a
             class="sc-AxhCb jEGWZk"
@@ -87,13 +87,13 @@ Object {
           </a>
         </div>
         <div
-          class="sc-AxiKw hkFqRR Footer_Content__Block"
+          class="sc-AxiKw hzpiMk Footer_Content__Block"
         >
           <p
             class="sc-AxhUy kEucne"
           >
             2020
-             – Vojo® – Todos os direitos reservados |
+             – Vojo® – Todos os direitos reservados
           </p>
           <svg
             class="Logo"
