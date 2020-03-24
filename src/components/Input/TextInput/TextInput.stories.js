@@ -10,6 +10,7 @@ import categories from '../../../../.storybook/categories';
 export const component = () => {
   const disabled = boolean('disabled', false)
   const id = text('id', 'vojo-input')
+  const label = text('label', 'Text Input')
   const name =  text('name', 'vojo-input')
   const onInputBlur = action('onInputBlur')
   const onInputChange = action('onInputChange')
@@ -21,6 +22,7 @@ export const component = () => {
     <TextInput 
       disabled={disabled}
       id={id}
+      label={label}
       name={name}
       onInputBlur={onInputBlur}
       onInputChange={onInputChange}
@@ -34,7 +36,12 @@ export const component = () => {
 export default {
   title: categories.Inputs,
   component: component,
-  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
+  decorators: [
+    withKnobs, 
+    withA11y, 
+    (story) => <ThemeProvider>{ story() }</ThemeProvider>,
+    (story) => <div style={{ width: "260px" }}>{ story() }</div>,
+  ]
 }
 
 component.story = {

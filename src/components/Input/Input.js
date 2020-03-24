@@ -10,6 +10,7 @@ class InputComponent extends Component {
   static propTypes = {
     disabled: PropTypes.bool,
     id: PropTypes.string,
+    label: PropTypes.string,
     name: PropTypes.string,
     onInputBlur: PropTypes.func,
     onInputChange: PropTypes.func,
@@ -61,20 +62,24 @@ class InputComponent extends Component {
           className="Input__Name"
           htmlFor={this.props.id}>
           <Typography 
-            color={theme.colors.primaryColor}
+            color={theme.colors.blackColor}
             tag="span"
             type="default">
-              Test
+            <strong>
+              {this.props.label}
+            </strong>
           </Typography>
         </Input.Label>
         <Input.Input
           className="Input__Input" 
           disabled={this.props.disabled}
           id={this.props.id}
+          isValid={this.state.isValid}
           name={this.props.name || this.props.id}
           onBlur={() => this.handleInputBlur()}
           onChange={(event) => this.handleInputChange(event)}
           placeholder={this.props.placeholder}
+          theme={theme}
           type={this.props.type}
         />
         {
