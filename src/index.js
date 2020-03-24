@@ -1,11 +1,21 @@
-import Card from './components/Card';
+import Button from './components/Button';
+import Logo from './components/Logo';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import TextInput from './components/Input/TextInput';
+import Typography from './components/Typography';
 
-import ThemeConsumer, { ThemeProvider } from './ThemeManager/ThemeProvider'
+import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider'
 
 import * as themes from './style/themes'
 
 export {
-  Card,
+  Button,
+  Logo,
+  Footer,
+  Header,
+  TextInput,
+  Typography,
   ThemeConsumer,
   ThemeProvider,
   themes,

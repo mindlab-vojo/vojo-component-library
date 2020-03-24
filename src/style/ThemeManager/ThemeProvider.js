@@ -31,9 +31,18 @@ class ThemeProvider extends Component {
     this.setState({ theme: updatedTheme })
   }
 
+  getThemeFont = () => {
+    const { themeConfig } = this.state
+    return themeConfig.font
+  }
+
   render() {
+
+    const GlobalFont = this.getThemeFont()
+
     return (
       <Provider value={{ theme: this.state.themeConfig.theme }}>
+        <GlobalFont/>
         {this.props.children}
       </Provider>
     )

@@ -1,65 +1,31 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Card component render 1`] = `
+exports[`Test Button component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <div
-        class="sc-AxjAm kvTteP Card__Wrapper"
+      <button
+        class="sc-AxjAm dgDXMV Button"
+        form="formId"
+        id="button-test"
+        name="button-name"
+        type="button"
       >
-        <div
-          class="sc-AxiKw eIMRRL Card__Wrapper__UpperBody"
-        >
-          <div
-            class="sc-AxirZ jZFMiW Card__Wrapper__UpperBody__Image"
-            src="https://miro.medium.com/max/4240/0*6lzpRfcdt7wU0HAN."
-          />
-        </div>
-        <div
-          class="sc-AxhCb kwcBJT Card__Wrapper__LowerBody"
-        >
-          <h1
-            class="sc-AxhUy fTTxeE Card__Wrapper__LowerBody__Title"
-          >
-            Testing
-          </h1>
-          <p
-            class="sc-AxgMl eErQtE Card__Wrapper__LowerBody__Description"
-          >
-            Testing this component with props
-          </p>
-        </div>
-      </div>
+        Hello Vojo
+      </button>
     </div>
   </body>,
   "container": <div>
-    <div
-      class="sc-AxjAm kvTteP Card__Wrapper"
+    <button
+      class="sc-AxjAm dgDXMV Button"
+      form="formId"
+      id="button-test"
+      name="button-name"
+      type="button"
     >
-      <div
-        class="sc-AxiKw eIMRRL Card__Wrapper__UpperBody"
-      >
-        <div
-          class="sc-AxirZ jZFMiW Card__Wrapper__UpperBody__Image"
-          src="https://miro.medium.com/max/4240/0*6lzpRfcdt7wU0HAN."
-        />
-      </div>
-      <div
-        class="sc-AxhCb kwcBJT Card__Wrapper__LowerBody"
-      >
-        <h1
-          class="sc-AxhUy fTTxeE Card__Wrapper__LowerBody__Title"
-        >
-          Testing
-        </h1>
-        <p
-          class="sc-AxgMl eErQtE Card__Wrapper__LowerBody__Description"
-        >
-          Testing this component with props
-        </p>
-      </div>
-    </div>
+      Hello Vojo
+    </button>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
