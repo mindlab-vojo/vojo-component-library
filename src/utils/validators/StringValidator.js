@@ -34,6 +34,14 @@ export default class StringValidator {
     const errorMessage = isValid ? '' : this.validatorPattern.errorMessage
     this.setValidationProps(isValid, errorMessage)
   }
+
+  checkSpecificValidation = () => {
+    if (this.validatorPattern.specificValidation) {
+      const isValid = Boolean(this.validatorPattern.specificValidation(this.value))
+      const errorMessage = isValid ? '' : this.validatorPattern.errorMessage
+      this.setValidationProps(isValid, errorMessage)
+    }
+  }
   
   setValidationProps = (isValid, errorMessage) => {
     this.isValid = isValid
@@ -52,6 +60,7 @@ export default class StringValidator {
     const validations = [
       this.checkLength,
       this.checkRegexPattern,
+      this.checkSpecificValidation,
     ]
     
     for (let i = 0; i < validations.length; i++) {
@@ -82,23 +91,27 @@ export const validatorPatterns = {
     minLength: null,
     maxLength: null,
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ]*$/,
+    specificValidation: null,
   },
   [validatorTypes.alphabeitcalSpaced]: {
     errorMessage: 'O valor não deve possuir números ou símbolos',
     minLength: null,
     maxLength: null,
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ ]*$/,
+    specificValidation: null,
   },
   [validatorTypes.alphaNumeric]: {
     errorMessage: 'O valor não deve possuir espaçamento ou símbolos',
     minLength: null,
     maxLength: null,
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ0-9]*$/,
+    specificValidation: null,
   },
   [validatorTypes.alphaNumericSpaced]: {
     errorMessage: 'O valor não deve possuir símbolos',
     minLength: null,
     maxLength: null,
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 ]*$/,
+    specificValidation: null,
   },
 }
