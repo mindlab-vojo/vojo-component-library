@@ -15,6 +15,7 @@ function ButtonComponent({
 
   const renderComponent = (theme) => (
     <Button.Button
+      className="Button"
       id={id}
       name={name}
       form={form}
@@ -39,6 +40,10 @@ ButtonComponent.propTypes = {
   form: PropTypes.string,
   onButtonClick: PropTypes.func, 
   type: PropTypes.string
+}
+
+ButtonComponent.defaultProps = {
+  type: 'button'
 }
 
 export default ButtonComponent

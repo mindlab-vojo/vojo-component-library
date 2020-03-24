@@ -8,14 +8,21 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const component = () => {
-  const type = text('type', 'submit')
+  const children = text('children', 'Hello Vojo')
+  const id = text('id', 'button')
+  const name = text('name', 'button')
+  const form = text('form', 'formId')
   const onButtonClick = action('Clicked')
-  
+  const type = text('type', 'submit')
+
   return (
     <Button
+      id={id}
+      name={name}
+      form={form}
       onButtonClick={onButtonClick}
       type={type}>
-      Teste
+      {children}
     </Button>
   )
 }
