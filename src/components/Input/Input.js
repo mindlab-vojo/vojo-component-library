@@ -26,14 +26,32 @@ class InputComponent extends Component {
   
   validatorType = null
 
+  validateInputValue = (inputValue) => {
+    return new StringValidator(inputValue, this.validatorType).validate()
+  }
+
   handleInputChange = (event) => {
     const inputValue = event.target.value
-    const validation = new StringValidator(inputValue, this.validatorType).validate()
-    this.setState({
+    const validation = this.validateInputValue(inputValue)
+    const newInputState = {
       errorMessage: validation.errorMessage,
       isValid: validation.isValid,
       value: validation.value,
-    })
+    }
+
+    this.setState({ ...newInputState })
+    this.props.onInputChange && this.props.onInputChange(newInputState)
+  }
+
+  handleInputBlur = () => {
+    if (this.props.onInputBlur) {
+      const inputState = {
+        errorMessage: this.state.errorMessage,
+        isValid: this.state.isValid,
+        value: this.state.value,
+      }
+      this.props.onInputBlur(inputState)
+    }
   }
 
   render() {
@@ -54,6 +72,7 @@ class InputComponent extends Component {
           disabled={this.props.disabled}
           id={this.props.id}
           name={this.props.name || this.props.id}
+          onBlur={() => this.handleInputBlur()}
           onChange={(event) => this.handleInputChange(event)}
           placeholder={this.props.placeholder}
           type={this.props.type}
