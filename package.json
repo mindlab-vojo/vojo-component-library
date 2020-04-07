@@ -17,16 +17,12 @@
     "registry": "https://npm.pkg.github.com"
   },
   "dependencies": {
-    "@testing-library/jest-dom": "^4.2.4",
-    "@testing-library/react": "^9.3.2",
-    "@testing-library/user-event": "^7.1.2",
     "classnames": "^2.2.6",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "react-helmet": "^5.2.1",
     "react-scripts": "3.4.0",
-    "rollup": "^2.0.3",
-    "styled-components": "^5.0.1"
+    "styled-components": "^5.1.0"
   },
   "resolutions": {
     "react-helmet/react-side-effect": "2.1.0"
@@ -62,25 +58,29 @@
     ]
   },
   "devDependencies": {
-    "@babel/core": "^7.8.7",
+    "@babel/core": "^7.9.0",
     "@babel/plugin-proposal-class-properties": "^7.8.3",
-    "@babel/preset-env": "^7.8.7",
-    "@babel/preset-react": "^7.8.3",
+    "@babel/preset-env": "^7.9.0",
+    "@babel/preset-react": "^7.9.4",
     "@babel/preset-stage-1": "^7.8.3",
-    "@storybook/addon-a11y": "^5.3.14",
-    "@storybook/addon-actions": "^5.3.17",
-    "@storybook/addon-knobs": "^5.3.14",
-    "@storybook/addon-links": "^5.3.13",
-    "@storybook/addon-viewport": "^5.3.14",
-    "@storybook/addons": "^5.3.13",
+    "@storybook/addon-a11y": "^5.3.18",
+    "@storybook/addon-actions": "^5.3.18",
+    "@storybook/addon-knobs": "^5.3.18",
+    "@storybook/addon-links": "^5.3.18",
+    "@storybook/addon-viewport": "^5.3.18",
+    "@storybook/addons": "^5.3.18",
     "@storybook/preset-create-react-app": "^1.5.2",
-    "@storybook/react": "^5.3.14",
+    "@storybook/react": "^5.3.18",
     "eslint": "^6.8.0",
-    "eslint-plugin-react": "^7.18.3",
+    "eslint-plugin-react": "^7.19.0",
+    "rollup": "^2.3.3",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-copy": "^3.3.0",
     "rollup-plugin-delete": "^1.2.0",
-    "rollup-plugin-node-resolve": "^5.2.0"
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "@testing-library/jest-dom": "^4.2.4",
+    "@testing-library/react": "^9.5.0",
+    "@testing-library/user-event": "^7.1.2"
   }
 }
