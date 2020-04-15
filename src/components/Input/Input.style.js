@@ -18,9 +18,25 @@ export const Label = styled.label`
 `
 
 export const InputBackground = styled.div`
+  align-items: center;
   border: 1px solid ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.redColor};
   border-radius: 4px;
-  padding: 5px 10px 4px
+  display: flex;
+  justify-content: center;
+  padding: 5px 10px 4px;
+`
+
+export const InputIcon = styled.div`
+  cursor: pointer;
+  margin: 0 5px;
+
+  :first-child{
+    margin-left: 0
+  }
+
+  :last-child{
+    margin-right: 0
+  }
 `
 
 export const Input = styled.input`
@@ -28,6 +44,7 @@ export const Input = styled.input`
   color: ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.redColor};
   font-size: 16px;
   margin: 5px 0;
+  width: 100%;
 
   :focus {
     outline: 0;
