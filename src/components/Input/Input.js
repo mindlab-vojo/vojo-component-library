@@ -22,6 +22,7 @@ class InputComponent extends Component {
   state = {
     errorMessage: '',
     isValid: true,
+    isFocused: false,
     value: this.props.value || '',
   }
   
@@ -51,37 +52,57 @@ class InputComponent extends Component {
         isValid: this.state.isValid,
         value: this.state.value,
       }
+      this.setState({ isFocused: false })
       this.props.onInputBlur(inputState)
     }
   }
 
+  handleInputFocus = () => {
+    this.setState({ isFocused: true })
+  }
+
+  hasLabel = () => {
+    return (this.state.isFocused || this.state.value.length > 0)
+  }
+
   render() {
     const component = (theme) => (
-      <Input.Wrapper className="Input">
+      <Input.Wrapper 
+        className="Input"
+        theme={theme}>
         <Input.Label
           className="Input__Name"
-          htmlFor={this.props.id}>
+          hasLabel={this.hasLabel()}
+          htmlFor={this.props.id}
+          isValid={this.state.isValid}
+          theme={theme}>
           <Typography 
-            color={theme.colors.blackColor}
+            color={this.state.isValid ? theme.colors.primaryColor : theme.colors.redColor}
             tag="span"
-            type="default">
+            type="label">
             <strong>
               {this.props.label}
             </strong>
           </Typography>
         </Input.Label>
-        <Input.Input
-          className="Input__Input" 
-          disabled={this.props.disabled}
-          id={this.props.id}
+        <Input.InputBackground
+          className="Input__InputBackground"
           isValid={this.state.isValid}
-          name={this.props.name || this.props.id}
-          onBlur={() => this.handleInputBlur()}
-          onChange={(event) => this.handleInputChange(event)}
-          placeholder={this.props.placeholder}
-          theme={theme}
-          type={this.props.type}
-        />
+          theme={theme}>
+          <Input.Input
+            className="Input__Input" 
+            disabled={this.props.disabled}
+            id={this.props.id}
+            isValid={this.state.isValid}
+            name={this.props.name || this.props.id}
+            onBlur={() => this.handleInputBlur()}
+            onChange={(event) => this.handleInputChange(event)}
+            onFocus={() => this.handleInputFocus()}
+            placeholder={!this.hasLabel() && (this.props.placeholder || this.props.label)}
+            theme={theme}
+            type={this.props.type}
+          />
+        </Input.InputBackground>
         {
           !this.state.isValid && (
             <Typography 
