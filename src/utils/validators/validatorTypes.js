@@ -3,6 +3,7 @@ export const validatorTypes = {
   alphaNumericSpaced: 'alphaNumericSpaced',
   alphabeitcal: 'alphabeitcal',
   alphabeitcalSpaced: 'alphabeitcalSpaced',
+  mobileNumber: 'mobileNumber'
 }
 
 export const validatorPatterns = {
@@ -32,6 +33,13 @@ export const validatorPatterns = {
     minLength: null,
     maxLength: null,
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 ]*$/,
+    specificValidation: null,
+  },
+  [validatorTypes.mobileNumber]: {
+    errorMessage: 'O número de telefone é inválido',
+    minLength: 11,
+    maxLength: 11,
+    regex: /^[0-9]{11}$/,
     specificValidation: null,
   },
 }
