@@ -98,7 +98,7 @@ class InputComponent extends Component {
             onBlur={() => this.handleInputBlur()}
             onChange={(event) => this.handleInputChange(event)}
             onFocus={() => this.handleInputFocus()}
-            placeholder={!this.hasLabel() && (this.props.placeholder || this.props.label)}
+            placeholder={!this.hasLabel() ? (this.props.placeholder || this.props.label) : ''}
             theme={theme}
             type={this.props.type}
           />
