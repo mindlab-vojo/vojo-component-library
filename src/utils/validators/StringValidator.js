@@ -1,4 +1,5 @@
 import { validatorPatterns } from './validatorTypes'
+import genBind from 'generator-bind'
 
 class StringValidator {
 
@@ -58,17 +59,19 @@ class StringValidator {
     }
   }
 
-  validate = () => {
-    const validations = [
-      this.checkLength,
-      this.checkRegexPattern,
-      this.checkSpecificValidation,
-    ]
-    
-    for (let i = 0; i < validations.length; i++) {
-      const validation = validations[i];
-      validation()
 
+  validate = () => {
+    const validationGenerator = genBind(
+      this, 
+      function* validator() {
+        yield this.checkLength
+        yield this.checkRegexPattern
+        yield this.checkSpecificValidation
+      }
+    )
+
+    for (let validation of validationGenerator()) {
+      validation()
       if (!this.isValid) {
         return this.createValidationObject()
       }
