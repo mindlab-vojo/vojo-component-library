@@ -6565,6 +6565,11 @@ gauge@~2.7.3:
     strip-ansi "^3.0.1"
     wide-align "^1.1.0"
 
+generator-bind@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/generator-bind/-/generator-bind-1.0.1.tgz#c1d1ba0aa0ecfc18171891c8a7c9d72ff5a502cc"
+  integrity sha1-wdG6CqDs/BgXGJHIp8nXL/WlAsw=
+
 gensync@^1.0.0-beta.1:
   version "1.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/gensync/-/gensync-1.0.0-beta.1.tgz#58f4361ff987e5ff6e1e7a210827aa371eaac269"
