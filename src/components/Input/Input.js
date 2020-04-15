@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 
 import * as Input from './Input.style'
 import Typography from '../Typography'
+import IconManager from '../IconManager'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import StringValidator from '../../utils/validators/StringValidator'
 
@@ -10,6 +11,7 @@ class InputComponent extends Component {
   static propTypes = {
     disabled: PropTypes.bool,
     id: PropTypes.string,
+    isPassword: PropTypes.bool,
     label: PropTypes.string,
     name: PropTypes.string,
     onInputBlur: PropTypes.func,
@@ -23,6 +25,8 @@ class InputComponent extends Component {
     errorMessage: '',
     isValid: true,
     isFocused: false,
+    isPassword: this.props.isPassword,
+    type: this.props.type,
     value: this.props.value || '',
   }
   
@@ -61,6 +65,13 @@ class InputComponent extends Component {
     this.setState({ isFocused: true })
   }
 
+  handleInputVisibility = () => {
+    this.setState({
+      isVisible: this.state.type !== 'password',
+      type: this.state.type !== 'password' ? 'password' : this.props.type
+    })
+  }
+
   hasLabel = () => {
     return (this.state.isFocused || this.state.value.length > 0)
   }
@@ -89,6 +100,17 @@ class InputComponent extends Component {
           className="Input__InputBackground"
           isValid={this.state.isValid}
           theme={theme}>
+          {
+            this.props.isPassword && (
+              <Input.InputIcon>
+                <IconManager 
+                  icon="Lock"
+                  height="20"
+                  width="20"
+                />
+              </Input.InputIcon>
+            )
+          }
           <Input.Input
             className="Input__Input" 
             disabled={this.props.disabled}
@@ -100,8 +122,19 @@ class InputComponent extends Component {
             onFocus={() => this.handleInputFocus()}
             placeholder={!this.hasLabel() ? (this.props.placeholder || this.props.label) : ''}
             theme={theme}
-            type={this.props.type}
+            type={this.state.type}
           />
+          {
+            this.props.isPassword && (
+              <Input.InputIcon
+                onClick={() => this.handleInputVisibility()}>
+                <IconManager 
+                  icon={this.state.isVisible ? "VisibilityOff" : "VisibilityOn"}
+                  height="20"
+                  width="20"/>
+              </Input.InputIcon>
+            )
+          }
         </Input.InputBackground>
         {
           !this.state.isValid && (

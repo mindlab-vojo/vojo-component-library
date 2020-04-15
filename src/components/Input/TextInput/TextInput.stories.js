@@ -10,6 +10,7 @@ import categories from '../../../../.storybook/categories';
 export const component = () => {
   const disabled = boolean('disabled', false)
   const id = text('id', 'vojo-input')
+  const isPassword = boolean('isPassword', false)
   const label = text('label', 'Text Input')
   const name =  text('name', 'vojo-input')
   const onInputBlur = action('onInputBlur')
@@ -22,6 +23,7 @@ export const component = () => {
     <TextInput 
       disabled={disabled}
       id={id}
+      isPassword={isPassword}
       label={label}
       name={name}
       onInputBlur={onInputBlur}
