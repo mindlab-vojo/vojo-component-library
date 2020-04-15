@@ -5,20 +5,20 @@ import Lock from './Icons/Lock'
 import VisibilityOff from './Icons/VisibilityOff'
 import VisibilityOn from './Icons/VisibilityOn'
 
-const IconManager = ({ heigth, icon, width }) => {
+const IconManager = ({ height, icon, width }) => {
 
   const Icon = iconList[icon]
 
   return (
     <Icon
-      heigth={heigth}
+      height={height}
       width={width}
     />
   )
 }
 
 IconManager.propTypes = {
-  heigth: PropTypes.string,
+  height: PropTypes.string,
   icon: PropTypes.string,
   width: PropTypes.string
 }
