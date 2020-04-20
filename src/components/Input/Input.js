@@ -1,11 +1,13 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import MaskedInput from 'react-text-mask'
 
 import * as Input from './Input.style'
 import Typography from '../Typography'
 import IconManager from '../IconManager'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import StringValidator from '../../utils/validators/StringValidator'
+import { validatorPatterns } from './../../utils/validators/validatorTypes'
 
 class InputComponent extends Component {
   static propTypes = {
@@ -26,6 +28,7 @@ class InputComponent extends Component {
     isValid: true,
     isFocused: false,
     isPassword: this.props.isPassword,
+    maskedValue: this.props.value || '',
     type: this.props.type,
     value: this.props.value || '',
   }
@@ -38,10 +41,12 @@ class InputComponent extends Component {
 
   handleInputChange = (event) => {
     const inputValue = event.target.value
-    const validation = this.validateInputValue(inputValue)
+    const cleanValue = validatorPatterns[this.validatorType].maskRemover(inputValue)
+    const validation = this.validateInputValue(cleanValue)
     const newInputState = {
       errorMessage: validation.errorMessage,
       isValid: validation.isValid,
+      maskedValue: inputValue,
       value: validation.value,
     }
 
@@ -54,6 +59,7 @@ class InputComponent extends Component {
       const inputState = {
         errorMessage: this.state.errorMessage,
         isValid: this.state.isValid,
+        maskedValue: this.state.maskedValue,
         value: this.state.value,
       }
       this.setState({ isFocused: false })
@@ -77,6 +83,45 @@ class InputComponent extends Component {
   }
 
   render() {
+    const inputRender = (theme) => validatorPatterns[this.validatorType].mask ? (
+      <MaskedInput
+        disabled={this.props.disabled}
+        id={this.props.id}
+        isValid={this.state.isValid}
+        mask={validatorPatterns[this.validatorType].mask}
+        name={this.props.name || this.props.id}
+        onBlur={() => this.handleInputBlur()}
+        onChange={(event) => this.handleInputChange(event)}
+        onFocus={() => this.handleInputFocus()}
+        placeholder={!this.hasLabel() ? (this.props.placeholder || this.props.label) : ''}
+        theme={theme}
+        type={this.state.type}
+        value={this.state.maskedValue}
+        render={(ref, props) => (
+          <Input.Input
+            className="Input__Input" 
+            ref={ref}
+            {...props}
+          />
+        )}
+      />
+    ) : (
+      <Input.Input
+        className="Input__Input" 
+        disabled={this.props.disabled}
+        id={this.props.id}
+        isValid={this.state.isValid}
+        name={this.props.name || this.props.id}
+        onBlur={() => this.handleInputBlur()}
+        onChange={(event) => this.handleInputChange(event)}
+        onFocus={() => this.handleInputFocus()}
+        placeholder={!this.hasLabel() ? (this.props.placeholder || this.props.label) : ''}
+        theme={theme}
+        type={this.state.type}
+        value={this.state.maskedValue}
+      />
+    )
+
     const component = (theme) => (
       <Input.Wrapper 
         className="Input"
@@ -111,19 +156,7 @@ class InputComponent extends Component {
               </Input.InputIcon>
             )
           }
-          <Input.Input
-            className="Input__Input" 
-            disabled={this.props.disabled}
-            id={this.props.id}
-            isValid={this.state.isValid}
-            name={this.props.name || this.props.id}
-            onBlur={() => this.handleInputBlur()}
-            onChange={(event) => this.handleInputChange(event)}
-            onFocus={() => this.handleInputFocus()}
-            placeholder={!this.hasLabel() ? (this.props.placeholder || this.props.label) : ''}
-            theme={theme}
-            type={this.state.type}
-          />
+          { inputRender(theme) }
           {
             this.props.isPassword && (
               <Input.InputIcon
