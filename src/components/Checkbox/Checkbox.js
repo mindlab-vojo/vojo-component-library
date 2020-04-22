@@ -1,18 +1,36 @@
-import React, { Component } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
-class Checkbox extends Component {
-  static propTypes = {
-    prop: PropTypes
+import * as Checkbox from './Checkbox.style'
+
+const CheckboxComponent = ({
+  isChecked,
+  inClickCheckbox,
+  value, 
+}) => {
+  
+  const [checked, setChecked] = useState(false)
+
+  if (isChecked) {
+    setChecked(true)
   }
 
-  render() {
-    return (
-      <div>
+  const renderCheckbox = () => checked ? (
+    null
+  ) : (
+    null
+  )
+
+  return (
+    <Checkbox.Wrapper>
         
-      </div>
-    )
-  }
+    </Checkbox.Wrapper>
+  )
+  
 }
 
-export default Checkbox
+CheckboxComponent.propTypes = {
+  prop: PropTypes
+}
+
+export default CheckboxComponent
