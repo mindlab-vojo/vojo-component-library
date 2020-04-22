@@ -19,6 +19,7 @@ class InputComponent extends Component {
     onInputBlur: PropTypes.func,
     onInputChange: PropTypes.func,
     placeholder: PropTypes.string,
+    showError: PropTypes.bool,
     type: PropTypes.string,
     value: PropTypes.string,
   }
@@ -78,6 +79,13 @@ class InputComponent extends Component {
     })
   }
 
+  handleErrorStyle = () => {
+    if(this.props.showError) {
+      return this.state.isValid
+    }
+    return true
+  }
+
   hasLabel = () => {
     return (this.state.isFocused || this.state.value.length > 0)
   }
@@ -87,7 +95,7 @@ class InputComponent extends Component {
       <MaskedInput
         disabled={this.props.disabled}
         id={this.props.id}
-        isValid={this.state.isValid}
+        isValid={this.handleErrorStyle()}
         mask={validatorPatterns[this.validatorType].mask}
         name={this.props.name || this.props.id}
         onBlur={() => this.handleInputBlur()}
@@ -110,7 +118,7 @@ class InputComponent extends Component {
         className="Input__Input" 
         disabled={this.props.disabled}
         id={this.props.id}
-        isValid={this.state.isValid}
+        isValid={this.handleErrorStyle()}
         name={this.props.name || this.props.id}
         onBlur={() => this.handleInputBlur()}
         onChange={(event) => this.handleInputChange(event)}
@@ -130,10 +138,10 @@ class InputComponent extends Component {
           className="Input__Name"
           hasLabel={this.hasLabel()}
           htmlFor={this.props.id}
-          isValid={this.state.isValid}
+          isValid={this.handleErrorStyle()}
           theme={theme}>
           <Typography 
-            color={this.state.isValid ? theme.colors.primaryColor : theme.colors.redColor}
+            color={this.handleErrorStyle() ? theme.colors.primaryColor : theme.colors.redColor}
             tag="span"
             type="label">
             <strong>
@@ -143,7 +151,7 @@ class InputComponent extends Component {
         </Input.Label>
         <Input.InputBackground
           className="Input__InputBackground"
-          isValid={this.state.isValid}
+          isValid={this.handleErrorStyle()}
           theme={theme}>
           {
             this.props.isPassword && (
@@ -170,6 +178,7 @@ class InputComponent extends Component {
           }
         </Input.InputBackground>
         {
+          this.props.showError &&
           !this.state.isValid && (
             <Typography 
               color={theme.colors.redColor}
