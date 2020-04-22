@@ -1,20 +1,20 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import Input from './';
-import { ThemeProvider } from './../../style/ThemeManager/ThemeProvider';
+import MobileInput from './';
+import { ThemeProvider } from './../../../style/ThemeManager/ThemeProvider';
 
-test('Test Input component render', () => {
+test('Test MobileInput component render', () => {
   const fakeFn = jest.fn()
   const component = render(
     <ThemeProvider>
-      <Input
+      <MobileInput
         disabled={false}
         id="vojo-test"
         label="teste"
         name="teste"
-        onInputBlur={fakeFn}
-        onInputChange={fakeFn}
+        onTextInputBlur={fakeFn}
+        onTextInputChange={fakeFn}
         placeholder=""
         type="text"
         value=""/>

@@ -6,53 +6,63 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm bkUdLm Input"
+        class="sc-AxjAm hGa-Dbc Input"
       >
         <label
-          class="sc-AxirZ dqVvws Input__Name"
+          class="sc-AxirZ GipoM Input__Name"
           for="vojo-test"
         >
           <span
-            class="sc-AxhCb srRwI"
+            class="sc-AxgMl eFYyAl"
           >
             <strong>
               teste
             </strong>
           </span>
         </label>
-        <input
-          class="sc-AxiKw bfUDbD Input__Input"
-          id="vojo-test"
-          name="teste"
-          placeholder=""
-          type="text"
-        />
+        <div
+          class="sc-AxiKw ePgIcC Input__InputBackground"
+        >
+          <input
+            class="sc-AxhUy ialHtY Input__Input"
+            id="vojo-test"
+            name="teste"
+            placeholder="teste"
+            type="text"
+            value=""
+          />
+        </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm bkUdLm Input"
+      class="sc-AxjAm hGa-Dbc Input"
     >
       <label
-        class="sc-AxirZ dqVvws Input__Name"
+        class="sc-AxirZ GipoM Input__Name"
         for="vojo-test"
       >
         <span
-          class="sc-AxhCb srRwI"
+          class="sc-AxgMl eFYyAl"
         >
           <strong>
             teste
           </strong>
         </span>
       </label>
-      <input
-        class="sc-AxiKw bfUDbD Input__Input"
-        id="vojo-test"
-        name="teste"
-        placeholder=""
-        type="text"
-      />
+      <div
+        class="sc-AxiKw ePgIcC Input__InputBackground"
+      >
+        <input
+          class="sc-AxhUy ialHtY Input__Input"
+          id="vojo-test"
+          name="teste"
+          placeholder="teste"
+          type="text"
+          value=""
+        />
+      </div>
     </div>
   </div>,
   "debug": [Function],

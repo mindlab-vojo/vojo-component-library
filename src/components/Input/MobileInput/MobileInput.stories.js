@@ -3,7 +3,7 @@ import { withKnobs, boolean, text } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
-import TextInput from '.'; 
+import MobileInput from '.'; 
 import { ThemeProvider } from "../../../../src";
 import categories from '../../../../.storybook/categories';
 
@@ -11,17 +11,17 @@ export const component = () => {
   const disabled = boolean('disabled', false)
   const id = text('id', 'vojo-input')
   const isPassword = boolean('isPassword', false)
-  const label = text('label', 'Text Input')
+  const label = text('label', 'Mobile phone')
   const name =  text('name', 'vojo-input')
   const onInputBlur = action('onInputBlur')
   const onInputChange = action('onInputChange')
-  const placeholder =  text('placeholder', '')
+  const placeholder =  text('Mobile phone', '')
   const showError = boolean('showError', false)
   const type =  text('type', 'text')
   const value =  text('value', '')
 
   return (
-    <TextInput 
+    <MobileInput 
       disabled={disabled}
       id={id}
       isPassword={isPassword}
@@ -39,7 +39,7 @@ export const component = () => {
 
 export default {
   title: categories.Inputs,
-  component: TextInput,
+  component: MobileInput,
   decorators: [
     withKnobs, 
     withA11y, 
@@ -49,6 +49,5 @@ export default {
 }
 
 component.story = {
-  name: 'TextInput',
+  name: 'MobileInput',
 };
-  

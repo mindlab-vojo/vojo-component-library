@@ -1,6 +1,7 @@
 export default {
   Buttons: 'Buttons',
   Cards: 'Cards',
+  Checkbox: 'Checkbox',
   Footers: 'Footers',
   Headers: 'Headers',
   Icons: 'Icons',
