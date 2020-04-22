@@ -2,8 +2,8 @@ import Input from './../'
 
 import  { validatorTypes } from '../../../utils/validators/validatorTypes'
 
-class TextInput extends Input {
+class MobileInput extends Input {
   validatorType = validatorTypes.mobileNumber
 }
 
-export default TextInput
+export default MobileInput
