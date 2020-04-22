@@ -1,4 +1,5 @@
 import Button from './components/Button';
+import Checkbox from './components/Checkbox';
 import Logo from './components/Logo';
 import Footer from './components/Footer';
 import Header from './components/Header';
@@ -12,6 +13,7 @@ import * as themes from './style/themes'
 
 export {
   Button,
+  Checkbox,
   Logo,
   Footer,
   Header,
