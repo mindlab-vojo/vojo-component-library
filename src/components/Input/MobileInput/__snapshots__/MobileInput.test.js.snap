@@ -1,31 +1,69 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Button component render 1`] = `
+exports[`Test MobileInput component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
-      <button
-        class="sc-AxjAm jboAxw Button"
-        form="formId"
-        id="button-test"
-        name="button-name"
-        type="button"
+      <div
+        class="sc-AxjAm hGa-Dbc Input"
       >
-        Hello Vojo
-      </button>
+        <label
+          class="sc-AxirZ GipoM Input__Name"
+          for="vojo-test"
+        >
+          <span
+            class="sc-AxgMl eFYyAl"
+          >
+            <strong>
+              teste
+            </strong>
+          </span>
+        </label>
+        <div
+          class="sc-AxiKw ePgIcC Input__InputBackground"
+        >
+          <input
+            class="sc-AxhUy ialHtY Input__Input"
+            id="vojo-test"
+            name="teste"
+            placeholder="teste"
+            type="text"
+            value=""
+          />
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
-    <button
-      class="sc-AxjAm jboAxw Button"
-      form="formId"
-      id="button-test"
-      name="button-name"
-      type="button"
+    <div
+      class="sc-AxjAm hGa-Dbc Input"
     >
-      Hello Vojo
-    </button>
+      <label
+        class="sc-AxirZ GipoM Input__Name"
+        for="vojo-test"
+      >
+        <span
+          class="sc-AxgMl eFYyAl"
+        >
+          <strong>
+            teste
+          </strong>
+        </span>
+      </label>
+      <div
+        class="sc-AxiKw ePgIcC Input__InputBackground"
+      >
+        <input
+          class="sc-AxhUy ialHtY Input__Input"
+          id="vojo-test"
+          name="teste"
+          placeholder="teste"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
