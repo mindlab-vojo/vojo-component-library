@@ -4,4 +4,6 @@ export const Wrapper = styled.div``
 
 export const Label = styled.label``
 
-export const Checkbox = styled.input``
+export const Checkbox = styled.input`
+  display: none;
+`
