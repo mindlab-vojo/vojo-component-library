@@ -16,6 +16,7 @@ export const component = () => {
   const onInputBlur = action('onInputBlur')
   const onInputChange = action('onInputChange')
   const placeholder =  text('Mobile phone', '')
+  const showError = boolean('showError', false)
   const type =  text('type', 'text')
   const value =  text('value', '')
 
@@ -29,6 +30,7 @@ export const component = () => {
       onInputBlur={onInputBlur}
       onInputChange={onInputChange}
       placeholder={placeholder}
+      showError={showError}
       type={type}
       value={value}
     />
