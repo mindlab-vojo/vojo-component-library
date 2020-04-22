@@ -37,7 +37,8 @@ const CheckboxComponent = ({
       <Checkbox.Checkbox 
         id={id}
         name={componentName}
-        type="checkbox"/>
+        type="checkbox"
+        value={value}/>
       {renderCheckbox()}
       <Checkbox.Label htmlFor={id}>
         {label}
@@ -48,7 +49,9 @@ const CheckboxComponent = ({
 }
 
 CheckboxComponent.propTypes = {
+  id: PropTypes.string,
   isChecked: PropTypes.bool,
+  name: PropTypes.string,
   onClickCheckbox: PropTypes.func,
   label: PropTypes.node,
   value: PropTypes.node,
