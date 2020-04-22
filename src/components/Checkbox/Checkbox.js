@@ -13,12 +13,8 @@ const CheckboxComponent = ({
   name,
   value,
 }) => {
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(isChecked ? true : false)
   const componentName = name ? name : id
-
-  if (isChecked) {
-    setChecked(true)
-  }
   
   const handleCheckboxClick = () => {
     setChecked(!checked)
@@ -41,7 +37,7 @@ const CheckboxComponent = ({
         type="checkbox"
         value={value}/>
       {renderCheckbox()}
-      <Checkbox.Label htmlFor={id}>
+      <Checkbox.Label >
         {label}
       </Checkbox.Label>
     </Checkbox.Wrapper>
