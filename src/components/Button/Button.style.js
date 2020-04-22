@@ -2,11 +2,11 @@ import styled from 'styled-components'
 
 export const Button = styled.button`
   align-items: center;
-  background-color: ${props => props.theme.colors.secondaryColor};
-  border: 1px solid ${props => props.theme.colors.secondaryColor};
-  color: 1px solid ${props => props.theme.colors.blackColor};
+  background-color: ${props => props.theme.colors.primaryColor};
+  border: 1px solid ${props => props.theme.colors.primaryColor};
+  color: ${props => props.theme.colors.whiteColor};
   cursor: pointer;
-  border-radius: 10px;
+  border-radius: 500px;
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -16,7 +16,7 @@ export const Button = styled.button`
   width: 100%;
 
   :hover{
-    background-color: ${props => props.theme.colors.darkerSecondaryColor};
+    background-color: ${props => props.theme.colors.darkerPrimaryColor};
   }
 
   :focus{
