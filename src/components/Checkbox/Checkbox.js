@@ -35,6 +35,7 @@ const CheckboxComponent = ({
     <Checkbox.Wrapper
       onClick={() => handleCheckboxClick()}>
       <Checkbox.Checkbox 
+        checked={checked}
         id={id}
         name={componentName}
         type="checkbox"
