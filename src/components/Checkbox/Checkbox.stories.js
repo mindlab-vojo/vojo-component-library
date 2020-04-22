@@ -8,8 +8,8 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const component = () => {
-  const id = text('id', 'Checkbox')
-  const label = text('label', 'checkbox')
+  const id = text('id', 'checkbox')
+  const label = text('label', 'Checkbox')
   const name = text('name', 'checkbox')
   const onClickCheckbox = action('onClickCheckbox')
   
