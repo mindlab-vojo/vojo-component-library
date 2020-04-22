@@ -37,7 +37,7 @@ export const component = () => {
 
 export default {
   title: categories.Inputs,
-  component: component,
+  component: TextInput,
   decorators: [
     withKnobs, 
     withA11y, 
