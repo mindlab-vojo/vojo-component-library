@@ -43,6 +43,15 @@ export const validatorPatterns = {
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ0-9 ]*$/,
     specificValidation: null,
   },
+  [validatorTypes.freeText]: {
+    errorMessage: '',
+    mask: null,
+    maskRemover: (value) => value,
+    maxLength: null,
+    minLength: null,
+    regex: /[\s\S]+/g,
+    specificValidation: null,
+  },
   [validatorTypes.mobileNumber]: {
     errorMessage: 'O número de telefone é inválido',
     mask: ['(', /\d/, /\d/, ')', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/],
