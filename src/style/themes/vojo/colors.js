@@ -1,5 +1,6 @@
 export const primaryColor = "#391DDD"
 export const secondaryColor = "#FF909E"
+export const darkerPrimaryColor = "#2f17b5"
 export const darkerSecondaryColor = "#FF7C8C"
 
 export const blackColor = "#212529"
