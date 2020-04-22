@@ -21,6 +21,10 @@ const CheckboxComponent = ({
     onClickCheckbox && onClickCheckbox(checked)
   }
 
+  const handleCheckboxChange = () => {
+    // Clear warnings
+  }
+
   const renderCheckbox = () => checked ? (
     <IconManager icon="CheckboxChecked"/>
   ) : (
@@ -34,6 +38,7 @@ const CheckboxComponent = ({
         checked={checked}
         id={id}
         name={componentName}
+        onChange={() => handleCheckboxChange()}
         type="checkbox"
         value={value}/>
       {renderCheckbox()}
