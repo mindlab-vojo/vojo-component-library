@@ -16,7 +16,7 @@ function TypographyComponent({
     default: {
       fontSize: "14px"
     },
-    subtitles: {
+    subtitle: {
       fontSize: "15px"
     },
     label: {
