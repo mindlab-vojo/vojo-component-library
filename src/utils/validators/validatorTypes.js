@@ -3,6 +3,7 @@ export const validatorTypes = {
   alphaNumericSpaced: 'alphaNumericSpaced',
   alphabeitcal: 'alphabeitcal',
   alphabeitcalSpaced: 'alphabeitcalSpaced',
+  email: 'email',
   mobileNumber: 'mobileNumber'
 }
 
@@ -50,6 +51,15 @@ export const validatorPatterns = {
     maxLength: null,
     minLength: null,
     regex: /[\s\S]+/g,
+    specificValidation: null,
+  },
+  [validatorTypes.email]: {
+    errorMessage: 'O número de telefone é inválido',
+    mask: null,
+    maskRemover: (value) => value,
+    maxLength: null,
+    minLength: null,
+    regex: /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
     specificValidation: null,
   },
   [validatorTypes.mobileNumber]: {
