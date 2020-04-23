@@ -1,16 +1,18 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-function CardComponent(props) {
+import * as Card from './Card.style'
+
+function CardComponent({ children }) {
   return (
-    <div>
-      
-    </div>
+    <Card.Card>
+      {children}
+    </Card.Card>
   )
 }
 
 CardComponent.propTypes = {
-
+  children: PropTypes.node
 }
 
 export default CardComponent
