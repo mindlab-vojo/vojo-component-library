@@ -2,6 +2,7 @@ export default {
   Buttons: 'Buttons',
   Cards: 'Cards',
   Checkbox: 'Checkbox',
+  Containers: 'Containers',
   Footers: 'Footers',
   Headers: 'Headers',
   Icons: 'Icons',

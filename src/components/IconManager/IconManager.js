@@ -1,6 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import ArrowDown from './Icons/ArrowDown'
+import ArrowLeft from './Icons/ArrowLeft'
+import ArrowRigth from './Icons/ArrowRigth'
+import ArrowUp from './Icons/ArrowUp'
 import CheckboxChecked from './Icons/CheckboxChecked'
 import CheckboxUnchecked from './Icons/CheckboxUnchecked'
 import Lock from './Icons/Lock'
@@ -28,6 +32,10 @@ IconManager.propTypes = {
 }
 
 export const iconList = {
+  ArrowDown: ArrowDown,
+  ArrowLeft: ArrowLeft,
+  ArrowRigth: ArrowRigth,
+  ArrowUp: ArrowUp,
   CheckboxChecked: CheckboxChecked,
   CheckboxUnchecked: CheckboxUnchecked,
   Lock: Lock,
