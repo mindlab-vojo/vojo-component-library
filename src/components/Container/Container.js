@@ -24,7 +24,7 @@ function ContainerComponent({
   )
 }
 
-Container.propTypes = {
+ContainerComponent.propTypes = {
   children: PropTypes.node,
   maxWidth: PropTypes.oneOf([
     'desktop',
