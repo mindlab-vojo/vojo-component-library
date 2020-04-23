@@ -3,11 +3,24 @@ import PropTypes from 'prop-types'
 
 import * as Container from './Container.style'
 
-function ContainerComponent({ children, maxWidth }) {
-  return (
-    <Container.Container maxWidth={maxWidth}>
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
+
+function ContainerComponent({ 
+  children, 
+  maxWidth,
+}) {
+  const renderComponent = (theme) => (
+    <Container.Container 
+      maxWidth={maxWidth}
+      theme={theme}>
       {children}
     </Container.Container>
+  )
+  
+  return (
+    <ThemeConsumer>
+      {({ theme }) => renderComponent(theme)}
+    </ThemeConsumer>
   )
 }
 
