@@ -151,6 +151,7 @@ class InputComponent extends Component {
         </Input.Label>
         <Input.InputBackground
           className="Input__InputBackground"
+          isFocused={this.state.isFocused}
           isValid={this.handleErrorStyle()}
           theme={theme}>
           {

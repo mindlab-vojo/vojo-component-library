@@ -19,7 +19,13 @@ export const Label = styled.label`
 
 export const InputBackground = styled.div`
   align-items: center;
-  border: 1px solid ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.redColor};
+  border: 1px solid ${props => 
+    props.isValid ? 
+      props.isFocused ? 
+        props.theme.colors.primaryColor : 
+        props.theme.colors.darkGrayColor:
+      props.theme.colors.redColor
+};
   border-radius: 4px;
   display: flex;
   justify-content: center;
