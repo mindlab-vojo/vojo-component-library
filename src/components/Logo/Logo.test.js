@@ -12,7 +12,6 @@ test('Test reverse Logo with sizes component render', () => {
   const component = render(
     <Logo isReverse
       width="150px"
-      height="auto"
     />
   );
   expect(component).toMatchSnapshot()
