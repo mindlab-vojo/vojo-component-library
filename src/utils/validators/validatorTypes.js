@@ -4,7 +4,8 @@ export const validatorTypes = {
   alphabeitcal: 'alphabeitcal',
   alphabeitcalSpaced: 'alphabeitcalSpaced',
   email: 'email',
-  mobileNumber: 'mobileNumber'
+  mobileNumber: 'mobileNumber',
+  password: 'password'
 }
 
 export const validatorPatterns = {
@@ -68,6 +69,15 @@ export const validatorPatterns = {
     maskRemover: (value) => value.match(/[0-9]/g).join(''),
     maxLength: 11,
     minLength: 11,
+    regex: /^[0-9]{11}$/,
+    specificValidation: null,
+  },
+  [validatorTypes.password]: {
+    errorMessage: 'Esta senha é inválida',
+    mask: null,
+    maskRemover: (value) => value,
+    maxLength: 16,
+    minLength: 6,
     regex: /^[0-9]{11}$/,
     specificValidation: null,
   },
