@@ -7,6 +7,7 @@ import Footer from './components/Footer';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import Logo from './components/Logo';
+import PasswordInput from './components/Input/PasswordInput';
 import TextInput from './components/Input/TextInput';
 import MobileInput from './components/Input/MobileInput';
 import Typography from './components/Typography';
@@ -26,6 +27,7 @@ export {
   IconManager,
   Logo,
   MobileInput,
+  PasswordInput,
   TextInput,
   Typography,
   ThemeConsumer,

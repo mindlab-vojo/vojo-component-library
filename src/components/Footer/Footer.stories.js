@@ -6,10 +6,17 @@ import Footer from '.';
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
+import Container from '../Container';
+
 export const component = () => {
   const termsUrl = text('termsUrl', 'https://app.vojo.com.br/terms-of-use')
   
-  return <Footer termsUrl={termsUrl}/>
+  return (
+    <Container>
+      <div style={{ height: '1000px' }}/>
+      <Footer termsUrl={termsUrl}/>
+    </Container>
+  )
 }
 
 export default {

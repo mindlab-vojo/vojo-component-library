@@ -48,7 +48,7 @@ export const InputIcon = styled.div`
 export const Input = styled.input`
   border: 0;
   color: ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.redColor};
-  font-size: 16px;
+  font-size: 15px;
   margin: 5px 0;
   width: 100%;
 
