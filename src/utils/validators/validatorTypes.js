@@ -78,7 +78,7 @@ export const validatorPatterns = {
     maskRemover: (value) => value,
     maxLength: 16,
     minLength: 6,
-    regex: /^[0-9]{11}$/,
+    regex: /[\s\S]+/g,
     specificValidation: null,
   },
 }
