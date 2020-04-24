@@ -11,6 +11,7 @@ function ContainerComponent({
 }) {
   const renderComponent = (theme) => (
     <Container.Container 
+      className="Container"
       maxWidth={maxWidth}
       theme={theme}>
       {children}
