@@ -7,7 +7,7 @@ import categories from '../../../.storybook/categories';
 import { ThemeProvider } from "../../../src";
 
 export const component = () => {
-  const height = text("height", "auto")
+  const height = text("height", null)
   const width = text("width", "100px")
   const isReverse = boolean("isReverse", false)
 

@@ -6,13 +6,13 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm cYUero"
+        class="sc-AxjAm fKtAGm Container"
       />
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm cYUero"
+      class="sc-AxjAm fKtAGm Container"
     />
   </div>,
   "debug": [Function],
