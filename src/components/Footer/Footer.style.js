@@ -7,7 +7,6 @@ export const Wrapper = styled.footer`
   display: flex;
   height: 120px;
   justify-content: center;
-  position: absolute;
   width: 100%;
 
 @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
