@@ -1,2 +1,2 @@
-import TextInput from './TextInput'
-export default TextInput
+import PasswordInput from './PasswordInput'
+export default PasswordInput
