@@ -11,25 +11,20 @@ class StringValidator {
     this.validatorPattern = validatorPatterns[validatorPattern]
   }
 
-  checkLength = () => {
-    if (this.validatorPattern.minLength) {
-      this.checkMinLength()
-    }
-    if (this.validatorPattern.maxLength) {
-      this.checkMaxLength()
-    }
-  }
-
   checkMinLength = () => {
-    const isValid = Boolean(this.value.length <= this.validatorPattern.minLength)
-    const errorMessage = isValid ? '' : `O valor deve ser maior que ${this.validatorPattern.minLength - 1} caracteres`
-    this.setValidationProps(isValid, errorMessage)
+    if (this.validatorPattern.minLength) {
+      const isValid = Boolean(this.value.length >= this.validatorPattern.minLength)
+      const errorMessage = isValid ? '' : `O valor deve ser maior que ${this.validatorPattern.minLength} caracteres`
+      this.setValidationProps(isValid, errorMessage)
+    }
   }
 
   checkMaxLength = () => {
-    const isValid = Boolean(this.value.length >= this.validatorPattern.maxLength)
-    const errorMessage = isValid ? '' : `O valor deve ser menor que ${this.validatorPattern.minLength + 1} caracteres`
-    this.setValidationProps(isValid, errorMessage)
+    if (this.validatorPattern.maxLength) {
+      const isValid = Boolean(this.value.length <= this.validatorPattern.maxLength)
+      const errorMessage = isValid ? '' : `O valor deve ser menor que ${this.validatorPattern.maxLength} caracteres`
+      this.setValidationProps(isValid, errorMessage)
+    }
   }
 
   checkRegexPattern = () => {
@@ -64,7 +59,8 @@ class StringValidator {
     const validationGenerator = genBind(
       this, 
       function* validator() {
-        yield this.checkLength
+        yield this.checkMinLength
+        yield this.checkMaxLength
         yield this.checkRegexPattern
         yield this.checkSpecificValidation
       }
