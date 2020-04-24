@@ -141,7 +141,13 @@ class InputComponent extends Component {
           isValid={this.handleErrorStyle()}
           theme={theme}>
           <Typography 
-            color={this.handleErrorStyle() ? theme.colors.primaryColor : theme.colors.redColor}
+            color={
+              this.handleErrorStyle() ? 
+                this.state.isFocused ?
+                  theme.colors.primaryColor :
+                  theme.colors.darkGreyColor : 
+                theme.colors.redColor
+            }
             tag="span"
             type="label">
             <strong>
