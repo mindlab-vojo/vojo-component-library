@@ -5,7 +5,7 @@ import * as Card from './Card.style'
 
 function CardComponent({ children }) {
   return (
-    <Card.Card>
+    <Card.Card className="Card">
       {children}
     </Card.Card>
   )
