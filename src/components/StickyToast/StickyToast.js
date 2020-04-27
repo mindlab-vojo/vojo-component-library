@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 import Sticky from 'react-sticky-el'
 
@@ -9,8 +9,17 @@ import IconManager from '../IconManager'
 
 const StickyToastComponent = ({
   children,
+  onClickClose,
   show,
 }) => {
+
+  const [showToast, setShowToast] = useState(show ? true : false)
+
+  const handleCloseButton = () => {
+    setShowToast(false)
+    onClickClose && onClickClose(false)
+  }
+
   const renderComponent = theme => (
     <Sticky>
       <StickyToast.Wrapper 
@@ -21,14 +30,15 @@ const StickyToastComponent = ({
           {children}
         </StickyToast.Content>
         <StickyToast.Close 
+          onClick={()=>handleCloseButton()}
           className="StickyToast__Close">
-          <IconManager width="24" icon="ArrowLeft"/>
+          <IconManager width="17" icon="Close"/>
         </StickyToast.Close>
       </StickyToast.Wrapper>
     </Sticky>
   )  
 
-  return show ? (
+  return showToast ? (
     <ThemeConsumer>
       {({ theme }) => renderComponent(theme)}
     </ThemeConsumer>
@@ -37,6 +47,7 @@ const StickyToastComponent = ({
 
 StickyToastComponent.propTypes = {
   children: PropTypes.node,
+  onClickClose: PropTypes.func,
   show: PropTypes.bool,
 }
 
