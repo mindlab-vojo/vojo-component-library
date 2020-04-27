@@ -11,6 +11,15 @@ class StringValidator {
     this.validatorPattern = validatorPatterns[validatorPattern]
   }
 
+  checkIsRequired = () => {
+    if (this.options.isRequired) {
+      console.log((this.value && this.value.length > 0))
+      const isValid = Boolean(this.value && this.value.length > 0)
+      const errorMessage = isValid ? '' : `Este campo é obrigatório`
+      this.setValidationProps(isValid, errorMessage)
+    }
+  }
+
   checkMinLength = () => {
     if (this.validatorPattern.minLength) {
       const isValid = Boolean(this.value.length >= this.validatorPattern.minLength)
@@ -59,6 +68,7 @@ class StringValidator {
     const validationGenerator = genBind(
       this, 
       function* validator() {
+        yield this.checkIsRequired
         yield this.checkMinLength
         yield this.checkMaxLength
         yield this.checkRegexPattern
