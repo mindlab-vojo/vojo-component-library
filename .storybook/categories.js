@@ -8,5 +8,6 @@ export default {
   Icons: 'Icons',
   Inputs: 'Inputs',
   Logos: 'Logos',
+  StickyToasts:'StickyToasts',
   Typographys: 'Typographys'
 }

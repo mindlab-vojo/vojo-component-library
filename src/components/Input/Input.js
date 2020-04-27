@@ -14,6 +14,7 @@ class InputComponent extends Component {
     disabled: PropTypes.bool,
     id: PropTypes.string,
     isPassword: PropTypes.bool,
+    isRequired: PropTypes.bool,
     label: PropTypes.string,
     name: PropTypes.string,
     onInputBlur: PropTypes.func,
@@ -36,8 +37,17 @@ class InputComponent extends Component {
   
   validatorType = null
 
+  componentDidMount() {
+    const validation = this.validateInputValue(this.state.value)
+    this.setState({
+      errorMessage: validation.errorMessage,
+      isValid: validation.isValid,
+      value: validation.value,
+    })
+  }
+
   validateInputValue = (inputValue) => {
-    return new StringValidator(inputValue, this.validatorType).validate()
+    return new StringValidator(inputValue, this.validatorType, { isRequired: this.props.isRequired }).validate()
   }
 
   handleInputChange = (event) => {
