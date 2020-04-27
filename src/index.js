@@ -8,6 +8,7 @@ import Header from './components/Header';
 import IconManager from './components/IconManager';
 import Logo from './components/Logo';
 import PasswordInput from './components/Input/PasswordInput';
+import StickyToast from './components/StickyToast/StickyToast';
 import TextInput from './components/Input/TextInput';
 import MobileInput from './components/Input/MobileInput';
 import Typography from './components/Typography';
@@ -28,6 +29,7 @@ export {
   Logo,
   MobileInput,
   PasswordInput,
+  StickyToast,
   TextInput,
   Typography,
   ThemeConsumer,
