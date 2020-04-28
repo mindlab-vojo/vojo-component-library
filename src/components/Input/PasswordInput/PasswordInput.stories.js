@@ -18,7 +18,7 @@ export const component = () => {
   const showError = boolean('showError', false)
   const type =  text('type', 'text')
   const value =  text('value', '')
-
+  
   
   return (
     <PasswordInput 
