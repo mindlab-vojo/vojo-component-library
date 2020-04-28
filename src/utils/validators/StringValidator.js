@@ -14,7 +14,7 @@ class StringValidator {
   checkIsRequired = () => {
     if (this.options.isRequired) {
       console.log((this.value && this.value.length > 0))
-      const isValid = Boolean(this.value && this.value.length > 0)
+      const isValid = Boolean((this.value !== '') && (this.value.length > 0))
       const errorMessage = isValid ? '' : `Este campo é obrigatório`
       this.setValidationProps(isValid, errorMessage)
     }
@@ -23,7 +23,7 @@ class StringValidator {
   checkMinLength = () => {
     if (this.validatorPattern.minLength) {
       const isValid = Boolean(this.value.length >= this.validatorPattern.minLength)
-      const errorMessage = isValid ? '' : `O valor deve ser maior que ${this.validatorPattern.minLength} caracteres`
+      const errorMessage = isValid ? '' : `O valor conter pelo menos ${this.validatorPattern.minLength} caracteres`
       this.setValidationProps(isValid, errorMessage)
     }
   }
@@ -31,7 +31,7 @@ class StringValidator {
   checkMaxLength = () => {
     if (this.validatorPattern.maxLength) {
       const isValid = Boolean(this.value.length <= this.validatorPattern.maxLength)
-      const errorMessage = isValid ? '' : `O valor deve ser menor que ${this.validatorPattern.maxLength} caracteres`
+      const errorMessage = isValid ? '' : `O valor conter no máximo ${this.validatorPattern.maxLength} caracteres`
       this.setValidationProps(isValid, errorMessage)
     }
   }

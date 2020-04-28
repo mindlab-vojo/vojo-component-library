@@ -1,0 +1,104 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Spinner component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxjAm jOAJCI"
+      >
+        <svg
+          class="sc-AxirZ iUBOPB"
+          height="50px"
+          version="1.1"
+          viewBox="0 0 512 512"
+          width="50px"
+          xml:space="preserve"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g>
+            <path
+              d="M266.3,0c-34.3,0-62.1,27.8-62.1,62.1s27.8,62.1,62.1,62.1s62.1-27.8,62.1-62.1S300.6,0,266.3,0z M120.2,71.1 c-28.5,0-51.7,23.2-51.7,51.7s23.2,51.7,51.7,51.7s51.7-23.2,51.7-51.7S148.8,71.1,120.2,71.1z M412.4,102.1 c-11.4,0-20.7,9.3-20.7,20.7s9.3,20.7,20.7,20.7c11.4,0,20.7-9.3,20.7-20.7S423.8,102.1,412.4,102.1z M59.5,222.4 c-25.7,0-46.5,20.8-46.5,46.5s20.8,46.5,46.5,46.5s46.5-20.8,46.5-46.5S85.2,222.4,59.5,222.4z M473.2,243.1 c-14.3,0-25.9,11.6-25.9,25.9c0,14.3,11.6,25.9,25.9,25.9c14.3,0,25.9-11.6,25.9-25.9C499.1,254.6,487.5,243.1,473.2,243.1z M120.2,373.7c-22.9,0-41.4,18.5-41.4,41.4s18.5,41.4,41.4,41.4s41.4-18.5,41.4-41.4S143.1,373.7,120.2,373.7z M412.4,384 c-17.1,0-31,13.9-31,31s13.9,31,31,31c17.1,0,31-13.9,31-31S429.6,384,412.4,384z M266.3,439.6c-20,0-36.2,16.2-36.2,36.2 s16.2,36.2,36.2,36.2s36.2-16.2,36.2-36.2S286.3,439.6,266.3,439.6z"
+              fill="#391DDD"
+            />
+          </g>
+        </svg>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm jOAJCI"
+    >
+      <svg
+        class="sc-AxirZ iUBOPB"
+        height="50px"
+        version="1.1"
+        viewBox="0 0 512 512"
+        width="50px"
+        xml:space="preserve"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <g>
+          <path
+            d="M266.3,0c-34.3,0-62.1,27.8-62.1,62.1s27.8,62.1,62.1,62.1s62.1-27.8,62.1-62.1S300.6,0,266.3,0z M120.2,71.1 c-28.5,0-51.7,23.2-51.7,51.7s23.2,51.7,51.7,51.7s51.7-23.2,51.7-51.7S148.8,71.1,120.2,71.1z M412.4,102.1 c-11.4,0-20.7,9.3-20.7,20.7s9.3,20.7,20.7,20.7c11.4,0,20.7-9.3,20.7-20.7S423.8,102.1,412.4,102.1z M59.5,222.4 c-25.7,0-46.5,20.8-46.5,46.5s20.8,46.5,46.5,46.5s46.5-20.8,46.5-46.5S85.2,222.4,59.5,222.4z M473.2,243.1 c-14.3,0-25.9,11.6-25.9,25.9c0,14.3,11.6,25.9,25.9,25.9c14.3,0,25.9-11.6,25.9-25.9C499.1,254.6,487.5,243.1,473.2,243.1z M120.2,373.7c-22.9,0-41.4,18.5-41.4,41.4s18.5,41.4,41.4,41.4s41.4-18.5,41.4-41.4S143.1,373.7,120.2,373.7z M412.4,384 c-17.1,0-31,13.9-31,31s13.9,31,31,31c17.1,0,31-13.9,31-31S429.6,384,412.4,384z M266.3,439.6c-20,0-36.2,16.2-36.2,36.2 s16.2,36.2,36.2,36.2s36.2-16.2,36.2-36.2S286.3,439.6,266.3,439.6z"
+            fill="#391DDD"
+          />
+        </g>
+      </svg>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;

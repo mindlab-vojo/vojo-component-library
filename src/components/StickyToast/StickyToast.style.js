@@ -1,5 +1,11 @@
 import styled from 'styled-components'
 
+export const Normalizer = styled.div`
+  display: block;
+  width: 100%;
+  z-index: 1000;
+`
+
 export const Wrapper = styled.div`
   align-items: center;
   background-color: ${props => props.theme.colors.whiteColor};

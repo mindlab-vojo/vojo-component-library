@@ -29,9 +29,10 @@ class InputComponent extends Component {
     errorMessage: '',
     isValid: true,
     isFocused: false,
+    isVisible: this.props.isPassword,
     isPassword: this.props.isPassword,
     maskedValue: this.props.value || '',
-    type: this.props.type,
+    type: this.props.isPassword ? 'password' : this.props.type,
     value: this.props.value || '',
   }
   
