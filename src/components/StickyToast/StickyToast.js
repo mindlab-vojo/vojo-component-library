@@ -21,21 +21,23 @@ const StickyToastComponent = ({
   }
 
   const renderComponent = theme => (
-    <Sticky>
-      <StickyToast.Wrapper 
-        className="StickyToast"
-        theme={theme}>
-        <StickyToast.Content 
-          className="StickyToast__Content">
-          {children}
-        </StickyToast.Content>
-        <StickyToast.Close 
-          onClick={()=>handleCloseButton()}
-          className="StickyToast__Close">
-          <IconManager width="17" icon="Close"/>
-        </StickyToast.Close>
-      </StickyToast.Wrapper>
-    </Sticky>
+    <StickyToast.Normalizer>
+      <Sticky>
+        <StickyToast.Wrapper 
+          className="StickyToast"
+          theme={theme}>
+          <StickyToast.Content 
+            className="StickyToast__Content">
+            {children}
+          </StickyToast.Content>
+          <StickyToast.Close 
+            onClick={()=>handleCloseButton()}
+            className="StickyToast__Close">
+            <IconManager width="17" icon="Close"/>
+          </StickyToast.Close>
+        </StickyToast.Wrapper>
+      </Sticky>
+    </StickyToast.Normalizer>
   )  
 
   return showToast ? (
