@@ -57,7 +57,7 @@ export const validatorPatterns = {
     specificValidation: null,
   },
   [validatorTypes.email]: {
-    errorMessage: 'O número formato do e-mail é inválido',
+    errorMessage: 'O formato do e-mail é inválido',
     mask: null,
     maskRemover: (value) => value,
     maxLength: null,
