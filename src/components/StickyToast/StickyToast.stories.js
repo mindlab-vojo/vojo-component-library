@@ -4,7 +4,7 @@ import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions';
 
 import StickyToast from '.'; 
-import { ThemeProvider } from "../../../src";
+import { ThemeProvider, Container } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const component = () => {
@@ -13,13 +13,16 @@ export const component = () => {
   const onClickClose = action('onClickClose')
   
   return (
-    <div style={{ height: "1500px" }}>
+    <Container maxWidth="full">
       <div style={{ height: "350px" }}>
       </div>
       <StickyToast show={show} onClickClose={onClickClose}>
         {children}
       </StickyToast>
-    </div>
+      
+      <div style={{ height: "900px" }}>
+      </div>
+    </Container>
   )
 }
 
