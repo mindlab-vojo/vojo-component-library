@@ -1,3 +1,5 @@
+import phoneValidator from './phoneValidator'
+
 export const validatorTypes = {
   alphaNumeric: 'alphaNumeric',
   alphaNumericSpaced: 'alphaNumericSpaced',
@@ -66,7 +68,7 @@ export const validatorPatterns = {
   [validatorTypes.mobileNumber]: {
     errorMessage: 'O número de telefone é inválido',
     mask: ['(', /\d/, /\d/, ')', /\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/, /\d/],
-    maskRemover: (value) => value.match(/[0-9]/g).join(''),
+    maskRemover: (value) => phoneValidator(value),
     maxLength: 11,
     minLength: 11,
     regex: /^[0-9]{11}$/,
