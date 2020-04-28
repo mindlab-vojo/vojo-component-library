@@ -8,6 +8,7 @@ import Header from './components/Header';
 import IconManager from './components/IconManager';
 import Logo from './components/Logo';
 import PasswordInput from './components/Input/PasswordInput';
+import Spinner from './components/Spinner/Spinner';
 import StickyToast from './components/StickyToast/StickyToast';
 import TextInput from './components/Input/TextInput';
 import MobileInput from './components/Input/MobileInput';
@@ -29,6 +30,7 @@ export {
   Logo,
   MobileInput,
   PasswordInput,
+  Spinner,
   StickyToast,
   TextInput,
   Typography,
