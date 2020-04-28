@@ -9,5 +9,6 @@ export default {
   Inputs: 'Inputs',
   Logos: 'Logos',
   StickyToasts:'StickyToasts',
+  Spinners:'Spinners',
   Typographys: 'Typographys'
 }
