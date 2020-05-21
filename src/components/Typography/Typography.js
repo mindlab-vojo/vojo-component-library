@@ -19,6 +19,9 @@ function TypographyComponent({
     subtitle: {
       fontSize: "15px"
     },
+    title: {
+      fontSize: "24px"
+    },
     label: {
       fontSize: "13px"
     }
