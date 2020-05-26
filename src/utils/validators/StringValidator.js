@@ -13,7 +13,6 @@ class StringValidator {
 
   checkIsRequired = () => {
     if (this.options.isRequired) {
-      console.log((this.value && this.value.length > 0))
       const isValid = Boolean((this.value !== '') && (this.value.length > 0))
       const errorMessage = isValid ? '' : `Este campo é obrigatório`
       this.setValidationProps(isValid, errorMessage)
