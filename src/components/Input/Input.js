@@ -50,10 +50,15 @@ class InputComponent extends Component {
 
   componentDidUpdate = (prevProps) => {
     if (prevProps.errorMessage !== this.props.errorMessage){
-      this.setState({ 
-        errorMessage: this.props.errorMessage,
-        isValid: false
-      })
+      if (
+        this.props.errorMessage !== "" ||
+        this.props.errorMessage !== undefined ||
+        this.props.errorMessage !== null
+      )
+        this.setState({ 
+          errorMessage: this.props.errorMessage,
+          isValid: false
+        })
     }
   }
 
