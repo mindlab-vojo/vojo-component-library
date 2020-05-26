@@ -12,6 +12,7 @@ import { validatorPatterns } from './../../utils/validators/validatorTypes'
 class InputComponent extends Component {
   static propTypes = {
     disabled: PropTypes.bool,
+    errorMessage: PropTypes.string,
     id: PropTypes.string,
     isPassword: PropTypes.bool,
     isRequired: PropTypes.bool,
@@ -26,7 +27,7 @@ class InputComponent extends Component {
   }
   
   state = {
-    errorMessage: '',
+    errorMessage: this.props.errorMessage,
     isValid: true,
     isFocused: false,
     isVisible: this.props.isPassword,
@@ -45,6 +46,15 @@ class InputComponent extends Component {
       isValid: validation.isValid,
       value: validation.value,
     })
+  }
+
+  componentDidUpdate = (prevProps) => {
+    if (prevProps.errorMessage !== this.props.errorMessage){
+      this.setState({ 
+        errorMessage: this.props.errorMessage,
+        isValid: false
+      })
+    }
   }
 
   validateInputValue = (inputValue) => {

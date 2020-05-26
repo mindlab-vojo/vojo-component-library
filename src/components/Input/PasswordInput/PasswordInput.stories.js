@@ -9,6 +9,7 @@ import categories from '../../../../.storybook/categories';
 
 export const component = () => {
   const disabled = boolean('disabled', false)
+  const errorMessage = text('errorMessage', '')
   const id = text('id', 'vojo-input')
   const label = text('label', 'Text Input')
   const name =  text('name', 'vojo-input')
@@ -23,6 +24,7 @@ export const component = () => {
   return (
     <PasswordInput 
       disabled={disabled}
+      errorMessage={errorMessage}
       id={id}
       isPassword={true}
       label={label}
