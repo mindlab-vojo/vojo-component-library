@@ -49,21 +49,28 @@ class InputComponent extends Component {
   }
 
   componentDidUpdate = (prevProps) => {
-    if (prevProps.errorMessage !== this.props.errorMessage){
-      if (
-        this.props.errorMessage !== "" ||
-        this.props.errorMessage !== undefined ||
-        this.props.errorMessage !== null
-      )
-        this.setState({ 
-          errorMessage: this.props.errorMessage,
-          isValid: false
-        })
-    }
+    this.handleErrorMessagePropsChange(prevProps.errorMessage, this.props.errorMessage)
   }
 
   validateInputValue = (inputValue) => {
     return new StringValidator(inputValue, this.validatorType, { isRequired: this.props.isRequired }).validate()
+  }
+
+  handleErrorMessagePropsChange = (prevErrorMessage, currentErrorMessage) => {
+    if (prevErrorMessage !== currentErrorMessage){
+      if (
+        currentErrorMessage === "" ||
+        currentErrorMessage === undefined ||
+        currentErrorMessage === null
+      ){
+        this.setState({ isValid: true })
+      } else {
+        this.setState({ 
+          errorMessage: currentErrorMessage,
+          isValid: false
+        })
+      }
+    }
   }
 
   handleInputChange = (event) => {
