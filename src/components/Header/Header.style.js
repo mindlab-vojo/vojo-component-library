@@ -2,7 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.header`
   align-items: center;
-  background-color: ${props => props.theme.colors.whiteColor};
+  background-color: ${props => props.theme.colors.primaryColor};
   box-shadow: 0 3px 5px ${props => props.theme.colors.greyColor};
   display: flex;
   height: 48px;
