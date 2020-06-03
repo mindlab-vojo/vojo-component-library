@@ -3,6 +3,7 @@ export default {
   Cards: 'Cards',
   Checkbox: 'Checkbox',
   Containers: 'Containers',
+  Dropdowns: 'Dropdowns',
   Footers: 'Footers',
   Headers: 'Headers',
   Icons: 'Icons',
