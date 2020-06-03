@@ -10,11 +10,14 @@ ${props => props.isSelected
 }
   align-items: center;
   border: 2px solid ${props => props.theme.colors.blackColor};
-  border-radius: 5px;
+  border-radius: 10px;
   display: flex;
-  padding: 12px 15px;
+  padding: 8px 12px;
   width: 100%
 `
 export const Text = styled.div``
 
-export const Icon = styled.div``
+export const Icon = styled.div`
+  margin-left: 5px;
+  margin-top: 7px;
+`
