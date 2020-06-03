@@ -14,17 +14,24 @@ const FilterDropdownComponent = ({
   placeholder,
 }) => {
   const [isSelected, setIsSelected] = useState(Boolean(defaultOption))
+  const [isOpen, setIsOpen] = useState(false)
 
   const renderComponent = theme => {
-    
     const currentColor = isSelected 
       ? theme.colors.blackColor
       : theme.colors.whiteColor
+
+    const currentIcon = isOpen 
+      ? 'ArrowUp'
+      : 'ArrowDown'
+    
     return (
       <FilterDropdown.Wrapper
+        className="FilterDropdown"
         isSelected={isSelected}
         theme={theme}>
-        <FilterDropdown.Text>
+        <FilterDropdown.Text
+          className="FilterDropdown__Text">
           <Typography 
             color={currentColor}
             tag="p"
@@ -32,9 +39,10 @@ const FilterDropdownComponent = ({
             TESTE
           </Typography>
         </FilterDropdown.Text>
-        <FilterDropdown.Icon>
+        <FilterDropdown.Icon
+          className="FilterDropdown__Icon">
           <IconManager 
-            icon="ArrowDown"
+            icon={currentIcon}
             fill={currentColor}
           />
         </FilterDropdown.Icon>
