@@ -11,8 +11,8 @@ const JobCardComponent = ({
   imageUrl,
   isNew,
   isUnavailable,
-  linkUrl,
   locations,
+  onClickCard,
   slots,
   title,
 }) => {
@@ -35,9 +35,9 @@ JobCardComponent.propTypes = {
   imageUrl: PropTypes.string,
   isNew: PropTypes.bool,
   isUnavailable: PropTypes.bool,
-  linkUrl: PropTypes.string,
   locations: PropTypes.array,
   slots: PropTypes.number,
+  onClickCard: PropTypes.string,
   title: PropTypes.string,
 }
 
