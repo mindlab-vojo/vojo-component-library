@@ -7,13 +7,7 @@ import categories from '../../../.storybook/categories';
 import { ThemeProvider } from "../../../src";
 import Typography from '../Typography';
 
-export default {
-  title: categories.Cards,
-  component: Card,
-  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
-}
-
-export const component = () => {
+export const card = () => {
   return (
     <Card>
       <Typography tag="h2" type="subtitle">
@@ -26,7 +20,12 @@ export const component = () => {
   )
 }
 
-component.story = {
+card.story = {
   name: 'Card',
 };
-  
+
+export default {
+  title: categories.Cards,
+  component: card,
+  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
+}
