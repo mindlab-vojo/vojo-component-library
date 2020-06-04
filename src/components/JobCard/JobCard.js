@@ -18,9 +18,58 @@ const JobCardComponent = ({
   slots,
   title,
 }) => {
-
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
   const companiesText = companyNumber > 1 ? "empresas" : "empresa"
+  
+  const renderLocations = (theme) => {
+    const locationLength = locations[0].states.length
+
+    switch (locationLength) {
+    case 1: 
+      return locations[0].states.map(location => (
+        <>
+          <JobCard.StateCircle 
+            key={location.uf}
+            theme={theme}>
+            <Typography
+              fontSize="12px"
+              fontWeight="bolder"
+            >
+              {location.uf}
+            </Typography>
+          </JobCard.StateCircle>
+        </>
+      ));
+        
+    case 27:
+      return (
+        <JobCard.CountryCircle 
+          key={locations[0].country}
+          theme={theme}>
+          <Typography
+            fontSize="12px"
+            fontWeight="bolder"
+          >
+            {locations[0].country}
+          </Typography>
+        </JobCard.CountryCircle>
+      )
+      
+    default:
+      return locations[0].states.map(location => (
+        <JobCard.StateCircle 
+          key={location.uf}
+          theme={theme}>
+          <Typography
+            fontSize="12px"
+            fontWeight="bolder"
+          >
+            {location.uf}
+          </Typography>
+        </JobCard.StateCircle>
+      ));
+    }
+  }
 
   const renderComponent = (theme) => (
     <Card padding="12px 8px">
@@ -67,7 +116,7 @@ const JobCardComponent = ({
           </JobCard.Companies>
           <JobCard.Locations
             className="JobCard__Locations">
-              
+            {renderLocations(theme)}
           </JobCard.Locations>
         </JobCard.DataBlock>
       </JobCard.Wrapper>
