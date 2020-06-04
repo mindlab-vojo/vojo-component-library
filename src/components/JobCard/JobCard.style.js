@@ -50,4 +50,29 @@ export const Title = styled.div``
 
 export const Companies = styled.div``
 
-export const Locations = styled.div``
+export const Locations = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+`
+export const StateCircle = styled.div`
+  align-items: center;
+  background-color: ${props => props.theme.colors.greyColor};
+  border-radius: 500px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin: 3px;
+  min-width: 24px;
+`
+export const CountryCircle = styled.div`
+  align-items: center;
+  background-color: ${props => props.theme.colors.greyColor};
+  border-radius: 500px;
+  display: flex;
+  height: 24px;
+  justify-content: center;
+  margin: 3px;
+  min-width: 24px;
+  padding: 0 8px;
+`
