@@ -11,19 +11,23 @@ export const component = () => {
   const optionsList = [
     {
       id: '1',
-      name: 'Leonardo'
+      name: 'Leonardo',
+      value: 'leonardo',
     },
     {
       id: '2',
-      name: 'Renata'
+      name: 'Renata',
+      value: 'renata',
     },
     {
       id: '3',
-      name: 'Robson'
+      name: 'Robson',
+      value: 'robson',
     },
     {
       id: '4',
-      name: 'Ana Carolina'
+      name: 'Ana Carolina',
+      value: 'ana-carolina',
     },
   ]
 
