@@ -10,10 +10,18 @@ import categories from '../../../.storybook/categories';
 export const jobCard = () => {
   const locationsList = [
     {
-      id: '1',
-      state: 'SP',
-      cities: ['São Paulo', 'São Caetano', 'Campinas'],
-    },
+      country: "Brasil",
+      states: [
+        {
+          uf: "SP",
+          cities: ['São Paulo', 'Jundiaí', 'Sorocaba']
+        },
+        {
+          uf: "RJ",
+          cities: ['Rio de Janeiro']
+        }
+      ],
+    }
   ]
   
   const companyNumber = number('companyNumber', 5)
