@@ -6,6 +6,7 @@ export const Wrapper = styled.div`
 `
 
 export const ImageBlock = styled.div`
+  margin-right: 8px;
   width: 72px;
 `
 
@@ -33,11 +34,20 @@ export const Slots = styled.div`
   box-sizing: border-box;
   display: flex;
   justify-content: center;
-  margin-top: -17px;
+  margin-top: -18px;
   padding: 5px;
   position: relative;
   width: 72px;
   z-index: 2;
 `
 
-export const DataBlock = styled.div``
+export const DataBlock = styled.div`
+  display: flex;
+  flex-direction: column;
+`
+
+export const Title = styled.div``
+
+export const Companies = styled.div``
+
+export const Locations = styled.div``
