@@ -20,6 +20,7 @@ const JobCardComponent = ({
 }) => {
 
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
+  const companiesText = companyNumber > 1 ? "empresas" : "empresa"
 
   const renderComponent = (theme) => (
     <Card padding="12px 8px">
@@ -48,6 +49,26 @@ const JobCardComponent = ({
         </JobCard.ImageBlock>
         <JobCard.DataBlock
           className="JobCard__DataBlock">
+          <JobCard.Title
+            className="JobCard__Title">
+            <Typography
+              color={theme.colors.darkBlueColor}
+              fontSize="18px"
+              fontWeight="bolder">
+              {title}
+            </Typography>
+          </JobCard.Title>
+          <JobCard.Companies
+            className="JobCard__Companies">
+            <Typography
+              fontSize="12px">
+              {`${companyNumber} ${companiesText} contratando em`}
+            </Typography>
+          </JobCard.Companies>
+          <JobCard.Locations
+            className="JobCard__Locations">
+              
+          </JobCard.Locations>
         </JobCard.DataBlock>
       </JobCard.Wrapper>
     </Card>
