@@ -10,11 +10,20 @@ function TypographyComponent({
   type, 
   tag,
   isUnderlined,
+  fontStyle,
+  fontVariant,
+  fontWeight,
+  fontSize,
+  lineHeight,
+  fontFamily,
 }) {
 
   const typographyTypes = {
     default: {
       fontSize: "14px"
+    },
+    smallText: {
+      fontSize: "9px"
     },
     subtitle: {
       fontSize: "15px"
@@ -33,7 +42,14 @@ function TypographyComponent({
       typoColor={color} 
       typoStyles={typographyTypes[type]}
       isUnderlined={isUnderlined}
-      additionalProps={additionalProps}>
+      additionalProps={additionalProps}
+      fontStyle={fontStyle}
+      fontVariant={fontVariant}
+      fontWeight={fontWeight}
+      fontSize={fontSize}
+      lineHeight={lineHeight}
+      fontFamily={fontFamily}
+    >
       {children}
     </Typography>
   )
@@ -46,6 +62,20 @@ TypographyComponent.propTypes = {
   type: PropTypes.string,
   tag: PropTypes.string,
   isUnderlined: PropTypes.bool,
+  // FontProps
+  fontStyle: PropTypes.string,
+  fontVariant: PropTypes.string,
+  fontWeight: PropTypes.string,
+  fontSize: PropTypes.string,
+  lineHeight: PropTypes.string,
+  fontFamily: PropTypes.string,
+}
+
+TypographyComponent.defaultProps = {
+  color: "#212529", 
+  type: "default",
+  tag: "p",
+  isUnderlined: false,
 }
 
 export default TypographyComponent
