@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, array, number, boolean, object } from '@storybook/addon-knobs';
+import { withKnobs, text, number, boolean, object } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -19,7 +19,7 @@ export const jobCard = () => {
         {
           uf: "RJ",
           cities: ['Rio de Janeiro']
-        }
+        },
       ],
     }
   ]
