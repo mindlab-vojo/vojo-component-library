@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import * as JobCard from './JobCard.style'
+
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 const JobCardComponent = ({
@@ -15,9 +17,9 @@ const JobCardComponent = ({
   title,
 }) => {
   const renderComponent = (theme) => (
-    <div>
+    <JobCard.Wrapper>
       
-    </div>
+    </JobCard.Wrapper>
   )
 
   return (
