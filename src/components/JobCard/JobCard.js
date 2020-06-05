@@ -18,6 +18,7 @@ const JobCardComponent = ({
   slots,
   title,
 }) => {
+
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
   const companiesText = companyNumber > 1 ? "empresas" : "empresa"
   
@@ -119,7 +120,7 @@ const JobCardComponent = ({
           <JobCard.Title
             className="JobCard__Title">
             <Typography
-              color={theme.colors.darkBlueColor}
+              color={isUnavailable ? theme.colors.blackColor : theme.colors.darkBlueColor}
               fontSize="18px"
               fontWeight="bolder">
               {title}
@@ -156,7 +157,7 @@ JobCardComponent.propTypes = {
   isUnavailable: PropTypes.bool,
   locations: PropTypes.array,
   slots: PropTypes.number,
-  onClickCard: PropTypes.string,
+  onClickCard: PropTypes.func,
   title: PropTypes.string,
 }
 

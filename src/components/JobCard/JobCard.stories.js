@@ -28,7 +28,7 @@ export const jobCard = () => {
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
   const isNew = boolean('isNew', true)
-  const isUnavailable = text('isUnavailable', false)
+  const isUnavailable = boolean('isUnavailable', false)
   const locations = object('locations', locationsList)
   const onClickCard = action('onClickCard')
   const slots = number('slots', 200)
