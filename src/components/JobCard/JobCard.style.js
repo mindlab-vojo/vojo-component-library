@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   align-items: center;
   display: flex;
   position: relative;
+  width: 100%;
 `
 
 export const NewTag = styled.div`
@@ -64,9 +65,17 @@ export const Companies = styled.div`
 
 export const Locations = styled.div`
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
 `
+
+export const SingleState = styled.div`
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+`
+
 export const StateCircle = styled.div`
   align-items: center;
   background-color: ${props => props.theme.colors.greyColor};
@@ -87,4 +96,9 @@ export const CountryCircle = styled.div`
   margin: 3px;
   min-width: 24px;
   padding: 0 8px;
+`
+
+export const Cities = styled.div`
+  margin-left: 5px;
+  width: 100%
 `

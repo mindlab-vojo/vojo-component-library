@@ -27,9 +27,9 @@ const JobCardComponent = ({
     switch (locationLength) {
     case 1: 
       return locations[0].states.map(location => (
-        <>
+        <JobCard.SingleState
+          key={location.uf}>
           <JobCard.StateCircle 
-            key={location.uf}
             theme={theme}>
             <Typography
               fontSize="12px"
@@ -38,7 +38,12 @@ const JobCardComponent = ({
               {location.uf}
             </Typography>
           </JobCard.StateCircle>
-        </>
+          <JobCard.Cities>
+            <Typography>
+              {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
+            </Typography>
+          </JobCard.Cities>
+        </JobCard.SingleState>
       ));
         
     case 27:
@@ -76,12 +81,16 @@ const JobCardComponent = ({
       id={`JobCard-${id}`}
       padding="15px 8px" 
       onClick={onClickCard}>
-      <JobCard.NewTag theme={theme}>
-        <Typography
-          color={theme.colors.whiteColor}>
-            novidade
-        </Typography>
-      </JobCard.NewTag>
+      {
+        isNew && (
+          <JobCard.NewTag theme={theme}>
+            <Typography
+              color={theme.colors.whiteColor}>
+              novidade
+            </Typography>
+          </JobCard.NewTag>
+        )
+      }
       <JobCard.Wrapper
         className="JobCard">
         <JobCard.ImageBlock 
