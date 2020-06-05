@@ -3,6 +3,16 @@ import styled from 'styled-components'
 export const Wrapper = styled.div`
   align-items: center;
   display: flex;
+  position: relative;
+`
+
+export const NewTag = styled.div`
+  background-color: ${props => props.theme.colors.pinkColor};
+  border-radius: 5px;
+  padding: 1px 6px 2px;
+  position: absolute;
+  right: 8px;
+  top: -2px;
 `
 
 export const ImageBlock = styled.div`
@@ -48,7 +58,9 @@ export const DataBlock = styled.div`
 
 export const Title = styled.div``
 
-export const Companies = styled.div``
+export const Companies = styled.div`
+  margin: 4px 0;
+`
 
 export const Locations = styled.div`
   display: flex;

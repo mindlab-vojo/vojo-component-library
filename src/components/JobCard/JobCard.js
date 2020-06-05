@@ -72,7 +72,16 @@ const JobCardComponent = ({
   }
 
   const renderComponent = (theme) => (
-    <Card padding="12px 8px">
+    <Card 
+      id={`JobCard-${id}`}
+      padding="15px 8px" 
+      onClick={onClickCard}>
+      <JobCard.NewTag theme={theme}>
+        <Typography
+          color={theme.colors.whiteColor}>
+            novidade
+        </Typography>
+      </JobCard.NewTag>
       <JobCard.Wrapper
         className="JobCard">
         <JobCard.ImageBlock 
