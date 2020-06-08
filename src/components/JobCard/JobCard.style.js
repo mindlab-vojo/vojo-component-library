@@ -62,6 +62,9 @@ export const Title = styled.div``
 export const Companies = styled.div`
   margin: 4px 0;
 `
+export const Unavailable = styled.div`
+  margin: 4px 0;
+`
 
 export const Locations = styled.div`
   display: flex;

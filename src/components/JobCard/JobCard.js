@@ -126,17 +126,34 @@ const JobCardComponent = ({
               {title}
             </Typography>
           </JobCard.Title>
-          <JobCard.Companies
-            className="JobCard__Companies">
-            <Typography
-              fontSize="12px">
-              {`${companyNumber} ${companiesText} contratando em`}
-            </Typography>
-          </JobCard.Companies>
-          <JobCard.Locations
-            className="JobCard__Locations">
-            {renderLocations(theme)}
-          </JobCard.Locations>
+          {
+            isUnavailable ? (
+              <>
+                <JobCard.Unavailable
+                  className="JobCard__Unavailable">
+                  <Typography
+                    fontSize="12px"
+                    fontStyle="italic">
+                    {`Se inscreva para ter acesso à vagas quando estiver disponível`}
+                  </Typography>
+                </JobCard.Unavailable>
+              </>
+            ) : (
+              <>
+                <JobCard.Companies
+                  className="JobCard__Companies">
+                  <Typography
+                    fontSize="12px">
+                    {`${companyNumber} ${companiesText} contratando em`}
+                  </Typography>
+                </JobCard.Companies>
+                <JobCard.Locations
+                  className="JobCard__Locations">
+                  {renderLocations(theme)}
+                </JobCard.Locations>
+              </>
+            )
+          }
         </JobCard.DataBlock>
       </JobCard.Wrapper>
     </Card>
