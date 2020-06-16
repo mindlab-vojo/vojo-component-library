@@ -7,6 +7,7 @@ import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
+import JobCard from './components/JobCard';
 import Logo from './components/Logo';
 import PasswordInput from './components/Input/PasswordInput';
 import Spinner from './components/Spinner/Spinner';
@@ -29,6 +30,7 @@ export {
   Footer,
   Header,
   IconManager,
+  JobCard,
   Logo,
   MobileInput,
   PasswordInput,
