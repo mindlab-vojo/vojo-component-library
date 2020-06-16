@@ -7,9 +7,13 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 function HeaderComponent() {
   const renderComponent = (theme) => (
-    <Header.Wrapper theme={theme}>
-      <Header.Content theme={theme}>
-        <Logo height="16px"/>
+    <Header.Wrapper 
+      className="Header__Wrapper"
+      theme={theme}>
+      <Header.Content 
+        className="Header__Content"
+        theme={theme}>
+        <Logo height="16px" isReverse/>
       </Header.Content>
     </Header.Wrapper>
   )

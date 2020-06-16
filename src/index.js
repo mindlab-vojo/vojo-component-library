@@ -3,9 +3,11 @@ import Card from './components/Card';
 import Checkbox from './components/Checkbox';
 import Container from './components/Container';
 import EmailInput from './components/Input/EmailInput';
+import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
+import JobCard from './components/JobCard';
 import Logo from './components/Logo';
 import PasswordInput from './components/Input/PasswordInput';
 import Spinner from './components/Spinner/Spinner';
@@ -24,9 +26,11 @@ export {
   Checkbox,
   Container,
   EmailInput,
+  FilterDropdown,
   Footer,
   Header,
   IconManager,
+  JobCard,
   Logo,
   MobileInput,
   PasswordInput,

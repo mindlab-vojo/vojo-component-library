@@ -1,67 +1,83 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test PasswordInput component render 1`] = `
+exports[`Test FilterDropdown component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hGa-Dbc Input"
+        class="sc-AxjAm ilhmbz"
       >
-        <label
-          class="sc-AxirZ GipoM Input__Name"
-          for="vojo-test"
-        >
-          <span
-            class="sc-AxheI cDVgEw"
-          >
-            <strong>
-              teste
-            </strong>
-          </span>
-        </label>
         <div
-          class="sc-AxiKw dhWbka Input__InputBackground"
+          class="sc-AxirZ rfaeh FilterDropdown"
         >
-          <input
-            class="sc-AxhUy jaojvj Input__Input"
-            id="vojo-test"
-            name="teste"
-            placeholder="teste"
-            type="text"
-            value=""
-          />
+          <div
+            class="sc-AxiKw bOTXee FilterDropdown__Text"
+          >
+            <p
+              class="sc-AxheI cUOxXm"
+            >
+              Test
+            </p>
+          </div>
+          <div
+            class="sc-AxhCb gkOWJK FilterDropdown__Icon"
+          >
+            <svg
+              height="24"
+              viewBox="0 0 24 24"
+              width="24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+                fill="#212529"
+              />
+              <path
+                d="M0 0h24v24H0V0z"
+                fill="none"
+              />
+            </svg>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hGa-Dbc Input"
+      class="sc-AxjAm ilhmbz"
     >
-      <label
-        class="sc-AxirZ GipoM Input__Name"
-        for="vojo-test"
-      >
-        <span
-          class="sc-AxheI cDVgEw"
-        >
-          <strong>
-            teste
-          </strong>
-        </span>
-      </label>
       <div
-        class="sc-AxiKw dhWbka Input__InputBackground"
+        class="sc-AxirZ rfaeh FilterDropdown"
       >
-        <input
-          class="sc-AxhUy jaojvj Input__Input"
-          id="vojo-test"
-          name="teste"
-          placeholder="teste"
-          type="text"
-          value=""
-        />
+        <div
+          class="sc-AxiKw bOTXee FilterDropdown__Text"
+        >
+          <p
+            class="sc-AxheI cUOxXm"
+          >
+            Test
+          </p>
+        </div>
+        <div
+          class="sc-AxhCb gkOWJK FilterDropdown__Icon"
+        >
+          <svg
+            height="24"
+            viewBox="0 0 24 24"
+            width="24"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M7.41 8.59L12 13.17l4.59-4.58L18 10l-6 6-6-6 1.41-1.41z"
+              fill="#212529"
+            />
+            <path
+              d="M0 0h24v24H0V0z"
+              fill="none"
+            />
+          </svg>
+        </div>
       </div>
     </div>
   </div>,

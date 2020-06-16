@@ -11,16 +11,42 @@ export class Typography extends Component {
     tag: PropTypes.string,
     typoColor: PropTypes.string,
     typoStyles: PropTypes.object,
+    fontStyle: PropTypes.string,
+    fontVariant: PropTypes.string,
+    fontWeight: PropTypes.string,
+    fontSize: PropTypes.string,
+    lineHeight: PropTypes.string,
+    fontFamily: PropTypes.string,
   }
 
   render() {
-    const { additionalProps, children, tag, typoColor, typoStyles, isUnderlined } = this.props;
+    const {
+      additionalProps, 
+      children, 
+      tag, 
+      typoColor, 
+      typoStyles, 
+      isUnderlined,
+      fontStyle,
+      fontVariant,
+      fontWeight,
+      fontSize,
+      lineHeight,
+      fontFamily,
+    } = this.props;
 
     const Component = styled(tag).attrs(additionalProps)`
       color: ${typoColor};
       font-size: ${typoStyles.fontSize};
       margin: 0;
       ${isUnderlined && `text-decoration: underline;`}
+      ${fontStyle && `font-style: ${fontStyle};`}
+      ${fontVariant && `font-variant: ${fontVariant};`}
+      ${fontWeight && `font-weight: ${fontWeight};`}
+      ${fontSize && `font-size: ${fontSize};`}
+      ${lineHeight && `line-height: ${lineHeight};`}
+      ${fontFamily && `font-family: ${fontFamily};`}
+      }
     `
 
     return (
