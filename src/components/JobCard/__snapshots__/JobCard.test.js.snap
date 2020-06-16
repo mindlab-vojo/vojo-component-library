@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test JobCard component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fzokOt juupGE"
+        id="JobCard-card-id"
+      >
+        <div
+          class="sc-AxirZ cLmhxZ"
+        >
+          <p
+            class="sc-fzqBZW kqYVrC"
+          >
+            novidade
+          </p>
+        </div>
+        <div
+          class="sc-AxjAm jDxcNw JobCard"
+        >
+          <div
+            class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+          >
+            <div
+              class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+            >
+              <div
+                class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+              >
+                <img
+                  alt="Entregador Mágico"
+                  class="sc-AxgMl TlUFs"
+                  src="https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg"
+                />
+              </div>
+            </div>
+            <div
+              class="sc-AxheI eKLjGh JobCard__Slots"
+            >
+              <p
+                class="sc-fzqNJr cFqHAX"
+              >
+                200 VAGAS
+              </p>
+            </div>
+          </div>
+          <div
+            class="sc-Axmtr erLQOu JobCard__DataBlock"
+          >
+            <div
+              class="sc-AxmLO cAKCgh JobCard__Title"
+            >
+              <p
+                class="sc-fzoyAV oAxVr"
+              >
+                Entregador Mágico
+              </p>
+            </div>
+            <div
+              class="sc-fzozJi aHfnD JobCard__Companies"
+            >
+              <p
+                class="sc-fzoLag dQmyMU"
+              >
+                5 empresas contratando em
+              </p>
+            </div>
+            <div
+              class="sc-fzpans iFvVQQ JobCard__Locations"
+            >
+              <div
+                class="sc-fznyAO dNloSp"
+              >
+                <p
+                  class="sc-fzoXzr hxNOpN"
+                >
+                  SP
+                </p>
+              </div>
+              <div
+                class="sc-fznyAO dNloSp"
+              >
+                <p
+                  class="sc-fzpjYC dBBYeC"
+                >
+                  RJ
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fzokOt juupGE"
+      id="JobCard-card-id"
+    >
+      <div
+        class="sc-AxirZ cLmhxZ"
+      >
+        <p
+          class="sc-fzqBZW kqYVrC"
+        >
+          novidade
+        </p>
+      </div>
+      <div
+        class="sc-AxjAm jDxcNw JobCard"
+      >
+        <div
+          class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+        >
+          <div
+            class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+          >
+            <div
+              class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+            >
+              <img
+                alt="Entregador Mágico"
+                class="sc-AxgMl TlUFs"
+                src="https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg"
+              />
+            </div>
+          </div>
+          <div
+            class="sc-AxheI eKLjGh JobCard__Slots"
+          >
+            <p
+              class="sc-fzqNJr cFqHAX"
+            >
+              200 VAGAS
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-Axmtr erLQOu JobCard__DataBlock"
+        >
+          <div
+            class="sc-AxmLO cAKCgh JobCard__Title"
+          >
+            <p
+              class="sc-fzoyAV oAxVr"
+            >
+              Entregador Mágico
+            </p>
+          </div>
+          <div
+            class="sc-fzozJi aHfnD JobCard__Companies"
+          >
+            <p
+              class="sc-fzoLag dQmyMU"
+            >
+              5 empresas contratando em
+            </p>
+          </div>
+          <div
+            class="sc-fzpans iFvVQQ JobCard__Locations"
+          >
+            <div
+              class="sc-fznyAO dNloSp"
+            >
+              <p
+                class="sc-fzoXzr hxNOpN"
+              >
+                SP
+              </p>
+            </div>
+            <div
+              class="sc-fznyAO dNloSp"
+            >
+              <p
+                class="sc-fzpjYC dBBYeC"
+              >
+                RJ
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
