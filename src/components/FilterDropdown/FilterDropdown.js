@@ -99,7 +99,7 @@ const FilterDropdownComponent = ({
 
 FilterDropdownComponent.propTypes = {
   defaultOption: PropTypes.any,
-  options: PropTypes.object,
+  options: PropTypes.array,
   onSelectOption: PropTypes.func,
   placeholder: PropTypes.string,
 }
