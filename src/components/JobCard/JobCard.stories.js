@@ -8,21 +8,10 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const jobCard = () => {
-  const locationsList = [
-    {
-      country: "Brasil",
-      states: [
-        {
-          uf: "SP",
-          cities: ['São Paulo', 'Jundiaí', 'Sorocaba']
-        },
-        {
-          uf: "RJ",
-          cities: ['Rio de Janeiro']
-        },
-      ],
-    }
-  ]
+  const locationsList = [{
+    "country": "Brasil",
+    "states": ["SP", "RJ"]
+  }]
   
   const companyNumber = number('companyNumber', 5)
   const id = text('id', 'card-id')

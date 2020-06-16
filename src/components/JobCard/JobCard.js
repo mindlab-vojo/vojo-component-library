@@ -26,26 +26,27 @@ const JobCardComponent = ({
     const locationLength = locations[0].states.length
 
     switch (locationLength) {
-    case 1: 
-      return locations[0].states.map(location => (
-        <JobCard.SingleState
-          key={location.uf}>
-          <JobCard.StateCircle 
-            theme={theme}>
-            <Typography
-              fontSize="12px"
-              fontWeight="bolder"
-            >
-              {location.uf}
-            </Typography>
-          </JobCard.StateCircle>
-          <JobCard.Cities>
-            <Typography>
-              {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
-            </Typography>
-          </JobCard.Cities>
-        </JobCard.SingleState>
-      ));
+    // DEPRECATED
+    // case 1: 
+    //   return locations[0].states.map(location => (
+    //     <JobCard.SingleState
+    //       key={location.uf}>
+    //       <JobCard.StateCircle 
+    //         theme={theme}>
+    //         <Typography
+    //           fontSize="12px"
+    //           fontWeight="bolder"
+    //         >
+    //           {location.uf}
+    //         </Typography>
+    //       </JobCard.StateCircle>
+    //       <JobCard.Cities>
+    //         <Typography>
+    //           {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
+    //         </Typography>
+    //       </JobCard.Cities>
+    //     </JobCard.SingleState>
+    //   ));
         
     case 27:
       return (
@@ -62,15 +63,15 @@ const JobCardComponent = ({
       )
       
     default:
-      return locations[0].states.map(location => (
+      return locations[0].states.map(state => (
         <JobCard.StateCircle 
-          key={location.uf}
+          key={state}
           theme={theme}>
           <Typography
             fontSize="12px"
             fontWeight="bolder"
           >
-            {location.uf}
+            {state}
           </Typography>
         </JobCard.StateCircle>
       ));
