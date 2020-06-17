@@ -1,6 +1,6 @@
 import React from 'react';
 import { withA11y } from '@storybook/addon-a11y';
-import { withKnobs } from '@storybook/addon-knobs';
+import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 import Card from '.';
 import categories from '../../../.storybook/categories';
@@ -8,8 +8,10 @@ import { ThemeProvider } from "../../../src";
 import Typography from '../Typography';
 
 export const card = () => {
+  const hasPointer = boolean('hasPointer', false)
+  
   return (
-    <Card>
+    <Card hasPointer={hasPointer}>
       <Typography tag="h2" type="subtitle">
         This is a Card
       </Typography>
