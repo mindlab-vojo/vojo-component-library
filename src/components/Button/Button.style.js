@@ -2,9 +2,9 @@ import styled from 'styled-components'
 
 export const Button = styled.button`
   align-items: center;
-  background-color: ${props => props.theme.colors.primaryColor};
-  border: 1px solid ${props => props.theme.colors.primaryColor};
-  color: ${props => props.theme.colors.whiteColor};
+  background-color: ${props => props.backgroundColor};
+  border: 1px solid ${props => props.backgroundColor};
+  color: ${props => props.textColor};
   cursor: pointer;
   border-radius: 500px;
   display: flex;
@@ -16,7 +16,7 @@ export const Button = styled.button`
   width: 100%;
 
   :hover{
-    background-color: ${props => props.theme.colors.darkerPrimaryColor};
+    background-color: ${props => props.hoverColor};
   }
 
   :focus{
