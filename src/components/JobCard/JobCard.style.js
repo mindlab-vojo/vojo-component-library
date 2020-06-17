@@ -37,6 +37,7 @@ export const Image = styled.img`
   height: 100%;
   width: auto;
   z-index: 1;
+  ${props => props.isUnavailable && `opacity: 50%;`}
 `
 
 export const Slots = styled.div`

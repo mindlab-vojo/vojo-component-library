@@ -80,6 +80,7 @@ const JobCardComponent = ({
 
   const renderComponent = (theme) => (
     <Card 
+      hasPointer
       id={`JobCard-${id}`}
       padding="15px 8px" 
       onClick={onClickCard}>
@@ -102,19 +103,24 @@ const JobCardComponent = ({
             <JobCard.ImageCropper
               className="JobCard__ImageWrapper__Cropper">
               <JobCard.Image
+                isUnavailable={isUnavailable}
                 src={imageUrl}
                 alt={title}
               />
             </JobCard.ImageCropper>
           </JobCard.ImageWrapper>
-          <JobCard.Slots
-            className="JobCard__Slots">
-            <Typography 
-              fontSize="10px"
-              fontWeight="bolder">
-              {`${slots} ${slotText}`}
-            </Typography>
-          </JobCard.Slots>
+          {
+            !isUnavailable && (
+              <JobCard.Slots
+                className="JobCard__Slots">
+                <Typography 
+                  fontSize="10px"
+                  fontWeight="bolder">
+                  {`${slots} ${slotText}`}
+                </Typography>
+              </JobCard.Slots>
+            )
+          }
         </JobCard.ImageBlock>
         <JobCard.DataBlock
           className="JobCard__DataBlock">
