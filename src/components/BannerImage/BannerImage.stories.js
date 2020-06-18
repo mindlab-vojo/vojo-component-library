@@ -8,7 +8,7 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const bannerImage = () => {
-  const imageUrl = text('imageUrl', 'https://guiadafarmacia.com.br/wp-content/uploads/2019/05/shutterstock_1345420442.png')
+  const imageUrl = text('imageUrl', 'https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg')
   const title = text('title', 'Balconista')
 
   return (
