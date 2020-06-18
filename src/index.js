@@ -1,3 +1,4 @@
+import BannerCard from './components/BannerCard';
 import Button from './components/Button';
 import Card from './components/Card';
 import Checkbox from './components/Checkbox';
@@ -21,6 +22,7 @@ import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider
 import * as themes from './style/themes'
 
 export {
+  BannerCard,
   Button,
   Card,
   Checkbox,
