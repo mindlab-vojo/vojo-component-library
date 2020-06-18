@@ -13,7 +13,8 @@ const BannerImageComponent = ({
 
   const renderComponent = (theme) => (
     <BannerImage.Wrapper
-      className="BannerImage">
+      className="BannerImage"
+      theme={theme}>
       <BannerImage.Cropper
         className="BannerImage__Cropper">
         <BannerImage.Image
@@ -22,7 +23,10 @@ const BannerImageComponent = ({
       </BannerImage.Cropper>
       <BannerImage.Overlay/>
       <BannerImage.Title>
-        <Typography>
+        <Typography 
+          fontSize="36px"
+          fontWeight="bolder"
+          color={theme.colors.whiteColor}>
           {title}
         </Typography>
       </BannerImage.Title>
