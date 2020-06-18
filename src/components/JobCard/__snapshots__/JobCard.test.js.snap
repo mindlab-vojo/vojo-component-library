@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzokOt juupGE"
+        class="sc-fzokOt kiJckm"
         id="JobCard-card-id"
       >
         <div
@@ -32,7 +32,7 @@ Object {
               >
                 <img
                   alt="Entregador Mágico"
-                  class="sc-AxgMl TlUFs"
+                  class="sc-AxgMl kIBdGh"
                   src="https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg"
                 />
               </div>
@@ -97,7 +97,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzokOt juupGE"
+      class="sc-fzokOt kiJckm"
       id="JobCard-card-id"
     >
       <div
@@ -123,7 +123,7 @@ Object {
             >
               <img
                 alt="Entregador Mágico"
-                class="sc-AxgMl TlUFs"
+                class="sc-AxgMl kIBdGh"
                 src="https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg"
               />
             </div>
