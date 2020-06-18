@@ -38,8 +38,8 @@ export const Image = styled.img`
 `
 
 export const Title = styled.div`
-  bottom: 10px;
-  left: 15px;
+  bottom: 30px;
+  left: 18px;
   position: absolute;
 `
 
