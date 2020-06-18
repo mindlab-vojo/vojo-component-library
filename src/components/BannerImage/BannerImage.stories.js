@@ -3,6 +3,7 @@ import { withKnobs, text, } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import BannerImage from '.'; 
+import Container from '../Container';
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
@@ -23,8 +24,14 @@ export default {
   decorators: [
     withKnobs, 
     withA11y, 
-    (story) => <ThemeProvider>{ story() }</ThemeProvider>,
-    (story) => <div style={{ width: "260px" }}>{ story() }</div>,
+    (story) => 
+      <ThemeProvider>
+        <Container maxWidth="full">
+          <Container maxWidth="desktop">
+            { story() }
+          </Container>
+        </Container>
+      </ThemeProvider>,
   ],
 }
 
