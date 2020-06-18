@@ -20,9 +20,12 @@ const BannerCardComponent = ({
       id={`BannerCard-${id}`}
       padding="15px 8px" 
       onClick={onClickCard}>
-      <BannerCard.Wrapper>
-        <BannerCard.LeftContent>
+      <BannerCard.Wrapper 
+        className="BannerCard">
+        <BannerCard.LeftContent
+          className="BannerCard__LeftContent">
           <BannerCard.Image
+            className="BannerCard__LeftContent__Image"
             theme={theme}>
             <Typography
               color={theme.colors.darkBlueColor}
@@ -32,14 +35,17 @@ const BannerCardComponent = ({
             </Typography>
           </BannerCard.Image>
         </BannerCard.LeftContent>
-        <BannerCard.RightContent>
-          <BannerCard.Description>
+        <BannerCard.RightContent
+          className="BannerCard__RightContent">
+          <BannerCard.Description
+            className="BannerCard__RightContent__Description">
             <Typography
               fontSize="12px">
               {description}
             </Typography>
           </BannerCard.Description>
-          <BannerCard.Title>
+          <BannerCard.Title
+            className="BannerCard__RightContent__Title">
             <Typography
               color={theme.colors.darkBlueColor}
               fontSize="18px"
