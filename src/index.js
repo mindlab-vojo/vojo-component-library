@@ -1,6 +1,8 @@
 import BannerCard from './components/BannerCard';
+import BannerImage from './components/BannerImage';
 import Button from './components/Button';
 import Card from './components/Card';
+import CarouselSelector from './components/CarouselSelector';
 import Checkbox from './components/Checkbox';
 import Container from './components/Container';
 import EmailInput from './components/Input/EmailInput';
@@ -23,8 +25,10 @@ import * as themes from './style/themes'
 
 export {
   BannerCard,
+  BannerImage,
   Button,
   Card,
+  CarouselSelector,
   Checkbox,
   Container,
   EmailInput,
