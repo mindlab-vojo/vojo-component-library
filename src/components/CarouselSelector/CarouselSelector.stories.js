@@ -19,8 +19,33 @@ export const carouselSelector = () => {
       "description": "São Paulo, Campinas, São José dos Campos, São Caetano do Sul"
     },
     {
-      "id": "MS",
+      "id": "RJ",
       "title": "RJ",
+      "description": "Rio de Janeiro, São Paulo, Campinas, São José dos Campos, São Caetano do Sul, São Paulo, Campinas, São José dos Campos, São Caetano do Sul"
+    },
+    {
+      "id": "SA",
+      "title": "SA",
+      "description": "Rio de Janeiro, São Paulo, Campinas, São José dos Campos, São Caetano do Sul"
+    },
+    {
+      "id": "WW",
+      "title": "WW",
+      "description": "Rio de Janeiro, Campinas, São José dos Campos"
+    },
+    {
+      "id": "ZZ",
+      "title": "ZZ",
+      "description": "Rio de Janeiro"
+    },
+    {
+      "id": "QA",
+      "title": "QA",
+      "description": "Rio de Janeiro"
+    },
+    {
+      "id": "MB",
+      "title": "mb",
       "description": "Rio de Janeiro"
     },
   ]
