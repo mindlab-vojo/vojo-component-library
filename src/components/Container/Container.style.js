@@ -2,26 +2,32 @@ import styled from 'styled-components'
 
 export const Container = styled.div`
   align-items: center;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   position: relative;
   width:100%;
 
-  max-width: ${props => {
+  ${props => {
     const { maxWidth, theme } = props
 
     switch (maxWidth) {
     case 'desktop':
-      return theme.breakpoints.desktopContentSize
+      return (
+        `
+        max-width: ${theme.breakpoints.desktopContentSize};
+        padding: 0 20px;
+        `
+      )
 
     case 'full':
-      return theme.breakpoints.fullContentSize
+      return `max-width: ${theme.breakpoints.fullContentSize};`
 
     case 'mobile':
-      return theme.breakpoints.mobileContentSize
+      return `max-width: ${theme.breakpoints.mobileContentSize};`
     
     default:
-      return theme.breakpoints.fullContentSize
+      return `max-width: ${theme.breakpoints.fullContentSize};`
     }
   }};
 `

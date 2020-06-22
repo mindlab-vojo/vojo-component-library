@@ -1,19 +1,99 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Container component render 1`] = `
+exports[`Test CarouselSelector component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm cyNqwE Container"
-      />
+        class="sc-AxjAm dBiyVn"
+      >
+        <div
+          class="sc-AxirZ dhMIdF"
+        >
+          <div
+            class="sc-AxiKw hOsYxl"
+          >
+            <div
+              class="sc-AxhCb iiTAEP"
+            >
+              <p
+                class="sc-AxgMl dxhauJ"
+              >
+                MS
+              </p>
+            </div>
+          </div>
+          <div
+            class="sc-AxiKw kJMJyG"
+          >
+            <div
+              class="sc-AxhCb iiTAEP"
+            >
+              <p
+                class="sc-AxheI ipZPcM"
+              >
+                SP
+              </p>
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-AxhUy kMyssT"
+        >
+          <p
+            class="sc-Axmtr bAkYFZ"
+          >
+            Araquari, São José
+          </p>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm cyNqwE Container"
-    />
+      class="sc-AxjAm dBiyVn"
+    >
+      <div
+        class="sc-AxirZ dhMIdF"
+      >
+        <div
+          class="sc-AxiKw hOsYxl"
+        >
+          <div
+            class="sc-AxhCb iiTAEP"
+          >
+            <p
+              class="sc-AxgMl dxhauJ"
+            >
+              MS
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-AxiKw kJMJyG"
+        >
+          <div
+            class="sc-AxhCb iiTAEP"
+          >
+            <p
+              class="sc-AxheI ipZPcM"
+            >
+              SP
+            </p>
+          </div>
+        </div>
+      </div>
+      <div
+        class="sc-AxhUy kMyssT"
+      >
+        <p
+          class="sc-Axmtr bAkYFZ"
+        >
+          Araquari, São José
+        </p>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],

@@ -7,6 +7,7 @@ export default {
   Footers: 'Footers',
   Headers: 'Headers',
   Icons: 'Icons',
+  Images: 'Images',
   Inputs: 'Inputs',
   Logos: 'Logos',
   StickyToasts:'StickyToasts',

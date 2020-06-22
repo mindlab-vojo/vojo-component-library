@@ -1,19 +1,61 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test Container component render 1`] = `
+exports[`Test BannerImage component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm cyNqwE Container"
-      />
+        class="sc-AxjAm hRwqvF BannerImage"
+      >
+        <div
+          class="sc-AxiKw dGeVpK BannerImage__Cropper"
+        >
+          <img
+            class="sc-AxhCb QXIUk BannerImage__Image"
+            src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+          />
+        </div>
+        <div
+          class="sc-AxirZ lgjBfs"
+        />
+        <div
+          class="sc-AxhUy kCwsYC"
+        >
+          <p
+            class="sc-AxgMl gsbxKg"
+          >
+            Balconista
+          </p>
+        </div>
+      </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm cyNqwE Container"
-    />
+      class="sc-AxjAm hRwqvF BannerImage"
+    >
+      <div
+        class="sc-AxiKw dGeVpK BannerImage__Cropper"
+      >
+        <img
+          class="sc-AxhCb QXIUk BannerImage__Image"
+          src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+        />
+      </div>
+      <div
+        class="sc-AxirZ lgjBfs"
+      />
+      <div
+        class="sc-AxhUy kCwsYC"
+      >
+        <p
+          class="sc-AxgMl gsbxKg"
+        >
+          Balconista
+        </p>
+      </div>
+    </div>
   </div>,
   "debug": [Function],
   "findAllByAltText": [Function],
