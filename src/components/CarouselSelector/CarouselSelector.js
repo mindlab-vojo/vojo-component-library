@@ -7,7 +7,6 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Typography from '../Typography'
 
 const CarouselSelectorComponent = ({ items }) => {
-
   const [selectedItem, setSelectedItem] = useState(items[0])
 
   const handleSelectItem = (id) => {
@@ -17,17 +16,23 @@ const CarouselSelectorComponent = ({ items }) => {
         currentItemIndex = index
       }
     })
-    setSelectedItem(currentItemIndex)
+    setSelectedItem(items[currentItemIndex])
   }
 
   const renderCircles = (theme) => items.map(item => (
     <CarouselSelector.Circle
       key={item.id}
-      onClick={handleSelectItem(item.id)}
+      onClick={() => handleSelectItem(item.id)}
       theme={theme}
       isSelected={item.id === selectedItem.id}
     >
-      {item.title}
+      <CarouselSelector.TextWrapper>
+        <Typography
+          color={item.id === selectedItem.id ? theme.colors.whiteColor : theme.colors.blackColor}
+          fontWeight="bolder">
+          {item.title}
+        </Typography>
+      </CarouselSelector.TextWrapper>
     </CarouselSelector.Circle>
   ))
 
