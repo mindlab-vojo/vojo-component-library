@@ -29,6 +29,7 @@ ContainerComponent.propTypes = {
   children: PropTypes.node,
   maxWidth: PropTypes.oneOf([
     'desktop',
+    'full-desktop',
     'full',
     'mobile'
   ])

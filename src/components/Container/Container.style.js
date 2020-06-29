@@ -20,6 +20,9 @@ export const Container = styled.div`
         `
       )
 
+    case 'full-desktop':
+      return `max-width: ${theme.breakpoints.desktopContentSize};`
+
     case 'full':
       return `max-width: ${theme.breakpoints.fullContentSize};`
 
