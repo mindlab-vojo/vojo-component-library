@@ -5,8 +5,14 @@ import * as CarouselSelector from './CarouselSelector.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Typography from '../Typography'
+import Spinner from '../Spinner'
 
-const CarouselSelectorComponent = ({ items }) => {
+const CarouselSelectorComponent = ({ 
+  description,
+  isLoading,
+  items,
+  onClickItem,
+}) => {
   const [selectedItem, setSelectedItem] = useState(items[0])
 
   const handleSelectItem = (id) => {
@@ -17,6 +23,7 @@ const CarouselSelectorComponent = ({ items }) => {
       }
     })
     setSelectedItem(items[currentItemIndex])
+    onClickItem && onClickItem(items[currentItemIndex])
   }
 
   const renderCircles = (theme) => items.map(item => (
@@ -42,9 +49,15 @@ const CarouselSelectorComponent = ({ items }) => {
         {renderCircles(theme)}
       </CarouselSelector.Carousel>
       <CarouselSelector.Description>
-        <Typography>
-          {selectedItem.description}
-        </Typography>
+        {
+          isLoading ? (
+            <Spinner spinnerArea="50px"/>
+          ) : (
+            <Typography>
+              {description}
+            </Typography>
+          )
+        }
       </CarouselSelector.Description>
     </CarouselSelector.Wrapper>
   )
@@ -57,7 +70,10 @@ const CarouselSelectorComponent = ({ items }) => {
 }
 
 CarouselSelectorComponent.propTypes = {
+  description: PropTypes.string,
+  isLoading: PropTypes.bool,
   items: PropTypes.array,
+  onClickItem: PropTypes.func,
 }
 
 export default CarouselSelectorComponent
