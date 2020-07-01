@@ -5,10 +5,13 @@ import ArrowDown from './Icons/ArrowDown'
 import ArrowLeft from './Icons/ArrowLeft'
 import ArrowRigth from './Icons/ArrowRigth'
 import ArrowUp from './Icons/ArrowUp'
+import Check from './Icons/Check'
 import CheckboxChecked from './Icons/CheckboxChecked'
 import CheckboxUnchecked from './Icons/CheckboxUnchecked'
 import Close from './Icons/Close'
+import Exclamation from './Icons/Exclamation'
 import Lock from './Icons/Lock'
+import Pencil from './Icons/Pencil'
 import VisibilityOff from './Icons/VisibilityOff'
 import VisibilityOn from './Icons/VisibilityOn'
 
@@ -37,10 +40,13 @@ export const iconList = {
   ArrowLeft: ArrowLeft,
   ArrowRigth: ArrowRigth,
   ArrowUp: ArrowUp,
+  Check: Check,
   CheckboxChecked: CheckboxChecked,
   CheckboxUnchecked: CheckboxUnchecked,
   Close: Close,
+  Exclamation: Exclamation,
   Lock: Lock,
+  Pencil: Pencil,
   VisibilityOff: VisibilityOff,
   VisibilityOn: VisibilityOn
 }
