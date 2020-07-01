@@ -1,6 +1,7 @@
 import React from 'react';
 import { withKnobs, text, } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
+import { action } from '@storybook/addon-actions' 
 
 import BannerImageCard from '.'; 
 import Container from '../Container';
@@ -11,11 +12,13 @@ export const bannerImageCard = () => {
   const imageUrl = text('imageUrl', 'https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg')
   const subtitle = text('subtitle', 'Ver detalhes da função')
   const title = text('title', 'Balconista')
+  const onClickCard = action('onClickCard')
 
   return (
     <BannerImageCard
       imageUrl={imageUrl}
       subtitle={subtitle}
+      onClickCard={onClickCard}
       title={title}/>
   )
 }
