@@ -11,7 +11,7 @@ export const Wrapper = styled.div`
 `
 
 export const Overlay = styled.div`
-  background: linear-gradient(180deg, rgba(57, 29, 221, 0) 0%, #391DDD 100%), url(livreur-coursier-a-velo.jpg);
+  background: linear-gradient(180deg, rgba(57, 29, 221, 0) 0%, #391DDD 100%);
   height: 100%;
   position: absolute;
   opacity: 0.4;
