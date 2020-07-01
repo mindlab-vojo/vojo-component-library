@@ -1,59 +1,85 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test BannerImage component render 1`] = `
+exports[`Test BannerImageCard component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hRwqvF BannerImage"
+        class="sc-AxjAm cZAXsg BannerImageCard"
       >
         <div
-          class="sc-AxiKw dGeVpK BannerImage__Cropper"
+          class="sc-AxirZ FRTjp BannerImageCard__Cropper"
         >
           <img
-            class="sc-AxhCb QXIUk BannerImage__Image"
+            class="sc-AxiKw bJNNLQ BannerImageCard__Image"
             src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
           />
         </div>
         <div
-          class="sc-AxirZ imbHoc"
+          class="sc-AxhCb cQJDIS BannerImageCard__Overlay"
         />
         <div
-          class="sc-AxhUy kCwsYC"
+          class="sc-AxhUy jKRdOF"
         >
-          <p
-            class="sc-AxgMl gsbxKg"
+          <div
+            class="sc-AxgMl fFPQpl BannerImageCard__Title"
           >
-            Balconista
-          </p>
+            <p
+              class="sc-Axmtr eJYGKx"
+            >
+              Balconista
+            </p>
+          </div>
+          <div
+            class="sc-AxheI fniENP BannerImageCard__Subtitle"
+          >
+            <p
+              class="sc-AxmLO aYRrd"
+            >
+              Testando o subtítulo.
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hRwqvF BannerImage"
+      class="sc-AxjAm cZAXsg BannerImageCard"
     >
       <div
-        class="sc-AxiKw dGeVpK BannerImage__Cropper"
+        class="sc-AxirZ FRTjp BannerImageCard__Cropper"
       >
         <img
-          class="sc-AxhCb QXIUk BannerImage__Image"
+          class="sc-AxiKw bJNNLQ BannerImageCard__Image"
           src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
         />
       </div>
       <div
-        class="sc-AxirZ imbHoc"
+        class="sc-AxhCb cQJDIS BannerImageCard__Overlay"
       />
       <div
-        class="sc-AxhUy kCwsYC"
+        class="sc-AxhUy jKRdOF"
       >
-        <p
-          class="sc-AxgMl gsbxKg"
+        <div
+          class="sc-AxgMl fFPQpl BannerImageCard__Title"
         >
-          Balconista
-        </p>
+          <p
+            class="sc-Axmtr eJYGKx"
+          >
+            Balconista
+          </p>
+        </div>
+        <div
+          class="sc-AxheI fniENP BannerImageCard__Subtitle"
+        >
+          <p
+            class="sc-AxmLO aYRrd"
+          >
+            Testando o subtítulo.
+          </p>
+        </div>
       </div>
     </div>
   </div>,
