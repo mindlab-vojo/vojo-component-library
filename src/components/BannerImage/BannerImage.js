@@ -21,8 +21,10 @@ const BannerImageComponent = ({
           className="BannerImage__Image"
           src={imageUrl}/>
       </BannerImage.Cropper>
-      <BannerImage.Overlay/>
-      <BannerImage.Title>
+      <BannerImage.Overlay
+        className="BannerImage__Overlay"/>
+      <BannerImage.Title
+        className="BannerImage__Title">
         <Typography 
           fontSize="36px"
           fontWeight="bolder"

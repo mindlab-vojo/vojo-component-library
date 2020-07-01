@@ -17,10 +17,10 @@ Object {
           />
         </div>
         <div
-          class="sc-AxirZ imbHoc"
+          class="sc-AxirZ imbHoc BannerImage__Overlay"
         />
         <div
-          class="sc-AxhUy kCwsYC"
+          class="sc-AxhUy kCwsYC BannerImage__Title"
         >
           <p
             class="sc-AxgMl gsbxKg"
@@ -44,10 +44,10 @@ Object {
         />
       </div>
       <div
-        class="sc-AxirZ imbHoc"
+        class="sc-AxirZ imbHoc BannerImage__Overlay"
       />
       <div
-        class="sc-AxhUy kCwsYC"
+        class="sc-AxhUy kCwsYC BannerImage__Title"
       >
         <p
           class="sc-AxgMl gsbxKg"
