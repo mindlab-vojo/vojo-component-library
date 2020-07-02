@@ -12,7 +12,8 @@ const ToastComponent = ({
   title,
 }) => {
   const renderComponent = (theme) => (
-    <Toast.Wrapper>
+    <Toast.Wrapper
+      theme={theme}>
       <Toast.Content>
         <Toast.Title>
           <Typography
@@ -41,7 +42,7 @@ const ToastComponent = ({
 }
 
 ToastComponent.propTypes = {
-  description: PropTypes.string,
+  description: PropTypes.node,
   title: PropTypes.string,
 }
 
