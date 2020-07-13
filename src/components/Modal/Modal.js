@@ -4,8 +4,6 @@ import PropTypes from 'prop-types'
 import * as Modal from './Modal.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import Logo from '../Logo'
-import Typography from '../Typography'
 
 function ModalComponent({ 
   cardWidth,
@@ -18,6 +16,7 @@ function ModalComponent({
       className="Modal"
       zIndex={zIndex}>
       <Modal.Card
+        className="Modal__Card"
         cardWidth={cardWidth}
         theme={theme}>
         {children}
@@ -33,6 +32,7 @@ function ModalComponent({
 }
 
 ModalComponent.propTypes ={
+  cardWidth: PropTypes.string,
   children: PropTypes.any,
   zIndex: PropTypes.number
 }
