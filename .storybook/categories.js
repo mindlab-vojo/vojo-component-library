@@ -10,6 +10,7 @@ export default {
   Images: 'Images',
   Inputs: 'Inputs',
   Logos: 'Logos',
+  Modals: 'Modals',
   StickyToasts:'StickyToasts',
   Spinners:'Spinners',
   Toasts: 'Toasts',
