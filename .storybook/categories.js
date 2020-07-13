@@ -12,5 +12,6 @@ export default {
   Logos: 'Logos',
   StickyToasts:'StickyToasts',
   Spinners:'Spinners',
+  Toasts: 'Toasts',
   Typographys: 'Typographys'
 }
