@@ -6,28 +6,36 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm iGqofF Modal"
+        class="sc-AxjAm iZyfsR Modal"
       >
         <div
-          class="sc-AxirZ chGqjg Modal__Card"
+          class="sc-AxirZ dExGSw Modal__Background"
         >
-          <p>
-            Test
-          </p>
+          <div
+            class="sc-AxiKw eJSoQg Modal__Card"
+          >
+            <p>
+              Test
+            </p>
+          </div>
         </div>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm iGqofF Modal"
+      class="sc-AxjAm iZyfsR Modal"
     >
       <div
-        class="sc-AxirZ chGqjg Modal__Card"
+        class="sc-AxirZ dExGSw Modal__Background"
       >
-        <p>
-          Test
-        </p>
+        <div
+          class="sc-AxiKw eJSoQg Modal__Card"
+        >
+          <p>
+            Test
+          </p>
+        </div>
       </div>
     </div>
   </div>,
