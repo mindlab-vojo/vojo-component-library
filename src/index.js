@@ -14,7 +14,7 @@ import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
 import Logo from './components/Logo';
 import MobileInput from './components/Input/MobileInput';
-import Modal from './components/Modal';
+import Modal from './components/Modal/Modal';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
 import Spinner from './components/Spinner/Spinner';
