@@ -12,16 +12,19 @@ function ModalComponent({
 }) {
 
   const renderComponent = (theme) => (
-    <Modal.Background 
+    <Modal.FixedWrapper
       className="Modal"
       zIndex={zIndex}>
-      <Modal.Card
-        className="Modal__Card"
-        cardWidth={cardWidth}
-        theme={theme}>
-        {children}
-      </Modal.Card>
-    </Modal.Background>
+      <Modal.Background 
+        className="Modal__Background">
+        <Modal.Card
+          className="Modal__Card"
+          cardWidth={cardWidth}
+          theme={theme}>
+          {children}
+        </Modal.Card>
+      </Modal.Background>
+    </Modal.FixedWrapper>
   )
 
   return (

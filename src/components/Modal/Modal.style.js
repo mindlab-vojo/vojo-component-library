@@ -1,5 +1,13 @@
 import styled from 'styled-components'
 
+export const FixedWrapper = styled.div`
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  overflow: scroll;
+  z-index: ${props => props.zIndex};
+`
+
 export const Background = styled.div`
   box-sizing: border-box;
   align-items: center;
@@ -12,7 +20,6 @@ export const Background = styled.div`
   position: absolute;
   top: 0;
   width: 100%;
-  z-index: ${props => props.zIndex};
 `
 
 export const Card = styled.div`

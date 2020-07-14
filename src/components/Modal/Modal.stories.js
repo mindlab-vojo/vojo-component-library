@@ -26,6 +26,10 @@ export const modal = () => {
       <Typography>
           O conteúdo do Modal é passado como children para o componente, podendo assim ser construído de acordo com a necessidade da aplicação na qual está inserida.
       </Typography>
+      <br/>
+      <Typography>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Odio ut sem nulla pharetra diam sit. Pellentesque elit eget gravida cum sociis natoque penatibus. Aliquet porttitor lacus luctus accumsan tortor. Nibh mauris cursus mattis molestie a iaculis at erat. Quis commodo odio aenean sed adipiscing. Adipiscing commodo elit at imperdiet dui accumsan sit. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Mauris sit amet massa vitae tortor. Enim blandit volutpat maecenas volutpat blandit. Malesuada nunc vel risus commodo viverra maecenas accumsan lacus vel. Dolor morbi non arcu risus quis varius. Amet venenatis urna cursus eget nunc scelerisque viverra. Arcu non sodales neque sodales ut. Suspendisse interdum consectetur libero id faucibus nisl. Nec feugiat nisl pretium fusce id velit. Platea dictumst quisque sagittis purus. Pretium fusce id velit ut tortor pretium.
+      </Typography>
     </Modal>
   )
 }
