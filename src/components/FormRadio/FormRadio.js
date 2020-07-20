@@ -14,36 +14,50 @@ const FormRadioComponent = ({
   title,
 }) => {
 
-  const [selectedOption, setSelectedOption] = useState(null)
+  const defaultOption = {
+    id: null,
+    title: null,
+    value: null
+  }
+  const [selectedOption, setSelectedOption] = useState(defaultOption)
 
   const handleClickOption = (option) => {
     setSelectedOption(option)
     onClickOption && onClickOption(option)
   }
 
-  const renderOptions = () => 
-    options.map(option => (
-      <FormRadio.Option
-        key={option.id}
-        onClick={handleClickOption}>
-        <FormRadio.HiddenRadio
-          selected={option.id === selectedOption.id}
-        />
-        <FormRadio.RadioIcon>
-          <IconManager 
-            height="20px"
-            width="20px"
-            icon={
-              option.id === selectedOption.id ?
-                "RadioChecked" : 
-                "RadioUnchecked"
-            }/>
-        </FormRadio.RadioIcon>
-        <FormRadio.Label>
-          {option.title}
-        </FormRadio.Label>
-      </FormRadio.Option>
-    ))
+  const renderOptions = () => {
+    return options.map(option => {
+      const isSelected = option.id === selectedOption.id
+
+      return (
+        <FormRadio.Option
+          key={option.id}
+          onClick={() => handleClickOption(option)}>
+          <FormRadio.HiddenRadio
+            checked={isSelected}
+            type="radio"
+            value={option.value}
+            id={option.id}
+          />
+          <FormRadio.Label
+            htmlFor={option.id}>
+            <FormRadio.RadioIcon>
+              <IconManager 
+                height="20px"
+                width="20px"
+                icon={
+                  isSelected ?
+                    "RadioChecked" : 
+                    "RadioUnchecked"
+                }/>
+            </FormRadio.RadioIcon>
+            {option.title}
+          </FormRadio.Label>
+        </FormRadio.Option>
+      )
+    })
+  }
 
   const renderComponent = (theme) => (
     <FormRadio.Wrapper>
@@ -80,13 +94,5 @@ const FormRadioComponent = ({
   )
 }
 
-FormRadioComponent.propTypes = {
-  description: PropTypes.string,
-  hasToolTip: PropTypes.bool,
-  onClickOption: PropTypes.func,
-  onClickToolTip: PropTypes.func,
-  options: PropTypes.array,
-  title: PropTypes.string,
-}
 
 export default FormRadioComponent
