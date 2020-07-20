@@ -11,6 +11,7 @@ export default {
   Inputs: 'Inputs',
   Logos: 'Logos',
   Modals: 'Modals',
+  Radios: 'Radios',
   StickyToasts:'StickyToasts',
   Spinners:'Spinners',
   Toasts: 'Toasts',
