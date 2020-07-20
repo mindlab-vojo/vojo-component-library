@@ -1,13 +1,17 @@
 import phoneValidator from './phoneValidator'
+import { cpfMaskRemover, cpfValidator } from './cpfValidator'
 
 export const validatorTypes = {
   alphaNumeric: 'alphaNumeric',
   alphaNumericSpaced: 'alphaNumericSpaced',
   alphabeitcal: 'alphabeitcal',
   alphabeitcalSpaced: 'alphabeitcalSpaced',
+  cep: 'cep',
+  cpf: 'cpf',
   email: 'email',
   mobileNumber: 'mobileNumber',
-  password: 'password'
+  password: 'password',
+  pis: 'pis',
 }
 
 export const validatorPatterns = {
@@ -82,5 +86,14 @@ export const validatorPatterns = {
     minLength: 6,
     regex: /[\s\S]+/g,
     specificValidation: null,
+  },
+  [validatorTypes.cpf]: {
+    errorMessage: 'Este CPF é inválido',
+    mask: [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/],
+    maskRemover: (value) => cpfMaskRemover(value),
+    maxLength: 16,
+    minLength: 6,
+    regex: /[\s\S]+/g,
+    specificValidation: (value) => cpfValidator(value),
   },
 }
