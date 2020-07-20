@@ -8,6 +8,8 @@ import Typography from '../Typography'
 
 const FormRadioComponent = ({
   description,
+  errorMessage,
+  hasError,
   hasToolTip,
   onClickOption,
   onClickToolTip,
@@ -70,48 +72,65 @@ const FormRadioComponent = ({
     })
   }
 
-  const renderComponent = (theme) => (
-    <FormRadio.Wrapper>
-      <FormRadio.Header>
-        <FormRadio.TitleWrapper>
-          <FormRadio.Title>
-            <Typography
-              color={theme.colors.darkGreyColor}
-              fontSize="16px"
-              fontWeight="bold">
-              {title}
-            </Typography>
-          </FormRadio.Title>
-          <FormRadio.Description>
-            <Typography
-              color={theme.colors.darkGreyColor}
-              fontSize="12px">
-              {description}
-            </Typography>
-          </FormRadio.Description>
-        </FormRadio.TitleWrapper>
-        {
-          hasToolTip &&(
-            <FormRadio.Tooltip
-              onClick={handleClickToolTip}>
-              <IconManager 
-                height="20px"
-                width="20px"
-                icon="HelpCircle"
-                fill={theme.colors.darkGreyColor}/>
-            </FormRadio.Tooltip>
-          )
-        }
-      </FormRadio.Header>
-      <FormRadio.OptionsWrapper>
-        <FormRadio.OptionsWrapper>
+  const renderComponent = (theme) => {
+    return (
+      <FormRadio.Wrapper>
+        <FormRadio.Header>
+          <FormRadio.TitleWrapper>
+            <FormRadio.Title>
+              <Typography
+                color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                fontSize="16px"
+                fontWeight="bold">
+                {title}
+              </Typography>
+            </FormRadio.Title>
+            {
+              description && (
+                <FormRadio.Description>
+                  <Typography
+                    color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                    fontSize="12px">
+                    {description}
+                  </Typography>
+                </FormRadio.Description>
+              )
+            }
+            {
+              hasError && (
+                <FormRadio.Description>
+                  <Typography
+                    color={theme.colors.redColor}
+                    fontSize="12px">
+                    {errorMessage}
+                  </Typography>
+                </FormRadio.Description>
+              )
+            }
+          </FormRadio.TitleWrapper>
           {
-            renderOptions(theme)
+            hasToolTip &&(
+              <FormRadio.Tooltip
+                onClick={handleClickToolTip}>
+                <IconManager 
+                  height="20px"
+                  width="20px"
+                  icon="HelpCircle"
+                  fill={theme.colors.darkGreyColor}/>
+              </FormRadio.Tooltip>
+            )
           }
+        </FormRadio.Header>
+        <FormRadio.OptionsWrapper>
+          <FormRadio.OptionsWrapper>
+            {
+              renderOptions(theme)
+            }
+          </FormRadio.OptionsWrapper>
         </FormRadio.OptionsWrapper>
-      </FormRadio.OptionsWrapper>
-    </FormRadio.Wrapper>
-  )
+      </FormRadio.Wrapper>
+    )
+  }
 
   return (
     <ThemeConsumer>
@@ -122,6 +141,8 @@ const FormRadioComponent = ({
 
 FormRadioComponent.propTypes = {
   description: PropTypes.string,
+  errorMessage: PropTypes.string,
+  hasError: PropTypes.bool,
   hasToolTip: PropTypes.bool,
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,

@@ -36,6 +36,8 @@ export const formRadio = () => {
     description: "Descrição que aparecerá no modal, normalmente descreverá detalhes dos requisistos deste campo."
   }
 
+  const errorMessage = text('errorMessage', 'Este campo possui algum erro...')
+  const hasError = boolean('hasError', false)
   const hasToolTip = boolean('hasToolTip', true)
   const tooltipData = object('tooltipData', tooltipDataObject)
   const onClickOption = action('onClickOption')
@@ -46,11 +48,13 @@ export const formRadio = () => {
 
   return (
     <FormRadio
+      description={description}
+      errorMessage={errorMessage}
+      hasError={hasError}
       hasToolTip={hasToolTip}
       onClickOption={onClickOption}
       onClickToolTip={onClickToolTip}
       options={options}
-      description={description}
       tooltipData={tooltipData}
       title={title}
     />
