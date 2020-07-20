@@ -1,0 +1,154 @@
+import React,  { useState } from 'react'
+import PropTypes from 'prop-types'
+
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
+import * as FormCheckbox from './FormCheckbox.style'
+import IconManager from '../IconManager'
+import Typography from '../Typography'
+
+const FormCheckboxComponent = ({
+  description,
+  errorMessage,
+  hasError,
+  hasToolTip,
+  onClickOption,
+  onClickToolTip,
+  options,
+  title,
+  tooltipData,
+}) => {
+
+  const defaultOption = {
+    id: null,
+    title: null,
+    value: null
+  }
+  const [selectedOption, setSelectedOption] = useState(defaultOption)
+
+  const handleClickOption = (option) => {
+    setSelectedOption(option)
+    onClickOption && onClickOption(option)
+  }
+
+  const handleClickToolTip = () => {
+    onClickToolTip && onClickToolTip(tooltipData)
+  }
+
+  const renderOptions = (theme) => {
+    return options.map(option => {
+      const isSelected = option.id === selectedOption.id
+
+      return (
+        <FormCheckbox.Option
+          key={option.id}
+          onClick={() => handleClickOption(option)}>
+          <FormCheckbox.HiddenRadio
+            checked={isSelected}
+            type="radio"
+            value={option.value}
+            id={option.id}
+          />
+          <FormCheckbox.Label
+            htmlFor={option.id}>
+            <FormCheckbox.RadioIcon>
+              <IconManager 
+                height="20px"
+                width="20px"
+                icon={
+                  isSelected ?
+                    "RadioChecked" : 
+                    "RadioUnchecked"
+                }
+                fill={theme.colors.darkGreyColor}/>
+            </FormCheckbox.RadioIcon>
+            <Typography
+              color={theme.colors.darkGreyColor}
+              fontSize="14px">
+              {option.title}
+            </Typography>
+          </FormCheckbox.Label>
+        </FormCheckbox.Option>
+      )
+    })
+  }
+
+  const renderComponent = (theme) => {
+    return (
+      <FormCheckbox.Wrapper>
+        <FormCheckbox.Header>
+          <FormCheckbox.TitleWrapper>
+            <FormCheckbox.Title>
+              <Typography
+                color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                fontSize="16px"
+                fontWeight="bold">
+                {title}
+              </Typography>
+            </FormCheckbox.Title>
+            {
+              description && (
+                <FormCheckbox.Description>
+                  <Typography
+                    color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                    fontSize="12px">
+                    {description}
+                  </Typography>
+                </FormCheckbox.Description>
+              )
+            }
+            {
+              hasError && (
+                <FormCheckbox.Description>
+                  <Typography
+                    color={theme.colors.redColor}
+                    fontSize="12px">
+                    {errorMessage}
+                  </Typography>
+                </FormCheckbox.Description>
+              )
+            }
+          </FormCheckbox.TitleWrapper>
+          {
+            hasToolTip &&(
+              <FormCheckbox.Tooltip
+                onClick={handleClickToolTip}>
+                <IconManager 
+                  height="20px"
+                  width="20px"
+                  icon="HelpCircle"
+                  fill={theme.colors.darkGreyColor}/>
+              </FormCheckbox.Tooltip>
+            )
+          }
+        </FormCheckbox.Header>
+        <FormCheckbox.OptionsWrapper>
+          <FormCheckbox.OptionsWrapper>
+            {
+              renderOptions(theme)
+            }
+          </FormCheckbox.OptionsWrapper>
+        </FormCheckbox.OptionsWrapper>
+      </FormCheckbox.Wrapper>
+    )
+  }
+
+  return (
+    <ThemeConsumer>
+      {({ theme }) => renderComponent(theme)}
+    </ThemeConsumer>
+  )
+}
+
+FormCheckboxComponent.propTypes = {
+  description: PropTypes.string,
+  errorMessage: PropTypes.string,
+  hasError: PropTypes.bool,
+  hasToolTip: PropTypes.bool,
+  onClickOption: PropTypes.func,
+  onClickToolTip: PropTypes.func,
+  options: PropTypes.array,
+  title: PropTypes.string,
+  tooltipData: PropTypes.object,
+}
+
+export default FormCheckboxComponent
