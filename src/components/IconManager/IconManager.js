@@ -12,6 +12,8 @@ import Close from './Icons/Close'
 import Exclamation from './Icons/Exclamation'
 import Lock from './Icons/Lock'
 import Pencil from './Icons/Pencil'
+import RadioChecked from './Icons/RadioChecked'
+import RadioUnchecked from './Icons/RadioUnchecked'
 import VisibilityOff from './Icons/VisibilityOff'
 import VisibilityOn from './Icons/VisibilityOn'
 
@@ -47,6 +49,8 @@ export const iconList = {
   Exclamation: Exclamation,
   Lock: Lock,
   Pencil: Pencil,
+  RadioChecked: RadioChecked,
+  RadioUnchecked: RadioUnchecked,
   VisibilityOff: VisibilityOff,
   VisibilityOn: VisibilityOn
 }
