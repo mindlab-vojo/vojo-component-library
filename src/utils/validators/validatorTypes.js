@@ -106,4 +106,13 @@ export const validatorPatterns = {
     regex: /[\s\S]+/g,
     specificValidation: null,
   },
+  [validatorTypes.cep]: {
+    errorMessage: 'Este CPF é inválido',
+    mask: [/\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/],
+    maskRemover: (value) => pisMaskRemover(value),
+    maxLength: 8,
+    minLength: 8,
+    regex: /[\s\S]+/g,
+    specificValidation: null,
+  },
 }
