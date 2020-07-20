@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, array } from '@storybook/addon-knobs';
+import { withKnobs, text, array, boolean, object } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -31,7 +31,13 @@ export const formRadio = () => {
     },
   ]
 
-  const hasToolTip = text('hasToolTip', '')
+  const tooltipDataObject = {
+    title: "Título do Modal",
+    description: "Descrição que aparecerá no modal, normalmente descreverá detalhes dos requisistos deste campo."
+  }
+
+  const hasToolTip = boolean('hasToolTip', true)
+  const tooltipData = object('tooltipData', tooltipDataObject)
   const onClickOption = action('onClickOption')
   const onClickToolTip = action('onClickToolTip')
   const options = array('options', optionsList)
@@ -45,6 +51,7 @@ export const formRadio = () => {
       onClickToolTip={onClickToolTip}
       options={options}
       description={description}
+      tooltipData={tooltipData}
       title={title}
     />
   )
