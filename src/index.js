@@ -11,6 +11,8 @@ import Container from './components/Container';
 import EmailInput from './components/Input/EmailInput';
 import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
+import FormCheckbox from './components/FormCheckbox';
+import FormRadio from './components/FormRadio';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
@@ -44,6 +46,8 @@ export {
   EmailInput,
   FilterDropdown,
   Footer,
+  FormCheckbox,
+  FormRadio,
   Header,
   IconManager,
   JobCard,
