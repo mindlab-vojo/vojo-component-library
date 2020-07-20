@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as FormRadio from './FormRadio.style'
 import IconManager from '../IconManager'
+import Typography from '../Typography'
 
 const FormRadioComponent = ({
   description,
@@ -12,6 +13,7 @@ const FormRadioComponent = ({
   onClickToolTip,
   options,
   title,
+  tooltipData,
 }) => {
 
   const defaultOption = {
@@ -26,7 +28,11 @@ const FormRadioComponent = ({
     onClickOption && onClickOption(option)
   }
 
-  const renderOptions = () => {
+  const handleClickToolTip = () => {
+    onClickToolTip && onClickToolTip(tooltipData)
+  }
+
+  const renderOptions = (theme) => {
     return options.map(option => {
       const isSelected = option.id === selectedOption.id
 
@@ -50,9 +56,14 @@ const FormRadioComponent = ({
                   isSelected ?
                     "RadioChecked" : 
                     "RadioUnchecked"
-                }/>
+                }
+                fill={theme.colors.darkGreyColor}/>
             </FormRadio.RadioIcon>
-            {option.title}
+            <Typography
+              color={theme.colors.darkGreyColor}
+              fontSize="14px">
+              {option.title}
+            </Typography>
           </FormRadio.Label>
         </FormRadio.Option>
       )
@@ -64,23 +75,38 @@ const FormRadioComponent = ({
       <FormRadio.Header>
         <FormRadio.TitleWrapper>
           <FormRadio.Title>
-
+            <Typography
+              color={theme.colors.darkGreyColor}
+              fontSize="16px"
+              fontWeight="bold">
+              {title}
+            </Typography>
           </FormRadio.Title>
           <FormRadio.Description>
-            
+            <Typography
+              color={theme.colors.darkGreyColor}
+              fontSize="12px">
+              {description}
+            </Typography>
           </FormRadio.Description>
         </FormRadio.TitleWrapper>
-        <FormRadio.Tooltip>
-          <IconManager 
-            height="20px"
-            width="20px"
-            icon="HelpCircle"/>
-        </FormRadio.Tooltip>
+        {
+          hasToolTip &&(
+            <FormRadio.Tooltip
+              onClick={handleClickToolTip}>
+              <IconManager 
+                height="20px"
+                width="20px"
+                icon="HelpCircle"
+                fill={theme.colors.darkGreyColor}/>
+            </FormRadio.Tooltip>
+          )
+        }
       </FormRadio.Header>
       <FormRadio.OptionsWrapper>
         <FormRadio.OptionsWrapper>
           {
-            renderOptions()
+            renderOptions(theme)
           }
         </FormRadio.OptionsWrapper>
       </FormRadio.OptionsWrapper>
@@ -94,5 +120,14 @@ const FormRadioComponent = ({
   )
 }
 
+FormRadioComponent.propTypes = {
+  description: PropTypes.string,
+  hasToolTip: PropTypes.bool,
+  onClickOption: PropTypes.func,
+  onClickToolTip: PropTypes.func,
+  options: PropTypes.array,
+  title: PropTypes.string,
+  tooltipData: PropTypes.object,
+}
 
 export default FormRadioComponent
