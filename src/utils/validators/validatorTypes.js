@@ -1,5 +1,6 @@
 import phoneValidator from './phoneValidator'
 import { cpfMaskRemover, cpfValidator } from './cpfValidator'
+import { pisMaskRemover } from './pisValidator'
 
 export const validatorTypes = {
   alphaNumeric: 'alphaNumeric',
@@ -91,9 +92,18 @@ export const validatorPatterns = {
     errorMessage: 'Este CPF é inválido',
     mask: [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/, /\d/],
     maskRemover: (value) => cpfMaskRemover(value),
-    maxLength: 16,
-    minLength: 6,
+    maxLength: 11,
+    minLength: 11,
     regex: /[\s\S]+/g,
     specificValidation: (value) => cpfValidator(value),
+  },
+  [validatorTypes.pis]: {
+    errorMessage: 'Este CPF é inválido',
+    mask: [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/],
+    maskRemover: (value) => pisMaskRemover(value),
+    maxLength: 11,
+    minLength: 11,
+    regex: /[\s\S]+/g,
+    specificValidation: null,
   },
 }
