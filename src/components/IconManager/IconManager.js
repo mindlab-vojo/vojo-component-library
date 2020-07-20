@@ -10,6 +10,7 @@ import CheckboxChecked from './Icons/CheckboxChecked'
 import CheckboxUnchecked from './Icons/CheckboxUnchecked'
 import Close from './Icons/Close'
 import Exclamation from './Icons/Exclamation'
+import HelpCircle from './Icons/HelpCircle'
 import Lock from './Icons/Lock'
 import Pencil from './Icons/Pencil'
 import RadioChecked from './Icons/RadioChecked'
@@ -47,6 +48,7 @@ export const iconList = {
   CheckboxUnchecked: CheckboxUnchecked,
   Close: Close,
   Exclamation: Exclamation,
+  HelpCircle: HelpCircle,
   Lock: Lock,
   Pencil: Pencil,
   RadioChecked: RadioChecked,
