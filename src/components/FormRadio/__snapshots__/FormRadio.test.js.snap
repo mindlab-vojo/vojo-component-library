@@ -1,0 +1,508 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test FormRadio component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxjAm bkUdLm"
+      >
+        <div
+          class="sc-AxirZ eljDRB"
+        >
+          <div
+            class="sc-AxiKw jWoTjM"
+          >
+            <div
+              class="sc-AxhCb ZaNiK"
+            >
+              <p
+                class="sc-fzpans jzxdbk"
+              >
+                Título
+              </p>
+            </div>
+            <div
+              class="sc-AxgMl bFfuHh"
+            >
+              <p
+                class="sc-fzplWN gKsRiR"
+              >
+                Este é um exemplo de descrição
+              </p>
+            </div>
+            <div
+              class="sc-AxgMl bFfuHh"
+            >
+              <p
+                class="sc-fznyAO irOkzZ"
+              >
+                Este é um erro
+              </p>
+            </div>
+          </div>
+          <div
+            class="sc-AxhUy cWBCut"
+          >
+            <svg
+              height="20px"
+              viewBox="0 0 24 24"
+              width="20px"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M0 0h24v24H0z"
+                fill="none"
+              />
+              <path
+                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+                fill="4D4771"
+              />
+            </svg>
+          </div>
+        </div>
+        <div
+          class="sc-AxheI ghZMUJ"
+        >
+          <div
+            class="sc-AxheI ghZMUJ"
+          >
+            <div
+              class="sc-Axmtr dLmrMf"
+            >
+              <input
+                class="sc-AxmLO hemNFY"
+                id="1"
+                type="radio"
+                value="leonardo"
+              />
+              <label
+                class="sc-fzoLsD ijPeEE"
+                for="1"
+              >
+                <div
+                  class="sc-fzozJi gQFIXz"
+                >
+                  <svg
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      fill="4D4771"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="sc-fznKkj gxMqNm"
+                >
+                  Opção 1
+                </p>
+              </label>
+            </div>
+            <div
+              class="sc-Axmtr dLmrMf"
+            >
+              <input
+                class="sc-AxmLO hemNFY"
+                id="2"
+                type="radio"
+                value="renata"
+              />
+              <label
+                class="sc-fzoLsD ijPeEE"
+                for="2"
+              >
+                <div
+                  class="sc-fzozJi gQFIXz"
+                >
+                  <svg
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      fill="4D4771"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="sc-fznZeY gkYovW"
+                >
+                  Opção 2
+                </p>
+              </label>
+            </div>
+            <div
+              class="sc-Axmtr dLmrMf"
+            >
+              <input
+                class="sc-AxmLO hemNFY"
+                id="3"
+                type="radio"
+                value="robson"
+              />
+              <label
+                class="sc-fzoLsD ijPeEE"
+                for="3"
+              >
+                <div
+                  class="sc-fzozJi gQFIXz"
+                >
+                  <svg
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      fill="4D4771"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="sc-fzokOt okGQB"
+                >
+                  Opção 3
+                </p>
+              </label>
+            </div>
+            <div
+              class="sc-Axmtr dLmrMf"
+            >
+              <input
+                class="sc-AxmLO hemNFY"
+                id="4"
+                type="radio"
+                value="ana-carolina"
+              />
+              <label
+                class="sc-fzoLsD ijPeEE"
+                for="4"
+              >
+                <div
+                  class="sc-fzozJi gQFIXz"
+                >
+                  <svg
+                    height="20px"
+                    viewBox="0 0 24 24"
+                    width="20px"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path
+                      d="M0 0h24v24H0z"
+                      fill="none"
+                    />
+                    <path
+                      d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                      fill="4D4771"
+                    />
+                  </svg>
+                </div>
+                <p
+                  class="sc-fzqBZW cleajo"
+                >
+                  Opção 4
+                </p>
+              </label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm bkUdLm"
+    >
+      <div
+        class="sc-AxirZ eljDRB"
+      >
+        <div
+          class="sc-AxiKw jWoTjM"
+        >
+          <div
+            class="sc-AxhCb ZaNiK"
+          >
+            <p
+              class="sc-fzpans jzxdbk"
+            >
+              Título
+            </p>
+          </div>
+          <div
+            class="sc-AxgMl bFfuHh"
+          >
+            <p
+              class="sc-fzplWN gKsRiR"
+            >
+              Este é um exemplo de descrição
+            </p>
+          </div>
+          <div
+            class="sc-AxgMl bFfuHh"
+          >
+            <p
+              class="sc-fznyAO irOkzZ"
+            >
+              Este é um erro
+            </p>
+          </div>
+        </div>
+        <div
+          class="sc-AxhUy cWBCut"
+        >
+          <svg
+            height="20px"
+            viewBox="0 0 24 24"
+            width="20px"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-2h2v2zm2.07-7.75l-.9.92C13.45 12.9 13 13.5 13 15h-2v-.5c0-1.1.45-2.1 1.17-2.83l1.24-1.26c.37-.36.59-.86.59-1.41 0-1.1-.9-2-2-2s-2 .9-2 2H8c0-2.21 1.79-4 4-4s4 1.79 4 4c0 .88-.36 1.68-.93 2.25z"
+              fill="4D4771"
+            />
+          </svg>
+        </div>
+      </div>
+      <div
+        class="sc-AxheI ghZMUJ"
+      >
+        <div
+          class="sc-AxheI ghZMUJ"
+        >
+          <div
+            class="sc-Axmtr dLmrMf"
+          >
+            <input
+              class="sc-AxmLO hemNFY"
+              id="1"
+              type="radio"
+              value="leonardo"
+            />
+            <label
+              class="sc-fzoLsD ijPeEE"
+              for="1"
+            >
+              <div
+                class="sc-fzozJi gQFIXz"
+              >
+                <svg
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    fill="4D4771"
+                  />
+                </svg>
+              </div>
+              <p
+                class="sc-fznKkj gxMqNm"
+              >
+                Opção 1
+              </p>
+            </label>
+          </div>
+          <div
+            class="sc-Axmtr dLmrMf"
+          >
+            <input
+              class="sc-AxmLO hemNFY"
+              id="2"
+              type="radio"
+              value="renata"
+            />
+            <label
+              class="sc-fzoLsD ijPeEE"
+              for="2"
+            >
+              <div
+                class="sc-fzozJi gQFIXz"
+              >
+                <svg
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    fill="4D4771"
+                  />
+                </svg>
+              </div>
+              <p
+                class="sc-fznZeY gkYovW"
+              >
+                Opção 2
+              </p>
+            </label>
+          </div>
+          <div
+            class="sc-Axmtr dLmrMf"
+          >
+            <input
+              class="sc-AxmLO hemNFY"
+              id="3"
+              type="radio"
+              value="robson"
+            />
+            <label
+              class="sc-fzoLsD ijPeEE"
+              for="3"
+            >
+              <div
+                class="sc-fzozJi gQFIXz"
+              >
+                <svg
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    fill="4D4771"
+                  />
+                </svg>
+              </div>
+              <p
+                class="sc-fzokOt okGQB"
+              >
+                Opção 3
+              </p>
+            </label>
+          </div>
+          <div
+            class="sc-Axmtr dLmrMf"
+          >
+            <input
+              class="sc-AxmLO hemNFY"
+              id="4"
+              type="radio"
+              value="ana-carolina"
+            />
+            <label
+              class="sc-fzoLsD ijPeEE"
+              for="4"
+            >
+              <div
+                class="sc-fzozJi gQFIXz"
+              >
+                <svg
+                  height="20px"
+                  viewBox="0 0 24 24"
+                  width="20px"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0 0h24v24H0z"
+                    fill="none"
+                  />
+                  <path
+                    d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+                    fill="4D4771"
+                  />
+                </svg>
+              </div>
+              <p
+                class="sc-fzqBZW cleajo"
+              >
+                Opção 4
+              </p>
+            </label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
