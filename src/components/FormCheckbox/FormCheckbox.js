@@ -1,4 +1,4 @@
-import React,  { useState } from 'react'
+import React,  { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
@@ -18,16 +18,37 @@ const FormCheckboxComponent = ({
   tooltipData,
 }) => {
 
-  const defaultOption = {
-    id: null,
-    title: null,
-    value: null
-  }
-  const [selectedOption, setSelectedOption] = useState(defaultOption)
+  const defaultOption = []
+  const [selectedOptions, setSelectedOptions] = useState(defaultOption)
+
+  useEffect(() => {
+    onClickOption && onClickOption(selectedOptions)
+  }, [selectedOptions])
 
   const handleClickOption = (option) => {
-    setSelectedOption(option)
-    onClickOption && onClickOption(option)
+    hasOptionOnSelectedOptions(option)
+      ? removeOption(option)
+      : addOption(option)
+  }
+
+  const hasOptionOnSelectedOptions = (option) => {
+    const searchForOptionResult = selectedOptions.find(
+      selectedOption => selectedOption.id === option.id
+    )
+    return Boolean(searchForOptionResult)
+  }
+
+  const addOption = (option) => {
+    const newSelectedOptions = [...selectedOptions]
+    newSelectedOptions.push(option)
+    setSelectedOptions(newSelectedOptions)
+  }
+
+  const removeOption = (option) => {
+    const newSelectedOptions = selectedOptions.filter(
+      selectedOption => selectedOption.id !== option.id
+    )
+    setSelectedOptions(newSelectedOptions)
   }
 
   const handleClickToolTip = () => {
@@ -36,31 +57,30 @@ const FormCheckboxComponent = ({
 
   const renderOptions = (theme) => {
     return options.map(option => {
-      const isSelected = option.id === selectedOption.id
-
+      const isSelected = hasOptionOnSelectedOptions(option)
       return (
         <FormCheckbox.Option
-          key={option.id}
-          onClick={() => handleClickOption(option)}>
-          <FormCheckbox.HiddenRadio
+          key={option.id}>
+          <FormCheckbox.HiddenCheckbox
             checked={isSelected}
-            type="radio"
+            type="checkbox"
             value={option.value}
             id={option.id}
           />
           <FormCheckbox.Label
-            htmlFor={option.id}>
-            <FormCheckbox.RadioIcon>
+            htmlFor={option.id}
+            onClick={() => handleClickOption(option)}>
+            <FormCheckbox.CheckboxIcon>
               <IconManager 
                 height="20px"
                 width="20px"
                 icon={
                   isSelected ?
-                    "RadioChecked" : 
-                    "RadioUnchecked"
+                    "CheckboxChecked" : 
+                    "CheckboxUnchecked"
                 }
                 fill={theme.colors.darkGreyColor}/>
-            </FormCheckbox.RadioIcon>
+            </FormCheckbox.CheckboxIcon>
             <Typography
               color={theme.colors.darkGreyColor}
               fontSize="14px">
