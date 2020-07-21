@@ -66,6 +66,7 @@ const FormCheckboxComponent = ({
             type="checkbox"
             value={option.value}
             id={option.id}
+            onChange={() => null}
           />
           <FormCheckbox.Label
             htmlFor={option.id}

@@ -47,6 +47,7 @@ const FormRadioComponent = ({
             type="radio"
             value={option.value}
             id={option.id}
+            onChange={() => null}
           />
           <FormRadio.Label
             htmlFor={option.id}>
