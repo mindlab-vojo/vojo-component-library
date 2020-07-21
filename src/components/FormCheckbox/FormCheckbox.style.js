@@ -44,11 +44,11 @@ export const Option = styled.div`
   }
 `
 
-export const HiddenRadio = styled.input`
+export const HiddenCheckbox = styled.input`
   display: none;
 `
 
-export const RadioIcon = styled.div`
+export const CheckboxIcon = styled.div`
   margin-right: 5px;
 `
 
