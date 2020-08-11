@@ -43,6 +43,7 @@ export const formRadio = () => {
   const onClickOption = action('onClickOption')
   const onClickToolTip = action('onClickToolTip')
   const options = array('options', optionsList)
+  const preSelectedOption = text('preSelectedOption', '2')
   const description = text('description', 'Breve descrição da pergunta')
   const title = text('title', 'Título da Pergunta')
 
@@ -55,6 +56,7 @@ export const formRadio = () => {
       onClickOption={onClickOption}
       onClickToolTip={onClickToolTip}
       options={options}
+      preSelectedOption={preSelectedOption}
       tooltipData={tooltipData}
       title={title}
     />

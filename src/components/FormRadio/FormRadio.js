@@ -14,15 +14,22 @@ const FormRadioComponent = ({
   onClickOption,
   onClickToolTip,
   options,
+  preSelectedOption,
   title,
   tooltipData,
 }) => {
 
-  const defaultOption = {
-    id: null,
-    title: null,
-    value: null
+  const getPreselectedOption = () => {
+    return options.find(option => option.id === preSelectedOption)
   }
+
+  const defaultOption = preSelectedOption
+    ? getPreselectedOption() 
+    : {
+      id: null,
+      title: null,
+      value: null
+    }
   const [selectedOption, setSelectedOption] = useState(defaultOption)
 
   const handleClickOption = (option) => {
@@ -148,6 +155,7 @@ FormRadioComponent.propTypes = {
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,
   options: PropTypes.array,
+  preSelectedOption: PropTypes.string,
   title: PropTypes.string,
   tooltipData: PropTypes.object,
 }
