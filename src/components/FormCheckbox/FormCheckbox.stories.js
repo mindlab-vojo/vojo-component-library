@@ -36,13 +36,14 @@ export const formCheckbox = () => {
     description: "Descrição que aparecerá no modal, normalmente descreverá detalhes dos requisistos deste campo."
   }
 
+  const preSelectedOptions = array('preSelectedOptions', ['1', '3'])
   const errorMessage = text('errorMessage', 'Este campo possui algum erro...')
   const hasError = boolean('hasError', false)
   const hasToolTip = boolean('hasToolTip', true)
   const tooltipData = object('tooltipData', tooltipDataObject)
   const onClickOption = action('onClickOption')
   const onClickToolTip = action('onClickToolTip')
-  const options = array('options', optionsList)
+  const options = object('options', optionsList)
   const description = text('description', 'Breve descrição da pergunta')
   const title = text('title', 'Título da Pergunta')
 
@@ -55,6 +56,7 @@ export const formCheckbox = () => {
       onClickOption={onClickOption}
       onClickToolTip={onClickToolTip}
       options={options}
+      preSelectedOptions={preSelectedOptions}
       tooltipData={tooltipData}
       title={title}
     />

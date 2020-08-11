@@ -14,11 +14,24 @@ const FormCheckboxComponent = ({
   onClickOption,
   onClickToolTip,
   options,
+  preSelectedOptions,
   title,
   tooltipData,
 }) => {
+  const createPreselectedOptions = () => {
+    const newOptionsToState = []
 
-  const defaultOption = []
+    for (let i = 0; i < preSelectedOptions.length; i++) {
+      const preSelectedOption = preSelectedOptions[i];
+      newOptionsToState.push(
+        options.find(option => option.id === preSelectedOption)
+      )
+    }
+    
+    return newOptionsToState
+  }
+
+  const defaultOption = preSelectedOptions ? createPreselectedOptions() : []
   const [selectedOptions, setSelectedOptions] = useState(defaultOption)
 
   useEffect(() => {
@@ -168,6 +181,7 @@ FormCheckboxComponent.propTypes = {
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,
   options: PropTypes.array,
+  preSelectedOptions: PropTypes.array,
   title: PropTypes.string,
   tooltipData: PropTypes.object,
 }
