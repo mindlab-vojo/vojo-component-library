@@ -12,6 +12,7 @@ import EmailInput from './components/Input/EmailInput';
 import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
 import FormCheckbox from './components/FormCheckbox';
+import FormInput from './components/Input/FormInput';
 import FormRadio from './components/FormRadio';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
@@ -47,6 +48,7 @@ export {
   FilterDropdown,
   Footer,
   FormCheckbox,
+  FormInput,
   FormRadio,
   Header,
   IconManager,
