@@ -1,5 +1,6 @@
 import phoneValidator from './phoneValidator'
 import { cpfMaskRemover, cpfValidator } from './cpfValidator'
+import { dateMaskRemover, dateValidator } from './dateValidator'
 import { pisMaskRemover } from './pisValidator'
 
 export const validatorTypes = {
@@ -9,6 +10,7 @@ export const validatorTypes = {
   alphabeitcalSpaced: 'alphabeitcalSpaced',
   cep: 'cep',
   cpf: 'cpf',
+  date: 'date',
   email: 'email',
   mobileNumber: 'mobileNumber',
   password: 'password',
@@ -114,5 +116,14 @@ export const validatorPatterns = {
     minLength: 8,
     regex: /[\s\S]+/g,
     specificValidation: null,
+  },
+  [validatorTypes.date]: {
+    errorMessage: 'Esta data é inválida',
+    mask: [/\d/, /\d/, '/', /\d/, /\d/, '/', /\d/, /\d/, /\d/, /\d/],
+    maskRemover: (value) => dateMaskRemover(value),
+    maxLength: 10,
+    minLength: 10,
+    regex: /[\s\S]+/g,
+    specificValidation: (value) => dateValidator(value),
   },
 }
