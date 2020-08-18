@@ -19,7 +19,7 @@ export const formInput = () => {
   const placeholder =  text('Form Input', '')
   const showError = boolean('showError', false)
   const type =  text('type', 'text')
-  const validationType =  text('validationType', 'cpf')
+  const validationType =  text('validationType', 'date')
   const value =  text('value', '')
 
   return (
