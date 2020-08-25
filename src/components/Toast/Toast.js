@@ -10,14 +10,24 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 const ToastComponent = ({
   description,
   title,
+  type,
 }) => {
+  const textColor = (theme) => {
+    const textTypes = {
+      error: theme.colors.redColor,
+      warn: theme.colors.blackColor
+    }
+    return textTypes[type]
+  }
+
   const renderComponent = (theme) => (
     <Toast.Wrapper
+      type={type}
       theme={theme}>
       <Toast.Content>
         <Toast.Title>
           <Typography
-            color={theme.colors.redColor}
+            color={textColor(theme)}
             fontSize="12px"
             fontWeight="bolder">
             {title}
@@ -25,7 +35,7 @@ const ToastComponent = ({
         </Toast.Title>
         <Toast.Description>
           <Typography
-            color={theme.colors.redColor}
+            color={textColor(theme)}
             fontSize="12px">
             {description}
           </Typography>
@@ -44,6 +54,14 @@ const ToastComponent = ({
 ToastComponent.propTypes = {
   description: PropTypes.node,
   title: PropTypes.string,
+  type: PropTypes.oneOf([
+    'error',
+    'warn'
+  ]),
+}
+
+ToastComponent.defaultProps = {
+  type: 'error'
 }
 
 export default ToastComponent
