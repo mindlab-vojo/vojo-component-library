@@ -7,6 +7,7 @@ Object {
     <div>
       <div
         class="sc-AxjAm gCnghF"
+        type="error"
       >
         <div
           class="sc-AxirZ ktnnZK"
@@ -47,6 +48,7 @@ Object {
   "container": <div>
     <div
       class="sc-AxjAm gCnghF"
+      type="error"
     >
       <div
         class="sc-AxirZ ktnnZK"
