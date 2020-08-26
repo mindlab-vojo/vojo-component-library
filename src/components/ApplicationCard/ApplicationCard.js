@@ -23,7 +23,12 @@ const ApplicationCardComponent = ({
       onClickCard={onClickCard}>
       <ApplicationCard.Wrapper
         className="ApplicationCard">
-          
+        <ApplicationCard.ImageCropper>
+          <ApplicationCard.Image 
+            isClosed={isClosed}
+            src={imageUrl}
+          />
+        </ApplicationCard.ImageCropper>
 
       </ApplicationCard.Wrapper>
     </Card>
