@@ -6,17 +6,17 @@ import Header from '.';
 import categories from '../../../.storybook/categories';
 import { ThemeProvider } from "../../../src";
 
-export default {
-  title: categories.Headers,
-  component: Header,
-  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
-}
-
-export const component = () => {
+export const header = () => {
   return <Header/>
 }
 
-component.story = {
+header.story = {
   name: 'Header',
 };
+
+export default {
+  title: categories.Headers,
+  component: header,
+  decorators: [withKnobs, withA11y, (story) => <ThemeProvider>{ story() }</ThemeProvider>]
+}
   
