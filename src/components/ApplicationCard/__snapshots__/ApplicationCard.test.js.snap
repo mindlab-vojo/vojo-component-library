@@ -1,0 +1,158 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test ApplicationCard component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-AxjAm kQhVlK Card"
+      >
+        <div
+          class="sc-AxirZ iTEWhx ApplicationCard"
+        >
+          <div
+            class="sc-AxiKw hZuHAH ApplicationCard__Image"
+          >
+            <img
+              class="sc-AxhCb fEHPey ApplicationCard__Image__Image"
+              src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+            />
+          </div>
+          <div
+            class="sc-AxhUy bscpCC ApplicationCard__Info"
+          >
+            <div
+              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            >
+              <p
+                class="sc-AxheI lgKApw"
+              >
+                Você está na etapa 1 de 4
+              </p>
+            </div>
+            <div
+              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            >
+              <p
+                class="sc-Axmtr kLPMXW"
+              >
+                Procurando empresas
+              </p>
+            </div>
+            <div
+              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            >
+              <p
+                class="sc-AxmLO hDsJtr"
+              >
+                Seletor de produtos para entrega (Shopper)
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-AxjAm kQhVlK Card"
+    >
+      <div
+        class="sc-AxirZ iTEWhx ApplicationCard"
+      >
+        <div
+          class="sc-AxiKw hZuHAH ApplicationCard__Image"
+        >
+          <img
+            class="sc-AxhCb fEHPey ApplicationCard__Image__Image"
+            src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+          />
+        </div>
+        <div
+          class="sc-AxhUy bscpCC ApplicationCard__Info"
+        >
+          <div
+            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+          >
+            <p
+              class="sc-AxheI lgKApw"
+            >
+              Você está na etapa 1 de 4
+            </p>
+          </div>
+          <div
+            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+          >
+            <p
+              class="sc-Axmtr kLPMXW"
+            >
+              Procurando empresas
+            </p>
+          </div>
+          <div
+            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+          >
+            <p
+              class="sc-AxmLO hDsJtr"
+            >
+              Seletor de produtos para entrega (Shopper)
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
