@@ -23,13 +23,65 @@ const ApplicationCardComponent = ({
       onClickCard={onClickCard}>
       <ApplicationCard.Wrapper
         className="ApplicationCard">
-        <ApplicationCard.ImageCropper>
+        <ApplicationCard.ImageCropper 
+          className="ApplicationCard__Image">
           <ApplicationCard.Image 
+            className="ApplicationCard__Image__Image"
             isClosed={isClosed}
             src={imageUrl}
           />
         </ApplicationCard.ImageCropper>
-
+        <ApplicationCard.InfoWrapper
+          className="ApplicationCard__Info">
+          {
+            isClosed ? (
+              <>
+                <ApplicationCard.InfoText
+                  className="ApplicationCard__Info__Text">
+                  <Typography
+                    fontSize="14px"
+                    fontWeight="bolder">
+                Candidatura finalizada
+                  </Typography>
+                </ApplicationCard.InfoText>
+                <ApplicationCard.InfoText
+                  className="ApplicationCard__Info__Text">
+                  <Typography
+                    fontSize="18px">
+                    {jobTitle}
+                  </Typography>
+                </ApplicationCard.InfoText>
+              </>
+            ) : (
+              <>
+                <ApplicationCard.InfoText
+                  className="ApplicationCard__Info__Text">
+                  <Typography
+                    fontSize="12px">
+                    {`Você está na etapa ${currentStep} de ${totalSteps}`}
+                  </Typography>
+                </ApplicationCard.InfoText>
+                <ApplicationCard.InfoText
+                  className="ApplicationCard__Info__Text">
+                  <Typography
+                    fontSize="14px"
+                    fontWeight="bolder">
+                    {stepTitle}
+                  </Typography>
+                </ApplicationCard.InfoText>
+                <ApplicationCard.InfoText
+                  className="ApplicationCard__Info__Text">
+                  <Typography
+                    fontSize="18px"
+                    fontWeight="bolder"
+                    color={theme.colors.primaryColor}>
+                    {jobTitle}
+                  </Typography>
+                </ApplicationCard.InfoText>
+              </>
+            )
+          }
+        </ApplicationCard.InfoWrapper>
       </ApplicationCard.Wrapper>
     </Card>
   )
