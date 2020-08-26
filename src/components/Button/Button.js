@@ -7,6 +7,7 @@ import * as Button from './Button.style'
 function ButtonComponent({ 
   children, 
   backgroundColor,
+  borderColor,
   hoverColor,
   id,
   name,
@@ -20,6 +21,7 @@ function ButtonComponent({
     <Button.Button
       className="Button"
       backgroundColor={backgroundColor}
+      borderColor={borderColor}
       hoverColor={hoverColor}
       id={id}
       name={name}
@@ -41,6 +43,7 @@ function ButtonComponent({
 
 ButtonComponent.propTypes = {
   backgroundColor: PropTypes.string,
+  borderColor: PropTypes.string,
   children: PropTypes.node, 
   hoverColor: PropTypes.string,
   id: PropTypes.string,

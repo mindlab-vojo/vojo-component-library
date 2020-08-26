@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const Button = styled.button`
   align-items: center;
   background-color: ${props => props.backgroundColor};
-  border: 1px solid ${props => props.backgroundColor};
+  border: 1px solid ${props => props.borderColor ? props.borderColor : props.backgroundColor};
   color: ${props => props.textColor};
   cursor: pointer;
   border-radius: 500px;

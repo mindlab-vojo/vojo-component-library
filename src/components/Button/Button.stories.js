@@ -9,6 +9,7 @@ import categories from '../../../.storybook/categories';
 
 export const component = () => {
   const backgroundColor = color('backgroundColor', '#391DDD')
+  const borderColor = color('borderColor', '#391DDD')
   const children = text('children', 'Hello Vojo')
   const hoverColor = color('hoverColor', '#391DDD')
   const id = text('id', 'button')
@@ -21,6 +22,7 @@ export const component = () => {
   return (
     <Button
       backgroundColor={backgroundColor}
+      borderColor={borderColor}
       hoverColor={hoverColor}
       id={id}
       name={name}
