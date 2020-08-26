@@ -8,36 +8,49 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const sideMenu = () => {  
+  const menuButtons = [
+    {
+      text: 'Sair',
+      func: () => console.log('click')
+    },
+  ]
 
   const menuItems = [
     {
       icon: 'Check',
       text: 'Oportunidades',
+      func: () => console.log('click')
     },
     {
       icon: 'Check',
-      text: 'Oportunidades',
+      text: 'Cursos Gratuitos',
+      func: () => console.log('click')
     },
     {
       icon: 'Check',
-      text: 'Oportunidades',
+      text: 'Candidaturas Realizadas',
+      func: () => console.log('click')
     },
     {
       icon: 'Check',
-      text: 'Oportunidades',
+      text: 'Página de Ajuda',
+      func: () => console.log('click')
     },
     {
       icon: 'Check',
-      text: 'Oportunidades',
+      text: 'Minha Conta',
+      func: () => console.log('click')
     },
   ]
 
+  const buttons = object('buttons', menuButtons)
   const items = object('items', menuItems)
   const onClickClose = action('onClickClose')
   const onClickOutside = action('onClickOutside')
 
   return (
     <SideMenu
+      buttons={buttons}
       items={items}
       onClickClose={onClickClose}
       onClickOutside={onClickOutside}
