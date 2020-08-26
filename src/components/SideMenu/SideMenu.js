@@ -42,7 +42,8 @@ const SideMenuComponent = ({
     <SideMenu.Wrapper
       className="SideMenu">
       <SideMenu.Background
-        className="SideMenu__Background"/>
+        className="SideMenu__Background"
+        onClick={onClickOutside}/>
       <SideMenu.Menu
         className="SideMenu__Menu">
         <SideMenu.Close
