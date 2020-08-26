@@ -86,13 +86,37 @@ export const ItemText = styled.div`
 export const MenuButtons = styled.div`
   display: flex;
   flex-direction: column;
+  margin-top: 50px;
   width: 100%;
+`
+
+export const Button = styled.div`
+  align-items: center;
+  cursor: pointer;
+  display: flex;
+  margin: 7px 0px;
+  width: 100%;
+
+  &:first-of-type {
+    margin-top: 0;
+  };
+
+  &:last-of-type {
+    margin-bottom: 0;
+  };
+`
+
+export const ButtonWrapper = styled.div`
+  width: 128px;
 `
 
 export const Terms = styled.div`
   align-items: center;
+  cursor: pointer;
+  box-sizing: border-box;
+  bottom: 20px;
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100%;
+  position: absolute;
 `

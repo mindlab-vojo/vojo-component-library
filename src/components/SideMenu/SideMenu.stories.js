@@ -43,10 +43,16 @@ export const sideMenu = () => {
     },
   ]
 
+  const termsObject = {
+    text: 'termos de uso e política de privacidade',
+    func: () => console.log('click')
+  }
+
   const buttons = object('buttons', menuButtons)
   const items = object('items', menuItems)
   const onClickClose = action('onClickClose')
   const onClickOutside = action('onClickOutside')
+  const terms = object('terms', termsObject)
 
   return (
     <SideMenu
@@ -54,6 +60,7 @@ export const sideMenu = () => {
       items={items}
       onClickClose={onClickClose}
       onClickOutside={onClickOutside}
+      terms={terms}
     />
   )
 }
