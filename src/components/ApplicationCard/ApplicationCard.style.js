@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
 `
 
 export const ImageCropper = styled.div`
+  min-width: 72px;
   width: 72px;
   height: 72px;
   position: relative;
@@ -24,8 +25,11 @@ export const Image = styled.img`
 `
 
 export const InfoWrapper = styled.div`
-  align-items: center;
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
+  margin-left: 20px;
   width: 100%;
 `
+
+export const InfoText = styled.div``
