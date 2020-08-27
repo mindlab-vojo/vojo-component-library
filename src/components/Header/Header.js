@@ -5,8 +5,8 @@ import * as Header from './Header.style'
 
 import Logo from './../Logo'
 import SideMenu from '../SideMenu'
-import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import IconManager from '../IconManager'
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 const  HeaderComponent = ({
   menuButtons,
@@ -34,7 +34,7 @@ const  HeaderComponent = ({
             onClick={handleToogleMenu}>
             <IconManager 
               fill={theme.colors.whiteColor}
-              icon="Check"
+              icon="Hamburger"
               height="24px"/>
           </Header.BlockClickable>
           <Header.BlockClickable
@@ -70,8 +70,8 @@ const  HeaderComponent = ({
 }
 
 HeaderComponent.propTypes = {
-  menuButtons: PropTypes.object,
-  menuItems: PropTypes.object,
+  menuButtons: PropTypes.array,
+  menuItems: PropTypes.array,
   menuTems: PropTypes.object,
   onClickLogo: PropTypes.func
 }
