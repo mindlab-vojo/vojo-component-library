@@ -6,11 +6,13 @@ import * as Header from './Header.style'
 import Logo from './../Logo'
 import SideMenu from '../SideMenu'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
+import IconManager from '../IconManager'
 
 const  HeaderComponent = ({
   menuButtons,
   menuItems,
   menuTems,
+  onClickLogo
 }) => {
 
   const [showMenu, setShowMenu] = useState(false)
@@ -27,7 +29,21 @@ const  HeaderComponent = ({
         <Header.Content 
           className="Header__Content"
           theme={theme}>
-          <Logo height="16px" isReverse/>
+          <Header.BlockClickable
+            className="Header__Block"
+            onClick={handleToogleMenu}>
+            <IconManager 
+              fill={theme.colors.whiteColor}
+              icon="Check"
+              height="24px"/>
+          </Header.BlockClickable>
+          <Header.BlockClickable
+            className="Header__Block"
+            onClick={onClickLogo}>
+            <Logo height="16px" width="150px" isReverse/>
+          </Header.BlockClickable>
+          <Header.Block
+            className="Header__Block"/>
         </Header.Content>
       </Header.Wrapper>
       {
@@ -57,6 +73,7 @@ HeaderComponent.propTypes = {
   menuButtons: PropTypes.object,
   menuItems: PropTypes.object,
   menuTems: PropTypes.object,
+  onClickLogo: PropTypes.func
 }
 
 export default HeaderComponent
