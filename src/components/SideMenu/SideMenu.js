@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import PropTypes from 'prop-types'
 
 import IconManager from '../IconManager'
@@ -9,10 +9,12 @@ import * as SideMenu from './SideMenu.style'
 import Button from '../Button'
 
 const SideMenuComponent = ({
+  animationDuration,
   buttons,
   items,
   onClickClose,
   onClickOutside,
+  show,
   terms
 }) => {
 
@@ -70,9 +72,13 @@ const SideMenuComponent = ({
     <SideMenu.Wrapper
       className="SideMenu">
       <SideMenu.Background
+        animationDuration={animationDuration}
         className="SideMenu__Background"
-        onClick={onClickOutside}/>
+        onClick={onClickOutside}
+        show={show}/>
       <SideMenu.Menu
+        animationDuration={animationDuration}
+        show={show}
         className="SideMenu__Menu">
         <SideMenu.Close
           className="SideMenu__CloseWrapper">
@@ -115,10 +121,12 @@ const SideMenuComponent = ({
 }
 
 SideMenuComponent.propTypes = {
+  animationDuration: PropTypes.number,
   buttons: PropTypes.array,
   items: PropTypes.array,
   onClickClose: PropTypes.func,
   onClickOutside: PropTypes.func,
+  show: PropTypes.bool,
   terms: PropTypes.object
 }
 

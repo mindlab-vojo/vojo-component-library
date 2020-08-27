@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, object } from '@storybook/addon-knobs';
+import { withKnobs, object, number, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -48,18 +48,22 @@ export const sideMenu = () => {
     func: () => console.log('click')
   }
 
+  const animationDuration = number('animationDuration', 0.3)
   const buttons = object('buttons', menuButtons)
   const items = object('items', menuItems)
   const onClickClose = action('onClickClose')
   const onClickOutside = action('onClickOutside')
+  const show = boolean('show', false)
   const terms = object('terms', termsObject)
 
   return (
     <SideMenu
+      animationDuration={animationDuration}
       buttons={buttons}
       items={items}
       onClickClose={onClickClose}
       onClickOutside={onClickOutside}
+      show={show}
       terms={terms}
     />
   )
