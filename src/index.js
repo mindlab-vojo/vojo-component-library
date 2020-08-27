@@ -1,3 +1,4 @@
+import ApplicationCard from './components/ApplicationCard';
 import BannerCard from './components/BannerCard';
 import BannerImage from './components/BannerImage';
 import BannerImageCard from './components/BannerImageCard';
@@ -23,6 +24,7 @@ import Modal from './components/Modal/Modal';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
 import PisInput from './components/Input/PisInput';
+import SideMenu from './components/SideMenu';
 import Spinner from './components/Spinner/Spinner';
 import StickyToast from './components/StickyToast/StickyToast';
 import TextInput from './components/Input/TextInput';
@@ -34,6 +36,7 @@ import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider
 import * as themes from './style/themes'
 
 export {
+  ApplicationCard,
   BannerCard,
   BannerImage,
   BannerImageCard,
@@ -59,6 +62,7 @@ export {
   ModuleCard,
   PasswordInput,
   PisInput,
+  SideMenu,
   Spinner,
   StickyToast,
   TextInput,
