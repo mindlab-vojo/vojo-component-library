@@ -1,8 +1,45 @@
-import styled from 'styled-components'
+import styled, { keyframes } from 'styled-components'
+
+const slideIn = keyframes`
+  from {
+    margin-left: -360px;
+  }
+  to: {
+    margin-left: 0;
+  }
+
+`
+const slideOut = keyframes`
+  from {
+    margin-left: 0;
+  }
+  to: {
+    margin-left: -360px;
+  }
+`
+
+const fadeIn = keyframes`
+  from {
+    opacity: 0;
+  }
+  to: {
+    opacity: 0.3;
+  }
+
+`
+const fadeOut = keyframes`
+  from {
+    opacity: 0.3;
+  }
+  to: {
+    opacity: 0;
+  }
+`
 
 export const Wrapper = styled.div`
   height: 100vh;
   left: 0;
+  overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
@@ -10,10 +47,11 @@ export const Wrapper = styled.div`
 `
 
 export const Background = styled.div`
+  animation: ${props => props.show ? fadeIn : fadeOut } ${props => `${props.animationDuration}s`} linear forwards;
   background-color: #000000;
   height: 100vh;
   left: 0;
-  opacity:0.2;
+  opacity: 0.3;
   position: absolute;
   top: 0;
   width: 100%;
@@ -21,6 +59,7 @@ export const Background = styled.div`
 `
 
 export const Menu = styled.div`
+  animation: ${props => props.show ? slideIn : slideOut } ${props => `${props.animationDuration}s`} linear forwards;
   background-color: #FFFFFF;
   box-sizing: border-box;
   height: 100vh;
