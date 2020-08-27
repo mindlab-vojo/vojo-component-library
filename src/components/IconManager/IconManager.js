@@ -10,6 +10,7 @@ import Check from './Icons/Check'
 import CheckboxChecked from './Icons/CheckboxChecked'
 import CheckboxUnchecked from './Icons/CheckboxUnchecked'
 import Close from './Icons/Close'
+import Course from './Icons/Course'
 import Exclamation from './Icons/Exclamation'
 import Hamburger from './Icons/Hamburger'
 import HelpCircle from './Icons/HelpCircle'
@@ -53,6 +54,7 @@ export const iconList = {
   CheckboxChecked: CheckboxChecked,
   CheckboxUnchecked: CheckboxUnchecked,
   Close: Close,
+  Course: Course,
   Exclamation: Exclamation,
   Hamburger: Hamburger,
   HelpCircle: HelpCircle,
