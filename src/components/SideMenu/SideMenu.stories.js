@@ -7,47 +7,48 @@ import SideMenu from '.';
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
-export const menuButtons = [
-  {
-    text: 'Sair',
-    func: () => console.log('click')
-  },
-]
-
-export const menuItems = [
-  {
-    icon: 'Check',
-    text: 'Oportunidades',
-    func: () => console.log('click')
-  },
-  {
-    icon: 'Check',
-    text: 'Cursos Gratuitos',
-    func: () => console.log('click')
-  },
-  {
-    icon: 'Check',
-    text: 'Candidaturas Realizadas',
-    func: () => console.log('click')
-  },
-  {
-    icon: 'Check',
-    text: 'Página de Ajuda',
-    func: () => console.log('click')
-  },
-  {
-    icon: 'Check',
-    text: 'Minha Conta',
-    func: () => console.log('click')
-  },
-]
-
-export const termsObject = {
-  text: 'termos de uso e política de privacidade',
-  func: () => console.log('click')
-}
-
 export const sideMenu = () => {  
+  
+  const menuButtons = [
+    {
+      text: 'Sair',
+      func: () => console.log('click')
+    },
+  ]
+
+  const menuItems = [
+    {
+      icon: 'Suitcase',
+      text: 'Oportunidades',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Course',
+      text: 'Cursos Gratuitos',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'SuitcaseArrow',
+      text: 'Candidaturas Realizadas',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Question',
+      text: 'Página de Ajuda',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Avatar',
+      text: 'Minha Conta',
+      func: () => console.log('click')
+    },
+  ]
+
+  const termsObject = {
+    text: 'termos de uso e política de privacidade',
+    func: () => console.log('click')
+  }
+
   const animationDuration = number('animationDuration', 0.3)
   const buttons = object('buttons', menuButtons)
   const items = object('items', menuItems)

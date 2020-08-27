@@ -6,9 +6,48 @@ import { action } from '@storybook/addon-actions'
 import Header from '.';
 import categories from '../../../.storybook/categories';
 import { ThemeProvider } from "../../../src";
-import { menuButtons, menuItems, termsObject } from '../SideMenu/SideMenu.stories';
 
 export const header = () => {
+  const menuButtons = [
+    {
+      text: 'Sair',
+      func: () => console.log('click')
+    },
+  ]
+  
+  const menuItems = [
+    {
+      icon: 'Suitcase',
+      text: 'Oportunidades',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Course',
+      text: 'Cursos Gratuitos',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'SuitcaseArrow',
+      text: 'Candidaturas Realizadas',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Question',
+      text: 'Página de Ajuda',
+      func: () => console.log('click')
+    },
+    {
+      icon: 'Avatar',
+      text: 'Minha Conta',
+      func: () => console.log('click')
+    },
+  ]
+  
+  const termsObject = {
+    text: 'termos de uso e política de privacidade',
+    func: () => console.log('click')
+  }
+  
   const buttons = object('menuButtons', menuButtons)
   const items = object('menuItems', menuItems)
   const onClickLogo = action('onClickLogo')
