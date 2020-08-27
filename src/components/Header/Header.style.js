@@ -2,6 +2,7 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.header`
   align-items: center;
+  box-sizing: border-box;
   background-color: ${props => props.theme.colors.primaryColor};
   box-shadow: 0 3px 5px ${props => props.theme.colors.greyColor};
   display: flex;
@@ -17,7 +18,13 @@ export const Wrapper = styled.header`
 export const Content = styled.div`
   align-items: center;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   max-width: ${props => props.theme.breakpoints.desktopContentSize};
   width: 100%;
+`
+
+export const Block = styled.div``
+
+export const BlockClickable = styled.div`
+  cursor: pointer;
 `
