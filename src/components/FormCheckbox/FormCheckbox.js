@@ -34,10 +34,6 @@ const FormCheckboxComponent = ({
   const defaultOption = preSelectedOptions ? createPreselectedOptions() : []
   const [selectedOptions, setSelectedOptions] = useState(defaultOption)
 
-  useEffect(() => {
-    onClickOption && onClickOption(selectedOptions)
-  }, [selectedOptions])
-
   const handleClickOption = (option) => {
     hasOptionOnSelectedOptions(option)
       ? removeOption(option)
@@ -55,6 +51,7 @@ const FormCheckboxComponent = ({
     const newSelectedOptions = [...selectedOptions]
     newSelectedOptions.push(option)
     setSelectedOptions(newSelectedOptions)
+    onClickOption && onClickOption(newSelectedOptions)
   }
 
   const removeOption = (option) => {
@@ -62,6 +59,7 @@ const FormCheckboxComponent = ({
       selectedOption => selectedOption.id !== option.id
     )
     setSelectedOptions(newSelectedOptions)
+    onClickOption && onClickOption(newSelectedOptions)
   }
 
   const handleClickToolTip = () => {
