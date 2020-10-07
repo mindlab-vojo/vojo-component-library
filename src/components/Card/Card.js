@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import * as Card from './Card.style'
 
 function CardComponent({ 
+  backgroundColor,
   children,
   hasPointer,
   onClickCard,
@@ -11,6 +12,7 @@ function CardComponent({
 }) {
   return (
     <Card.Card 
+      backgroundColor={backgroundColor}
       className="Card"
       hasPointer={hasPointer}
       onClick={onClickCard}
@@ -21,6 +23,7 @@ function CardComponent({
 }
 
 CardComponent.propTypes = {
+  backgroundColor: props.string,
   children: PropTypes.node,
   hasPointer: PropTypes.bool,
   onClickCard: PropTypes.func,
