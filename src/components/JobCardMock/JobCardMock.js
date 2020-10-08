@@ -113,9 +113,9 @@ const JobCardMockComponent = ({
               <JobCardMock.Slots
                 className="JobCardMock__Slots">
                 <Typography 
-                  fontSize="9px"
+                  fontSize="10px"
                   fontWeight="bolder">
-                  {`RENDA EXTRA`}
+                  {`RENDA`}
                 </Typography>
               </JobCardMock.Slots>
             )
