@@ -151,7 +151,7 @@ const JobCardMockComponent = ({
                   <Typography
                     fontSize="12px"
                     color={theme.colors.whiteColor}>
-                    {`${companyNumber} ${companiesText} contratando em`}
+                    {`${companyNumber} ${companiesText} em`}
                   </Typography>
                 </JobCardMock.Companies>
                 <JobCardMock.Locations
