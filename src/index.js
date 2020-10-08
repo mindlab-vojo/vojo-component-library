@@ -18,6 +18,7 @@ import FormRadio from './components/FormRadio';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
+import JobCardMock from './components/JobCardMock';
 import Logo from './components/Logo';
 import MobileInput from './components/Input/MobileInput';
 import Modal from './components/Modal/Modal';
@@ -56,6 +57,7 @@ export {
   Header,
   IconManager,
   JobCard,
+  JobCardMock,
   Logo,
   MobileInput,
   Modal,
