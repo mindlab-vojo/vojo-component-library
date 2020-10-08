@@ -23,7 +23,7 @@ function CardComponent({
 }
 
 CardComponent.propTypes = {
-  backgroundColor: props.string,
+  backgroundColor: PropTypes.string,
   children: PropTypes.node,
   hasPointer: PropTypes.bool,
   onClickCard: PropTypes.func,
