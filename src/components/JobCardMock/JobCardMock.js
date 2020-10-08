@@ -78,6 +78,7 @@ const JobCardMockComponent = ({
 
   const renderComponent = (theme) => (
     <Card 
+      backgroundColor={backgroundColor}
       hasPointer
       id={`JobCardMock-${id}`}
       padding="15px 8px" 
@@ -125,7 +126,7 @@ const JobCardMockComponent = ({
           <JobCardMock.Title
             className="JobCardMock__Title">
             <Typography
-              color={isUnavailable ? theme.colors.blackColor : theme.colors.darkBlueColor}
+              color={isUnavailable ? theme.colors.blackColor : theme.colors.whiteColor}
               fontSize="18px"
               fontWeight="bolder">
               {title}
@@ -148,7 +149,8 @@ const JobCardMockComponent = ({
                 <JobCardMock.Companies
                   className="JobCardMock__Companies">
                   <Typography
-                    fontSize="12px">
+                    fontSize="12px"
+                    color={theme.colors.whiteColor}>
                     {`${companyNumber} ${companiesText} contratando em`}
                   </Typography>
                 </JobCardMock.Companies>
