@@ -7,7 +7,7 @@ Object {
     <div>
       <div
         class="sc-fzokOt hqmVYP"
-        id="JobCard-card-id"
+        id="JobCardMock-card-id"
       >
         <div
           class="sc-AxirZ cLmhxZ"
@@ -19,16 +19,16 @@ Object {
           </p>
         </div>
         <div
-          class="sc-AxjAm jDxcNw JobCard"
+          class="sc-AxjAm jDxcNw JobCardMock"
         >
           <div
-            class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+            class="sc-AxiKw bTpLoE JobCardMock__ImageBlock"
           >
             <div
-              class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+              class="sc-AxhCb ccMvAG JobCardMock__ImageWrapper"
             >
               <div
-                class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+                class="sc-AxhUy fzszZd JobCardMock__ImageWrapper__Cropper"
               >
                 <img
                   alt="Entregador Mágico"
@@ -38,38 +38,38 @@ Object {
               </div>
             </div>
             <div
-              class="sc-AxheI eKLjGh JobCard__Slots"
+              class="sc-AxheI eKLjGh JobCardMock__Slots"
             >
               <p
-                class="sc-fzqNJr cFqHAX"
+                class="sc-fzqNJr JTUAP"
               >
-                200 VAGAS
+                RENDA EXTRA
               </p>
             </div>
           </div>
           <div
-            class="sc-Axmtr erLQOu JobCard__DataBlock"
+            class="sc-Axmtr erLQOu JobCardMock__DataBlock"
           >
             <div
-              class="sc-AxmLO cAKCgh JobCard__Title"
+              class="sc-AxmLO cAKCgh JobCardMock__Title"
             >
               <p
-                class="sc-fzoyAV oAxVr"
+                class="sc-fzoyAV infahC"
               >
                 Entregador Mágico
               </p>
             </div>
             <div
-              class="sc-fzozJi aHfnD JobCard__Companies"
+              class="sc-fzozJi aHfnD JobCardMock__Companies"
             >
               <p
-                class="sc-fzoLag dQmyMU"
+                class="sc-fzoLag fgZswX"
               >
                 5 empresas contratando em
               </p>
             </div>
             <div
-              class="sc-fzpans iFvVQQ JobCard__Locations"
+              class="sc-fzpans iFvVQQ JobCardMock__Locations"
             >
               <div
                 class="sc-fznyAO dNloSp"
@@ -98,7 +98,7 @@ Object {
   "container": <div>
     <div
       class="sc-fzokOt hqmVYP"
-      id="JobCard-card-id"
+      id="JobCardMock-card-id"
     >
       <div
         class="sc-AxirZ cLmhxZ"
@@ -110,16 +110,16 @@ Object {
         </p>
       </div>
       <div
-        class="sc-AxjAm jDxcNw JobCard"
+        class="sc-AxjAm jDxcNw JobCardMock"
       >
         <div
-          class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+          class="sc-AxiKw bTpLoE JobCardMock__ImageBlock"
         >
           <div
-            class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+            class="sc-AxhCb ccMvAG JobCardMock__ImageWrapper"
           >
             <div
-              class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+              class="sc-AxhUy fzszZd JobCardMock__ImageWrapper__Cropper"
             >
               <img
                 alt="Entregador Mágico"
@@ -129,38 +129,38 @@ Object {
             </div>
           </div>
           <div
-            class="sc-AxheI eKLjGh JobCard__Slots"
+            class="sc-AxheI eKLjGh JobCardMock__Slots"
           >
             <p
-              class="sc-fzqNJr cFqHAX"
+              class="sc-fzqNJr JTUAP"
             >
-              200 VAGAS
+              RENDA EXTRA
             </p>
           </div>
         </div>
         <div
-          class="sc-Axmtr erLQOu JobCard__DataBlock"
+          class="sc-Axmtr erLQOu JobCardMock__DataBlock"
         >
           <div
-            class="sc-AxmLO cAKCgh JobCard__Title"
+            class="sc-AxmLO cAKCgh JobCardMock__Title"
           >
             <p
-              class="sc-fzoyAV oAxVr"
+              class="sc-fzoyAV infahC"
             >
               Entregador Mágico
             </p>
           </div>
           <div
-            class="sc-fzozJi aHfnD JobCard__Companies"
+            class="sc-fzozJi aHfnD JobCardMock__Companies"
           >
             <p
-              class="sc-fzoLag dQmyMU"
+              class="sc-fzoLag fgZswX"
             >
               5 empresas contratando em
             </p>
           </div>
           <div
-            class="sc-fzpans iFvVQQ JobCard__Locations"
+            class="sc-fzpans iFvVQQ JobCardMock__Locations"
           >
             <div
               class="sc-fznyAO dNloSp"
