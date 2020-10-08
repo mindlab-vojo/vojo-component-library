@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, number, boolean, object } from '@storybook/addon-knobs';
+import { withKnobs, text, number, boolean, object, color } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -13,6 +13,7 @@ export const jobCardMock = () => {
     "states": ["SP", "RJ"]
   }]
   
+  const backgroundColor = color('backgroundColor', "#AC53F2")
   const companyNumber = number('companyNumber', 5)
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
@@ -25,6 +26,7 @@ export const jobCardMock = () => {
 
   return (
     <JobCardMock
+      backgroundColor={backgroundColor}
       companyNumber={companyNumber}
       id={id}
       imageUrl={imageUrl}

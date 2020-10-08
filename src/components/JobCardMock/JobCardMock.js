@@ -8,6 +8,7 @@ import { Card } from '../Card/Card.style'
 import Typography from '../Typography'
 
 const JobCardMockComponent = ({
+  backgroundColor,
   companyNumber,
   id,
   imageUrl,
@@ -15,11 +16,8 @@ const JobCardMockComponent = ({
   isUnavailable,
   locations,
   onClickCard,
-  slots,
   title,
 }) => {
-
-  const slotText = slots > 1 ? "VAGAS" : "VAGA"
   const companiesText = companyNumber > 1 ? "empresas" : "empresa"
   
   const renderLocations = (theme) => {
@@ -114,9 +112,9 @@ const JobCardMockComponent = ({
               <JobCardMock.Slots
                 className="JobCardMock__Slots">
                 <Typography 
-                  fontSize="10px"
+                  fontSize="9px"
                   fontWeight="bolder">
-                  {`${slots} ${slotText}`}
+                  {`RENDA EXTRA`}
                 </Typography>
               </JobCardMock.Slots>
             )
@@ -174,13 +172,13 @@ const JobCardMockComponent = ({
 }
 
 JobCardMockComponent.propTypes = {
+  backgroundColor: PropTypes.string,
   companyNumber: PropTypes.number,
   id: PropTypes.string,
   imageUrl: PropTypes.string,
   isNew: PropTypes.bool,
   isUnavailable: PropTypes.bool,
   locations: PropTypes.array,
-  slots: PropTypes.number,
   onClickCard: PropTypes.func,
   title: PropTypes.string,
 }
