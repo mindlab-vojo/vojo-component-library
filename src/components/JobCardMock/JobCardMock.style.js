@@ -24,6 +24,8 @@ export const ImageBlock = styled.div`
 export const ImageWrapper = styled.div``
 
 export const ImageCropper = styled.div`
+  display: flex;
+  justify-content: center;
   width: 72px;
   height: 72px;
   position: relative;
