@@ -15,4 +15,7 @@ export const lightYellowColor = "#FFF7C3"
 export const darkWarnColor = "#D9B600"
 export const warnColor = "#FFF6BB"
 export const whiteColor = "#FFFFFF"
+export const lightPurpleColor = "#E9E5FF"
+
+export const textMutedColor = "#B8B5C6"
 export const lightBorderColor = "#9E9E9E"
