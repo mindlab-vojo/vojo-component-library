@@ -7,7 +7,15 @@ import { ThemeProvider } from "../../../src";
 import Container from '../Container';
 
 export const tabselector = () => {
-  const tabs = object('Tabs', [{ title: 'Dados de Login', active: true }, { title: 'Dados Pessoais', active: false }])
+  const tabs = object('Tabs', [{ 
+    id: 1,
+    title: 'Dados de Login', 
+    active: true 
+  }, { 
+    id: 2,
+    title: 'Dados Pessoais', 
+    active: false 
+  }])
 
   return (
     <Container maxWidth="desktop">
