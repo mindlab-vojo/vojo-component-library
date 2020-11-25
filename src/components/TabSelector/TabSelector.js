@@ -6,11 +6,11 @@ import PropTypes from 'prop-types'
 const TabSelectorComponent = ({ tabs }) => {
   const [ listOfTabs, setListOfTabs ] = useState(tabs)
 
-  const setThisTabAsActive = index => {
+  const setThisTabAsActive = id => {
     const newTabsState = []
 
-    listOfTabs.forEach((tab, key) => {
-      key === index ? newTabsState.push({ ...tab, active: true }) : newTabsState.push({ ...tab, active: false }) 
+    listOfTabs.forEach(tab => {
+      tab.id === id ? newTabsState.push({ ...tab, active: true }) : newTabsState.push({ ...tab, active: false }) 
     })
 
     setListOfTabs(newTabsState)
@@ -20,18 +20,18 @@ const TabSelectorComponent = ({ tabs }) => {
     return (
       <TabSelector.Wrapper theme={ theme }>
         {
-          listOfTabs.map((tab, index) => {
+          listOfTabs.map((tab) => {
             return tab.active ?
               <TabSelector.ActiveTab 
                 theme={ theme } 
-                key={ index }
-                onClick={ () => setThisTabAsActive(index) }
+                key={ tab.id }
+                onClick={ () => setThisTabAsActive(tab.id) }
               >{ tab.title }</TabSelector.ActiveTab>
               :
               <TabSelector.InactiveTab 
                 theme={ theme } 
-                key={ index }
-                onClick={ () => setThisTabAsActive(index) }
+                key={ tab.id }
+                onClick={ () => setThisTabAsActive(tab.id) }
               >{ tab.title }</TabSelector.InactiveTab>
           })
         }
