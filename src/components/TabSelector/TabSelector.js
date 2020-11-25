@@ -3,7 +3,7 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as TabSelector from './TabSelector.style'
 import PropTypes from 'prop-types'
 
-const TabSelectorComponent = ({ tabs }) => {
+const TabSelectorComponent = ({ tabs, setCurrentTab }) => {
   const [ listOfTabs, setListOfTabs ] = useState(tabs)
 
   const setThisTabAsActive = id => {
@@ -13,6 +13,7 @@ const TabSelectorComponent = ({ tabs }) => {
       tab.id === id ? newTabsState.push({ ...tab, active: true }) : newTabsState.push({ ...tab, active: false }) 
     })
 
+    setCurrentTab(id)
     setListOfTabs(newTabsState)
   }
 
@@ -52,7 +53,8 @@ TabSelectorComponent.propTypes = {
     id: PropTypes.number,
     title: PropTypes.string,
     active: PropTypes.bool
-  }))
+  })),
+  setCurrentTab: PropTypes.func
 }
 
 

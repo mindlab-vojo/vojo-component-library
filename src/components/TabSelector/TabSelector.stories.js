@@ -5,6 +5,7 @@ import { withKnobs, object } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { ThemeProvider } from "../../../src";
 import Container from '../Container';
+import { action } from '@storybook/addon-actions'
 
 export const tabselector = () => {
   const tabs = object('Tabs', [{ 
@@ -16,11 +17,13 @@ export const tabselector = () => {
     title: 'Dados Pessoais', 
     active: false 
   }])
+  const setCurrentTab = action('Clicked')
 
   return (
     <Container maxWidth="desktop">
       <TabSelector 
         tabs={ tabs }
+        setCurrentTab={ setCurrentTab }
       />
     </Container>
   )
