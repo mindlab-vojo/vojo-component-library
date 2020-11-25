@@ -24,5 +24,6 @@ export const ActiveTab = styled.li`
 
 export const InactiveTab = styled.li`
   color: ${props => props.theme.colors.textMutedColor};
+  padding: 15px 20px;
   flex: 1 0 0;
 `
