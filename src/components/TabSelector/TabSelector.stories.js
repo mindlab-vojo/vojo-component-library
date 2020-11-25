@@ -2,10 +2,13 @@ import React from 'react'
 import categories from '../../../.storybook/categories'
 import TabSelector from './TabSelector'
 import { ThemeProvider } from "../../../src";
+import Container from '../Container';
 
 export const tabselector = () => {
   return (
-    <TabSelector />
+    <Container maxWidth="desktop">
+      <TabSelector />
+    </Container>
   )
 }
 
