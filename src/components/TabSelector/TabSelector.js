@@ -1,31 +1,26 @@
 import React, { useState } from 'react'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as TabSelector from './TabSelector.style'
+import PropTypes from 'prop-types'
 
-const TabSelectorComponent = () => {
-  const [ tabs, setTabs ] = useState([{ 
-    title: 'Dados de Login', 
-    active: true 
-  }, { 
-    title: 'Dados Pessoais', 
-    active: false 
-  }])
+const TabSelectorComponent = ({ tabs }) => {
+  const [ listOfTabs, setListOfTabs ] = useState(tabs)
 
   const setThisTabAsActive = index => {
     const newTabsState = []
 
-    tabs.forEach((tab, key) => {
+    listOfTabs.forEach((tab, key) => {
       key === index ? newTabsState.push({ ...tab, active: true }) : newTabsState.push({ ...tab, active: false }) 
     })
 
-    setTabs(newTabsState)
+    setListOfTabs(newTabsState)
   }
 
   const renderComponent = theme => {
     return (
       <TabSelector.Wrapper theme={ theme }>
         {
-          tabs.map((tab, index) => {
+          listOfTabs.map((tab, index) => {
             return tab.active ?
               <TabSelector.ActiveTab 
                 theme={ theme } 
@@ -51,6 +46,13 @@ const TabSelectorComponent = () => {
   )
 }
 
+
+TabSelectorComponent.propTypes = {
+  tabs: PropTypes.arrayOf(PropTypes.shape({
+    title: PropTypes.string,
+    active: PropTypes.bool
+  }))
+}
 
 
 export default TabSelectorComponent
