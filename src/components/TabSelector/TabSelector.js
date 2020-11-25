@@ -1,9 +1,24 @@
 import React from 'react'
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
+import * as TabSelector from './TabSelector.style'
 
-const TabSelector = () => {
+const TabSelectorComponent = () => {
+
+  const renderComponent = theme => {
+    return (
+      <TabSelector.Wrapper theme={ theme }>
+        <p>teste</p>
+      </TabSelector.Wrapper>
+    )
+  }
+
   return (
-    <div>Tab Selector</div>
+    <ThemeConsumer>
+      { ({ theme }) => renderComponent(theme) }
+    </ThemeConsumer>
   )
 }
 
-export default TabSelector
+
+
+export default TabSelectorComponent
