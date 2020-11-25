@@ -3,11 +3,19 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as TabSelector from './TabSelector.style'
 
 const TabSelectorComponent = () => {
+  const tabs = [{ title: 'Dados de Login', active: true }, { title: 'Dados Pessoais', active: false }]
 
   const renderComponent = theme => {
     return (
       <TabSelector.Wrapper theme={ theme }>
-        <p>teste</p>
+        {
+          tabs.map(tab => {
+            return tab.active ?
+              <TabSelector.ActiveTab theme={ theme }>{ tab.title }</TabSelector.ActiveTab>
+              :
+              <TabSelector.InactiveTab theme={ theme }>{ tab.title }</TabSelector.InactiveTab>
+          })
+        }
       </TabSelector.Wrapper>
     )
   }
