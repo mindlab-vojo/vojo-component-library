@@ -9,11 +9,11 @@ const TabSelectorComponent = () => {
     return (
       <TabSelector.Wrapper theme={ theme }>
         {
-          tabs.map(tab => {
+          tabs.map((tab, index) => {
             return tab.active ?
-              <TabSelector.ActiveTab theme={ theme }>{ tab.title }</TabSelector.ActiveTab>
+              <TabSelector.ActiveTab theme={ theme } key={ index }>{ tab.title }</TabSelector.ActiveTab>
               :
-              <TabSelector.InactiveTab theme={ theme }>{ tab.title }</TabSelector.InactiveTab>
+              <TabSelector.InactiveTab theme={ theme } key={ index }>{ tab.title }</TabSelector.InactiveTab>
           })
         }
       </TabSelector.Wrapper>
