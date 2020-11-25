@@ -49,6 +49,7 @@ const TabSelectorComponent = ({ tabs }) => {
 
 TabSelectorComponent.propTypes = {
   tabs: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number,
     title: PropTypes.string,
     active: PropTypes.bool
   }))
