@@ -14,6 +14,7 @@ export default {
   Radios: 'Radios',
   StickyToasts:'StickyToasts',
   Spinners:'Spinners',
+  Tabs:'Tabs',
   Toasts: 'Toasts',
   Typographys: 'Typographys'
 }
