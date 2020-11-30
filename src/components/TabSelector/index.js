@@ -1,1 +1,2 @@
-export * from './TabSelector'
+import TabSelector from './TabSelector'
+export default TabSelector
