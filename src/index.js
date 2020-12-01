@@ -31,6 +31,7 @@ import StickyToast from './components/StickyToast/StickyToast';
 import TextInput from './components/Input/TextInput';
 import Toast from './components/Toast';
 import Typography from './components/Typography';
+import TabSelector from './components/TabSelector'
 
 import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider'
 
@@ -73,4 +74,5 @@ export {
   ThemeConsumer,
   ThemeProvider,
   themes,
+  TabSelector
 }
