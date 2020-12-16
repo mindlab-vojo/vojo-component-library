@@ -7,5 +7,5 @@ export const dateMaskRemover = (value) => {
 
 export const dateValidator = (value) => {
   const date = dateMaskRemover(value)
-  return moment(date).isValid()
+  return moment(date, "DD-MM-YYYY").isValid()
 }
