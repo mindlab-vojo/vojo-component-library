@@ -12,6 +12,7 @@ const ModuleCardComponent = ({
   description,
   iconName,
   iconBackgroundColor,
+  lineHeight,
   onClickCard,
   title,
   time,
@@ -37,6 +38,7 @@ const ModuleCardComponent = ({
           </ModuleCard.IconCircle>
         </ModuleCard.IconWrapper>
         <ModuleCard.InfoWrapper
+          lineHeight={lineHeight}
           className="ModuleCard__InfoWrapper">
           <ModuleCard.Title
             className="ModuleCard__InfoWrapper__Title">
@@ -77,6 +79,7 @@ ModuleCardComponent.propTypes = {
   description: PropTypes.string,
   iconName: PropTypes.string,
   iconBackgroundColor: PropTypes.string,
+  lineHeight: PropTypes.string,
   imageUrl: PropTypes.string,
   onClickCard: PropTypes.func,
   title: PropTypes.string,

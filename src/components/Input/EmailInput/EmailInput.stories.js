@@ -7,7 +7,7 @@ import EmailInput from '.';
 import { ThemeProvider } from "../../../../src";
 import categories from '../../../../.storybook/categories';
 
-export const component = () => {
+export const emailInput = () => {
   const disabled = boolean('disabled', false)
   const errorMessage = text('errorMessage', '')
   const id = text('id', 'vojo-email')
@@ -41,7 +41,7 @@ export const component = () => {
 
 export default {
   title: categories.Inputs,
-  component: EmailInput,
+  component: emailInput,
   decorators: [
     withKnobs, 
     withA11y, 
@@ -50,6 +50,6 @@ export default {
   ]
 }
 
-component.story = {
+emailInput.story = {
   name: 'EmailInput',
 };

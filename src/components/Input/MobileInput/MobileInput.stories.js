@@ -7,7 +7,7 @@ import MobileInput from '.';
 import { ThemeProvider } from "../../../../src";
 import categories from '../../../../.storybook/categories';
 
-export const component = () => {
+export const mobileInput = () => {
   const disabled = boolean('disabled', false)
   const errorMessage = text('errorMessage', '')
   const id = text('id', 'vojo-input')
@@ -41,7 +41,7 @@ export const component = () => {
 
 export default {
   title: categories.Inputs,
-  component: MobileInput,
+  component: mobileInput,
   decorators: [
     withKnobs, 
     withA11y, 
@@ -50,6 +50,6 @@ export default {
   ]
 }
 
-component.story = {
+mobileInput.story = {
   name: 'MobileInput',
 };

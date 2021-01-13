@@ -7,7 +7,7 @@ import TextInput from '.';
 import { ThemeProvider } from "../../../../src";
 import categories from '../../../../.storybook/categories';
 
-export const component = () => {
+export const textInput = () => {
   const disabled = boolean('disabled', false)
   const errorMessage = text('errorMessage', '')
   const id = text('id', 'vojo-input')
@@ -43,7 +43,7 @@ export const component = () => {
 
 export default {
   title: categories.Inputs,
-  component: TextInput,
+  component: textInput,
   decorators: [
     withKnobs, 
     withA11y, 
@@ -52,7 +52,7 @@ export default {
   ]
 }
 
-component.story = {
+textInput.story = {
   name: 'TextInput',
 };
   
