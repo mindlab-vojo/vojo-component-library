@@ -20,7 +20,9 @@ export const IconCircle = styled.div`
   width: 38px;
 `
 
-export const InfoWrapper = styled.div``
+export const InfoWrapper = styled.div`
+  line-height: ${props => props.lineHeight};
+`
 
 export const Title = styled.div``
 
