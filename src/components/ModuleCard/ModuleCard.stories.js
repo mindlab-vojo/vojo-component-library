@@ -12,6 +12,7 @@ export const moduleCard = () => {
   const description = text("description", "Formulário com informações básicas sobre você para a função que deseja")
   const iconName = select('iconName', Object.keys(iconList), Object.keys(iconList)[0])
   const iconBackgroundColor = color("iconBackgroundColor", "#FF5400")
+  const lineHeight = text('lineHeight', '1.1')
   const onClickCard = action("onClickCard")
   const title = text("title", "Formulário de Inscrição")
   const time = text("time", "5min.")
@@ -21,6 +22,7 @@ export const moduleCard = () => {
       description={description}
       iconName={iconName}
       iconBackgroundColor={iconBackgroundColor}
+      lineHeight={lineHeight}
       onClickCard={onClickCard}
       title={title}
       time={time}
