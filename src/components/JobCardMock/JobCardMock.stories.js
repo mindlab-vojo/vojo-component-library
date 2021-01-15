@@ -13,7 +13,7 @@ export const jobCardMock = () => {
     "states": ["SP", "RJ"]
   }]
   
-  const backgroundColor = color('backgroundColor', "#AC53F2")
+  const backgroundColor = color('backgroundColor', "#FFFFFF")
   const companyNumber = number('companyNumber', 5)
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
@@ -22,7 +22,10 @@ export const jobCardMock = () => {
   const locations = object('locations', locationsList)
   const onClickCard = action('onClickCard')
   const slots = number('slots', 200)
+  const subtitle = text('subtitle', 'Entregador Mágico')
+  const subtitleColor = color('subtitleColor', "#212529")
   const title = text('title', 'Entregador Mágico')
+  const titleColor = color('titleColor', "#5320E8")
 
   return (
     <JobCardMock
@@ -35,7 +38,10 @@ export const jobCardMock = () => {
       locations={locations}
       onClickCard={onClickCard}
       slots={slots}
+      subtitle={subtitle}
+      subtitleColor={subtitleColor}
       title={title}
+      titleColor={titleColor}
     />
   )
 }

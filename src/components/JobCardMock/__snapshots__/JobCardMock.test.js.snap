@@ -37,15 +37,6 @@ Object {
                 />
               </div>
             </div>
-            <div
-              class="sc-AxheI eKLjGh JobCardMock__Slots"
-            >
-              <p
-                class="sc-fzqNJr cFqHAX"
-              >
-                RENDA
-              </p>
-            </div>
           </div>
           <div
             class="sc-Axmtr erLQOu JobCardMock__DataBlock"
@@ -54,7 +45,7 @@ Object {
               class="sc-AxmLO cAKCgh JobCardMock__Title"
             >
               <p
-                class="sc-fzoyAV infahC"
+                class="sc-fzqNJr cgTdkj"
               >
                 Entregador Mágico
               </p>
@@ -63,9 +54,9 @@ Object {
               class="sc-fzozJi aHfnD JobCardMock__Companies"
             >
               <p
-                class="sc-fzoLag fgZswX"
+                class="sc-fzoyAV eAKYMQ"
               >
-                5 empresas em
+                undefined
               </p>
             </div>
             <div
@@ -75,7 +66,7 @@ Object {
                 class="sc-fznyAO dNloSp"
               >
                 <p
-                  class="sc-fzoXzr hxNOpN"
+                  class="sc-fzoLag goyUWP"
                 >
                   SP
                 </p>
@@ -84,7 +75,7 @@ Object {
                 class="sc-fznyAO dNloSp"
               >
                 <p
-                  class="sc-fzpjYC dBBYeC"
+                  class="sc-fzoXzr hxNOpN"
                 >
                   RJ
                 </p>
@@ -128,15 +119,6 @@ Object {
               />
             </div>
           </div>
-          <div
-            class="sc-AxheI eKLjGh JobCardMock__Slots"
-          >
-            <p
-              class="sc-fzqNJr cFqHAX"
-            >
-              RENDA
-            </p>
-          </div>
         </div>
         <div
           class="sc-Axmtr erLQOu JobCardMock__DataBlock"
@@ -145,7 +127,7 @@ Object {
             class="sc-AxmLO cAKCgh JobCardMock__Title"
           >
             <p
-              class="sc-fzoyAV infahC"
+              class="sc-fzqNJr cgTdkj"
             >
               Entregador Mágico
             </p>
@@ -154,9 +136,9 @@ Object {
             class="sc-fzozJi aHfnD JobCardMock__Companies"
           >
             <p
-              class="sc-fzoLag fgZswX"
+              class="sc-fzoyAV eAKYMQ"
             >
-              5 empresas em
+              undefined
             </p>
           </div>
           <div
@@ -166,7 +148,7 @@ Object {
               class="sc-fznyAO dNloSp"
             >
               <p
-                class="sc-fzoXzr hxNOpN"
+                class="sc-fzoLag goyUWP"
               >
                 SP
               </p>
@@ -175,7 +157,7 @@ Object {
               class="sc-fznyAO dNloSp"
             >
               <p
-                class="sc-fzpjYC dBBYeC"
+                class="sc-fzoXzr hxNOpN"
               >
                 RJ
               </p>

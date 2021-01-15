@@ -9,16 +9,17 @@ import Typography from '../Typography'
 
 const JobCardMockComponent = ({
   backgroundColor,
-  companyNumber,
   id,
   imageUrl,
   isNew,
   isUnavailable,
   locations,
   onClickCard,
+  subtitle,
+  subtitleColor,
+  titleColor,
   title,
 }) => {
-  const companiesText = companyNumber > 1 ? "empresas" : "empresa"
   
   const renderLocations = (theme) => {
     const locationLength = locations[0].states.length
@@ -55,7 +56,7 @@ const JobCardMockComponent = ({
             fontSize="12px"
             fontWeight="bolder"
           >
-            {locations[0].country}
+            {"Autônomo"}
           </Typography>
         </JobCardMock.CountryCircle>
       )
@@ -108,25 +109,13 @@ const JobCardMockComponent = ({
               />
             </JobCardMock.ImageCropper>
           </JobCardMock.ImageWrapper>
-          {
-            !isUnavailable && (
-              <JobCardMock.Slots
-                className="JobCardMock__Slots">
-                <Typography 
-                  fontSize="10px"
-                  fontWeight="bolder">
-                  {`RENDA`}
-                </Typography>
-              </JobCardMock.Slots>
-            )
-          }
         </JobCardMock.ImageBlock>
         <JobCardMock.DataBlock
           className="JobCardMock__DataBlock">
           <JobCardMock.Title
             className="JobCardMock__Title">
             <Typography
-              color={isUnavailable ? theme.colors.blackColor : theme.colors.whiteColor}
+              color={isUnavailable ? theme.colors.blackColor : titleColor}
               fontSize="18px"
               fontWeight="bolder">
               {title}
@@ -150,8 +139,8 @@ const JobCardMockComponent = ({
                   className="JobCardMock__Companies">
                   <Typography
                     fontSize="12px"
-                    color={theme.colors.whiteColor}>
-                    {`${companyNumber} ${companiesText} em`}
+                    color={subtitleColor}>
+                    {`${subtitle}`}
                   </Typography>
                 </JobCardMock.Companies>
                 <JobCardMock.Locations
@@ -183,6 +172,9 @@ JobCardMockComponent.propTypes = {
   locations: PropTypes.array,
   onClickCard: PropTypes.func,
   title: PropTypes.string,
+  subtitle: PropTypes.string,
+  titleColor: PropTypes.string,
+  subtitleColor: PropTypes.string,
 }
 
 export default JobCardMockComponent
