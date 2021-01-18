@@ -30,7 +30,7 @@ export const ImageCropper = styled.div`
   height: 72px;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: ${props => props.borderRadius};
 `
 
 export const Image = styled.img`

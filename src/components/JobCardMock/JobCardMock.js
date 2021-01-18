@@ -9,6 +9,7 @@ import Typography from '../Typography'
 
 const JobCardMockComponent = ({
   backgroundColor,
+  borderRadius,
   id,
   imageUrl,
   isNew,
@@ -101,6 +102,7 @@ const JobCardMockComponent = ({
           <JobCardMock.ImageWrapper
             className="JobCardMock__ImageWrapper">
             <JobCardMock.ImageCropper
+              borderRadius={borderRadius}
               className="JobCardMock__ImageWrapper__Cropper">
               <JobCardMock.Image
                 isUnavailable={isUnavailable}
@@ -164,6 +166,7 @@ const JobCardMockComponent = ({
 
 JobCardMockComponent.propTypes = {
   backgroundColor: PropTypes.string,
+  borderRadius: PropTypes.string,
   companyNumber: PropTypes.number,
   id: PropTypes.string,
   imageUrl: PropTypes.string,

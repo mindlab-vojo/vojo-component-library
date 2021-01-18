@@ -14,6 +14,7 @@ export const jobCardMock = () => {
   }]
   
   const backgroundColor = color('backgroundColor', "#FFFFFF")
+  const borderRadius = text('borderRadius', '50%')
   const companyNumber = number('companyNumber', 5)
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
@@ -30,6 +31,7 @@ export const jobCardMock = () => {
   return (
     <JobCardMock
       backgroundColor={backgroundColor}
+      borderRadius={borderRadius}
       companyNumber={companyNumber}
       id={id}
       imageUrl={imageUrl}
