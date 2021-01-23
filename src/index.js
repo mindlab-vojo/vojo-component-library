@@ -22,9 +22,11 @@ import JobCardMock from './components/JobCardMock';
 import Logo from './components/Logo';
 import MobileInput from './components/Input/MobileInput';
 import Modal from './components/Modal/Modal';
+import ModalInformation from './components/ModalInformation/ModalInformation';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
 import PisInput from './components/Input/PisInput';
+import ResearchCard from './components/ResearchCard';
 import SideMenu from './components/SideMenu';
 import Spinner from './components/Spinner/Spinner';
 import StickyToast from './components/StickyToast/StickyToast';
@@ -62,9 +64,11 @@ export {
   Logo,
   MobileInput,
   Modal,
+  ModalInformation,
   ModuleCard,
   PasswordInput,
   PisInput,
+  ResearchCard,
   SideMenu,
   Spinner,
   StickyToast,

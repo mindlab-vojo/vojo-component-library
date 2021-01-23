@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-AxjAm kGdTdF Header__Wrapper"
+        class="sc-AxjAm grqyYz Header__Wrapper"
       >
         <div
           class="sc-AxirZ easNkP Header__Content"
@@ -71,7 +71,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-AxjAm kGdTdF Header__Wrapper"
+      class="sc-AxjAm grqyYz Header__Wrapper"
     >
       <div
         class="sc-AxirZ easNkP Header__Content"
@@ -193,7 +193,7 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-AxjAm kGdTdF Header__Wrapper"
+        class="sc-AxjAm grqyYz Header__Wrapper"
       >
         <div
           class="sc-AxirZ easNkP Header__Content"
@@ -258,7 +258,7 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-AxjAm kGdTdF Header__Wrapper"
+      class="sc-AxjAm grqyYz Header__Wrapper"
     >
       <div
         class="sc-AxirZ easNkP Header__Content"

@@ -56,6 +56,7 @@ const JobCardMockComponent = ({
           <Typography
             fontSize="12px"
             fontWeight="bolder"
+            color={theme.colors.primaryColor}
           >
             {"Autônomo"}
           </Typography>
@@ -70,6 +71,7 @@ const JobCardMockComponent = ({
           <Typography
             fontSize="12px"
             fontWeight="bolder"
+            color={theme.colors.primaryColor}
           >
             {state}
           </Typography>

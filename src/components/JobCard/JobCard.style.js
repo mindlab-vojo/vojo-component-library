@@ -82,13 +82,14 @@ export const SingleState = styled.div`
 
 export const StateCircle = styled.div`
   align-items: center;
-  background-color: ${props => props.theme.colors.greyColor};
+  background-color: #E9E6FF;
   border-radius: 500px;
   display: flex;
   height: 24px;
   justify-content: center;
   margin: 3px;
   min-width: 24px;
+  border: 1px solid #391DDD;
 `
 export const CountryCircle = styled.div`
   align-items: center;
