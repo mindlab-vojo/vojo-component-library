@@ -26,6 +26,7 @@ import ModalInformation from './components/ModalInformation/ModalInformation';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
 import PisInput from './components/Input/PisInput';
+import ResearchCard from './components/ResearchCard';
 import SideMenu from './components/SideMenu';
 import Spinner from './components/Spinner/Spinner';
 import StickyToast from './components/StickyToast/StickyToast';
@@ -67,6 +68,7 @@ export {
   ModuleCard,
   PasswordInput,
   PisInput,
+  ResearchCard,
   SideMenu,
   Spinner,
   StickyToast,
