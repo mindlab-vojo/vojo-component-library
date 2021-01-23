@@ -9,7 +9,7 @@ export const Wrapper = styled.header`
   height: 48px;
   justify-content: center;
   width: 100%;
-
+  padding: 0 20px;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}){
     
   }
