@@ -56,6 +56,7 @@ const JobCardComponent = ({
           <Typography
             fontSize="12px"
             fontWeight="bolder"
+            color={theme.colors.primaryColor}
           >
             {locations[0].country}
           </Typography>
@@ -70,6 +71,7 @@ const JobCardComponent = ({
           <Typography
             fontSize="12px"
             fontWeight="bolder"
+            color={theme.colors.primaryColor}
           >
             {state}
           </Typography>
