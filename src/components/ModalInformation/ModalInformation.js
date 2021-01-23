@@ -5,7 +5,6 @@ import * as ModalInformation from './ModalInformation.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Modal from '../Modal'
-import Typography from '../Typography'
 
 function ModalInformationComponent({
   icon,

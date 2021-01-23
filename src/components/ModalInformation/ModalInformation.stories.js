@@ -3,7 +3,6 @@ import { withKnobs, text, number, array, boolean } from '@storybook/addon-knobs'
 import { withA11y } from '@storybook/addon-a11y';
 
 import ModalInformation from '.';
-import Typography from '../Typography';
 
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
