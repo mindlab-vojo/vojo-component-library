@@ -23,6 +23,7 @@ import Suitcase from './Icons/Suitcase'
 import SuitcaseArrow from './Icons/SuitcaseArrow'
 import VisibilityOff from './Icons/VisibilityOff'
 import VisibilityOn from './Icons/VisibilityOn'
+import Clock from './Icons/Clock'
 
 const IconManager = ({ height, icon, fill, width }) => {
 
@@ -66,7 +67,8 @@ export const iconList = {
   Suitcase: Suitcase,
   SuitcaseArrow: SuitcaseArrow,
   VisibilityOff: VisibilityOff,
-  VisibilityOn: VisibilityOn
+  VisibilityOn: VisibilityOn,
+  Clock: Clock
 }
 
 export default IconManager
