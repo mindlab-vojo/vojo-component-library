@@ -16,75 +16,76 @@ const JobCardComponent = ({
   locations,
   onClickCard,
   slots,
+  slotsOn,
   title,
 }) => {
 
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
-  const companiesText = companyNumber > 1 ? "empresas" : "empresa"
-  
+  const companiesText = companyNumber > 1 ? "empresas disponíveis" : "empresa disponível"
+
   const renderLocations = (theme) => {
     const locationLength = locations[0].states.length
 
     switch (locationLength) {
-    // DEPRECATED
-    // case 1: 
-    //   return locations[0].states.map(location => (
-    //     <JobCard.SingleState
-    //       key={location.uf}>
-    //       <JobCard.StateCircle 
-    //         theme={theme}>
-    //         <Typography
-    //           fontSize="12px"
-    //           fontWeight="bolder"
-    //         >
-    //           {location.uf}
-    //         </Typography>
-    //       </JobCard.StateCircle>
-    //       <JobCard.Cities>
-    //         <Typography>
-    //           {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
-    //         </Typography>
-    //       </JobCard.Cities>
-    //     </JobCard.SingleState>
-    //   ));
-        
-    case 27:
-      return (
-        <JobCard.CountryCircle 
-          key={locations[0].country}
-          theme={theme}>
-          <Typography
-            fontSize="12px"
-            fontWeight="bolder"
-            color={theme.colors.primaryColor}
-          >
-            {locations[0].country}
-          </Typography>
-        </JobCard.CountryCircle>
-      )
-      
-    default:
-      return locations[0].states.map(state => (
-        <JobCard.StateCircle 
-          key={state}
-          theme={theme}>
-          <Typography
-            fontSize="12px"
-            fontWeight="bolder"
-            color={theme.colors.primaryColor}
-          >
-            {state}
-          </Typography>
-        </JobCard.StateCircle>
-      ));
+      // DEPRECATED
+      // case 1: 
+      //   return locations[0].states.map(location => (
+      //     <JobCard.SingleState
+      //       key={location.uf}>
+      //       <JobCard.StateCircle 
+      //         theme={theme}>
+      //         <Typography
+      //           fontSize="12px"
+      //           fontWeight="bolder"
+      //         >
+      //           {location.uf}
+      //         </Typography>
+      //       </JobCard.StateCircle>
+      //       <JobCard.Cities>
+      //         <Typography>
+      //           {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
+      //         </Typography>
+      //       </JobCard.Cities>
+      //     </JobCard.SingleState>
+      //   ));
+
+      case 27:
+        return (
+          <JobCard.CountryCircle
+            key={locations[0].country}
+            theme={theme}>
+            <Typography
+              fontSize="12px"
+              fontWeight="bolder"
+              color={theme.colors.primaryColor}
+            >
+              {locations[0].country}
+            </Typography>
+          </JobCard.CountryCircle>
+        )
+
+      default:
+        return locations[0].states.map(state => (
+          <JobCard.StateCircle
+            key={state}
+            theme={theme}>
+            <Typography
+              fontSize="12px"
+              fontWeight="bolder"
+              color={theme.colors.primaryColor}
+            >
+              {state}
+            </Typography>
+          </JobCard.StateCircle>
+        ));
     }
   }
 
   const renderComponent = (theme) => (
-    <Card 
+    <Card
       hasPointer
       id={`JobCard-${id}`}
-      padding="15px 8px" 
+      padding="15px 8px"
       onClick={onClickCard}>
       {
         isNew && (
@@ -98,7 +99,7 @@ const JobCardComponent = ({
       }
       <JobCard.Wrapper
         className="JobCard">
-        <JobCard.ImageBlock 
+        <JobCard.ImageBlock
           className="JobCard__ImageBlock">
           <JobCard.ImageWrapper
             className="JobCard__ImageWrapper">
@@ -112,10 +113,10 @@ const JobCardComponent = ({
             </JobCard.ImageCropper>
           </JobCard.ImageWrapper>
           {
-            !isUnavailable && (
+            !isUnavailable && slotsOn && (
               <JobCard.Slots
                 className="JobCard__Slots">
-                <Typography 
+                <Typography
                   fontSize="10px"
                   fontWeight="bolder">
                   {`${slots} ${slotText}`}
@@ -148,20 +149,21 @@ const JobCardComponent = ({
                 </JobCard.Unavailable>
               </>
             ) : (
-              <>
-                <JobCard.Companies
-                  className="JobCard__Companies">
-                  <Typography
-                    fontSize="12px">
-                    {`${companyNumber} ${companiesText} contratando em`}
-                  </Typography>
-                </JobCard.Companies>
-                <JobCard.Locations
-                  className="JobCard__Locations">
-                  {renderLocations(theme)}
-                </JobCard.Locations>
-              </>
-            )
+                <>
+                  <JobCard.Companies
+                    className="JobCard__Companies">
+                    <Typography
+                      fontSize="12px"
+                      color="#666666">
+                      {`${companyNumber} ${companiesText}`}
+                    </Typography>
+                  </JobCard.Companies>
+                  <JobCard.Locations
+                    className="JobCard__Locations">
+                    {renderLocations(theme)}
+                  </JobCard.Locations>
+                </>
+              )
           }
         </JobCard.DataBlock>
       </JobCard.Wrapper>
@@ -183,6 +185,7 @@ JobCardComponent.propTypes = {
   isUnavailable: PropTypes.bool,
   locations: PropTypes.array,
   slots: PropTypes.number,
+  slotsOn: PropTypes.bool,
   onClickCard: PropTypes.func,
   title: PropTypes.string,
 }

@@ -21,6 +21,7 @@ export const jobCard = () => {
   const locations = object('locations', locationsList)
   const onClickCard = action('onClickCard')
   const slots = number('slots', 200)
+  const slotsOn = boolean('slotsOn', false)
   const title = text('title', 'Entregador Mágico')
 
   return (
@@ -33,6 +34,7 @@ export const jobCard = () => {
       locations={locations}
       onClickCard={onClickCard}
       slots={slots}
+      slotsOn={slotsOn}
       title={title}
     />
   )
