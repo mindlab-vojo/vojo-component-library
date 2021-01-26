@@ -10,7 +10,34 @@ import categories from '../../../.storybook/categories';
 export const jobCardMock = () => {
   const locationsList = [{
     "country": "Brasil",
-    "states": ["SP", "RJ"]
+    "states": [
+      'AL',
+      'AP',
+      'AM',
+      'BA',
+      'CE',
+      'DF',
+      'ES',
+      'GO',
+      'MA',
+      'MT',
+      'MS',
+      'MG',
+      'PA',
+      'PB',
+      'PR',
+      'PE',
+      'PI',
+      'RJ',
+      'RN',
+      'RS',
+      'AC',
+      'RO',
+      'RR',
+      'SC',
+      'SP',
+      'SE',
+      'TO']
   }]
   
   const backgroundColor = color('backgroundColor', "#FFFFFF")

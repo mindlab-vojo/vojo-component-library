@@ -26,28 +26,6 @@ const JobCardMockComponent = ({
     const locationLength = locations[0].states.length
 
     switch (locationLength) {
-    // DEPRECATED
-    // case 1: 
-    //   return locations[0].states.map(location => (
-    //     <JobCardMock.SingleState
-    //       key={location.uf}>
-    //       <JobCardMock.StateCircle 
-    //         theme={theme}>
-    //         <Typography
-    //           fontSize="12px"
-    //           fontWeight="bolder"
-    //         >
-    //           {location.uf}
-    //         </Typography>
-    //       </JobCardMock.StateCircle>
-    //       <JobCardMock.Cities>
-    //         <Typography>
-    //           {location.cities.map((city, index) => ((index + 1) === location.cities.length) ? `${city}` : `${city}, `)}
-    //         </Typography>
-    //       </JobCardMock.Cities>
-    //     </JobCardMock.SingleState>
-    //   ));
-        
     case 27:
       return (
         <JobCardMock.CountryCircle 
@@ -56,7 +34,7 @@ const JobCardMockComponent = ({
           <Typography
             fontSize="12px"
             fontWeight="bolder"
-            color={theme.colors.primaryColor}
+            color={theme.colors.blackColor}
           >
             {"Autônomo"}
           </Typography>
