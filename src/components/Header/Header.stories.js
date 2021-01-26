@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, object } from '@storybook/addon-knobs';
+import { withKnobs, object, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -47,16 +47,19 @@ export const header = () => {
     text: 'termos de uso e política de privacidade',
     func: () => console.log('click')
   }
-  
   const buttons = object('menuButtons', menuButtons)
   const items = object('menuItems', menuItems)
   const onClickLogo = action('onClickLogo')
   const tems = object('menuTems', termsObject)
+  const menuOn = boolean('menuOn', true)
+  const onClickGoBack = action('onClickGoBack')
 
   return (
     <Header
       menuButtons={buttons}
       menuItems={items}
+      menuOn={menuOn}
+      onClickGoBack={onClickGoBack}
       onClickLogo={onClickLogo}
       menuTems={tems}
     />
