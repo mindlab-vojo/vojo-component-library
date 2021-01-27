@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, number, array, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, array, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import ModalInformation from '.';
