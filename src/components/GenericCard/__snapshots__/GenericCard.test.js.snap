@@ -1,0 +1,267 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test GenericCard component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fzokOt hqmVYP"
+        id="GenericCard-undefined"
+      >
+        <div
+          class="sc-AxjAm jDxcNw GenericCard"
+        >
+          <div
+            class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
+          >
+            <div
+              class="sc-AxhCb ccMvAG CourseCard__ImageWrapper"
+            >
+              <div
+                class="sc-AxhUy bZMVBu CourseCard__ImageWrapper__Cropper"
+              >
+                <img
+                  class="sc-AxgMl TlUFs"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-AxheI iByoSw"
+          >
+            <div
+              class="sc-Axmtr hBVTto"
+            >
+              <p
+                class="sc-fzqBZW itaHDn"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fzokOt hqmVYP"
+      id="GenericCard-undefined"
+    >
+      <div
+        class="sc-AxjAm jDxcNw GenericCard"
+      >
+        <div
+          class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
+        >
+          <div
+            class="sc-AxhCb ccMvAG CourseCard__ImageWrapper"
+          >
+            <div
+              class="sc-AxhUy bZMVBu CourseCard__ImageWrapper__Cropper"
+            >
+              <img
+                class="sc-AxgMl TlUFs"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-AxheI iByoSw"
+        >
+          <div
+            class="sc-Axmtr hBVTto"
+          >
+            <p
+              class="sc-fzqBZW itaHDn"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
+
+exports[`Test Reverse GenericCard component render 1`] = `
+Object {
+  "asFragment": [Function],
+  "baseElement": <body>
+    <div>
+      <div
+        class="sc-fzokOt hqmVYP"
+        id="GenericCard-undefined"
+      >
+        <div
+          class="sc-AxjAm jDxcNw GenericCard"
+        >
+          <div
+            class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
+          >
+            <div
+              class="sc-AxhCb ccMvAG CourseCard__ImageWrapper"
+            >
+              <div
+                class="sc-AxhUy bZMVBu CourseCard__ImageWrapper__Cropper"
+              >
+                <img
+                  class="sc-AxgMl TlUFs"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="sc-AxheI iByoSw"
+          >
+            <div
+              class="sc-Axmtr hBVTto"
+            >
+              <p
+                class="sc-fzqNJr cQgZJS"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>,
+  "container": <div>
+    <div
+      class="sc-fzokOt hqmVYP"
+      id="GenericCard-undefined"
+    >
+      <div
+        class="sc-AxjAm jDxcNw GenericCard"
+      >
+        <div
+          class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
+        >
+          <div
+            class="sc-AxhCb ccMvAG CourseCard__ImageWrapper"
+          >
+            <div
+              class="sc-AxhUy bZMVBu CourseCard__ImageWrapper__Cropper"
+            >
+              <img
+                class="sc-AxgMl TlUFs"
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="sc-AxheI iByoSw"
+        >
+          <div
+            class="sc-Axmtr hBVTto"
+          >
+            <p
+              class="sc-fzqNJr cQgZJS"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>,
+  "debug": [Function],
+  "findAllByAltText": [Function],
+  "findAllByDisplayValue": [Function],
+  "findAllByLabelText": [Function],
+  "findAllByPlaceholderText": [Function],
+  "findAllByRole": [Function],
+  "findAllByTestId": [Function],
+  "findAllByText": [Function],
+  "findAllByTitle": [Function],
+  "findByAltText": [Function],
+  "findByDisplayValue": [Function],
+  "findByLabelText": [Function],
+  "findByPlaceholderText": [Function],
+  "findByRole": [Function],
+  "findByTestId": [Function],
+  "findByText": [Function],
+  "findByTitle": [Function],
+  "getAllByAltText": [Function],
+  "getAllByDisplayValue": [Function],
+  "getAllByLabelText": [Function],
+  "getAllByPlaceholderText": [Function],
+  "getAllByRole": [Function],
+  "getAllByTestId": [Function],
+  "getAllByText": [Function],
+  "getAllByTitle": [Function],
+  "getByAltText": [Function],
+  "getByDisplayValue": [Function],
+  "getByLabelText": [Function],
+  "getByPlaceholderText": [Function],
+  "getByRole": [Function],
+  "getByTestId": [Function],
+  "getByText": [Function],
+  "getByTitle": [Function],
+  "queryAllByAltText": [Function],
+  "queryAllByDisplayValue": [Function],
+  "queryAllByLabelText": [Function],
+  "queryAllByPlaceholderText": [Function],
+  "queryAllByRole": [Function],
+  "queryAllByTestId": [Function],
+  "queryAllByText": [Function],
+  "queryAllByTitle": [Function],
+  "queryByAltText": [Function],
+  "queryByDisplayValue": [Function],
+  "queryByLabelText": [Function],
+  "queryByPlaceholderText": [Function],
+  "queryByRole": [Function],
+  "queryByTestId": [Function],
+  "queryByText": [Function],
+  "queryByTitle": [Function],
+  "rerender": [Function],
+  "unmount": [Function],
+}
+`;
