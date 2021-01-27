@@ -21,19 +21,18 @@ const JobCardComponent = ({
   onClickCard,
   showCountry,
   slots,
-  slotsOn,
   subtitle,
   subtitleColor,
-  title
+  title,
+  titleColor,
+  titleSize
 }) => {
 
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
   const companiesText = companyNumber > 1 ? "empresas disponíveis" : "empresa disponível"
 
   const renderLocations = (theme) => {
-    const locationLength = locations[0].states.length
-
-    if (locationLength === 27 || showCountry) {
+    if (locations[0].states.length === 27 || showCountry) {
       const countryAbbreviation = locations[0].country.toUpperCase() === 'BRASIL' ? 'BR' : locations[0].country
       return (
         <JobCard.LocationCircle
@@ -88,7 +87,7 @@ const JobCardComponent = ({
               />
             </JobCard.ImageCropper>
           </JobCard.ImageWrapper>
-          {!isUnavailable && slotsOn &&
+          {!isUnavailable && slots &&
             <JobCard.Slots>
               <Typography
                 fontSize="10px"
@@ -101,8 +100,8 @@ const JobCardComponent = ({
         <JobCard.DataBlock justifyContent={justifyContent}>
           <JobCard.Title>
             <Typography
-              color={isUnavailable ? theme.colors.blackColor : theme.colors.darkBlueColor}
-              fontSize="18px"
+              color={isUnavailable ? theme.colors.blackColor : titleColor}
+              fontSize={titleSize ? titleSize : '18px'}
               fontWeight="bolder">
               {title}
             </Typography>
@@ -173,10 +172,11 @@ JobCardComponent.propTypes = {
   onClickCard: PropTypes.func,
   showCountry: PropTypes.bool,
   slots: PropTypes.number,
-  slotsOn: PropTypes.bool,
   subtitle: PropTypes.string,
   subtitleColor: PropTypes.string,
-  title: PropTypes.string
+  title: PropTypes.string,
+  titleColor: PropTypes.string,
+  titleSize: PropTypes.string
 }
 
 export default JobCardComponent

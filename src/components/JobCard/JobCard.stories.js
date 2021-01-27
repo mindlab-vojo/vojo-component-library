@@ -25,11 +25,11 @@ export const jobCard = () => {
   const onClickCard = action('onClickCard')
   const showCountry = boolean('showCountry', false)
   const slots = number('slots', 200)
-  const slotsOn = boolean('slotsOn', false)
   const subtitle = text('subtitle', '')
   const subtitleColor = color('subtitleColor', '')
   const title = text('title', 'Entregador Mágico')
   const titleSize = text('titleSize', '14px')
+  const titleColor = color('subtitleColor', '')
 
   return (
     <JobCard
@@ -46,10 +46,10 @@ export const jobCard = () => {
       onClickCard={onClickCard}
       showCountry={showCountry}
       slots={slots}
-      slotsOn={slotsOn}
       subtitle={subtitle}
       subtitleColor={subtitleColor}
       title={title}
+      titleColor={titleColor}
       titleSize={titleSize}
     />
   )

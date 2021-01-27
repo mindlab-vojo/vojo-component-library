@@ -97,6 +97,7 @@ export const LocationCircle = styled.div`
   margin: 3px;
   min-width: 24px;
   border: 1px solid #391DDD;
+  padding: 2px;
 `
 export const Freelance = styled.div`
   align-items: center;

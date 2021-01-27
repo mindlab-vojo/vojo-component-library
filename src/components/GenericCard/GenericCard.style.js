@@ -93,6 +93,7 @@ export const StateCircle = styled.div`
   margin: 3px;
   min-width: 24px;
   border: 1px solid #391DDD;
+  padding: 2px;
 `
 
 export const Cities = styled.div`

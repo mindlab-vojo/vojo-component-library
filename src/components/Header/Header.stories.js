@@ -51,14 +51,14 @@ export const header = () => {
   const items = object('menuItems', menuItems)
   const onClickLogo = action('onClickLogo')
   const tems = object('menuTems', termsObject)
-  const menuOn = boolean('menuOn', true)
+  const goBack = boolean('goBack', false)
   const onClickGoBack = action('onClickGoBack')
 
   return (
     <Header
       menuButtons={buttons}
       menuItems={items}
-      menuOn={menuOn}
+      goBack={goBack}
       onClickGoBack={onClickGoBack}
       onClickLogo={onClickLogo}
       menuTems={tems}

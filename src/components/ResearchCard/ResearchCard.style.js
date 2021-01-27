@@ -8,6 +8,9 @@ export const Container = styled.div`
   background-color: ${props => props.backgroundCard};
   padding: 16px 24px;
   gap: 16px;
+  box-sizing: border-box;
+  box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
+  border-radius: 6px;
 `
 
 export const Icon = styled.div`
@@ -26,12 +29,16 @@ export const Icon = styled.div`
 
 export const TextContainer = styled.div`
     width: 85%;
-    line-height: ${props => props.lineHeight};
+    line-height: ${props => props.lineHeight ? props.lineHeight : '17px' };
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
 `
 
 export const Button = styled.div`
     color: #391DDD;
     font-weight: bold;
+    pointer:
 `
 
 export const Title = styled.div`
