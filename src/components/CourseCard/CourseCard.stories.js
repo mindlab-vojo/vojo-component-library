@@ -3,82 +3,45 @@ import { withKnobs, text, number, boolean, object, color } from '@storybook/addo
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
-import JobCardMock from '.'; 
+import CourseCard from '.'; 
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
-export const jobCardMock = () => {
-  const locationsList = [{
-    "country": "Brasil",
-    "states": [
-      'AL',
-      'AP',
-      'AM',
-      'BA',
-      'CE',
-      'DF',
-      'ES',
-      'GO',
-      'MA',
-      'MT',
-      'MS',
-      'MG',
-      'PA',
-      'PB',
-      'PR',
-      'PE',
-      'PI',
-      'RJ',
-      'RN',
-      'RS',
-      'AC',
-      'RO',
-      'RR',
-      'SC',
-      'SP',
-      'SE',
-      'TO']
-  }]
-  
+export const courseCard = () => {
   const backgroundColor = color('backgroundColor', "#FFFFFF")
-  const borderRadius = text('borderRadius', '50%')
-  const companyNumber = number('companyNumber', 5)
+  const borderRadius = text('borderRadius', '0')
   const id = text('id', 'card-id')
-  const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
+  const imageUrl = text('imageUrl', 'https://s3.amazonaws.com/static.vojo.com.br/prd/images/icon_servicos.PNG')
   const isNew = boolean('isNew', true)
-  const isUnavailable = boolean('isUnavailable', false)
-  const locations = object('locations', locationsList)
+  const isFree = boolean('isFree', true)
   const onClickCard = action('onClickCard')
-  const slots = number('slots', 200)
-  const subtitle = text('subtitle', 'Entregador Mágico')
+  const subtitle = text('subtitle', '')
   const subtitleColor = color('subtitleColor', "#212529")
   const title = text('title', 'Entregador Mágico')
   const titleColor = color('titleColor', "#5320E8")
-
+  const workload = text('workload', '60 min')
   return (
-    <JobCardMock
+    <CourseCard
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
-      companyNumber={companyNumber}
       id={id}
       imageUrl={imageUrl}
+      isFree={isFree}
       isNew={isNew}
-      isUnavailable={isUnavailable}
-      locations={locations}
       onClickCard={onClickCard}
-      slots={slots}
       subtitle={subtitle}
       subtitleColor={subtitleColor}
       title={title}
       titleColor={titleColor}
+      workload={workload}
     />
   )
 }
 
 export default {
   title: categories.Cards,
-  name: 'JobCardMock',
-  component: jobCardMock,
+  name: 'CourseCard',
+  component: courseCard,
   decorators: [
     withKnobs, 
     withA11y, 

@@ -9,6 +9,7 @@ import CepInput from './components/Input/CepInput';
 import CpfInput from './components/Input/CpfInput';
 import Checkbox from './components/Checkbox';
 import Container from './components/Container';
+import CourseCard from './components/CourseCard';
 import EmailInput from './components/Input/EmailInput';
 import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
@@ -51,6 +52,7 @@ export {
   CpfInput,
   Checkbox,
   Container,
+  CourseCard,
   EmailInput,
   FilterDropdown,
   Footer,

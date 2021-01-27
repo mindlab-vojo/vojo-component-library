@@ -12,7 +12,9 @@ const  HeaderComponent = ({
   menuButtons,
   menuItems,
   menuTems,
-  onClickLogo
+  onClickLogo,
+  menuOn,
+  onClickGoBack
 }) => {
 
   const [showMenu, setShowMenu] = useState(false)
@@ -31,11 +33,15 @@ const  HeaderComponent = ({
           theme={theme}>
           <Header.BlockClickable
             className="Header__Block"
-            onClick={handleToogleMenu}>
-            <IconManager 
+            onClick={menuOn ? handleToogleMenu : onClickGoBack}>
+            {menuOn ? <IconManager 
               fill={theme.colors.whiteColor}
               icon="Hamburger"
-              height="24px"/>
+              height="24px"/> :
+              <IconManager 
+              fill={theme.colors.whiteColor}
+              icon="ArrowLeft"
+              height="24px"/>}
           </Header.BlockClickable>
           <Header.BlockClickable
             className="Header__Block"
@@ -73,7 +79,9 @@ HeaderComponent.propTypes = {
   menuButtons: PropTypes.array,
   menuItems: PropTypes.array,
   menuTems: PropTypes.object,
-  onClickLogo: PropTypes.func
+  onClickLogo: PropTypes.func,
+  menuOn: PropTypes.bool,
+  onClickGoBack: PropTypes.func
 }
 
 export default HeaderComponent

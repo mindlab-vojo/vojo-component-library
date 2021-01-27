@@ -37,15 +37,6 @@ Object {
                 />
               </div>
             </div>
-            <div
-              class="sc-AxheI eKLjGh JobCard__Slots"
-            >
-              <p
-                class="sc-fzqNJr cFqHAX"
-              >
-                200 VAGAS
-              </p>
-            </div>
           </div>
           <div
             class="sc-Axmtr erLQOu JobCard__DataBlock"
@@ -54,7 +45,7 @@ Object {
               class="sc-AxmLO cAKCgh JobCard__Title"
             >
               <p
-                class="sc-fzoyAV oAxVr"
+                class="sc-fzqNJr chhMEZ"
               >
                 Entregador Mágico
               </p>
@@ -63,9 +54,9 @@ Object {
               class="sc-fzozJi aHfnD JobCard__Companies"
             >
               <p
-                class="sc-fzoLag dQmyMU"
+                class="sc-fzoyAV dBazvz"
               >
-                5 empresas contratando em
+                5 empresas disponíveis
               </p>
             </div>
             <div
@@ -75,7 +66,7 @@ Object {
                 class="sc-fznyAO fdaoTq"
               >
                 <p
-                  class="sc-fzoXzr eGEkOd"
+                  class="sc-fzoLag bXpYaz"
                 >
                   SP
                 </p>
@@ -84,7 +75,7 @@ Object {
                 class="sc-fznyAO fdaoTq"
               >
                 <p
-                  class="sc-fzpjYC bPUezO"
+                  class="sc-fzoXzr eGEkOd"
                 >
                   RJ
                 </p>
@@ -128,15 +119,6 @@ Object {
               />
             </div>
           </div>
-          <div
-            class="sc-AxheI eKLjGh JobCard__Slots"
-          >
-            <p
-              class="sc-fzqNJr cFqHAX"
-            >
-              200 VAGAS
-            </p>
-          </div>
         </div>
         <div
           class="sc-Axmtr erLQOu JobCard__DataBlock"
@@ -145,7 +127,7 @@ Object {
             class="sc-AxmLO cAKCgh JobCard__Title"
           >
             <p
-              class="sc-fzoyAV oAxVr"
+              class="sc-fzqNJr chhMEZ"
             >
               Entregador Mágico
             </p>
@@ -154,9 +136,9 @@ Object {
             class="sc-fzozJi aHfnD JobCard__Companies"
           >
             <p
-              class="sc-fzoLag dQmyMU"
+              class="sc-fzoyAV dBazvz"
             >
-              5 empresas contratando em
+              5 empresas disponíveis
             </p>
           </div>
           <div
@@ -166,7 +148,7 @@ Object {
               class="sc-fznyAO fdaoTq"
             >
               <p
-                class="sc-fzoXzr eGEkOd"
+                class="sc-fzoLag bXpYaz"
               >
                 SP
               </p>
@@ -175,7 +157,7 @@ Object {
               class="sc-fznyAO fdaoTq"
             >
               <p
-                class="sc-fzpjYC bPUezO"
+                class="sc-fzoXzr eGEkOd"
               >
                 RJ
               </p>
