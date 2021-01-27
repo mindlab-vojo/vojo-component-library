@@ -8,12 +8,12 @@ import SideMenu from '../SideMenu'
 import IconManager from '../IconManager'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
-const  HeaderComponent = ({
+const HeaderComponent = ({
   menuButtons,
   menuItems,
   menuTems,
   onClickLogo,
-  menuOn,
+  goBack,
   onClickGoBack
 }) => {
 
@@ -25,31 +25,30 @@ const  HeaderComponent = ({
 
   const renderComponent = (theme) => (
     <>
-      <Header.Wrapper 
+      <Header.Wrapper
         className="Header__Wrapper"
         theme={theme}>
-        <Header.Content 
+        <Header.Content
           className="Header__Content"
           theme={theme}>
           <Header.BlockClickable
             className="Header__Block"
-            onClick={menuOn ? handleToogleMenu : onClickGoBack}>
-            {menuOn ? <IconManager 
+            onClick={goBack ? onClickGoBack : handleToogleMenu}>
+            {goBack ? <IconManager
+              fill={theme.colors.whiteColor}
+              icon="ArrowLeft"
+              height="24px" /> : <IconManager
               fill={theme.colors.whiteColor}
               icon="Hamburger"
-              height="24px"/> :
-              <IconManager 
-                fill={theme.colors.whiteColor}
-                icon="ArrowLeft"
-                height="24px"/>}
+              height="24px" />}
           </Header.BlockClickable>
           <Header.BlockClickable
             className="Header__Block"
             onClick={onClickLogo}>
-            <Logo height="16px" width="150px" isReverse/>
+            <Logo height="16px" width="150px" isReverse />
           </Header.BlockClickable>
           <Header.Block
-            className="Header__Block"/>
+            className="Header__Block" />
         </Header.Content>
       </Header.Wrapper>
       {
@@ -80,7 +79,7 @@ HeaderComponent.propTypes = {
   menuItems: PropTypes.array,
   menuTems: PropTypes.object,
   onClickLogo: PropTypes.func,
-  menuOn: PropTypes.bool,
+  goBack: PropTypes.bool,
   onClickGoBack: PropTypes.func
 }
 
