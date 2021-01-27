@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import * as CourseCard from './CourseCard.style'
+import * as GenericCard from './GenericCard.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import { Card } from '../Card/Card.style'
@@ -11,77 +11,78 @@ import IconManager from '../IconManager'
 const CourseCardComponent = ({
   backgroundColor,
   borderRadius,
+  children,
   id,
   imageUrl,
   isFree,
   isNew,
+  justifyContent,
   onClickCard,
   subtitle,
   subtitleColor,
-  titleColor,
   title,
-  workload
+  titleColor,
+  titleSize,
+  workload,
 }) => {
 
   const renderComponent = (theme) => (
     <Card
       backgroundColor={backgroundColor}
       hasPointer
-      id={`CourseCard-${id}`}
+      id={`GenericCard-${id}`}
       padding="15px 8px"
       onClick={onClickCard}>
-      {isNew && <CourseCard.NewTag theme={theme}>
+      {isNew && <GenericCard.NewTag theme={theme}>
         <Typography
           color={theme.colors.whiteColor}>
           novidade
-            </Typography>
-      </CourseCard.NewTag>}
-      <CourseCard.Wrapper
-        className="CourseCard">
-        <CourseCard.ImageBlock
+        </Typography>
+      </GenericCard.NewTag>}
+      <GenericCard.Wrapper
+        className="GenericCard">
+        <GenericCard.ImageBlock
           className="CourseCard__ImageBlock">
-          <CourseCard.ImageWrapper
+          <GenericCard.ImageWrapper
             className="CourseCard__ImageWrapper">
-            <CourseCard.ImageCropper
+            <GenericCard.ImageCropper
               borderRadius={borderRadius}
               className="CourseCard__ImageWrapper__Cropper">
-              <CourseCard.Image
+              <GenericCard.Image
                 src={imageUrl}
                 alt={title}
               />
-            </CourseCard.ImageCropper>
-          </CourseCard.ImageWrapper>
-        </CourseCard.ImageBlock>
-        <CourseCard.DataBlock>
-          <CourseCard.Title
-            className="CourseCard__Title">
+            </GenericCard.ImageCropper>
+          </GenericCard.ImageWrapper>
+        </GenericCard.ImageBlock>
+        <GenericCard.DataBlock justifyContent={justifyContent}>
+          <GenericCard.Title>
             <Typography
               color={titleColor}
-              fontSize="18px"
+              fontSize={titleSize}
               fontWeight="bolder">
               {title}
             </Typography>
-          </CourseCard.Title>
-          {subtitle && <CourseCard.Subtitle
-            className="CourseCard__Companies">
+          </GenericCard.Title>
+          {subtitle && <GenericCard.Subtitle>
             <Typography
               fontSize="12px"
-              color={subtitleColor}>
+              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}>
               {`${subtitle}`}
             </Typography>
-          </CourseCard.Subtitle>}
-          {isFree && <CourseCard.Free>
+          </GenericCard.Subtitle>}
+          {isFree && <GenericCard.Free>
             <Typography
               fontSize="12px"
               fontWeight="bolder"
-              color={theme.colors.blackColor}
+              color={theme.colors.darkGreyColor}
             >
               {"Gratuito "}
             </Typography>
-          </CourseCard.Free>}
-          {workload && <CourseCard.Workload>
+          </GenericCard.Free>}
+          {workload && <GenericCard.Workload>
             <IconManager icon={'Clock'} fill={'#666666'} width={'20px'} height={'20px'} />
-            <CourseCard.WorkloadText>
+            <GenericCard.WorkloadText>
               <Typography
                 fontSize="12px"
                 color={theme.colors.darkGreyColor}
@@ -91,14 +92,15 @@ const CourseCardComponent = ({
               <Typography
                 fontSize="12px"
                 fontWeight="bolder"
-                color={theme.colors.blackColor}
+                color={theme.colors.darkGreyColor}
               >
                 {workload}
               </Typography>
-            </CourseCard.WorkloadText>
-          </CourseCard.Workload>}
-        </CourseCard.DataBlock>
-      </CourseCard.Wrapper>
+            </GenericCard.WorkloadText>
+          </GenericCard.Workload>}
+          {children}
+        </GenericCard.DataBlock>
+      </GenericCard.Wrapper>
     </Card>
   )
 
@@ -112,18 +114,21 @@ const CourseCardComponent = ({
 CourseCardComponent.propTypes = {
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
+  children: PropTypes.node,
   companyNumber: PropTypes.number,
   id: PropTypes.string,
   imageUrl: PropTypes.string,
   isFree: PropTypes.bool,
   isNew: PropTypes.bool,
+  justifyContent: PropTypes.string,
   locations: PropTypes.array,
   onClickCard: PropTypes.func,
-  title: PropTypes.string,
   subtitle: PropTypes.string,
-  titleColor: PropTypes.string,
   subtitleColor: PropTypes.string,
-  workload: PropTypes.string,
+  title: PropTypes.string,
+  titleColor: PropTypes.string,
+  titleSize: PropTypes.string,
+  workload: PropTypes.string
 }
 
 export default CourseCardComponent

@@ -1,16 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test CourseCard component render 1`] = `
+exports[`Test GenericCard component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzqBZW dcqdVe"
-        id="CourseCard-undefined"
+        class="sc-fzokOt hqmVYP"
+        id="GenericCard-undefined"
       >
         <div
-          class="sc-AxjAm jDxcNw CourseCard"
+          class="sc-AxjAm jDxcNw GenericCard"
         >
           <div
             class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
@@ -28,13 +28,13 @@ Object {
             </div>
           </div>
           <div
-            class="sc-AxheI jpgzzd"
+            class="sc-AxheI iByoSw"
           >
             <div
-              class="sc-Axmtr hBVTto CourseCard__Title"
+              class="sc-Axmtr hBVTto"
             >
               <p
-                class="sc-fzqNJr cgTdkj"
+                class="sc-fzqBZW itaHDn"
               />
             </div>
           </div>
@@ -44,11 +44,11 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzqBZW dcqdVe"
-      id="CourseCard-undefined"
+      class="sc-fzokOt hqmVYP"
+      id="GenericCard-undefined"
     >
       <div
-        class="sc-AxjAm jDxcNw CourseCard"
+        class="sc-AxjAm jDxcNw GenericCard"
       >
         <div
           class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
@@ -66,13 +66,13 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxheI jpgzzd"
+          class="sc-AxheI iByoSw"
         >
           <div
-            class="sc-Axmtr hBVTto CourseCard__Title"
+            class="sc-Axmtr hBVTto"
           >
             <p
-              class="sc-fzqNJr cgTdkj"
+              class="sc-fzqBZW itaHDn"
             />
           </div>
         </div>
@@ -133,17 +133,17 @@ Object {
 }
 `;
 
-exports[`Test Reverse CourseCard component render 1`] = `
+exports[`Test Reverse GenericCard component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzqBZW dcqdVe"
-        id="CourseCard-undefined"
+        class="sc-fzokOt hqmVYP"
+        id="GenericCard-undefined"
       >
         <div
-          class="sc-AxjAm jDxcNw CourseCard"
+          class="sc-AxjAm jDxcNw GenericCard"
         >
           <div
             class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
@@ -161,13 +161,13 @@ Object {
             </div>
           </div>
           <div
-            class="sc-AxheI jpgzzd"
+            class="sc-AxheI iByoSw"
           >
             <div
-              class="sc-Axmtr hBVTto CourseCard__Title"
+              class="sc-Axmtr hBVTto"
             >
               <p
-                class="sc-fzoyAV gltwSx"
+                class="sc-fzqNJr cQgZJS"
               />
             </div>
           </div>
@@ -177,11 +177,11 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzqBZW dcqdVe"
-      id="CourseCard-undefined"
+      class="sc-fzokOt hqmVYP"
+      id="GenericCard-undefined"
     >
       <div
-        class="sc-AxjAm jDxcNw CourseCard"
+        class="sc-AxjAm jDxcNw GenericCard"
       >
         <div
           class="sc-AxiKw bTpLoE CourseCard__ImageBlock"
@@ -199,13 +199,13 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxheI jpgzzd"
+          class="sc-AxheI iByoSw"
         >
           <div
-            class="sc-Axmtr hBVTto CourseCard__Title"
+            class="sc-Axmtr hBVTto"
           >
             <p
-              class="sc-fzoyAV gltwSx"
+              class="sc-fzqNJr cQgZJS"
             />
           </div>
         </div>

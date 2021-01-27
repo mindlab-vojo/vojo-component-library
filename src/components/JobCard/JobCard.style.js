@@ -24,11 +24,13 @@ export const ImageBlock = styled.div`
 export const ImageWrapper = styled.div``
 
 export const ImageCropper = styled.div`
+  display: flex;
+  justify-content: center;
   width: 72px;
   height: 72px;
   position: relative;
   overflow: hidden;
-  border-radius: 50%;
+  border-radius: ${props => props.borderRadius};
 `
 
 export const Image = styled.img`
@@ -56,10 +58,15 @@ export const Slots = styled.div`
 export const DataBlock = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: ${props => props.justifyContent};
+  min-height: 65px;
+  gap: 2px;
 `
 
 export const Title = styled.div``
 
+export const Subtitle = styled.div`
+`
 export const Companies = styled.div`
   margin: 4px 0;
 `
@@ -80,7 +87,7 @@ export const SingleState = styled.div`
   width: 100%;
 `
 
-export const StateCircle = styled.div`
+export const LocationCircle = styled.div`
   align-items: center;
   background-color: #E9E6FF;
   border-radius: 500px;
@@ -91,7 +98,7 @@ export const StateCircle = styled.div`
   min-width: 24px;
   border: 1px solid #391DDD;
 `
-export const CountryCircle = styled.div`
+export const Freelance = styled.div`
   align-items: center;
   background-color: ${props => props.theme.colors.greyColor};
   border-radius: 500px;
@@ -100,7 +107,8 @@ export const CountryCircle = styled.div`
   justify-content: center;
   margin: 3px;
   min-width: 24px;
-  padding: 0 8px;
+  padding: 0 10px;
+  width: fit-content;
 `
 
 export const Cities = styled.div`

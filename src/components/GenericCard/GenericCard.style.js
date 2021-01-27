@@ -44,15 +44,14 @@ export const Image = styled.img`
 export const DataBlock = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  justify-content: ${props => props.justifyContent};
   min-height: 65px;
+  gap: 2px;
 `
 
 export const Title = styled.div``
 
 export const Subtitle = styled.div`
-  margin: 4px 0;
 `
 export const Unavailable = styled.div`
   margin: 4px 0;
@@ -94,17 +93,6 @@ export const StateCircle = styled.div`
   margin: 3px;
   min-width: 24px;
   border: 1px solid #391DDD;
-`
-export const CountryCircle = styled.div`
-  align-items: center;
-  background-color: ${props => props.theme.colors.greyColor};
-  border-radius: 500px;
-  display: flex;
-  height: 24px;
-  justify-content: center;
-  margin: 3px;
-  min-width: 24px;
-  padding: 0 8px;
 `
 
 export const Cities = styled.div`

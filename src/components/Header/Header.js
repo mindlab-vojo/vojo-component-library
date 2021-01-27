@@ -39,9 +39,9 @@ const  HeaderComponent = ({
               icon="Hamburger"
               height="24px"/> :
               <IconManager 
-              fill={theme.colors.whiteColor}
-              icon="ArrowLeft"
-              height="24px"/>}
+                fill={theme.colors.whiteColor}
+                icon="ArrowLeft"
+                height="24px"/>}
           </Header.BlockClickable>
           <Header.BlockClickable
             className="Header__Block"

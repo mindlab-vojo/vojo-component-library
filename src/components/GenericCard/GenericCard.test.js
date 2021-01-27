@@ -1,21 +1,21 @@
 import React from 'react';
 import { render } from '@testing-library/react';
 
-import CourseCard from './';
+import GenericCard from './';
 import { ThemeProvider } from './../../style/ThemeManager/ThemeProvider';
 
-test('Test CourseCard component render', () => {
+test('Test GenericCard component render', () => {
   const component = render(
     <ThemeProvider>
-      <CourseCard/>
+      <GenericCard/>
     </ThemeProvider>
   );
   expect(component).toMatchSnapshot()
 });
-test('Test Reverse CourseCard component render', () => {
+test('Test Reverse GenericCard component render', () => {
   const component = render(
     <ThemeProvider>
-      <CourseCard isReverse/>
+      <GenericCard isReverse/>
     </ThemeProvider>
   );
   expect(component).toMatchSnapshot()

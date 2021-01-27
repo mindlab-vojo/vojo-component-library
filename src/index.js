@@ -9,7 +9,7 @@ import CepInput from './components/Input/CepInput';
 import CpfInput from './components/Input/CpfInput';
 import Checkbox from './components/Checkbox';
 import Container from './components/Container';
-import CourseCard from './components/CourseCard';
+import CourseCard from './components/GenericCard';
 import EmailInput from './components/Input/EmailInput';
 import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
@@ -19,7 +19,6 @@ import FormRadio from './components/FormRadio';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
-import JobCardMock from './components/JobCardMock';
 import Logo from './components/Logo';
 import MobileInput from './components/Input/MobileInput';
 import Modal from './components/Modal/Modal';
@@ -35,6 +34,7 @@ import TextInput from './components/Input/TextInput';
 import Toast from './components/Toast';
 import Typography from './components/Typography';
 import TabSelector from './components/TabSelector'
+import GenericCard from './components/GenericCard'
 
 import ThemeConsumer, { ThemeProvider } from './style/ThemeManager/ThemeProvider'
 
@@ -59,10 +59,10 @@ export {
   FormCheckbox,
   FormInput,
   FormRadio,
+  GenericCard,
   Header,
   IconManager,
   JobCard,
-  JobCardMock,
   Logo,
   MobileInput,
   Modal,

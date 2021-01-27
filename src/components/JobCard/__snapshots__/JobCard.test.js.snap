@@ -6,29 +6,29 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fzokOt hqmVYP"
+        class="sc-fzqBZW dcqdVe"
         id="JobCard-card-id"
       >
         <div
           class="sc-AxirZ cLmhxZ"
         >
           <p
-            class="sc-fzqBZW kqYVrC"
+            class="sc-fzqNJr ikFMjf"
           >
             novidade
           </p>
         </div>
         <div
-          class="sc-AxjAm jDxcNw JobCard"
+          class="sc-AxjAm jDxcNw"
         >
           <div
-            class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+            class="sc-AxiKw bTpLoE"
           >
             <div
-              class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+              class="sc-AxhCb ccMvAG"
             >
               <div
-                class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+                class="sc-AxhUy bZMVBu"
               >
                 <img
                   alt="Entregador Mágico"
@@ -39,47 +39,25 @@ Object {
             </div>
           </div>
           <div
-            class="sc-Axmtr erLQOu JobCard__DataBlock"
+            class="sc-Axmtr ffqwYb"
           >
             <div
-              class="sc-AxmLO cAKCgh JobCard__Title"
+              class="sc-AxmLO cAKCgh"
             >
               <p
-                class="sc-fzqNJr chhMEZ"
+                class="sc-fzoyAV oAxVr"
               >
                 Entregador Mágico
               </p>
             </div>
             <div
-              class="sc-fzozJi aHfnD JobCard__Companies"
+              class="sc-fzoLsD kGasLV"
             >
               <p
-                class="sc-fzoyAV dBazvz"
+                class="sc-fzoLag kWidhT"
               >
                 5 empresas disponíveis
               </p>
-            </div>
-            <div
-              class="sc-fzpans iFvVQQ JobCard__Locations"
-            >
-              <div
-                class="sc-fznyAO fdaoTq"
-              >
-                <p
-                  class="sc-fzoLag bXpYaz"
-                >
-                  SP
-                </p>
-              </div>
-              <div
-                class="sc-fznyAO fdaoTq"
-              >
-                <p
-                  class="sc-fzoXzr eGEkOd"
-                >
-                  RJ
-                </p>
-              </div>
             </div>
           </div>
         </div>
@@ -88,29 +66,29 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fzokOt hqmVYP"
+      class="sc-fzqBZW dcqdVe"
       id="JobCard-card-id"
     >
       <div
         class="sc-AxirZ cLmhxZ"
       >
         <p
-          class="sc-fzqBZW kqYVrC"
+          class="sc-fzqNJr ikFMjf"
         >
           novidade
         </p>
       </div>
       <div
-        class="sc-AxjAm jDxcNw JobCard"
+        class="sc-AxjAm jDxcNw"
       >
         <div
-          class="sc-AxiKw bTpLoE JobCard__ImageBlock"
+          class="sc-AxiKw bTpLoE"
         >
           <div
-            class="sc-AxhCb ccMvAG JobCard__ImageWrapper"
+            class="sc-AxhCb ccMvAG"
           >
             <div
-              class="sc-AxhUy fzszZd JobCard__ImageWrapper__Cropper"
+              class="sc-AxhUy bZMVBu"
             >
               <img
                 alt="Entregador Mágico"
@@ -121,47 +99,25 @@ Object {
           </div>
         </div>
         <div
-          class="sc-Axmtr erLQOu JobCard__DataBlock"
+          class="sc-Axmtr ffqwYb"
         >
           <div
-            class="sc-AxmLO cAKCgh JobCard__Title"
+            class="sc-AxmLO cAKCgh"
           >
             <p
-              class="sc-fzqNJr chhMEZ"
+              class="sc-fzoyAV oAxVr"
             >
               Entregador Mágico
             </p>
           </div>
           <div
-            class="sc-fzozJi aHfnD JobCard__Companies"
+            class="sc-fzoLsD kGasLV"
           >
             <p
-              class="sc-fzoyAV dBazvz"
+              class="sc-fzoLag kWidhT"
             >
               5 empresas disponíveis
             </p>
-          </div>
-          <div
-            class="sc-fzpans iFvVQQ JobCard__Locations"
-          >
-            <div
-              class="sc-fznyAO fdaoTq"
-            >
-              <p
-                class="sc-fzoLag bXpYaz"
-              >
-                SP
-              </p>
-            </div>
-            <div
-              class="sc-fznyAO fdaoTq"
-            >
-              <p
-                class="sc-fzoXzr eGEkOd"
-              >
-                RJ
-              </p>
-            </div>
           </div>
         </div>
       </div>
