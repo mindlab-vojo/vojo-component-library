@@ -32,7 +32,9 @@ const JobCardComponent = ({
   const companiesText = companyNumber > 1 ? "empresas disponíveis" : "empresa disponível"
 
   const renderLocations = (theme) => {
-    if (locations[0].states.length === 27 || showCountry) {
+    const states = locations[0].states ? locations[0].states.length : false
+
+    if (states === 27 || showCountry) {
       const countryAbbreviation = locations[0].country.toUpperCase() === 'BRASIL' ? 'BR' : locations[0].country
       return (
         <JobCard.LocationCircle
@@ -47,7 +49,7 @@ const JobCardComponent = ({
           </Typography>
         </JobCard.LocationCircle>
       )
-    } else {
+    } else if (states) {
       return locations[0].states.map(state => (
         <JobCard.LocationCircle
           key={state}

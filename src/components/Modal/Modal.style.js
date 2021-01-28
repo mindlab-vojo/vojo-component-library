@@ -4,7 +4,7 @@ export const FixedWrapper = styled.div`
   position: fixed;
   width: 100%;
   height: 100vh;
-  overflow: scroll;
+  overflow: auto;
   z-index: ${props => props.zIndex};
 `
 
