@@ -75,7 +75,7 @@ const CourseCardComponent = ({
             <Typography
               fontSize="12px"
               fontWeight="bolder"
-              color={theme.colors.darkGreyColor}
+              color={'#666666'}
             >
               {"Gratuito "}
             </Typography>
@@ -92,7 +92,7 @@ const CourseCardComponent = ({
               <Typography
                 fontSize="12px"
                 fontWeight="bolder"
-                color={theme.colors.darkGreyColor}
+                color={'#666666'}
               >
                 {workload}
               </Typography>
