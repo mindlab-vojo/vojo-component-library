@@ -38,7 +38,7 @@ export const TextContainer = styled.div`
 export const Button = styled.div`
     color: #391DDD;
     font-weight: bold;
-    pointer:
+    cursor: pointer;
 `
 
 export const Title = styled.div`
