@@ -6,18 +6,18 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-AxjAm grqyYz Header__Wrapper"
+        class="sc-AxjAm grqyYz"
       >
         <div
-          class="sc-AxirZ easNkP Header__Content"
+          class="sc-AxirZ easNkP"
         >
           <div
-            class="sc-AxhCb dnXiiO Header__Block"
+            class="sc-AxhCb eZoPRV"
           >
             <svg
               height="24px"
               viewBox="0 0 18 12"
-              width="18"
+              width="24px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -27,7 +27,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxhCb dnXiiO Header__Block"
+            class="sc-AxhCb eZoPRV"
           >
             <svg
               class="Logo"
@@ -63,7 +63,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxiKw bOTXee Header__Block"
+            class="sc-AxiKw dJVzHt"
           />
         </div>
       </header>
@@ -71,18 +71,18 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-AxjAm grqyYz Header__Wrapper"
+      class="sc-AxjAm grqyYz"
     >
       <div
-        class="sc-AxirZ easNkP Header__Content"
+        class="sc-AxirZ easNkP"
       >
         <div
-          class="sc-AxhCb dnXiiO Header__Block"
+          class="sc-AxhCb eZoPRV"
         >
           <svg
             height="24px"
             viewBox="0 0 18 12"
-            width="18"
+            width="24px"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -92,7 +92,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxhCb dnXiiO Header__Block"
+          class="sc-AxhCb eZoPRV"
         >
           <svg
             class="Logo"
@@ -128,7 +128,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxiKw bOTXee Header__Block"
+          class="sc-AxiKw dJVzHt"
         />
       </div>
     </header>
@@ -193,18 +193,18 @@ Object {
   "baseElement": <body>
     <div>
       <header
-        class="sc-AxjAm grqyYz Header__Wrapper"
+        class="sc-AxjAm grqyYz"
       >
         <div
-          class="sc-AxirZ easNkP Header__Content"
+          class="sc-AxirZ easNkP"
         >
           <div
-            class="sc-AxhCb dnXiiO Header__Block"
+            class="sc-AxhCb eZoPRV"
           >
             <svg
               height="24px"
               viewBox="0 0 18 12"
-              width="18"
+              width="24px"
               xmlns="http://www.w3.org/2000/svg"
             >
               <path
@@ -214,7 +214,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxhCb dnXiiO Header__Block"
+            class="sc-AxhCb eZoPRV"
           >
             <svg
               class="Logo"
@@ -250,7 +250,7 @@ Object {
             </svg>
           </div>
           <div
-            class="sc-AxiKw bOTXee Header__Block"
+            class="sc-AxiKw dJVzHt"
           />
         </div>
       </header>
@@ -258,18 +258,18 @@ Object {
   </body>,
   "container": <div>
     <header
-      class="sc-AxjAm grqyYz Header__Wrapper"
+      class="sc-AxjAm grqyYz"
     >
       <div
-        class="sc-AxirZ easNkP Header__Content"
+        class="sc-AxirZ easNkP"
       >
         <div
-          class="sc-AxhCb dnXiiO Header__Block"
+          class="sc-AxhCb eZoPRV"
         >
           <svg
             height="24px"
             viewBox="0 0 18 12"
-            width="18"
+            width="24px"
             xmlns="http://www.w3.org/2000/svg"
           >
             <path
@@ -279,7 +279,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxhCb dnXiiO Header__Block"
+          class="sc-AxhCb eZoPRV"
         >
           <svg
             class="Logo"
@@ -315,7 +315,7 @@ Object {
           </svg>
         </div>
         <div
-          class="sc-AxiKw bOTXee Header__Block"
+          class="sc-AxiKw dJVzHt"
         />
       </div>
     </header>
