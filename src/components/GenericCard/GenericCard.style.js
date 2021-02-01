@@ -46,12 +46,14 @@ export const DataBlock = styled.div`
   flex-direction: column;
   justify-content: ${props => props.justifyContent};
   min-height: 65px;
-  gap: 2px;
 `
 
-export const Title = styled.div``
+export const Title = styled.div`
+  margin-bottom: 4px;
+`
 
 export const Subtitle = styled.div`
+  margin-bottom: 4px; 
 `
 export const Unavailable = styled.div`
   margin: 4px 0;
@@ -62,19 +64,25 @@ export const Free = styled.div`
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+  margin-bottom: 4px;
 `
 
 export const Workload = styled.div`
   display: flex;
   align-iteMs: center;
   width: 100%;
-  gap: 5px;
 `
 
 export const WorkloadText = styled.div`
   display: flex;
   align-iteMs: center;
-  gap: 5px;
+`
+
+export const WorkloadTextWrapper = styled.div`
+    margin-left: 10px;
+    &:nth-child(2) {
+      margin-left: 3px;
+    }
 `
 
 export const SingleState = styled.div`

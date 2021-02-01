@@ -60,14 +60,16 @@ const CourseCardComponent = ({
             <Typography
               color={titleColor}
               fontSize={titleSize}
-              fontWeight="bolder">
+              fontWeight="bolder"
+              fontFamily={"'Montserrat', sans-serif"}>
               {title}
             </Typography>
           </GenericCard.Title>
           {subtitle && <GenericCard.Subtitle>
             <Typography
               fontSize="12px"
-              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}>
+              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}
+              fontFamily={"'Rubik', sans-serif"}>
               {`${subtitle}`}
             </Typography>
           </GenericCard.Subtitle>}
@@ -76,6 +78,7 @@ const CourseCardComponent = ({
               fontSize="12px"
               fontWeight="bolder"
               color={'#666666'}
+              fontFamily={"'Rubik', sans-serif"}
             >
               {"Gratuito "}
             </Typography>
@@ -83,19 +86,25 @@ const CourseCardComponent = ({
           {workload && <GenericCard.Workload>
             <IconManager icon={'Clock'} fill={'#666666'} width={'20px'} height={'20px'} />
             <GenericCard.WorkloadText>
-              <Typography
-                fontSize="12px"
-                color={theme.colors.darkGreyColor}
-              >
-                {"Carga horária: "}
-              </Typography>
-              <Typography
-                fontSize="12px"
-                fontWeight="bolder"
-                color={'#666666'}
-              >
-                {workload}
-              </Typography>
+              <GenericCard.WorkloadTextWrapper>
+                <Typography
+                  fontSize="12px"
+                  color={theme.colors.darkGreyColor}
+                  fontFamily={"'Rubik', sans-serif"}
+                >
+                  {"Carga horária: "}
+                </Typography>
+              </GenericCard.WorkloadTextWrapper>
+              <GenericCard.WorkloadTextWrapper>
+                <Typography
+                  fontSize="12px"
+                  fontWeight="bolder"
+                  color={'#666666'}
+                  fontFamily={"'Rubik', sans-serif"}
+                >
+                  {workload}
+                </Typography>
+              </GenericCard.WorkloadTextWrapper>
             </GenericCard.WorkloadText>
           </GenericCard.Workload>}
           {children}

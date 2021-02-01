@@ -26,29 +26,26 @@ const HeaderComponent = ({
   const renderComponent = (theme) => (
     <>
       <Header.Wrapper
-        className="Header__Wrapper"
         theme={theme}>
         <Header.Content
-          className="Header__Content"
           theme={theme}>
           <Header.BlockClickable
-            className="Header__Block"
             onClick={goBack ? onClickGoBack : handleToogleMenu}>
             {goBack ? <IconManager
               fill={theme.colors.whiteColor}
               icon="ArrowLeft"
-              height="24px" /> : <IconManager
+              width="40px"
+              height="40px" /> : <IconManager
               fill={theme.colors.whiteColor}
               icon="Hamburger"
+              width="24px"
               height="24px" />}
           </Header.BlockClickable>
           <Header.BlockClickable
-            className="Header__Block"
             onClick={onClickLogo}>
             <Logo height="16px" width="150px" isReverse />
           </Header.BlockClickable>
-          <Header.Block
-            className="Header__Block" />
+          <Header.Block/>
         </Header.Content>
       </Header.Wrapper>
       {
