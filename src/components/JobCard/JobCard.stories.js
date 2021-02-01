@@ -29,7 +29,7 @@ export const jobCard = () => {
   const subtitleColor = color('subtitleColor', '')
   const title = text('title', 'Entregador Mágico')
   const titleSize = text('titleSize', '14px')
-  const titleColor = color('subtitleColor', '')
+  const titleColor = color('titleColor', '')
 
   return (
     <JobCard

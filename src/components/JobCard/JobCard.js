@@ -44,6 +44,7 @@ const JobCardComponent = ({
             fontSize="12px"
             fontWeight="bolder"
             color={theme.colors.primaryColor}
+            fontFamily={"'Rubik', sans-serif"}
           >
             {countryAbbreviation}
           </Typography>
@@ -58,6 +59,7 @@ const JobCardComponent = ({
             fontSize="12px"
             fontWeight="bolder"
             color={theme.colors.primaryColor}
+            fontFamily={"'Rubik', sans-serif"}
           >
             {state}
           </Typography>
@@ -103,15 +105,17 @@ const JobCardComponent = ({
           <JobCard.Title>
             <Typography
               color={isUnavailable ? theme.colors.blackColor : titleColor}
-              fontSize={titleSize ? titleSize : '18px'}
-              fontWeight="bolder">
+              fontSize={titleSize}
+              fontWeight="bolder"
+              fontFamily={"'Montserrat', sans-serif"}>
               {title}
             </Typography>
           </JobCard.Title>
           {subtitle && <JobCard.Subtitle>
             <Typography
               fontSize="12px"
-              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}>
+              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}
+              fontFamily={"'Rubik', sans-serif"}>
               {`${subtitle}`}
             </Typography>
           </JobCard.Subtitle>}
@@ -119,7 +123,8 @@ const JobCardComponent = ({
             <JobCard.Unavailable>
               <Typography
                 fontSize="12px"
-                fontStyle="italic">
+                fontStyle="italic"
+                fontFamily={"'Rubik', sans-serif"}>
                 {`Se inscreva para ter acesso à vagas quando estiver disponível`}
               </Typography>
             </JobCard.Unavailable>
@@ -128,11 +133,12 @@ const JobCardComponent = ({
               {companyNumber && <JobCard.Companies>
                 <Typography
                   fontSize="12px"
-                  color="#666666">
+                  color={theme.colors.lightGreyColor}
+                  fontFamily={"'Rubik', sans-serif"}>
                   {`${companyNumber} ${companiesText}`}
                 </Typography>
               </JobCard.Companies>}
-              {locationsOn && <JobCard.Locations>
+              {locationsOn && locations[0] && <JobCard.Locations>
                 {renderLocations(theme)}
               </JobCard.Locations>}
               {freelance && <JobCard.Freelance theme={theme}>
@@ -140,7 +146,7 @@ const JobCardComponent = ({
                   fontSize="12px"
                   fontWeight="bolder"
                   color={theme.colors.blackColor}
-                  
+                  fontFamily={"'Rubik', sans-serif"}
                 >
                   {"Autônomo"}
                 </Typography>
@@ -179,6 +185,11 @@ JobCardComponent.propTypes = {
   title: PropTypes.string,
   titleColor: PropTypes.string,
   titleSize: PropTypes.string
+}
+
+JobCardComponent.defaultProps = {
+  titleColor: "#391DDD", 
+  titleSize: '14px'
 }
 
 export default JobCardComponent
