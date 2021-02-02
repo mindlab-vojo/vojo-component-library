@@ -12,6 +12,7 @@ const CourseCardComponent = ({
   backgroundColor,
   borderRadius,
   children,
+  fontWeightSubtitle,
   id,
   imageUrl,
   isFree,
@@ -23,7 +24,7 @@ const CourseCardComponent = ({
   title,
   titleColor,
   titleSize,
-  workload,
+  workload
 }) => {
 
   const renderComponent = (theme) => (
@@ -68,6 +69,7 @@ const CourseCardComponent = ({
           {subtitle && <GenericCard.Subtitle>
             <Typography
               fontSize="12px"
+              fontWeight={fontWeightSubtitle}
               color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}
               fontFamily={"'Rubik', sans-serif"}>
               {`${subtitle}`}
@@ -80,7 +82,7 @@ const CourseCardComponent = ({
               color={'#666666'}
               fontFamily={"'Rubik', sans-serif"}
             >
-              {"Gratuito "}
+              {"Gratuito"}
             </Typography>
           </GenericCard.Free>}
           {workload && <GenericCard.Workload>
@@ -125,6 +127,7 @@ CourseCardComponent.propTypes = {
   borderRadius: PropTypes.string,
   children: PropTypes.node,
   companyNumber: PropTypes.number,
+  fontWeightSubtitle: PropTypes.string,
   id: PropTypes.string,
   imageUrl: PropTypes.string,
   isFree: PropTypes.bool,
@@ -138,6 +141,11 @@ CourseCardComponent.propTypes = {
   titleColor: PropTypes.string,
   titleSize: PropTypes.string,
   workload: PropTypes.string
+}
+
+CourseCardComponent.defaultProps = {
+  titleColor: "#391DDD", 
+  titleSize: '14px'
 }
 
 export default CourseCardComponent
