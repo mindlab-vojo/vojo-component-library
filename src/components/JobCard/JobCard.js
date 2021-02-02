@@ -144,7 +144,6 @@ const JobCardComponent = ({
               {freelance && <JobCard.Freelance theme={theme}>
                 <Typography
                   fontSize="12px"
-                  fontWeight="bolder"
                   color={theme.colors.blackColor}
                   fontFamily={"'Rubik', sans-serif"}
                 >
