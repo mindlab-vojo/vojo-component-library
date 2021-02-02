@@ -10,6 +10,7 @@ import categories from '../../../.storybook/categories';
 export const genericCard = () => {
   const backgroundColor = color('backgroundColor', "#FFFFFF")
   const borderRadius = text('borderRadius', '0')
+  const fontWeightSubtitle = text('fontWeightSubtitle', 'bolder')
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://s3.amazonaws.com/static.vojo.com.br/prd/images/icon_servicos.PNG')
   const isNew = boolean('isNew', true)
@@ -26,6 +27,7 @@ export const genericCard = () => {
     <GenericCard
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
+      fontWeightSubtitle={fontWeightSubtitle}
       id={id}
       imageUrl={imageUrl}
       isFree={isFree}

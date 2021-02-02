@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, color } from '@storybook/addon-knobs';
+import { withKnobs, text, color, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -10,6 +10,7 @@ import categories from '../../../.storybook/categories';
 export const component = () => {
   const backgroundColor = color('backgroundColor', '#391DDD')
   const borderColor = color('borderColor', '#391DDD')
+  const retangular = boolean('retangular', false)
   const children = text('children', 'Hello Vojo')
   const hoverColor = color('hoverColor', '#391DDD')
   const id = text('id', 'button')
@@ -23,6 +24,7 @@ export const component = () => {
     <Button
       backgroundColor={backgroundColor}
       borderColor={borderColor}
+      retangular={retangular}
       hoverColor={hoverColor}
       id={id}
       name={name}

@@ -8,6 +8,7 @@ function ButtonComponent({
   children, 
   backgroundColor,
   borderColor,
+  retangular,
   hoverColor,
   id,
   name,
@@ -22,6 +23,7 @@ function ButtonComponent({
       className="Button"
       backgroundColor={backgroundColor}
       borderColor={borderColor}
+      retangular={retangular}
       hoverColor={hoverColor}
       id={id}
       name={name}
@@ -44,6 +46,7 @@ function ButtonComponent({
 ButtonComponent.propTypes = {
   backgroundColor: PropTypes.string,
   borderColor: PropTypes.string,
+  retangular: PropTypes.bool,
   children: PropTypes.node, 
   hoverColor: PropTypes.string,
   id: PropTypes.string,

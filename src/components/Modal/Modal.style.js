@@ -5,6 +5,8 @@ export const FixedWrapper = styled.div`
   width: 100%;
   height: 100vh;
   overflow: auto;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
   z-index: ${props => props.zIndex};
 `
 

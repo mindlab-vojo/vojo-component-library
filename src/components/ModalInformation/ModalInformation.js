@@ -20,7 +20,7 @@ function ModalInformationComponent({
   const renderList = (list) => (
     list.map((item, index) => {
       return <ModalInformation.Item key={index}>
-        {unorderedList ? <span>•</span> : <span>{index + 1}-</span>}
+        {unorderedList ? <span>•</span> : <span>{index + 1}.</span>}
         {item}
       </ModalInformation.Item>
     })
@@ -36,7 +36,8 @@ function ModalInformationComponent({
         {list &&
           <ModalInformation.ListContainer>
             {unorderedList ? (
-              <ModalInformation.UList>
+              <ModalInformation.UList
+                theme={theme}>
                 {renderList(list)}
               </ModalInformation.UList>
             ) : (

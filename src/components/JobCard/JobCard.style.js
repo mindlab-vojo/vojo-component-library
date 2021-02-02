@@ -60,12 +60,14 @@ export const DataBlock = styled.div`
   flex-direction: column;
   justify-content: ${props => props.justifyContent};
   min-height: 65px;
-  gap: 2px;
 `
 
-export const Title = styled.div``
+export const Title = styled.div`
+  margin-bottom: 4px;
+`
 
 export const Subtitle = styled.div`
+  margin-bottom: 4px;
 `
 export const Companies = styled.div`
   margin: 4px 0;
@@ -106,7 +108,6 @@ export const Freelance = styled.div`
   display: flex;
   height: 24px;
   justify-content: center;
-  margin: 3px;
   min-width: 24px;
   padding: 0 10px;
   width: fit-content;
