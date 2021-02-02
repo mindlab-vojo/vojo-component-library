@@ -6,7 +6,7 @@ export const Button = styled.button`
   border: 1px solid ${props => props.borderColor ? props.borderColor : props.backgroundColor};
   color: ${props => props.textColor};
   cursor: pointer;
-  border-radius: 500px;
+  border-radius: ${props => props.retangular ? '4px' : '500px'};
   display: flex;
   justify-content: center;
   font-size: 15px;
@@ -14,7 +14,7 @@ export const Button = styled.button`
   padding: 10px 25px;
   transition-duration: 0.3s;
   width: 100%;
-
+  font-family: 'Rubik', sans-serif;
   :hover{
     background-color: ${props => props.hoverColor};
     border-color: ${props => props.hoverColor};
