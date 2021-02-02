@@ -10,13 +10,14 @@ import Button from '../Button'
 export const modalInformation = () => {
   const modalWidth = text('modalWidth', "280px")
   const title = text('title', "Como funciona?")
-  const description = text('description', "O nosso propósito é te ajudar a gerar na renda, mas é você quem decide como deseja começar!")
-  const list = array('list', ['Escolha a forma como você deseja gerar renda;', 'Preencha o questionário;', 'Descubra os sites das empresas parceiras que recomendamos para você;', 'Decida se você quer começar a gerar renda com a empresa e conte com a nossa ajuda, ou se desenvolva com os nossos cursos.'])
+  const description = text('description', "Nosso objetivo é te ajudar a chegar na renda.")
+  const list = array('list', ['Selecione uma oportunidade;',
+    'Preencha o formulário com os dados solicitados;',
+    'Faça o teste para traçarmos o seu perfil;',
+    'Aguarde pela análise da sua candidatura;',
+    'E receba o contato da empresa responsável pelo seu telefone e/ou e-mail.'])
   const unorderedList = boolean('unorderedList', false)
 
-  const renderActions = () => {
-    return <Button>OK!</Button>
-  }
   return (
     <ModalInformation
       modalWidth={modalWidth}
@@ -24,7 +25,7 @@ export const modalInformation = () => {
       description={description}
       list={list}
       unorderedList={unorderedList}
-      actions={renderActions()}
+      actions={<Button retangular={true}>OK!</Button>}
     >
     </ModalInformation>
   )
