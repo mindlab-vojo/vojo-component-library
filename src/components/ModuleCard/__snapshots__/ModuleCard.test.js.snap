@@ -41,7 +41,7 @@ Object {
               class="sc-AxgMl fFPQpl ModuleCard__InfoWrapper__Title"
             >
               <p
-                class="sc-AxmLO iASmzZ"
+                class="sc-AxmLO jpmPQf"
               >
                 Just a Title
               </p>
@@ -50,7 +50,7 @@ Object {
               class="sc-AxheI fniENP ModuleCard__InfoWrapper__Description"
             >
               <p
-                class="sc-fzozJi bFVTtP"
+                class="sc-fzozJi Wya-Dg"
               >
                 Just testing by
               </p>
@@ -59,7 +59,7 @@ Object {
               class="sc-Axmtr hBVTto ModuleCard__InfoWrapper__Time"
             >
               <p
-                class="sc-fzoLsD cleZru"
+                class="sc-fzoLsD jeWUtM"
               >
                 50min.
               </p>
@@ -106,7 +106,7 @@ Object {
             class="sc-AxgMl fFPQpl ModuleCard__InfoWrapper__Title"
           >
             <p
-              class="sc-AxmLO iASmzZ"
+              class="sc-AxmLO jpmPQf"
             >
               Just a Title
             </p>
@@ -115,7 +115,7 @@ Object {
             class="sc-AxheI fniENP ModuleCard__InfoWrapper__Description"
           >
             <p
-              class="sc-fzozJi bFVTtP"
+              class="sc-fzozJi Wya-Dg"
             >
               Just testing by
             </p>
@@ -124,7 +124,7 @@ Object {
             class="sc-Axmtr hBVTto ModuleCard__InfoWrapper__Time"
           >
             <p
-              class="sc-fzoLsD cleZru"
+              class="sc-fzoLsD jeWUtM"
             >
               50min.
             </p>
