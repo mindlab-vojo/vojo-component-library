@@ -62,7 +62,7 @@ Object {
                 class="sc-AxmLO gwIbuf"
               >
                 <p
-                  class="sc-fznKkj cxMsEq"
+                  class="sc-fznKkj jXfRPU"
                 >
                   Oportunidades
                 </p>
@@ -90,7 +90,7 @@ Object {
                 class="sc-AxmLO gwIbuf"
               >
                 <p
-                  class="sc-fznZeY dpA-duK"
+                  class="sc-fznZeY bcxhZs"
                 >
                   Cursos Gratuitos
                 </p>
@@ -107,13 +107,13 @@ Object {
                 class="sc-fzpans dguJNq"
               >
                 <button
-                  class="sc-fznyAO dUVuFA Button"
+                  class="sc-fznyAO fhoogm Button"
                   id="0-menu-button"
                   name="0-menu-button"
                   type="button"
                 >
                   <p
-                    class="sc-fzokOt ffWrmZ"
+                    class="sc-fzokOt deGzez"
                   >
                     Sair
                   </p>
@@ -192,7 +192,7 @@ Object {
               class="sc-AxmLO gwIbuf"
             >
               <p
-                class="sc-fznKkj cxMsEq"
+                class="sc-fznKkj jXfRPU"
               >
                 Oportunidades
               </p>
@@ -220,7 +220,7 @@ Object {
               class="sc-AxmLO gwIbuf"
             >
               <p
-                class="sc-fznZeY dpA-duK"
+                class="sc-fznZeY bcxhZs"
               >
                 Cursos Gratuitos
               </p>
@@ -237,13 +237,13 @@ Object {
               class="sc-fzpans dguJNq"
             >
               <button
-                class="sc-fznyAO dUVuFA Button"
+                class="sc-fznyAO fhoogm Button"
                 id="0-menu-button"
                 name="0-menu-button"
                 type="button"
               >
                 <p
-                  class="sc-fzokOt ffWrmZ"
+                  class="sc-fzokOt deGzez"
                 >
                   Sair
                 </p>

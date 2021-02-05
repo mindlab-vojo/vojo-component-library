@@ -13,22 +13,18 @@ const BannerImageComponent = ({
 
   const renderComponent = (theme) => (
     <BannerImage.Wrapper
-      className="BannerImage"
       theme={theme}>
-      <BannerImage.Cropper
-        className="BannerImage__Cropper">
+      <BannerImage.Cropper>
         <BannerImage.Image
-          className="BannerImage__Image"
           src={imageUrl}/>
       </BannerImage.Cropper>
-      <BannerImage.Overlay
-        className="BannerImage__Overlay"/>
-      <BannerImage.Title
-        className="BannerImage__Title">
+      <BannerImage.Overlay/>
+      <BannerImage.Title>
         <Typography 
           fontSize="36px"
           fontWeight="bolder"
-          color={theme.colors.whiteColor}>
+          color={theme.colors.whiteColor}
+          fontFamily="'Montserrat', sans-serif">
           {title}
         </Typography>
       </BannerImage.Title>

@@ -10,7 +10,7 @@ export const Button = styled.button`
   display: flex;
   justify-content: center;
   font-size: 15px;
-  font-weight: 600;
+  font-weight: 400;
   padding: 10px 25px;
   transition-duration: 0.3s;
   width: 100%;

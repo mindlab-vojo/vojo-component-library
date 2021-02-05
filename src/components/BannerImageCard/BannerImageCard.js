@@ -15,29 +15,24 @@ const BannerImageCardComponent = ({
 
   const renderComponent = (theme) => (
     <BannerImageCard.Wrapper
-      className="BannerImageCard"
       onClick={onClickCard}
       theme={theme}>
-      <BannerImageCard.Cropper
-        className="BannerImageCard__Cropper">
+      <BannerImageCard.Cropper>
         <BannerImageCard.Image
-          className="BannerImageCard__Image"
           src={imageUrl}/>
       </BannerImageCard.Cropper>
-      <BannerImageCard.Overlay
-        className="BannerImageCard__Overlay"/>
+      <BannerImageCard.Overlay/>
       <BannerImageCard.TextArea>
-        <BannerImageCard.Title
-          className="BannerImageCard__Title">
+        <BannerImageCard.Title>
           <Typography 
             fontSize="18px"
             fontWeight="bolder"
-            color={theme.colors.whiteColor}>
+            color={theme.colors.whiteColor}
+            fontFamily="'Montserrat', sans-serif">
             {title}
           </Typography>
         </BannerImageCard.Title>
-        <BannerImageCard.Subtitle
-          className="BannerImageCard__Subtitle">
+        <BannerImageCard.Subtitle>
           <Typography 
             fontSize="12px"
             color={theme.colors.whiteColor}>

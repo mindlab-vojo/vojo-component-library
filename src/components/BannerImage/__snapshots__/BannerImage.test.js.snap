@@ -6,24 +6,24 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hRwqvF BannerImage"
+        class="sc-AxjAm hRwqvF"
       >
         <div
-          class="sc-AxiKw dGeVpK BannerImage__Cropper"
+          class="sc-AxiKw dGeVpK"
         >
           <img
-            class="sc-AxhCb QXIUk BannerImage__Image"
+            class="sc-AxhCb QXIUk"
             src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
           />
         </div>
         <div
-          class="sc-AxirZ imbHoc BannerImage__Overlay"
+          class="sc-AxirZ imbHoc"
         />
         <div
-          class="sc-AxhUy kCwsYC BannerImage__Title"
+          class="sc-AxhUy kCwsYC"
         >
           <p
-            class="sc-AxgMl kugnSC"
+            class="sc-AxgMl ioGQxH"
           >
             Balconista
           </p>
@@ -33,24 +33,24 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hRwqvF BannerImage"
+      class="sc-AxjAm hRwqvF"
     >
       <div
-        class="sc-AxiKw dGeVpK BannerImage__Cropper"
+        class="sc-AxiKw dGeVpK"
       >
         <img
-          class="sc-AxhCb QXIUk BannerImage__Image"
+          class="sc-AxhCb QXIUk"
           src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
         />
       </div>
       <div
-        class="sc-AxirZ imbHoc BannerImage__Overlay"
+        class="sc-AxirZ imbHoc"
       />
       <div
-        class="sc-AxhUy kCwsYC BannerImage__Title"
+        class="sc-AxhUy kCwsYC"
       >
         <p
-          class="sc-AxgMl kugnSC"
+          class="sc-AxgMl ioGQxH"
         >
           Balconista
         </p>
