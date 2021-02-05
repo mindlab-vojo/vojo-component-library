@@ -9,7 +9,8 @@ import CepInput from './components/Input/CepInput';
 import CpfInput from './components/Input/CpfInput';
 import Checkbox from './components/Checkbox';
 import Container from './components/Container';
-import CourseCard from './components/GenericCard';
+import CouponCard from './components/CouponCard';
+import CourseCard from './components/CourseCard';
 import EmailInput from './components/Input/EmailInput';
 import FilterDropdown from './components/FilterDropdown';
 import Footer from './components/Footer';
@@ -30,6 +31,7 @@ import PisInput from './components/Input/PisInput';
 import ResearchCard from './components/ResearchCard';
 import SideMenu from './components/SideMenu';
 import Spinner from './components/Spinner/Spinner';
+import Snackbar from './components/Snackbar/Snackbar';
 import StickyToast from './components/StickyToast/StickyToast';
 import TextInput from './components/Input/TextInput';
 import Toast from './components/Toast';
@@ -53,6 +55,7 @@ export {
   CpfInput,
   Checkbox,
   Container,
+  CouponCard,
   CourseCard,
   EmailInput,
   FilterDropdown,
@@ -74,6 +77,7 @@ export {
   PisInput,
   ResearchCard,
   SideMenu,
+  Snackbar,
   Spinner,
   StickyToast,
   TextInput,
