@@ -35,7 +35,7 @@ Object {
               class="sc-AxgMl fFPQpl"
             >
               <p
-                class="sc-Axmtr ilCWvu"
+                class="sc-Axmtr bvymrK"
               >
                 Procurando empresas
               </p>
@@ -43,11 +43,11 @@ Object {
             <div
               class="sc-AxgMl fFPQpl"
             >
-              <p
-                class="sc-AxmLO cNfLoL"
+              <h3
+                class="sc-AxmLO bswCGd"
               >
                 Seletor de produtos para entrega (Shopper)
-              </p>
+              </h3>
             </div>
           </div>
         </div>
@@ -85,7 +85,7 @@ Object {
             class="sc-AxgMl fFPQpl"
           >
             <p
-              class="sc-Axmtr ilCWvu"
+              class="sc-Axmtr bvymrK"
             >
               Procurando empresas
             </p>
@@ -93,11 +93,11 @@ Object {
           <div
             class="sc-AxgMl fFPQpl"
           >
-            <p
-              class="sc-AxmLO cNfLoL"
+            <h3
+              class="sc-AxmLO bswCGd"
             >
               Seletor de produtos para entrega (Shopper)
-            </p>
+            </h3>
           </div>
         </div>
       </div>
