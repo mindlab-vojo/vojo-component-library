@@ -5,7 +5,7 @@ export const darkerSecondaryColor = "#FF7C8C"
 
 export const blackColor = "#212529"
 export const darkBlueColor = "#0C14B1"
-export const darkGreyColor = "4D4771"
+export const darkGreyColor = "#4D4771"
 export const greyColor = "#E1E4E8"
 export const lightGreyColor = "#9E9E9E"
 export const pinkColor = "#FF5477"
