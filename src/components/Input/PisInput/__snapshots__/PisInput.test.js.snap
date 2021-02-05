@@ -13,7 +13,7 @@ Object {
           for="vojo-test"
         >
           <span
-            class="sc-AxheI cDVgEw"
+            class="sc-AxheI eZoXUS"
           >
             <strong>
               teste
@@ -21,7 +21,7 @@ Object {
           </span>
         </label>
         <div
-          class="sc-AxiKw dhWbka Input__InputBackground"
+          class="sc-AxiKw houSoJ Input__InputBackground"
         >
           <input
             class="sc-AxhUy jaojvj Input__Input"
@@ -44,7 +44,7 @@ Object {
         for="vojo-test"
       >
         <span
-          class="sc-AxheI cDVgEw"
+          class="sc-AxheI eZoXUS"
         >
           <strong>
             teste
@@ -52,7 +52,7 @@ Object {
         </span>
       </label>
       <div
-        class="sc-AxiKw dhWbka Input__InputBackground"
+        class="sc-AxiKw houSoJ Input__InputBackground"
       >
         <input
           class="sc-AxhUy jaojvj Input__Input"
