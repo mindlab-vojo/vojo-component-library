@@ -38,8 +38,8 @@ const SnackbarComponent = ({
           {title && <Typography type={'h3'} color={titleColor}>{title}</Typography>}
           {description && <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>}
         </Snackbar.TextContainer>
-        <Snackbar.Button>
-          <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} onClick={onClickSnackbar}>{buttonText}</Typography>
+        <Snackbar.Button onClick={onClickSnackbar}>
+          <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} >{buttonText}</Typography>
         </Snackbar.Button>
       </Snackbar.Container>
     </Snackbar.ContainerTest>
@@ -70,7 +70,11 @@ SnackbarComponent.propTypes = {
 }
 
 SnackbarComponent.defaultProps = {
-  backgroundColor: 'red',
+  backgroundColor: '#391DDD',
+  iconColor: '#FFFFFF',
+  descriptionColor: '#DDDDDD',
+  titleColor: '#FFFFFF',
+  buttonTextColor: '#FFFFFF'
 }
 
 export default SnackbarComponent
