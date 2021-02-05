@@ -19,12 +19,12 @@ export const Label = styled.label`
 
 export const InputBackground = styled.div`
   align-items: center;
-  border: 1px solid ${props => 
+  border: 2px solid ${props => 
     props.isValid ? 
       props.isFocused ? 
         props.theme.colors.primaryColor : 
         props.theme.colors.darkGrayColor:
-      props.theme.colors.redColor
+      props.theme.colors.pinkColor
 };
   border-radius: 4px;
   display: flex;
@@ -47,7 +47,7 @@ export const InputIcon = styled.div`
 
 export const Input = styled.input`
   border: 0;
-  color: ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.redColor};
+  color: ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.pinkColor};
   font-size: 15px;
   margin: 5px 0;
   width: 100%;
