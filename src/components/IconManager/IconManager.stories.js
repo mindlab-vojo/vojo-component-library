@@ -15,7 +15,7 @@ export default {
 
 export const component = () => {
   const icon = select('icon', Object.keys(iconList), Object.keys(iconList)[0])
-  const fill = color('fill', '#00000')
+  const fill = color('fill', '#391DDD')
   const height = text('height', '24')
   const width = text('width', '24')
 
