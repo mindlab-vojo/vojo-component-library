@@ -179,7 +179,7 @@ class InputComponent extends Component {
                 this.state.isFocused ?
                   theme.colors.primaryColor :
                   theme.colors.darkGreyColor : 
-                theme.colors.redColor
+                theme.colors.pinkColor
             }
             tag="span"
             type="label">
@@ -221,9 +221,9 @@ class InputComponent extends Component {
           this.props.showError &&
           !this.state.isValid && (
             <Typography 
-              color={theme.colors.redColor}
+              color={theme.colors.pinkColor}
               tag="span"
-              type="default">
+              type="label">
               {this.state.errorMessage}
             </Typography>
           )

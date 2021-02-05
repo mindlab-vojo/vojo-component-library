@@ -38,7 +38,11 @@ export class Typography extends Component {
     const Component = styled(tag).attrs(additionalProps)`
       color: ${typoColor};
       font-size: ${typoStyles.fontSize};
+      font-family: ${typoStyles.fontFamily};
+      font-weight: ${typoStyles.fontWeight};
+      line-height: ${typoStyles.lineHeight};
       margin: 0;
+      letter-spacing: 0.2px;
       ${isUnderlined && `text-decoration: underline;`}
       ${fontStyle && `font-style: ${fontStyle};`}
       ${fontVariant && `font-variant: ${fontVariant};`}

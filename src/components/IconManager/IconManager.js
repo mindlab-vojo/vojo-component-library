@@ -6,10 +6,13 @@ import ArrowLeft from './Icons/ArrowLeft'
 import ArrowRigth from './Icons/ArrowRigth'
 import ArrowUp from './Icons/ArrowUp'
 import Avatar from './Icons/Avatar'
+import CancelOutlined from './Icons/CancelOutlined'
 import Check from './Icons/Check'
 import CheckboxChecked from './Icons/CheckboxChecked'
 import CheckboxUnchecked from './Icons/CheckboxUnchecked'
+import CheckOutlined from './Icons/CheckOutlined'
 import Close from './Icons/Close'
+import Coupon from './Icons/Coupon'
 import Course from './Icons/Course'
 import Exclamation from './Icons/Exclamation'
 import Hamburger from './Icons/Hamburger'
@@ -51,10 +54,13 @@ export const iconList = {
   ArrowLeft: ArrowLeft,
   ArrowRigth: ArrowRigth,
   ArrowUp: ArrowUp,
+  CancelOutlined: CancelOutlined,
   Check: Check,
   CheckboxChecked: CheckboxChecked,
   CheckboxUnchecked: CheckboxUnchecked,
+  CheckOutlined: CheckOutlined,
   Close: Close,
+  Coupon: Coupon,
   Course: Course,
   Exclamation: Exclamation,
   Hamburger: Hamburger,

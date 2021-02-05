@@ -18,6 +18,7 @@ export const NewTag = styled.div`
 
 export const ImageBlock = styled.div`
   margin-right: 8px;
+  margin-left: 4px;
   width: 72px;
 `
 
@@ -85,26 +86,12 @@ export const WorkloadTextWrapper = styled.div`
     }
 `
 
-export const SingleState = styled.div`
+export const CoursesAvailable = styled.div`
   display: flex;
-  flex-direction: row;
+  align-iteMs: center;
   width: 100%;
 `
 
-export const StateCircle = styled.div`
-  align-items: center;
-  background-color: #E9E6FF;
-  border-radius: 500px;
-  display: flex;
-  height: 24px;
-  justify-content: center;
-  margin: 3px;
-  min-width: 24px;
-  border: 1px solid #391DDD;
-  padding: 2px;
-`
-
-export const Cities = styled.div`
-  margin-left: 5px;
-  width: 100%
+export const CoursesAvailableIcon = styled.div`
+  margin-right: 9px;
 `

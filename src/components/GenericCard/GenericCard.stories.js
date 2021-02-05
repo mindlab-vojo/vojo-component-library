@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, boolean, color } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, color, number } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -10,6 +10,7 @@ import categories from '../../../.storybook/categories';
 export const genericCard = () => {
   const backgroundColor = color('backgroundColor', "#FFFFFF")
   const borderRadius = text('borderRadius', '0')
+  const coursesAvailable = number('coursesAvailable', 3)
   const fontWeightSubtitle = text('fontWeightSubtitle', 'bolder')
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://s3.amazonaws.com/static.vojo.com.br/prd/images/icon_servicos.PNG')
@@ -23,10 +24,12 @@ export const genericCard = () => {
   const titleColor = color('titleColor', "#5320E8")
   const titleSize = text('titleSize', '14px')
   const workload = text('workload', '60 min')
+
   return (
     <GenericCard
       backgroundColor={backgroundColor}
       borderRadius={borderRadius}
+      coursesAvailable={coursesAvailable}
       fontWeightSubtitle={fontWeightSubtitle}
       id={id}
       imageUrl={imageUrl}

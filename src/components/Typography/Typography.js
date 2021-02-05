@@ -15,7 +15,7 @@ function TypographyComponent({
   fontWeight,
   fontSize,
   lineHeight,
-  fontFamily,
+  fontFamily
 }) {
 
   const typographyTypes = {
@@ -23,16 +23,31 @@ function TypographyComponent({
       fontSize: "14px"
     },
     smallText: {
-      fontSize: "9px"
+      fontSize: "9px",
+      lineHeight: "18px",
     },
     subtitle: {
-      fontSize: "15px"
+      fontSize: "16px"
     },
     title: {
-      fontSize: "24px"
+      fontSize: "24px",
+      fontWeight: "bold",
+      fontFamily: "'Montserrat', sans-serif"
+    },
+    h1: {
+      fontSize: "24px",
+      fontWeight: "bold",
+      lineHeight: "28px",
+      fontFamily: "'Montserrat', sans-serif",
+    },
+    h3: {
+      fontSize: "14px",
+      fontWeight: "bold",
+      lineHeight: "18px",
+      fontFamily: "'Montserrat', sans-serif",
     },
     label: {
-      fontSize: "13px"
+      fontSize: "12px"
     }
   }
 
