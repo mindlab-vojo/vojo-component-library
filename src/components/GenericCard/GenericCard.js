@@ -8,10 +8,12 @@ import { Card } from '../Card/Card.style'
 import Typography from '../Typography'
 import IconManager from '../IconManager'
 
-const CourseCardComponent = ({
+const GenericCardComponent = ({
   backgroundColor,
   borderRadius,
   children,
+  coursesAvailable,
+  coursesAvailableColor,
   fontWeightSubtitle,
   id,
   imageUrl,
@@ -24,7 +26,8 @@ const CourseCardComponent = ({
   title,
   titleColor,
   titleSize,
-  workload
+  workload,
+  workloadColor
 }) => {
 
   const renderComponent = (theme) => (
@@ -40,15 +43,11 @@ const CourseCardComponent = ({
           novidade
         </Typography>
       </GenericCard.NewTag>}
-      <GenericCard.Wrapper
-        className="GenericCard">
-        <GenericCard.ImageBlock
-          className="CourseCard__ImageBlock">
-          <GenericCard.ImageWrapper
-            className="CourseCard__ImageWrapper">
+      <GenericCard.Wrapper>
+        <GenericCard.ImageBlock>
+          <GenericCard.ImageWrapper>
             <GenericCard.ImageCropper
-              borderRadius={borderRadius}
-              className="CourseCard__ImageWrapper__Cropper">
+              borderRadius={borderRadius}>
               <GenericCard.Image
                 src={imageUrl}
                 alt={title}
@@ -61,8 +60,7 @@ const CourseCardComponent = ({
             <Typography
               color={titleColor}
               fontSize={titleSize}
-              fontWeight="bolder"
-              fontFamily={"'Montserrat', sans-serif"}>
+              type={'h3'}>
               {title}
             </Typography>
           </GenericCard.Title>
@@ -70,8 +68,7 @@ const CourseCardComponent = ({
             <Typography
               fontSize="12px"
               fontWeight={fontWeightSubtitle}
-              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}
-              fontFamily={"'Rubik', sans-serif"}>
+              color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}>
               {`${subtitle}`}
             </Typography>
           </GenericCard.Subtitle>}
@@ -79,21 +76,17 @@ const CourseCardComponent = ({
             <Typography
               fontSize="12px"
               fontWeight="bolder"
-              color={'#666666'}
-              fontFamily={"'Rubik', sans-serif"}
-            >
+              color={'#666666'}>
               {"Gratuito"}
             </Typography>
           </GenericCard.Free>}
           {workload && <GenericCard.Workload>
-            <IconManager icon={'Clock'} fill={'#666666'} width={'20px'} height={'20px'} />
+            <IconManager icon={'Clock'} fill={workloadColor} width={'20px'} height={'20px'} />
             <GenericCard.WorkloadText>
               <GenericCard.WorkloadTextWrapper>
                 <Typography
                   fontSize="12px"
-                  color={theme.colors.darkGreyColor}
-                  fontFamily={"'Rubik', sans-serif"}
-                >
+                  color={workloadColor}>
                   {"Carga horária: "}
                 </Typography>
               </GenericCard.WorkloadTextWrapper>
@@ -101,14 +94,18 @@ const CourseCardComponent = ({
                 <Typography
                   fontSize="12px"
                   fontWeight="bolder"
-                  color={'#666666'}
-                  fontFamily={"'Rubik', sans-serif"}
-                >
+                  color={workloadColor}>
                   {workload}
                 </Typography>
               </GenericCard.WorkloadTextWrapper>
             </GenericCard.WorkloadText>
           </GenericCard.Workload>}
+          {coursesAvailable && <GenericCard.CoursesAvailable>
+            <GenericCard.CoursesAvailableIcon>
+              <Typography color={titleColor} type={'h1'}>+</Typography>
+            </GenericCard.CoursesAvailableIcon>
+            <Typography type={'label'} color={coursesAvailableColor}>{coursesAvailable} {coursesAvailable > 1 ? 'cursos disponíveis' : 'curso disponível'}</Typography>
+          </GenericCard.CoursesAvailable>}
           {children}
         </GenericCard.DataBlock>
       </GenericCard.Wrapper>
@@ -122,10 +119,12 @@ const CourseCardComponent = ({
   )
 }
 
-CourseCardComponent.propTypes = {
+GenericCardComponent.propTypes = {
   backgroundColor: PropTypes.string,
   borderRadius: PropTypes.string,
   children: PropTypes.node,
+  coursesAvailable: PropTypes.number,
+  coursesAvailableColor: PropTypes.string,
   companyNumber: PropTypes.number,
   fontWeightSubtitle: PropTypes.string,
   id: PropTypes.string,
@@ -140,12 +139,14 @@ CourseCardComponent.propTypes = {
   title: PropTypes.string,
   titleColor: PropTypes.string,
   titleSize: PropTypes.string,
-  workload: PropTypes.string
+  workload: PropTypes.string,
+  workloadColor: PropTypes.string,
 }
 
-CourseCardComponent.defaultProps = {
-  titleColor: "#391DDD", 
-  titleSize: '14px'
+GenericCardComponent.defaultProps = {
+  titleColor: "#391DDD",
+  titleSize: '14px',
+  workloadColor: "#666666"
 }
 
-export default CourseCardComponent
+export default GenericCardComponent
