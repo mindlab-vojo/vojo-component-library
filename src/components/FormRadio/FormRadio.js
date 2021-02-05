@@ -67,10 +67,10 @@ const FormRadioComponent = ({
                     "RadioChecked" : 
                     "RadioUnchecked"
                 }
-                fill={theme.colors.darkGreyColor}/>
+                fill={theme.colors.blackColor}/>
             </FormRadio.RadioIcon>
             <Typography
-              color={theme.colors.darkGreyColor}
+              color={theme.colors.blackColor}
               fontSize="14px">
               {option.title}
             </Typography>
@@ -87,9 +87,9 @@ const FormRadioComponent = ({
           <FormRadio.TitleWrapper>
             <FormRadio.Title>
               <Typography
-                color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                color={hasError ? theme.colors.redColor : theme.colors.blackColor}
                 fontSize="16px"
-                fontWeight="bold">
+                fontWeight="500">
                 {title}
               </Typography>
             </FormRadio.Title>
@@ -97,7 +97,7 @@ const FormRadioComponent = ({
               description && (
                 <FormRadio.Description>
                   <Typography
-                    color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                    color={hasError ? theme.colors.redColor : theme.colors.blackColor}
                     fontSize="12px">
                     {description}
                   </Typography>
@@ -124,7 +124,7 @@ const FormRadioComponent = ({
                   height="20px"
                   width="20px"
                   icon="HelpCircle"
-                  fill={theme.colors.darkGreyColor}/>
+                  fill={theme.colors.blackColor}/>
               </FormRadio.Tooltip>
             )
           }

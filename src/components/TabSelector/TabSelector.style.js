@@ -10,7 +10,7 @@ export const Wrapper = styled.ul`
   width: 100%;
   list-style: none;
   font-size: 14px;
-  font-weight: bold;
+  font-weight: 500;
   text-align: center;
   cursor: pointer;
 `

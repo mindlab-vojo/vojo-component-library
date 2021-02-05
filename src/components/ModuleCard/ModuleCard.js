@@ -45,7 +45,8 @@ const ModuleCardComponent = ({
             <Typography
               color={theme.colors.darkBlueColor}
               fontSize="18px"
-              fontWeight="bolder">
+              fontWeight="bolder"
+              fontFamily="'Montserrat', sans-serif">
               {title}
             </Typography>
           </ModuleCard.Title>

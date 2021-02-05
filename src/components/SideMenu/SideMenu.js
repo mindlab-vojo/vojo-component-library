@@ -34,8 +34,9 @@ const SideMenuComponent = ({
           <SideMenu.ItemText>
             <Typography
               color={theme.colors.primaryColor}
-              fontSize="18px"
-              fontWeight="bolder">
+              fontSize="16px"
+              fontWeight="700"
+              fontFamily="'Montserrat', sans-serif">
               {item.text}
             </Typography>
           </SideMenu.ItemText>
@@ -58,8 +59,7 @@ const SideMenuComponent = ({
               name={`${index}-menu-button`}>
               <Typography
                 color={theme.colors.primaryColor}
-                fontSize="18px"
-                fontWeight="bolder">
+                fontSize="18px">
                 {button.text}
               </Typography>
             </Button>

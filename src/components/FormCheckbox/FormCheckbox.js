@@ -91,10 +91,10 @@ const FormCheckboxComponent = ({
                     "CheckboxChecked" : 
                     "CheckboxUnchecked"
                 }
-                fill={theme.colors.darkGreyColor}/>
+                fill={theme.colors.blackColor}/>
             </FormCheckbox.CheckboxIcon>
             <Typography
-              color={theme.colors.darkGreyColor}
+              color={theme.colors.blackColor}
               fontSize="14px">
               {option.title}
             </Typography>
@@ -111,9 +111,9 @@ const FormCheckboxComponent = ({
           <FormCheckbox.TitleWrapper>
             <FormCheckbox.Title>
               <Typography
-                color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                color={hasError ? theme.colors.redColor : theme.colors.blackColor}
                 fontSize="16px"
-                fontWeight="bold">
+                fontWeight="500">
                 {title}
               </Typography>
             </FormCheckbox.Title>
@@ -121,7 +121,7 @@ const FormCheckboxComponent = ({
               description && (
                 <FormCheckbox.Description>
                   <Typography
-                    color={hasError ? theme.colors.redColor : theme.colors.darkGreyColor}
+                    color={hasError ? theme.colors.redColor : theme.colors.blackColor}
                     fontSize="12px">
                     {description}
                   </Typography>
@@ -148,7 +148,7 @@ const FormCheckboxComponent = ({
                   height="20px"
                   width="20px"
                   icon="HelpCircle"
-                  fill={theme.colors.darkGreyColor}/>
+                  fill={theme.colors.blackColor}/>
               </FormCheckbox.Tooltip>
             )
           }

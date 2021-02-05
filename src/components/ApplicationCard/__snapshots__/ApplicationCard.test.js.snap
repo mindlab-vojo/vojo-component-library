@@ -9,21 +9,21 @@ Object {
         class="sc-AxjAm hCpYkD Card"
       >
         <div
-          class="sc-AxirZ iTEWhx ApplicationCard"
+          class="sc-AxirZ iTEWhx"
         >
           <div
-            class="sc-AxiKw hZuHAH ApplicationCard__Image"
+            class="sc-AxiKw hZuHAH"
           >
             <img
-              class="sc-AxhCb fEHPey ApplicationCard__Image__Image"
+              class="sc-AxhCb fEHPey"
               src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
             />
           </div>
           <div
-            class="sc-AxhUy bscpCC ApplicationCard__Info"
+            class="sc-AxhUy bscpCC"
           >
             <div
-              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+              class="sc-AxgMl fFPQpl"
             >
               <p
                 class="sc-AxheI oXUPj"
@@ -32,19 +32,19 @@ Object {
               </p>
             </div>
             <div
-              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+              class="sc-AxgMl fFPQpl"
             >
               <p
-                class="sc-Axmtr cnitNc"
+                class="sc-Axmtr ilCWvu"
               >
                 Procurando empresas
               </p>
             </div>
             <div
-              class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+              class="sc-AxgMl fFPQpl"
             >
               <p
-                class="sc-AxmLO gAull"
+                class="sc-AxmLO cNfLoL"
               >
                 Seletor de produtos para entrega (Shopper)
               </p>
@@ -59,21 +59,21 @@ Object {
       class="sc-AxjAm hCpYkD Card"
     >
       <div
-        class="sc-AxirZ iTEWhx ApplicationCard"
+        class="sc-AxirZ iTEWhx"
       >
         <div
-          class="sc-AxiKw hZuHAH ApplicationCard__Image"
+          class="sc-AxiKw hZuHAH"
         >
           <img
-            class="sc-AxhCb fEHPey ApplicationCard__Image__Image"
+            class="sc-AxhCb fEHPey"
             src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
           />
         </div>
         <div
-          class="sc-AxhUy bscpCC ApplicationCard__Info"
+          class="sc-AxhUy bscpCC"
         >
           <div
-            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            class="sc-AxgMl fFPQpl"
           >
             <p
               class="sc-AxheI oXUPj"
@@ -82,19 +82,19 @@ Object {
             </p>
           </div>
           <div
-            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            class="sc-AxgMl fFPQpl"
           >
             <p
-              class="sc-Axmtr cnitNc"
+              class="sc-Axmtr ilCWvu"
             >
               Procurando empresas
             </p>
           </div>
           <div
-            class="sc-AxgMl fFPQpl ApplicationCard__Info__Text"
+            class="sc-AxgMl fFPQpl"
           >
             <p
-              class="sc-AxmLO gAull"
+              class="sc-AxmLO cNfLoL"
             >
               Seletor de produtos para entrega (Shopper)
             </p>

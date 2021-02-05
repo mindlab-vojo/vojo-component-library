@@ -21,59 +21,48 @@ const ApplicationCardComponent = ({
     <Card
       hasPointer
       onClickCard={onClickCard}>
-      <ApplicationCard.Wrapper
-        className="ApplicationCard">
-        <ApplicationCard.ImageCropper 
-          className="ApplicationCard__Image">
+      <ApplicationCard.Wrapper>
+        <ApplicationCard.ImageCropper>
           <ApplicationCard.Image 
-            className="ApplicationCard__Image__Image"
             isClosed={isClosed}
             src={imageUrl}
           />
         </ApplicationCard.ImageCropper>
-        <ApplicationCard.InfoWrapper
-          className="ApplicationCard__Info">
+        <ApplicationCard.InfoWrapper>
           {
             isClosed ? (
               <>
-                <ApplicationCard.InfoText
-                  className="ApplicationCard__Info__Text">
+                <ApplicationCard.InfoText>
                   <Typography
                     fontSize="14px"
                     fontWeight="bolder">
                 Candidatura finalizada
                   </Typography>
                 </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText
-                  className="ApplicationCard__Info__Text">
+                <ApplicationCard.InfoText>
                   <Typography
-                    fontSize="18px">
+                    type={'h3'}>
                     {jobTitle}
                   </Typography>
                 </ApplicationCard.InfoText>
               </>
             ) : (
               <>
-                <ApplicationCard.InfoText
-                  className="ApplicationCard__Info__Text">
+                <ApplicationCard.InfoText>
                   <Typography
                     fontSize="12px">
                     {`Você está na etapa ${currentStep} de ${totalSteps}`}
                   </Typography>
                 </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText
-                  className="ApplicationCard__Info__Text">
+                <ApplicationCard.InfoText>
                   <Typography
-                    fontSize="14px"
-                    fontWeight="bolder">
+                    type={'h3'}>
                     {stepTitle}
                   </Typography>
                 </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText
-                  className="ApplicationCard__Info__Text">
+                <ApplicationCard.InfoText>
                   <Typography
-                    fontSize="18px"
-                    fontWeight="bolder"
+                    type={'h3'}
                     color={theme.colors.primaryColor}>
                     {jobTitle}
                   </Typography>

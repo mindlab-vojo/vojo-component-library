@@ -6,33 +6,33 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm cZAXsg BannerImageCard"
+        class="sc-AxjAm cZAXsg"
       >
         <div
-          class="sc-AxirZ FRTjp BannerImageCard__Cropper"
+          class="sc-AxirZ FRTjp"
         >
           <img
-            class="sc-AxiKw bJNNLQ BannerImageCard__Image"
+            class="sc-AxiKw bJNNLQ"
             src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
           />
         </div>
         <div
-          class="sc-AxhCb cQJDIS BannerImageCard__Overlay"
+          class="sc-AxhCb cQJDIS"
         />
         <div
           class="sc-AxhUy jKRdOF"
         >
           <div
-            class="sc-AxgMl fFPQpl BannerImageCard__Title"
+            class="sc-AxgMl fFPQpl"
           >
             <p
-              class="sc-Axmtr gmDwjj"
+              class="sc-Axmtr hxnxoe"
             >
               Balconista
             </p>
           </div>
           <div
-            class="sc-AxheI fniENP BannerImageCard__Subtitle"
+            class="sc-AxheI fniENP"
           >
             <p
               class="sc-AxmLO kRFfBm"
@@ -46,33 +46,33 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm cZAXsg BannerImageCard"
+      class="sc-AxjAm cZAXsg"
     >
       <div
-        class="sc-AxirZ FRTjp BannerImageCard__Cropper"
+        class="sc-AxirZ FRTjp"
       >
         <img
-          class="sc-AxiKw bJNNLQ BannerImageCard__Image"
+          class="sc-AxiKw bJNNLQ"
           src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
         />
       </div>
       <div
-        class="sc-AxhCb cQJDIS BannerImageCard__Overlay"
+        class="sc-AxhCb cQJDIS"
       />
       <div
         class="sc-AxhUy jKRdOF"
       >
         <div
-          class="sc-AxgMl fFPQpl BannerImageCard__Title"
+          class="sc-AxgMl fFPQpl"
         >
           <p
-            class="sc-Axmtr gmDwjj"
+            class="sc-Axmtr hxnxoe"
           >
             Balconista
           </p>
         </div>
         <div
-          class="sc-AxheI fniENP BannerImageCard__Subtitle"
+          class="sc-AxheI fniENP"
         >
           <p
             class="sc-AxmLO kRFfBm"
