@@ -24,6 +24,7 @@ import RadioChecked from './Icons/RadioChecked'
 import RadioUnchecked from './Icons/RadioUnchecked'
 import Suitcase from './Icons/Suitcase'
 import SuitcaseArrow from './Icons/SuitcaseArrow'
+import Ticket from './Icons/Ticket'
 import VisibilityOff from './Icons/VisibilityOff'
 import VisibilityOn from './Icons/VisibilityOn'
 import Clock from './Icons/Clock'
@@ -72,6 +73,7 @@ export const iconList = {
   RadioUnchecked: RadioUnchecked,
   Suitcase: Suitcase,
   SuitcaseArrow: SuitcaseArrow,
+  Ticket: Ticket,
   VisibilityOff: VisibilityOff,
   VisibilityOn: VisibilityOn,
   Clock: Clock
