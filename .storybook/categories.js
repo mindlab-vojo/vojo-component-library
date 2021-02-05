@@ -13,6 +13,7 @@ export default {
   Modals: 'Modals',
   Radios: 'Radios',
   StickyToasts:'StickyToasts',
+  Snackbar: 'Snackbar',
   Spinners:'Spinners',
   Tabs:'Tabs',
   Toasts: 'Toasts',
