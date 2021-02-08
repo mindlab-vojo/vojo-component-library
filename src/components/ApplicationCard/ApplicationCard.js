@@ -56,13 +56,16 @@ const ApplicationCardComponent = ({
                 </ApplicationCard.InfoText>
                 <ApplicationCard.InfoText>
                   <Typography
-                    type={'h3'}>
+                    type={'h3'}
+                    fontWeight={'600'}>
                     {stepTitle}
                   </Typography>
                 </ApplicationCard.InfoText>
                 <ApplicationCard.InfoText>
                   <Typography
-                    type={'h3'}
+                    type={'subtitle'}
+                    tag={'h3'}
+                    fontFamily={"'Montserrat', sans-serif"}
                     color={theme.colors.primaryColor}>
                     {jobTitle}
                   </Typography>
