@@ -10,6 +10,7 @@ import * as ApplicationCard from './ApplicationCard.style'
 const ApplicationCardComponent = ({
   currentStep,
   jobTitle,
+  fontWeightTitle,
   imageUrl,
   isClosed,
   onClickCard,
@@ -65,6 +66,7 @@ const ApplicationCardComponent = ({
                   <Typography
                     type={'subtitle'}
                     tag={'h3'}
+                    fontWeight={fontWeightTitle}
                     fontFamily={"'Montserrat', sans-serif"}
                     color={theme.colors.primaryColor}>
                     {jobTitle}
@@ -87,6 +89,7 @@ const ApplicationCardComponent = ({
 ApplicationCardComponent.propTypes = {
   currentStep: PropTypes.string,
   jobTitle: PropTypes.string,
+  fontWeightTitle: PropTypes.string,
   imageUrl: PropTypes.string,
   isClosed: PropTypes.bool,
   onClickCard: PropTypes.func,

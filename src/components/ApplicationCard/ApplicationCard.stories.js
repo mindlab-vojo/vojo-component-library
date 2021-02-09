@@ -15,6 +15,7 @@ export const applicationCard = () => {
   const onClickCard = action("onClickCard")
   const stepTitle = text("stepTitle", "Procurando empresas")
   const totalSteps = text("totalSteps", "4")
+  const fontWeightTitle = text("fontWeightTitle", '700')
 
   return (
     <ApplicationCard
@@ -22,6 +23,7 @@ export const applicationCard = () => {
       imageUrl={imageUrl}
       isClosed={isClosed}
       jobTitle={jobTitle}
+      fontWeightTitle={fontWeightTitle}
       onClickCard={onClickCard}
       stepTitle={stepTitle}
       totalSteps={totalSteps}
