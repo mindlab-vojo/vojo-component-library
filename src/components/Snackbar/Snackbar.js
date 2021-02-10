@@ -36,7 +36,9 @@ const SnackbarComponent = ({
         </Snackbar.Icon>}
         <Snackbar.TextContainer justifyText={justifyText}>
           {title && <Typography type={'h3'} color={titleColor}>{title}</Typography>}
-          {description && <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>}
+          {description && <Snackbar.Wrapper>
+            <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>
+          </Snackbar.Wrapper>}
         </Snackbar.TextContainer>
         <Snackbar.Button onClick={onClickSnackbar}>
           <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} >{buttonText}</Typography>

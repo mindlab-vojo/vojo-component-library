@@ -31,12 +31,10 @@ export const TextContainer = styled.div`
     justify-content: ${props => props.justifyText};
     flex-direction: column;
     margin: 0 12px;
-    h3 {
-        font-size: 14px;
-        font-family: 'Montserrat', sans-serif;
-        color: red;
-        letter-spacing: 0.2px;
-    }
+`
+
+export const Wrapper = styled.div`
+    margin-top: 4px;
 `
 
 export const Button = styled.div`
