@@ -14,8 +14,11 @@ const GenericCardComponent = ({
   children,
   coursesAvailable,
   coursesAvailableColor,
+  currentStep,
   fontWeightSubtitle,
   id,
+  imageBackgroundColor,
+  imageOpacity,
   imageUrl,
   isFree,
   isNew,
@@ -26,6 +29,7 @@ const GenericCardComponent = ({
   title,
   titleColor,
   titleSize,
+  totalSteps,
   workload,
   workloadColor
 }) => {
@@ -47,23 +51,29 @@ const GenericCardComponent = ({
         <GenericCard.ImageBlock>
           <GenericCard.ImageWrapper>
             <GenericCard.ImageCropper
+              imageBackgroundColor={imageBackgroundColor}
               borderRadius={borderRadius}>
+              {currentStep && totalSteps && 
+              <GenericCard.Icon>
+                {currentStep === totalSteps &&<IconManager width={'50px'} height={'50px'} fill={'white'} icon={'Check'} />}
+              </GenericCard.Icon>}
               <GenericCard.Image
                 src={imageUrl}
                 alt={title}
+                imageOpacity={imageOpacity}
               />
             </GenericCard.ImageCropper>
           </GenericCard.ImageWrapper>
         </GenericCard.ImageBlock>
         <GenericCard.DataBlock justifyContent={justifyContent}>
-          <GenericCard.Title>
+          {title && <GenericCard.Title>
             <Typography
               color={titleColor}
               fontSize={titleSize}
               type={'h3'}>
               {title}
             </Typography>
-          </GenericCard.Title>
+          </GenericCard.Title>}
           {subtitle && <GenericCard.Subtitle>
             <Typography
               fontSize="12px"
@@ -106,6 +116,13 @@ const GenericCardComponent = ({
             </GenericCard.CoursesAvailableIcon>
             <Typography type={'label'} color={coursesAvailableColor}>{coursesAvailable} {coursesAvailable > 1 ? 'cursos disponíveis' : 'curso disponível'}</Typography>
           </GenericCard.CoursesAvailable>}
+          {totalSteps && currentStep && <GenericCard.Application>
+            <GenericCard.ApplicationTag>
+              <Typography fontSize={'14px'} color={theme.colors.lightGreyColor}>
+                {totalSteps === currentStep ? 'Candidatura finalizada! Fique atento(a) ao seu e-mail!' : 'Clique aqui para completar e finalizar a sua candidatura'}
+              </Typography>
+            </GenericCard.ApplicationTag>
+          </GenericCard.Application>}
           {children}
         </GenericCard.DataBlock>
       </GenericCard.Wrapper>
@@ -125,9 +142,12 @@ GenericCardComponent.propTypes = {
   children: PropTypes.node,
   coursesAvailable: PropTypes.number,
   coursesAvailableColor: PropTypes.string,
+  currentStep: PropTypes.number,
   companyNumber: PropTypes.number,
   fontWeightSubtitle: PropTypes.string,
   id: PropTypes.string,
+  imageBackgroundColor: PropTypes.string,
+  imageOpacity: PropTypes.string,
   imageUrl: PropTypes.string,
   isFree: PropTypes.bool,
   isNew: PropTypes.bool,
@@ -139,6 +159,7 @@ GenericCardComponent.propTypes = {
   title: PropTypes.string,
   titleColor: PropTypes.string,
   titleSize: PropTypes.string,
+  totalSteps: PropTypes.number,
   workload: PropTypes.string,
   workloadColor: PropTypes.string,
 }

@@ -6,6 +6,7 @@ import Typography from '../Typography'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as ApplicationCard from './ApplicationCard.style'
+import GenericCard from '../GenericCard/GenericCard'
 
 const ApplicationCardComponent = ({
   currentStep,
@@ -17,7 +18,20 @@ const ApplicationCardComponent = ({
   stepTitle,
   totalSteps,
 }) => {
+  const renderComponent = (theme) => (
+    <GenericCard
+      imageUrl={imageUrl}
+      title={jobTitle}
+      titleColor={currentStep === totalSteps ? 'rgb(57, 224, 155)' : '#391DDD'}
+      currentStep={currentStep}
+      totalSteps={totalSteps}
+      borderRadius={'500px'}
+      imageOpacity={currentStep === totalSteps ? '25%' : '100%'}
+      imageBackgroundColor={currentStep === totalSteps ? 'rgb(57, 224, 155)' : '#FFFFFF'}
+    />
+  )
 
+  {/* Card legado
   const renderComponent = (theme) => (
     <Card
       hasPointer
@@ -67,7 +81,6 @@ const ApplicationCardComponent = ({
                     type={'subtitle'}
                     tag={'h3'}
                     fontWeight={fontWeightTitle}
-                    fontFamily={"'Montserrat', sans-serif"}
                     color={theme.colors.primaryColor}>
                     {jobTitle}
                   </Typography>
@@ -78,7 +91,8 @@ const ApplicationCardComponent = ({
         </ApplicationCard.InfoWrapper>
       </ApplicationCard.Wrapper>
     </Card>
-  )
+  )*/}
+
   return (
     <ThemeConsumer>
       {({ theme }) => renderComponent(theme)}
