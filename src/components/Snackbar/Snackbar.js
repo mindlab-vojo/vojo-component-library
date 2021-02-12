@@ -26,7 +26,7 @@ const SnackbarComponent = ({
 
   const renderComponent = (theme) => (
     <Snackbar.ContainerTest>
-      <Snackbar.Container backgroundColor={backgroundColor}>
+      <Snackbar.Container  onClick={onClickSnackbar} backgroundColor={backgroundColor}>
         {iconName && <Snackbar.Icon>
           <IconManager
             height={iconHeight}
@@ -40,7 +40,7 @@ const SnackbarComponent = ({
             <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>
           </Snackbar.Wrapper>}
         </Snackbar.TextContainer>
-        <Snackbar.Button onClick={onClickSnackbar}>
+        <Snackbar.Button>
           <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} >{buttonText}</Typography>
         </Snackbar.Button>
       </Snackbar.Container>

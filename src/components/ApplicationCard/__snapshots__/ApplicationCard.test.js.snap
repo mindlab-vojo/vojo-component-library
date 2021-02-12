@@ -6,48 +6,56 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hCpYkD Card"
+        class="sc-AxjAm hNxWTz"
+        id="GenericCard-undefined"
       >
         <div
-          class="sc-AxirZ iTEWhx"
+          class="sc-AxheI jlMPlu"
         >
           <div
-            class="sc-AxiKw hZuHAH"
+            class="sc-AxmLO hfgRmI"
           >
-            <img
-              class="sc-AxhCb fEHPey"
-              src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
-            />
+            <div
+              class="sc-fzozJi jxgYyc"
+            >
+              <div
+                class="sc-fzpans dihwtL"
+              >
+                <div
+                  class="sc-fzoLsD cVCQL"
+                />
+                <img
+                  alt="Seletor de produtos para entrega (Shopper)"
+                  class="sc-fzplWN eJVIAv"
+                  src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+                />
+              </div>
+            </div>
           </div>
           <div
-            class="sc-AxhUy bscpCC"
+            class="sc-fznyAO bchgVT"
           >
             <div
-              class="sc-AxgMl fFPQpl"
+              class="sc-fznKkj dKlKX"
             >
               <p
-                class="sc-AxheI oXUPj"
-              >
-                Você está na etapa 1 de 4
-              </p>
-            </div>
-            <div
-              class="sc-AxgMl fFPQpl"
-            >
-              <p
-                class="sc-Axmtr bvymrK"
-              >
-                Procurando empresas
-              </p>
-            </div>
-            <div
-              class="sc-AxgMl fFPQpl"
-            >
-              <h3
-                class="sc-AxmLO bswCGd"
+                class="sc-fznWqX hglzre"
               >
                 Seletor de produtos para entrega (Shopper)
-              </h3>
+              </p>
+            </div>
+            <div
+              class="sc-fzpjYC fRbLgW"
+            >
+              <div
+                class="sc-fznxsB dsgAhn"
+              >
+                <p
+                  class="sc-fzoiQi dxHTqN"
+                >
+                  Clique aqui para completar e finalizar a sua candidatura
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -56,48 +64,56 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hCpYkD Card"
+      class="sc-AxjAm hNxWTz"
+      id="GenericCard-undefined"
     >
       <div
-        class="sc-AxirZ iTEWhx"
+        class="sc-AxheI jlMPlu"
       >
         <div
-          class="sc-AxiKw hZuHAH"
+          class="sc-AxmLO hfgRmI"
         >
-          <img
-            class="sc-AxhCb fEHPey"
-            src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
-          />
+          <div
+            class="sc-fzozJi jxgYyc"
+          >
+            <div
+              class="sc-fzpans dihwtL"
+            >
+              <div
+                class="sc-fzoLsD cVCQL"
+              />
+              <img
+                alt="Seletor de produtos para entrega (Shopper)"
+                class="sc-fzplWN eJVIAv"
+                src="https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg"
+              />
+            </div>
+          </div>
         </div>
         <div
-          class="sc-AxhUy bscpCC"
+          class="sc-fznyAO bchgVT"
         >
           <div
-            class="sc-AxgMl fFPQpl"
+            class="sc-fznKkj dKlKX"
           >
             <p
-              class="sc-AxheI oXUPj"
-            >
-              Você está na etapa 1 de 4
-            </p>
-          </div>
-          <div
-            class="sc-AxgMl fFPQpl"
-          >
-            <p
-              class="sc-Axmtr bvymrK"
-            >
-              Procurando empresas
-            </p>
-          </div>
-          <div
-            class="sc-AxgMl fFPQpl"
-          >
-            <h3
-              class="sc-AxmLO bswCGd"
+              class="sc-fznWqX hglzre"
             >
               Seletor de produtos para entrega (Shopper)
-            </h3>
+            </p>
+          </div>
+          <div
+            class="sc-fzpjYC fRbLgW"
+          >
+            <div
+              class="sc-fznxsB dsgAhn"
+            >
+              <p
+                class="sc-fzoiQi dxHTqN"
+              >
+                Clique aqui para completar e finalizar a sua candidatura
+              </p>
+            </div>
           </div>
         </div>
       </div>

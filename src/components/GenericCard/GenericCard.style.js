@@ -24,6 +24,16 @@ export const ImageBlock = styled.div`
 
 export const ImageWrapper = styled.div``
 
+export const Icon = styled.div`
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+`
+
 export const ImageCropper = styled.div`
   display: flex;
   justify-content: center;
@@ -32,6 +42,7 @@ export const ImageCropper = styled.div`
   position: relative;
   overflow: hidden;
   border-radius: ${props => props.borderRadius};
+  background-color: ${props => props.imageBackgroundColor};
 `
 
 export const Image = styled.img`
@@ -40,6 +51,7 @@ export const Image = styled.img`
   height: 100%;
   width: auto;
   z-index: 1;
+  opacity: ${props => props.imageOpacity};
 `
 
 export const DataBlock = styled.div`
@@ -88,8 +100,19 @@ export const WorkloadTextWrapper = styled.div`
 
 export const CoursesAvailable = styled.div`
   display: flex;
-  align-iteMs: center;
+  align-items: center;
   width: 100%;
+`
+
+export const Application = styled.div`
+  display: flex;
+  width: 100%;
+  flex-direction: column
+`
+
+export const ApplicationTag = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 export const CoursesAvailableIcon = styled.div`

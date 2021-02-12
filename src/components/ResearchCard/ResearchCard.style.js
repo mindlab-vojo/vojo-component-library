@@ -11,6 +11,7 @@ export const Container = styled.div`
   box-shadow: 0px 2px 4px rgb(0 0 0 / 25%);
   border-radius: 6px;
   font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
 `
 
 export const IconWrapper = styled.div`
