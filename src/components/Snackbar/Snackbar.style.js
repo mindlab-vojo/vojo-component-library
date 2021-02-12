@@ -16,6 +16,7 @@ export const Container = styled.div`
     box-shadow: 0px 5px 10px rgba(101, 101, 101, 0.05), 0px 5px 10px rgba(61, 61, 61, 0.1);
     border-radius: 4px; 
     padding: 12px 18px;
+    cursor: pointer;
 `
 
 export const Icon = styled.div`
@@ -43,5 +44,4 @@ export const Button = styled.div`
     justify-content: center;
     min-width: 40px;
     height: 40px;
-    cursor: pointer;
 `

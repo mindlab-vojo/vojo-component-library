@@ -16,11 +16,12 @@ const ResearchCardComponent = ({
 
   const renderComponent = (theme) => (
     <ResearchCard.Container
+      onClick={onClickCard}
       backgroundCard={backgroundCard}>
       <ResearchCard.IconWrapper>
         <ResearchCard.Icon
           iconBackgroundColor={iconBackgroundColor}>
-                ?
+          ?
         </ResearchCard.Icon>
       </ResearchCard.IconWrapper>
       <ResearchCard.TextContainer
@@ -32,8 +33,7 @@ const ResearchCardComponent = ({
           {description}
         </ResearchCard.Description>
       </ResearchCard.TextContainer>
-      <ResearchCard.Button
-        onClick={onClickCard}>
+      <ResearchCard.Button>
         {buttonText}
       </ResearchCard.Button>
     </ResearchCard.Container>
