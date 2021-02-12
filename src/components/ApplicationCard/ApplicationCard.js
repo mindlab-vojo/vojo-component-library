@@ -1,21 +1,14 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import Card from '../Card'
-import Typography from '../Typography'
-
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import * as ApplicationCard from './ApplicationCard.style'
 import GenericCard from '../GenericCard/GenericCard'
 
 const ApplicationCardComponent = ({
   currentStep,
   jobTitle,
-  fontWeightTitle,
   imageUrl,
-  isClosed,
   onClickCard,
-  stepTitle,
   totalSteps,
 }) => {
   const renderComponent = (theme) => (
@@ -28,6 +21,7 @@ const ApplicationCardComponent = ({
       borderRadius={'500px'}
       imageOpacity={currentStep === totalSteps ? '25%' : '100%'}
       imageBackgroundColor={currentStep === totalSteps ? 'rgb(57, 224, 155)' : '#FFFFFF'}
+      onClickCard={onClickCard}
     />
   )
 
