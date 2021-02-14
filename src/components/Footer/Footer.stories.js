@@ -9,7 +9,7 @@ import categories from '../../../.storybook/categories';
 import Container from '../Container';
 
 export const component = () => {
-  const termsUrl = text('termsUrl', 'https://app.vojo.com.br/terms-of-use')
+  const termsUrl = text('termsUrl', 'https://vojo.com.br/termos-de-uso/')
   
   return (
     <Container>
