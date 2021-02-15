@@ -93,6 +93,7 @@ export const Social = styled.div`
   justify-conten: space-between;
   align-items: center;
   height: fit-content;
+  margin-bottom: 20px;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 60px;
   }
@@ -188,9 +189,11 @@ export const Copywriting = styled.div`
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 20px;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 60px;
     width: 30%;
+    margin-top: 0px;
   }
   @media only screen and (max-width: 500px) {
     flex-direction: column;
@@ -215,7 +218,7 @@ export const CopywritingText = styled.span`
 export const Logo = styled.div`
   padding-left: 6px;
   @media only screen and (max-width: 500px) {
-    margin-top: 14px;
+    margin-top: 8px;
   }
   @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
     margin-top: 0px;
