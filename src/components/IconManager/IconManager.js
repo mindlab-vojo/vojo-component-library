@@ -16,6 +16,7 @@ import Coupon from './Icons/Coupon'
 import Course from './Icons/Course'
 import Exclamation from './Icons/Exclamation'
 import Hamburger from './Icons/Hamburger'
+import Heart from './Icons/Heart'
 import HelpCircle from './Icons/HelpCircle'
 import Lock from './Icons/Lock'
 import Pencil from './Icons/Pencil'
@@ -65,6 +66,7 @@ export const iconList = {
   Course: Course,
   Exclamation: Exclamation,
   Hamburger: Hamburger,
+  Heart: Heart,
   HelpCircle: HelpCircle,
   Lock: Lock,
   Pencil: Pencil,
