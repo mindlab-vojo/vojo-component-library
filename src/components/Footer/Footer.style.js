@@ -96,6 +96,9 @@ export const Social = styled.div`
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 60px;
   }
+  @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
+    flex-direction: column;
+  }
 `
 
 export const Center = styled.div`
@@ -112,7 +115,7 @@ export const Center = styled.div`
 export const Icons = styled.div`
   display: flex;
   img{
-    margin: 0 5px;
+    padding: 5px;
     width:30px;
     height:30px;
     cursor: pointer;
@@ -125,16 +128,20 @@ export const Terms = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 12px 0px;
+  margin-bottom: 8px;
   cursor: pointer;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     height: 60px;
     margin: 0px;
   }
+  @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
+    flex-direction: column;
+  }
 `
 
 export const Use = styled.span`
   margin-right: 4px;
+  margin-top: 4px;
   cursor: pointer;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     width: fit-content;
@@ -143,6 +150,7 @@ export const Use = styled.span`
 
 export const Privacy = styled.span`
   margin-left: 4px;
+  margin-top: 4px;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
     width: fit-content;
   }
@@ -184,14 +192,32 @@ export const Copywriting = styled.div`
     height: 60px;
     width: 30%;
   }
+  @media only screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
+    flex-direction: row;
+  }
 `
 
 export const CopywritingText = styled.span`
   font-size: 12px;
   text-align: right;
   padding-right: 6px;
+  @media only screen and (max-width: 500px) {
+    text-align: center;
+  }
+  @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
+    text-align: right;
+  }
 `
 
 export const Logo = styled.div`
   padding-left: 6px;
+  @media only screen and (max-width: 500px) {
+    margin-top: 14px;
+  }
+  @media only screen and (max-width: ${props => props.theme.breakpoints.mobileContentSize}) {
+    margin-top: 0px;
+  }
 `

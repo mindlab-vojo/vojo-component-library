@@ -19,8 +19,8 @@ function FooterComponent({ termsUrl, privacyUrl }) {
         <Footer.Social theme={theme}>
           <Typography color={'white'}>Siga o Vojo nas redes sociais:</Typography>
           <Footer.Icons>
-            <img onClick={() => window.open('https://www.facebook.com/vojoconecta', "_blank")} src="https://vojo.com.br/wp-content/uploads/2020/03/Facebook.png"></img>
-            <img onClick={() => window.open('https://www.instagram.com/vojoconecta/', "_blank")} src="https://vojo.com.br/wp-content/uploads/2020/03/Instagram.png"></img>
+            <img onClick={() => window.open('https://www.facebook.com/vojoconecta', "_blank")} src="https://s3.amazonaws.com/static.vojo.com.br/prd/images/facebook_branco.png"></img>
+            <img onClick={() => window.open('https://www.instagram.com/vojoconecta/', "_blank")} src="https://s3.amazonaws.com/static.vojo.com.br/prd/images/instagram_branco.png"></img>
           </Footer.Icons>
         </Footer.Social>
         <Footer.Center theme={theme}>
@@ -42,10 +42,10 @@ function FooterComponent({ termsUrl, privacyUrl }) {
           </Footer.Product>
         </Footer.Center>
         <Footer.Copywriting theme={theme}>
-          <Footer.CopywritingText>
+          <Footer.CopywritingText theme={theme}>
             {actualYear} – Vojo® – Todos os direitos reservados
-            </Footer.CopywritingText>
-          <Footer.Logo>
+          </Footer.CopywritingText>
+          <Footer.Logo theme={theme}>
             <Logo isReverse
               height="16px"
               width="103px"
