@@ -9,6 +9,7 @@ import IconManager from '../IconManager'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 const HeaderComponent = ({
+  blockActions,
   menuButtons,
   menuItems,
   menuTems,
@@ -29,7 +30,7 @@ const HeaderComponent = ({
         theme={theme}>
         <Header.Content
           theme={theme}>
-          <Header.BlockClickable
+          {!blockActions ? <Header.BlockClickable
             onClick={goBack ? onClickGoBack : handleToogleMenu}>
             {goBack ? <IconManager
               fill={theme.colors.whiteColor}
@@ -40,12 +41,15 @@ const HeaderComponent = ({
               icon="Hamburger"
               width="24px"
               height="24px" />}
-          </Header.BlockClickable>
-          <Header.BlockClickable
+          </Header.BlockClickable> : <Header.Block />}
+          {!blockActions ? <Header.BlockClickable
             onClick={onClickLogo}>
             <Logo height="16px" width="150px" isReverse />
-          </Header.BlockClickable>
-          <Header.Block/>
+          </Header.BlockClickable> :
+            <Header.Block>
+              <Logo height="16px" width="150px" isReverse />
+            </Header.Block>}
+          <Header.Block />
         </Header.Content>
       </Header.Wrapper>
       {

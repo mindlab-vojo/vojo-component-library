@@ -24,6 +24,9 @@ export const Content = styled.div`
 `
 
 export const Block = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 40px;
   min-height: 40px;
 `
