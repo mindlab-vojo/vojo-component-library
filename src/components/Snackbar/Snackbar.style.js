@@ -8,7 +8,7 @@ export const ContainerTest = styled.div`
 export const Container = styled.div`
     box-sizing: border-box;
     width: 100%;
-    height: 100%;
+    height: ${props => props.height};
     background-color: ${props => props.backgroundColor};
     display: flex;
     align-items: center;
