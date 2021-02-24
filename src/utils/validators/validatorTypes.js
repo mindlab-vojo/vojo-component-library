@@ -1,5 +1,6 @@
 import phoneValidator from './phoneValidator'
 import { cpfMaskRemover, cpfValidator } from './cpfValidator'
+import { rgMaskRemover, rgValidator } from './rgValidator'
 import { dateMaskRemover, dateValidator } from './dateValidator'
 import { pisMaskRemover } from './pisValidator'
 
@@ -15,10 +16,11 @@ export const validatorTypes = {
   mobileNumber: 'mobileNumber',
   password: 'password',
   pis: 'pis',
+  rg: 'rg'
 }
 
 export const validatorPatterns = {
-  [validatorTypes.alphabeitcal]: {
+  [validatorTypes.alphabetical]: {
     errorMessage: 'O valor não deve possuir espaçamento, números ou símbolos',
     mask: null,
     maskRemover: (value) => value,
@@ -27,7 +29,7 @@ export const validatorPatterns = {
     regex: /^[A-Za-zÀ-ÖØ-öø-ÿ]*$/,
     specificValidation: null,
   },
-  [validatorTypes.alphabeitcalSpaced]: {
+  [validatorTypes.alphabeticalSpaced]: {
     errorMessage: 'O valor não deve possuir números ou símbolos',
     mask: null,
     maskRemover: (value) => value,
@@ -100,7 +102,7 @@ export const validatorPatterns = {
     specificValidation: (value) => cpfValidator(value),
   },
   [validatorTypes.pis]: {
-    errorMessage: 'Este CPF é inválido',
+    errorMessage: 'Este PIS é inválido',
     mask: [/\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/],
     maskRemover: (value) => pisMaskRemover(value),
     maxLength: 11,
@@ -109,7 +111,7 @@ export const validatorPatterns = {
     specificValidation: null,
   },
   [validatorTypes.cep]: {
-    errorMessage: 'Este CPF é inválido',
+    errorMessage: 'Este CEP é inválido',
     mask: [/\d/, /\d/, /\d/, /\d/, /\d/, '-', /\d/, /\d/, /\d/],
     maskRemover: (value) => pisMaskRemover(value),
     maxLength: 8,
@@ -125,5 +127,14 @@ export const validatorPatterns = {
     minLength: 10,
     regex: /[\s\S]+/g,
     specificValidation: (value) => dateValidator(value),
+  },
+  [validatorTypes.rg]: {
+    errorMessage: 'Este RG é inválido',
+    mask: [/\d/, /\d/, '.', /\d/, /\d/, /\d/, '.', /\d/, /\d/, /\d/, '-', /\d/],
+    maskRemover: (value) => rgMaskRemover(value),
+    maxLength: 9,
+    minLength: 9,
+    regex: /[\s\S]+/g,
+    specificValidation: (value) => rgValidator(value),
   },
 }

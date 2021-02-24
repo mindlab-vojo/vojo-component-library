@@ -5,6 +5,7 @@ export const Content = styled.div`
   display:flex;
   flex-direction: column;
   font-family: 'Rubik', sans-serif;
+  text-align: ${props => props.textAlign};
 `
 
 export const Title = styled.h1`

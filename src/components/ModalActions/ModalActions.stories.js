@@ -11,6 +11,7 @@ export const modalActions = () => {
   const modalWidth = text('modalWidth', "280px")
   const title = text('title', "Aceitar CANDIDATOS?")
   const description = text('description', "Ao aceitar você automaticamente aprova os candidatos selecionados pela nossa equipe.")
+  const textAlign = text('textAlign', "center")
 
   const renderActions = () => {
     return <Button>OK!</Button>
@@ -18,6 +19,7 @@ export const modalActions = () => {
   return (
     <ModalActions
       modalWidth={modalWidth}
+      textAlign={textAlign}
       title={title}
       description={description}
       actions={renderActions()}
