@@ -6,22 +6,22 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm ilhmbz"
+        class="sc-bdfBwQ hKOOjS"
       >
         <div
-          class="sc-AxirZ rfaeh FilterDropdown"
+          class="sc-gsTCUz gTZrMT FilterDropdown"
         >
           <div
-            class="sc-AxiKw bOTXee FilterDropdown__Text"
+            class="sc-dlfnbm FilterDropdown__Text"
           >
             <p
-              class="sc-AxheI jTUVSO"
+              class="sc-gKsewC jlzQxH"
             >
               Test
             </p>
           </div>
           <div
-            class="sc-AxhCb gkOWJK FilterDropdown__Icon"
+            class="sc-hKgILt hkjEnp FilterDropdown__Icon"
           >
             <svg
               height="24"
@@ -45,22 +45,22 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm ilhmbz"
+      class="sc-bdfBwQ hKOOjS"
     >
       <div
-        class="sc-AxirZ rfaeh FilterDropdown"
+        class="sc-gsTCUz gTZrMT FilterDropdown"
       >
         <div
-          class="sc-AxiKw bOTXee FilterDropdown__Text"
+          class="sc-dlfnbm FilterDropdown__Text"
         >
           <p
-            class="sc-AxheI jTUVSO"
+            class="sc-gKsewC jlzQxH"
           >
             Test
           </p>
         </div>
         <div
-          class="sc-AxhCb gkOWJK FilterDropdown__Icon"
+          class="sc-hKgILt hkjEnp FilterDropdown__Icon"
         >
           <svg
             height="24"

@@ -30,6 +30,7 @@ import PasswordInput from './components/Input/PasswordInput';
 import PisInput from './components/Input/PisInput';
 import ResearchCard from './components/ResearchCard';
 import SideMenu from './components/SideMenu';
+import Select from './components/Select';
 import Spinner from './components/Spinner/Spinner';
 import Snackbar from './components/Snackbar/Snackbar';
 import StickyToast from './components/StickyToast/StickyToast';
@@ -78,6 +79,7 @@ export {
   ResearchCard,
   SideMenu,
   Snackbar,
+  Select,
   Spinner,
   StickyToast,
   TextInput,

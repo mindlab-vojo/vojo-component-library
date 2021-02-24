@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm bDFGYx"
+        class="sc-bdfBwQ kwdQxg"
       >
         <div
           style="min-height: 0px;"
@@ -16,15 +16,15 @@ Object {
             style="transform: translateZ(0);"
           >
             <div
-              class="sc-AxirZ HOBqp StickyToast"
+              class="sc-gsTCUz kyaJcf StickyToast"
             >
               <div
-                class="sc-AxiKw brroVm StickyToast__Content"
+                class="sc-dlfnbm eXnXcv StickyToast__Content"
               >
                 Testing!!
               </div>
               <div
-                class="sc-AxhCb ikxiQD StickyToast__Close"
+                class="sc-hKgILt esVuxk StickyToast__Close"
               >
                 <svg
                   height="24"
@@ -49,7 +49,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm bDFGYx"
+      class="sc-bdfBwQ kwdQxg"
     >
       <div
         style="min-height: 0px;"
@@ -59,15 +59,15 @@ Object {
           style="transform: translateZ(0);"
         >
           <div
-            class="sc-AxirZ HOBqp StickyToast"
+            class="sc-gsTCUz kyaJcf StickyToast"
           >
             <div
-              class="sc-AxiKw brroVm StickyToast__Content"
+              class="sc-dlfnbm eXnXcv StickyToast__Content"
             >
               Testing!!
             </div>
             <div
-              class="sc-AxhCb ikxiQD StickyToast__Close"
+              class="sc-hKgILt esVuxk StickyToast__Close"
             >
               <svg
                 height="24"

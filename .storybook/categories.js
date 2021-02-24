@@ -14,6 +14,7 @@ export default {
   Radios: 'Radios',
   StickyToasts:'StickyToasts',
   Snackbar: 'Snackbar',
+  Selects: 'Selects',
   Spinners:'Spinners',
   Tabs:'Tabs',
   Toasts: 'Toasts',

@@ -6,42 +6,42 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxheI MqPWV"
+        class="sc-gKsewC kKxGrg"
         id="BannerCard-card-id"
       >
         <div
-          class="sc-AxjAm htRcqc BannerCard"
+          class="sc-bdfBwQ beCqgx BannerCard"
         >
           <div
-            class="sc-AxiKw cUtmmu BannerCard__LeftContent"
+            class="sc-dlfnbm dPJlIz BannerCard__LeftContent"
           >
             <div
-              class="sc-AxirZ kuBmkQ BannerCard__LeftContent__Image"
+              class="sc-gsTCUz cOJuHC BannerCard__LeftContent__Image"
             >
               <p
-                class="sc-Axmtr hNXzOi"
+                class="sc-iBPRYJ jCmTcU"
               >
                 ?
               </p>
             </div>
           </div>
           <div
-            class="sc-AxhCb jFNitm BannerCard__RightContent"
+            class="sc-hKgILt fjzqPh BannerCard__RightContent"
           >
             <div
-              class="sc-AxgMl eeotzk BannerCard__RightContent__Description"
+              class="sc-jSgupP bAEpIu BannerCard__RightContent__Description"
             >
               <p
-                class="sc-AxmLO kORIMF"
+                class="sc-fubCfw bJRDb"
               >
                 Entregador Mágico
               </p>
             </div>
             <div
-              class="sc-AxhUy dWeUmw BannerCard__RightContent__Title"
+              class="sc-eCssSg jvctCF BannerCard__RightContent__Title"
             >
               <p
-                class="sc-fzozJi ievYeq"
+                class="sc-pFZIQ klUjYW"
               >
                 Entregador Mágico
               </p>
@@ -53,42 +53,42 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxheI MqPWV"
+      class="sc-gKsewC kKxGrg"
       id="BannerCard-card-id"
     >
       <div
-        class="sc-AxjAm htRcqc BannerCard"
+        class="sc-bdfBwQ beCqgx BannerCard"
       >
         <div
-          class="sc-AxiKw cUtmmu BannerCard__LeftContent"
+          class="sc-dlfnbm dPJlIz BannerCard__LeftContent"
         >
           <div
-            class="sc-AxirZ kuBmkQ BannerCard__LeftContent__Image"
+            class="sc-gsTCUz cOJuHC BannerCard__LeftContent__Image"
           >
             <p
-              class="sc-Axmtr hNXzOi"
+              class="sc-iBPRYJ jCmTcU"
             >
               ?
             </p>
           </div>
         </div>
         <div
-          class="sc-AxhCb jFNitm BannerCard__RightContent"
+          class="sc-hKgILt fjzqPh BannerCard__RightContent"
         >
           <div
-            class="sc-AxgMl eeotzk BannerCard__RightContent__Description"
+            class="sc-jSgupP bAEpIu BannerCard__RightContent__Description"
           >
             <p
-              class="sc-AxmLO kORIMF"
+              class="sc-fubCfw bJRDb"
             >
               Entregador Mágico
             </p>
           </div>
           <div
-            class="sc-AxhUy dWeUmw BannerCard__RightContent__Title"
+            class="sc-eCssSg jvctCF BannerCard__RightContent__Title"
           >
             <p
-              class="sc-fzozJi ievYeq"
+              class="sc-pFZIQ klUjYW"
             >
               Entregador Mágico
             </p>

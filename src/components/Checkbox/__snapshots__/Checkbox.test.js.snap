@@ -6,10 +6,10 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm dVmFxc"
+        class="sc-bdfBwQ fRFzZh"
       >
         <input
-          class="sc-AxiKw bymOIn"
+          class="sc-dlfnbm fKzgnC"
           id="checkbox"
           name="checkbox"
           type="checkbox"
@@ -30,7 +30,7 @@ Object {
           />
         </svg>
         <label
-          class="sc-AxirZ jYVAJK"
+          class="sc-gsTCUz iMnGY"
         >
           checkbox
         </label>
@@ -39,10 +39,10 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm dVmFxc"
+      class="sc-bdfBwQ fRFzZh"
     >
       <input
-        class="sc-AxiKw bymOIn"
+        class="sc-dlfnbm fKzgnC"
         id="checkbox"
         name="checkbox"
         type="checkbox"
@@ -63,7 +63,7 @@ Object {
         />
       </svg>
       <label
-        class="sc-AxirZ jYVAJK"
+        class="sc-gsTCUz iMnGY"
       >
         checkbox
       </label>
