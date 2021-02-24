@@ -7,8 +7,8 @@ import { pisMaskRemover } from './pisValidator'
 export const validatorTypes = {
   alphaNumeric: 'alphaNumeric',
   alphaNumericSpaced: 'alphaNumericSpaced',
-  alphabeitcal: 'alphabeitcal',
-  alphabeitcalSpaced: 'alphabeitcalSpaced',
+  alphabetical: 'alphabetical',
+  alphabeticalSpaced: 'alphabeticalSpaced',
   cep: 'cep',
   cpf: 'cpf',
   date: 'date',
