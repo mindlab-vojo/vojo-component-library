@@ -6,19 +6,19 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm gOFxuW SideMenu"
+        class="sc-bdfBwQ dulYen SideMenu"
       >
         <div
-          class="sc-AxirZ kKrlsT SideMenu__Background"
+          class="sc-gsTCUz fVGUcF SideMenu__Background"
         />
         <div
-          class="sc-AxiKw lfCqVr SideMenu__Menu"
+          class="sc-dlfnbm kzGwTK SideMenu__Menu"
         >
           <div
-            class="sc-AxhCb eFCZhj SideMenu__CloseWrapper"
+            class="sc-hKgILt fBlSnY SideMenu__CloseWrapper"
           >
             <div
-              class="sc-AxhUy dccBpB SideMenu__Close"
+              class="sc-eCssSg fvFtc SideMenu__Close"
             >
               <svg
                 height="24"
@@ -38,13 +38,13 @@ Object {
             </div>
           </div>
           <div
-            class="sc-AxgMl hplBOW"
+            class="sc-jSgupP ceWOEk"
           >
             <div
-              class="sc-AxheI iJvmgI"
+              class="sc-gKsewC dwIoxt"
             >
               <div
-                class="sc-Axmtr buYUhN"
+                class="sc-iBPRYJ gdWKsf"
               >
                 <svg
                   height="19"
@@ -59,20 +59,20 @@ Object {
                 </svg>
               </div>
               <div
-                class="sc-AxmLO gwIbuf"
+                class="sc-fubCfw hzOVYV"
               >
                 <p
-                  class="sc-fznKkj jXfRPU"
+                  class="sc-dQppl hALXpj"
                 >
                   Oportunidades
                 </p>
               </div>
             </div>
             <div
-              class="sc-AxheI iJvmgI"
+              class="sc-gKsewC dwIoxt"
             >
               <div
-                class="sc-Axmtr buYUhN"
+                class="sc-iBPRYJ gdWKsf"
               >
                 <svg
                   height="18"
@@ -87,10 +87,10 @@ Object {
                 </svg>
               </div>
               <div
-                class="sc-AxmLO gwIbuf"
+                class="sc-fubCfw hzOVYV"
               >
                 <p
-                  class="sc-fznZeY bcxhZs"
+                  class="sc-bqyKva fAJpUI"
                 >
                   Cursos Gratuitos
                 </p>
@@ -98,22 +98,22 @@ Object {
             </div>
           </div>
           <div
-            class="sc-fzozJi hIUNoJ"
+            class="sc-pFZIQ GIcVx"
           >
             <div
-              class="sc-fzoLsD enOwxJ"
+              class="sc-jrAGrp FHQqT"
             >
               <div
-                class="sc-fzpans dguJNq"
+                class="sc-kEjbxe gShzib"
               >
                 <button
-                  class="sc-fznyAO fhoogm Button"
+                  class="sc-crrsfI bnhdCO Button"
                   id="0-menu-button"
                   name="0-menu-button"
                   type="button"
                 >
                   <p
-                    class="sc-fzokOt deGzez"
+                    class="sc-kstrdz PHjLy"
                   >
                     Sair
                   </p>
@@ -122,10 +122,10 @@ Object {
             </div>
           </div>
           <div
-            class="sc-fzplWN jWiJSL"
+            class="sc-iqHYGH dSQeZq"
           >
             <p
-              class="sc-fzqBZW jkOkzs"
+              class="sc-hBEYos kgPuVS"
             >
               termos de uso e política de privacidade
             </p>
@@ -136,19 +136,19 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm gOFxuW SideMenu"
+      class="sc-bdfBwQ dulYen SideMenu"
     >
       <div
-        class="sc-AxirZ kKrlsT SideMenu__Background"
+        class="sc-gsTCUz fVGUcF SideMenu__Background"
       />
       <div
-        class="sc-AxiKw lfCqVr SideMenu__Menu"
+        class="sc-dlfnbm kzGwTK SideMenu__Menu"
       >
         <div
-          class="sc-AxhCb eFCZhj SideMenu__CloseWrapper"
+          class="sc-hKgILt fBlSnY SideMenu__CloseWrapper"
         >
           <div
-            class="sc-AxhUy dccBpB SideMenu__Close"
+            class="sc-eCssSg fvFtc SideMenu__Close"
           >
             <svg
               height="24"
@@ -168,13 +168,13 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxgMl hplBOW"
+          class="sc-jSgupP ceWOEk"
         >
           <div
-            class="sc-AxheI iJvmgI"
+            class="sc-gKsewC dwIoxt"
           >
             <div
-              class="sc-Axmtr buYUhN"
+              class="sc-iBPRYJ gdWKsf"
             >
               <svg
                 height="19"
@@ -189,20 +189,20 @@ Object {
               </svg>
             </div>
             <div
-              class="sc-AxmLO gwIbuf"
+              class="sc-fubCfw hzOVYV"
             >
               <p
-                class="sc-fznKkj jXfRPU"
+                class="sc-dQppl hALXpj"
               >
                 Oportunidades
               </p>
             </div>
           </div>
           <div
-            class="sc-AxheI iJvmgI"
+            class="sc-gKsewC dwIoxt"
           >
             <div
-              class="sc-Axmtr buYUhN"
+              class="sc-iBPRYJ gdWKsf"
             >
               <svg
                 height="18"
@@ -217,10 +217,10 @@ Object {
               </svg>
             </div>
             <div
-              class="sc-AxmLO gwIbuf"
+              class="sc-fubCfw hzOVYV"
             >
               <p
-                class="sc-fznZeY bcxhZs"
+                class="sc-bqyKva fAJpUI"
               >
                 Cursos Gratuitos
               </p>
@@ -228,22 +228,22 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzozJi hIUNoJ"
+          class="sc-pFZIQ GIcVx"
         >
           <div
-            class="sc-fzoLsD enOwxJ"
+            class="sc-jrAGrp FHQqT"
           >
             <div
-              class="sc-fzpans dguJNq"
+              class="sc-kEjbxe gShzib"
             >
               <button
-                class="sc-fznyAO fhoogm Button"
+                class="sc-crrsfI bnhdCO Button"
                 id="0-menu-button"
                 name="0-menu-button"
                 type="button"
               >
                 <p
-                  class="sc-fzokOt deGzez"
+                  class="sc-kstrdz PHjLy"
                 >
                   Sair
                 </p>
@@ -252,10 +252,10 @@ Object {
           </div>
         </div>
         <div
-          class="sc-fzplWN jWiJSL"
+          class="sc-iqHYGH dSQeZq"
         >
           <p
-            class="sc-fzqBZW jkOkzs"
+            class="sc-hBEYos kgPuVS"
           >
             termos de uso e política de privacidade
           </p>

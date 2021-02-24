@@ -6,14 +6,14 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hGa-Dbc Input"
+        class="sc-bdfBwQ jlpobx Input"
       >
         <label
-          class="sc-AxirZ GipoM Input__Name"
+          class="sc-gsTCUz dZftG Input__Name"
           for="vojo-test"
         >
           <span
-            class="sc-AxheI eZoXUS"
+            class="sc-gKsewC hERALn"
           >
             <strong>
               teste
@@ -21,10 +21,10 @@ Object {
           </span>
         </label>
         <div
-          class="sc-AxiKw houSoJ Input__InputBackground"
+          class="sc-dlfnbm eYlWMw Input__InputBackground"
         >
           <input
-            class="sc-AxhUy jaojvj Input__Input"
+            class="sc-eCssSg briTWu Input__Input"
             id="vojo-test"
             name="teste"
             placeholder="teste"
@@ -37,14 +37,14 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hGa-Dbc Input"
+      class="sc-bdfBwQ jlpobx Input"
     >
       <label
-        class="sc-AxirZ GipoM Input__Name"
+        class="sc-gsTCUz dZftG Input__Name"
         for="vojo-test"
       >
         <span
-          class="sc-AxheI eZoXUS"
+          class="sc-gKsewC hERALn"
         >
           <strong>
             teste
@@ -52,10 +52,10 @@ Object {
         </span>
       </label>
       <div
-        class="sc-AxiKw houSoJ Input__InputBackground"
+        class="sc-dlfnbm eYlWMw Input__InputBackground"
       >
         <input
-          class="sc-AxhUy jaojvj Input__Input"
+          class="sc-eCssSg briTWu Input__Input"
           id="vojo-test"
           name="teste"
           placeholder="teste"

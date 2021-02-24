@@ -6,16 +6,16 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-AxjAm hCpYkD Card"
+        class="sc-bdfBwQ iMxKRS Card"
       >
         <div
-          class="sc-AxirZ iTEWhx ModuleCard"
+          class="sc-gsTCUz jFBJQP ModuleCard"
         >
           <div
-            class="sc-AxiKw kDJXyU ModuleCard__IconWrapper"
+            class="sc-dlfnbm humlAt ModuleCard__IconWrapper"
           >
             <div
-              class="sc-AxhCb iFtFSU ModuleCard__IconCircle"
+              class="sc-hKgILt hZLSJb ModuleCard__IconCircle"
             >
               <svg
                 height="24px"
@@ -35,31 +35,31 @@ Object {
             </div>
           </div>
           <div
-            class="sc-AxhUy cjNzFp ModuleCard__InfoWrapper"
+            class="sc-eCssSg eMdUXE ModuleCard__InfoWrapper"
           >
             <div
-              class="sc-AxgMl fFPQpl ModuleCard__InfoWrapper__Title"
+              class="sc-jSgupP ModuleCard__InfoWrapper__Title"
             >
               <p
-                class="sc-AxmLO euTaYe"
+                class="sc-fubCfw cmXiao"
               >
                 Just a Title
               </p>
             </div>
             <div
-              class="sc-AxheI fniENP ModuleCard__InfoWrapper__Description"
+              class="sc-gKsewC ModuleCard__InfoWrapper__Description"
             >
               <p
-                class="sc-fzozJi Wya-Dg"
+                class="sc-pFZIQ ctFuKY"
               >
                 Just testing by
               </p>
             </div>
             <div
-              class="sc-Axmtr hBVTto ModuleCard__InfoWrapper__Time"
+              class="sc-iBPRYJ ModuleCard__InfoWrapper__Time"
             >
               <p
-                class="sc-fzoLsD jeWUtM"
+                class="sc-jrAGrp lgHKSq"
               >
                 50min.
               </p>
@@ -71,16 +71,16 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-AxjAm hCpYkD Card"
+      class="sc-bdfBwQ iMxKRS Card"
     >
       <div
-        class="sc-AxirZ iTEWhx ModuleCard"
+        class="sc-gsTCUz jFBJQP ModuleCard"
       >
         <div
-          class="sc-AxiKw kDJXyU ModuleCard__IconWrapper"
+          class="sc-dlfnbm humlAt ModuleCard__IconWrapper"
         >
           <div
-            class="sc-AxhCb iFtFSU ModuleCard__IconCircle"
+            class="sc-hKgILt hZLSJb ModuleCard__IconCircle"
           >
             <svg
               height="24px"
@@ -100,31 +100,31 @@ Object {
           </div>
         </div>
         <div
-          class="sc-AxhUy cjNzFp ModuleCard__InfoWrapper"
+          class="sc-eCssSg eMdUXE ModuleCard__InfoWrapper"
         >
           <div
-            class="sc-AxgMl fFPQpl ModuleCard__InfoWrapper__Title"
+            class="sc-jSgupP ModuleCard__InfoWrapper__Title"
           >
             <p
-              class="sc-AxmLO euTaYe"
+              class="sc-fubCfw cmXiao"
             >
               Just a Title
             </p>
           </div>
           <div
-            class="sc-AxheI fniENP ModuleCard__InfoWrapper__Description"
+            class="sc-gKsewC ModuleCard__InfoWrapper__Description"
           >
             <p
-              class="sc-fzozJi Wya-Dg"
+              class="sc-pFZIQ ctFuKY"
             >
               Just testing by
             </p>
           </div>
           <div
-            class="sc-Axmtr hBVTto ModuleCard__InfoWrapper__Time"
+            class="sc-iBPRYJ ModuleCard__InfoWrapper__Time"
           >
             <p
-              class="sc-fzoLsD jeWUtM"
+              class="sc-jrAGrp lgHKSq"
             >
               50min.
             </p>
