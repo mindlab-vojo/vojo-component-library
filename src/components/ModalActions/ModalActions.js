@@ -10,6 +10,7 @@ function ModalActionsComponent({
   icon,
   children,
   modalWidth,
+  textAlign,
   title,
   description,
   actions
@@ -19,7 +20,7 @@ function ModalActionsComponent({
 
   const renderComponent = (theme) => (
     <Modal cardWidth={modalWidth}>
-      <ModalActions.Content>
+      <ModalActions.Content textAlign={textAlign}>
         {icon}
         {title && <ModalActions.Title>{title}</ModalActions.Title>}
         {description && <ModalActions.Description>{description}</ModalActions.Description>}
@@ -43,6 +44,7 @@ ModalActionsComponent.propTypes = {
   list: PropTypes.array,
   unorderedList: PropTypes.bool,
   actions: PropTypes.any,
+  textAlign: PropTypes.string,
   title: PropTypes.string,
   description: PropTypes.string
 }
