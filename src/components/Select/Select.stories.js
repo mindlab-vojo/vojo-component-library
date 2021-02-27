@@ -41,7 +41,7 @@ export const selectStorie = () => {
       options={options}
       inputLabel={inputLabel} 
       value={'value'}
-      variant={variant}/>
+      variant={'outlined'}/>
   )
 }
 

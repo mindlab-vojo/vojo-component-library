@@ -16,7 +16,6 @@ import NativeSelect from '@material-ui/core/NativeSelect';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
-    margin: theme.spacing(1),
     minWidth: 120,
     width: '100%'
   },
@@ -34,7 +33,6 @@ const SelectMenuComponent = ({
   variant
 }) => {
   const classes = useStyles();
-
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>
       <InputLabel>{inputLabel}</InputLabel>

@@ -111,7 +111,7 @@ const FormCheckboxComponent = ({
           <FormCheckbox.TitleWrapper>
             <FormCheckbox.Title>
               <Typography
-                color={hasError ? theme.colors.redColor : theme.colors.blackColor}
+                color={hasError ? theme.colors.redColor : theme.colors.greyColor}
                 fontSize="16px"
                 fontWeight="500">
                 {title}
@@ -121,7 +121,7 @@ const FormCheckboxComponent = ({
               description && (
                 <FormCheckbox.Description>
                   <Typography
-                    color={hasError ? theme.colors.redColor : theme.colors.blackColor}
+                    color={hasError ? theme.colors.redColor : theme.colors.lightGreyColor}
                     fontSize="12px">
                     {description}
                   </Typography>

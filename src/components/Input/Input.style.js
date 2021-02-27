@@ -23,7 +23,7 @@ export const InputBackground = styled.div`
     props.isValid ? 
       props.isFocused ? 
         props.theme.colors.primaryColor : 
-        props.theme.colors.darkGrayColor:
+        props.theme.colors.greyColor:
       props.theme.colors.pinkColor
 };
   border-radius: 4px;
