@@ -18,6 +18,7 @@ const useStyles = makeStyles((theme) => ({
   formControl: {
     margin: theme.spacing(1),
     minWidth: 120,
+    width: '100%'
   },
   selectEmpty: {
     marginTop: theme.spacing(2),
@@ -33,18 +34,7 @@ const SelectMenuComponent = ({
   variant
 }) => {
   const classes = useStyles();
-  const [state, setState] = React.useState({
-    age: '',
-    name: 'hai',
-  });
-  
-  const handleChange = (event) => {
-    const name = event.target.name;
-    setState({
-      ...state,
-      [name]: event.target.value,
-    });
-  };
+
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>
       <InputLabel>{inputLabel}</InputLabel>

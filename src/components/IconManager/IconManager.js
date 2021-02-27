@@ -20,6 +20,7 @@ import Heart from './Icons/Heart'
 import HelpCircle from './Icons/HelpCircle'
 import Lock from './Icons/Lock'
 import Pencil from './Icons/Pencil'
+import QuestionCircle from './Icons/QuestionCircle'
 import Question from './Icons/Question'
 import RadioChecked from './Icons/RadioChecked'
 import RadioUnchecked from './Icons/RadioUnchecked'
@@ -71,6 +72,7 @@ export const iconList = {
   Lock: Lock,
   Pencil: Pencil,
   Question: Question,
+  QuestionCircle: QuestionCircle,
   RadioChecked: RadioChecked,
   RadioUnchecked: RadioUnchecked,
   Suitcase: Suitcase,

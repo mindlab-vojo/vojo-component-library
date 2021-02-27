@@ -9,22 +9,22 @@ import categories from '../../../.storybook/categories';
 
 const options = [{
   value: 1,
-  description: "Sem instrução",
+  description: "Sem ",
   code: "NDA",
 },
 {
   value: 2,
-  description: "Ensino fundamental incompleto ou equivalente",
+  description: "Ensino",
   code: "EFI",
 }, 
 {
   value: 3,
-  description: "Ensino fundamental completo ou equivalente",
+  description: "Ensino",
   code: "EFC",
 }, 
 {
   value: 4,
-  description: "Ensino médio incompleto ou equivalente",
+  description: "Ensino",
   code: "EMI",
 },]
 const list = {
@@ -32,7 +32,7 @@ const list = {
   Outlined: 'Outlined',
   Standard: 'Standard'
 }
-const inputLabel = text('inputLabel', 'Grau de escolaridade')
+const inputLabel = text('inputLabel', 'Grau')
 const variant = select('variant',  list)
 
 export const selectStorie = () => {
@@ -41,7 +41,7 @@ export const selectStorie = () => {
       options={options}
       inputLabel={inputLabel} 
       value={'value'}
-      variant={variant.value}/>
+      variant={variant}/>
   )
 }
 
