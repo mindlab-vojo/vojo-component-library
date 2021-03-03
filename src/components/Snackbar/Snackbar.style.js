@@ -14,7 +14,7 @@ export const Container = styled.div`
     align-items: center;
     justify-content: space-between;
     box-shadow: 0px 5px 10px rgba(101, 101, 101, 0.05), 0px 5px 10px rgba(61, 61, 61, 0.1);
-    border-radius: 4px; 
+    border-radius: ${props => props.borderRadius};
     padding: 12px 18px;
     cursor: pointer;
 `

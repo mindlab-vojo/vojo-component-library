@@ -15,7 +15,7 @@ export const snackbarCompany = () => {
   const title = text("title", "Entregador")
   const titleColor = color("titleColor", "#ffffff")
   const titleSize = text("titleSize", "24px")
-
+  const borderRadius = text("borderRadius", "10px")
   const img = () => {
     return (
       <img width={'100px'} src={'https://s3.amazonaws.com/static.vojo.com.br/prd/images/james_logo.png'}></img>
@@ -26,6 +26,7 @@ export const snackbarCompany = () => {
     <div style={{ height: '1000px', width: '100%' }}>
       <Snackbar
         backgroundColor={backgroundColor}
+        borderRadius={borderRadius}
         justifyText={justifyText}
         onClickSnackbar={onClickSnackbar}
         height={height}

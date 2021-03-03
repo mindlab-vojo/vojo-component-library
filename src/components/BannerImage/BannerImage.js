@@ -9,6 +9,7 @@ import * as BannerImage from './BannerImage.style'
 const BannerImageComponent = ({
   imageUrl,
   title,
+  titleSize
 }) => {
 
   const renderComponent = (theme) => (
@@ -21,7 +22,7 @@ const BannerImageComponent = ({
       <BannerImage.Overlay/>
       <BannerImage.Title>
         <Typography 
-          fontSize="36px"
+          fontSize={titleSize}
           fontWeight="bolder"
           color={theme.colors.whiteColor}
           fontFamily="'Montserrat', sans-serif">
@@ -40,6 +41,11 @@ const BannerImageComponent = ({
 BannerImageComponent.propTypes = {
   imageUrl: PropTypes.string,
   title: PropTypes.string,
+  titleSize: PropTypes.string
+}
+
+BannerImageComponent.defaultProps = {
+  titleSize: "36px"
 }
 
 export default BannerImageComponent

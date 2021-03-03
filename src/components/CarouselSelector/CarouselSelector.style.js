@@ -18,7 +18,7 @@ export const Carousel = styled.div`
 
 export const Circle = styled.div`
   align-items: center;
-  background-color: ${props => props.isSelected ? props.theme.colors.primaryColor : props.theme.colors.greyColor };
+  background-color: ${props => props.isSelected ? props.theme.colors.primaryColor : '#e1e4e8' };
   border: 1px solid ${props => props.theme.colors.blackColor};
   border-radius: 100px;
   cursor: pointer;
