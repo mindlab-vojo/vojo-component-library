@@ -103,7 +103,7 @@ export const LocationCircle = styled.div`
 `
 export const Freelance = styled.div`
   align-items: center;
-  background-color: ${props => props.theme.colors.greyColor};
+  background-color: #e1e4e8;
   border-radius: 500px;
   display: flex;
   height: 24px;

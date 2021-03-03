@@ -118,7 +118,7 @@ const GenericCardComponent = ({
           </GenericCard.CoursesAvailable>}
           {totalSteps && currentStep && <GenericCard.Application>
             <GenericCard.ApplicationTag>
-              <Typography fontSize={'14px'} color={theme.colors.lightGreyColor}>
+              <Typography fontSize={'14px'} color={'theme.colors.lightGreyColor'}>
                 {totalSteps === currentStep ? 'Candidatura finalizada! Fique atento(a) ao seu e-mail!' : 'Clique aqui para completar e finalizar a sua candidatura'}
               </Typography>
             </GenericCard.ApplicationTag>

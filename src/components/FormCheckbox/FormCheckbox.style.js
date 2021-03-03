@@ -19,6 +19,7 @@ export const TitleWrapper = styled.div`
 
 export const Title = styled.div`
   display: flex;
+  margin-bottom: ${props => props.titleMarginBottom}
 `
 
 export const Tooltip = styled.div`

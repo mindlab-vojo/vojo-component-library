@@ -1,18 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import IconManager from '../IconManager'
-import Typography from '../Typography'
-
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import Button from '../Button'
 
 import { makeStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
-import FormHelperText from '@material-ui/core/FormHelperText';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-import NativeSelect from '@material-ui/core/NativeSelect';
 
 const useStyles = makeStyles((theme) => ({
   formControl: {

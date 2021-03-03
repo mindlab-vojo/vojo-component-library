@@ -9,6 +9,7 @@ import * as Snackbar from './Snackbar.style'
 
 const SnackbarComponent = ({
   backgroundColor,
+  borderRadius,
   buttonText,
   buttonTextColor,
   description,
@@ -29,7 +30,7 @@ const SnackbarComponent = ({
 
   const renderComponent = (theme) => (
     <Snackbar.ContainerTest>
-      <Snackbar.Container height={height} onClick={onClickSnackbar} backgroundColor={backgroundColor}>
+      <Snackbar.Container borderRadius={borderRadius} height={height} onClick={onClickSnackbar} backgroundColor={backgroundColor}>
         {iconName && <Snackbar.Icon>
           <IconManager
             height={iconHeight}
@@ -60,6 +61,7 @@ const SnackbarComponent = ({
 
 SnackbarComponent.propTypes = {
   backgroundColor: PropTypes.string,
+  borderRadius: PropTypes.string,
   buttonText: PropTypes.string,
   buttonTextColor: PropTypes.string,
   description: PropTypes.string,
@@ -85,7 +87,8 @@ SnackbarComponent.defaultProps = {
   descriptionColor: '#DDDDDD',
   titleColor: '#FFFFFF',
   titleSize: "14px",
-  buttonTextColor: '#FFFFFF'
+  buttonTextColor: '#FFFFFF',
+  borderRadius: "4px"
 }
 
 export default SnackbarComponent

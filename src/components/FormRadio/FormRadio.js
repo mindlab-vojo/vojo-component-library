@@ -1,4 +1,4 @@
-import React,  { useState } from 'react'
+import React, { useState } from 'react'
 import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
@@ -16,6 +16,8 @@ const FormRadioComponent = ({
   options,
   preSelectedOption,
   title,
+  titleSize,
+  titleMarginBottom,
   tooltipData,
 }) => {
 
@@ -24,7 +26,7 @@ const FormRadioComponent = ({
   }
 
   const defaultOption = preSelectedOption
-    ? getPreselectedOption() 
+    ? getPreselectedOption()
     : {
       id: null,
       title: null,
@@ -59,18 +61,18 @@ const FormRadioComponent = ({
           <FormRadio.Label
             htmlFor={option.id}>
             <FormRadio.RadioIcon>
-              <IconManager 
+              <IconManager
                 height="20px"
                 width="20px"
                 icon={
                   isSelected ?
-                    "RadioChecked" : 
+                    "RadioChecked" :
                     "RadioUnchecked"
                 }
-                fill={theme.colors.blackColor}/>
+                fill={theme.colors.blackColor} />
             </FormRadio.RadioIcon>
             <Typography
-              color={theme.colors.blackColor}
+              color={'#4D4771'}
               fontSize="14px">
               {option.title}
             </Typography>
@@ -85,10 +87,10 @@ const FormRadioComponent = ({
       <FormRadio.Wrapper>
         <FormRadio.Header>
           <FormRadio.TitleWrapper>
-            <FormRadio.Title>
+            <FormRadio.Title titleMarginBottom={titleMarginBottom}>
               <Typography
-                color={hasError ? theme.colors.redColor : theme.colors.greyColor}
-                fontSize="16px"
+                color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
+                fontSize={titleSize}
                 fontWeight="500">
                 {title}
               </Typography>
@@ -97,7 +99,7 @@ const FormRadioComponent = ({
               description && (
                 <FormRadio.Description>
                   <Typography
-                    color={hasError ? theme.colors.redColor : theme.colors.lightGreyColor}
+                    color={hasError ? theme.colors.pinkColor : theme.colors.lightGreyColor}
                     fontSize="12px">
                     {description}
                   </Typography>
@@ -108,7 +110,7 @@ const FormRadioComponent = ({
               hasError && (
                 <FormRadio.Description>
                   <Typography
-                    color={theme.colors.redColor}
+                    color={theme.colors.pinkColor}
                     fontSize="12px">
                     {errorMessage}
                   </Typography>
@@ -117,14 +119,14 @@ const FormRadioComponent = ({
             }
           </FormRadio.TitleWrapper>
           {
-            hasToolTip &&(
+            hasToolTip && (
               <FormRadio.Tooltip
                 onClick={handleClickToolTip}>
-                <IconManager 
+                <IconManager
                   height="20px"
                   width="20px"
                   icon="HelpCircle"
-                  fill={theme.colors.blackColor}/>
+                  fill={theme.colors.blackColor} />
               </FormRadio.Tooltip>
             )
           }
@@ -157,7 +159,14 @@ FormRadioComponent.propTypes = {
   options: PropTypes.array,
   preSelectedOption: PropTypes.string,
   title: PropTypes.string,
+  titleSize: PropTypes.string,
+  titleMarginBottom: PropTypes.string,
   tooltipData: PropTypes.object,
+}
+
+FormRadioComponent.defaultProps = {
+  titleMarginBottom: "4px",
+  titleSize: "14px"
 }
 
 export default FormRadioComponent

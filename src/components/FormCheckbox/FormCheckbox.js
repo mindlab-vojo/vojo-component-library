@@ -16,6 +16,8 @@ const FormCheckboxComponent = ({
   options,
   preSelectedOptions,
   title,
+  titleSize,
+  titleMarginBottom,
   tooltipData,
 }) => {
   const createPreselectedOptions = () => {
@@ -94,7 +96,7 @@ const FormCheckboxComponent = ({
                 fill={theme.colors.blackColor}/>
             </FormCheckbox.CheckboxIcon>
             <Typography
-              color={theme.colors.blackColor}
+              color={'#4D4771'}
               fontSize="14px">
               {option.title}
             </Typography>
@@ -109,10 +111,10 @@ const FormCheckboxComponent = ({
       <FormCheckbox.Wrapper>
         <FormCheckbox.Header>
           <FormCheckbox.TitleWrapper>
-            <FormCheckbox.Title>
+            <FormCheckbox.Title titleMarginBottom={titleMarginBottom}>
               <Typography
-                color={hasError ? theme.colors.redColor : theme.colors.greyColor}
-                fontSize="16px"
+                color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
+                fontSize={titleSize}
                 fontWeight="500">
                 {title}
               </Typography>
@@ -121,7 +123,7 @@ const FormCheckboxComponent = ({
               description && (
                 <FormCheckbox.Description>
                   <Typography
-                    color={hasError ? theme.colors.redColor : theme.colors.lightGreyColor}
+                    color={hasError ? theme.colors.pinkColor : theme.colors.lightGreyColor}
                     fontSize="12px">
                     {description}
                   </Typography>
@@ -132,7 +134,7 @@ const FormCheckboxComponent = ({
               hasError && (
                 <FormCheckbox.Description>
                   <Typography
-                    color={theme.colors.redColor}
+                    color={theme.colors.pinkColor}
                     fontSize="12px">
                     {errorMessage}
                   </Typography>
@@ -181,7 +183,14 @@ FormCheckboxComponent.propTypes = {
   options: PropTypes.array,
   preSelectedOptions: PropTypes.array,
   title: PropTypes.string,
+  titleSize: PropTypes.string,
+  titleMarginBottom: PropTypes.string,
   tooltipData: PropTypes.object,
+}
+
+FormCheckboxComponent.defaultProps = {
+  titleMarginBottom: "4px",
+  titleSize: "14px"
 }
 
 export default FormCheckboxComponent
