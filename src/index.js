@@ -28,9 +28,10 @@ import ModalInformation from './components/ModalInformation/ModalInformation';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
 import PisInput from './components/Input/PisInput';
+import Select from './components/Select';
 import ResearchCard from './components/ResearchCard';
 import SideMenu from './components/SideMenu';
-import Select from './components/Select';
+import Radio from './components/Radio';
 import Spinner from './components/Spinner/Spinner';
 import Snackbar from './components/Snackbar/Snackbar';
 import StickyToast from './components/StickyToast/StickyToast';
@@ -76,6 +77,7 @@ export {
   ModuleCard,
   PasswordInput,
   PisInput,
+  Radio,
   ResearchCard,
   SideMenu,
   Snackbar,

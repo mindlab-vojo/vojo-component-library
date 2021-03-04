@@ -16,6 +16,7 @@ export class Typography extends Component {
     fontWeight: PropTypes.string,
     fontSize: PropTypes.string,
     lineHeight: PropTypes.string,
+    letterSpacing: PropTypes.string,
     fontFamily: PropTypes.string,
   }
 
@@ -32,6 +33,7 @@ export class Typography extends Component {
       fontWeight,
       fontSize,
       lineHeight,
+      letterSpacing,
       fontFamily,
     } = this.props;
 
@@ -47,8 +49,9 @@ export class Typography extends Component {
       ${fontStyle && `font-style: ${fontStyle};`}
       ${fontVariant && `font-variant: ${fontVariant};`}
       ${fontWeight && `font-weight: ${fontWeight};`}
-      ${fontSize && `font-size: ${fontSize};`}
+      ${fontSize && `font-size: ${fontSize};`}letterSpacing
       ${lineHeight && `line-height: ${lineHeight};`}
+      ${letterSpacing && `letter-spacing: ${letterSpacing};`}
       ${fontFamily && `font-family: ${fontFamily};`}
       }
     `

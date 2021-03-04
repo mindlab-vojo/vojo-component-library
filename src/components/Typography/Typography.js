@@ -14,6 +14,7 @@ function TypographyComponent({
   fontVariant,
   fontWeight,
   fontSize,
+  letterSpacing,
   lineHeight,
   fontFamily
 }) {
@@ -83,6 +84,7 @@ TypographyComponent.propTypes = {
   fontWeight: PropTypes.string,
   fontSize: PropTypes.string,
   lineHeight: PropTypes.string,
+  letterSpacing: PropTypes.string,
   fontFamily: PropTypes.string,
 }
 

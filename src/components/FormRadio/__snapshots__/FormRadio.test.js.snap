@@ -18,7 +18,7 @@ Object {
               class="sc-hKgILt iPKFzq"
             >
               <p
-                class="sc-kEjbxe bDoBze"
+                class="sc-kEjbxe mdwMJ"
               >
                 Título
               </p>
@@ -27,7 +27,7 @@ Object {
               class="sc-jSgupP cXdENn"
             >
               <p
-                class="sc-iqHYGH gNWtAg"
+                class="sc-iqHYGH iaYMaS"
               >
                 Este é um exemplo de descrição
               </p>
@@ -36,7 +36,7 @@ Object {
               class="sc-jSgupP cXdENn"
             >
               <p
-                class="sc-crrsfI dPbljJ"
+                class="sc-crrsfI kUYGzb"
               >
                 Este é um erro
               </p>
@@ -96,12 +96,12 @@ Object {
                     />
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      fill="#212529"
+                      fill="#B8B5C6"
                     />
                   </svg>
                 </div>
                 <p
-                  class="sc-dQppl iBymNN"
+                  class="sc-dQppl boytCb"
                 >
                   Opção 1
                 </p>
@@ -135,12 +135,12 @@ Object {
                     />
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      fill="#212529"
+                      fill="#B8B5C6"
                     />
                   </svg>
                 </div>
                 <p
-                  class="sc-bqyKva ktgpxG"
+                  class="sc-bqyKva Ewygw"
                 >
                   Opção 2
                 </p>
@@ -174,12 +174,12 @@ Object {
                     />
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      fill="#212529"
+                      fill="#B8B5C6"
                     />
                   </svg>
                 </div>
                 <p
-                  class="sc-kstrdz ghFTTw"
+                  class="sc-kstrdz cxmIYW"
                 >
                   Opção 3
                 </p>
@@ -213,12 +213,12 @@ Object {
                     />
                     <path
                       d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                      fill="#212529"
+                      fill="#B8B5C6"
                     />
                   </svg>
                 </div>
                 <p
-                  class="sc-hBEYos jSrDQO"
+                  class="sc-hBEYos gknPOc"
                 >
                   Opção 4
                 </p>
@@ -243,7 +243,7 @@ Object {
             class="sc-hKgILt iPKFzq"
           >
             <p
-              class="sc-kEjbxe bDoBze"
+              class="sc-kEjbxe mdwMJ"
             >
               Título
             </p>
@@ -252,7 +252,7 @@ Object {
             class="sc-jSgupP cXdENn"
           >
             <p
-              class="sc-iqHYGH gNWtAg"
+              class="sc-iqHYGH iaYMaS"
             >
               Este é um exemplo de descrição
             </p>
@@ -261,7 +261,7 @@ Object {
             class="sc-jSgupP cXdENn"
           >
             <p
-              class="sc-crrsfI dPbljJ"
+              class="sc-crrsfI kUYGzb"
             >
               Este é um erro
             </p>
@@ -321,12 +321,12 @@ Object {
                   />
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                    fill="#212529"
+                    fill="#B8B5C6"
                   />
                 </svg>
               </div>
               <p
-                class="sc-dQppl iBymNN"
+                class="sc-dQppl boytCb"
               >
                 Opção 1
               </p>
@@ -360,12 +360,12 @@ Object {
                   />
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                    fill="#212529"
+                    fill="#B8B5C6"
                   />
                 </svg>
               </div>
               <p
-                class="sc-bqyKva ktgpxG"
+                class="sc-bqyKva Ewygw"
               >
                 Opção 2
               </p>
@@ -399,12 +399,12 @@ Object {
                   />
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                    fill="#212529"
+                    fill="#B8B5C6"
                   />
                 </svg>
               </div>
               <p
-                class="sc-kstrdz ghFTTw"
+                class="sc-kstrdz cxmIYW"
               >
                 Opção 3
               </p>
@@ -438,12 +438,12 @@ Object {
                   />
                   <path
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
-                    fill="#212529"
+                    fill="#B8B5C6"
                   />
                 </svg>
               </div>
               <p
-                class="sc-hBEYos jSrDQO"
+                class="sc-hBEYos gknPOc"
               >
                 Opção 4
               </p>

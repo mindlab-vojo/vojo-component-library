@@ -1,94 +1,74 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test CarouselSelector component render 1`] = `
+exports[`Test Radio component render 1`] = `
 Object {
   "asFragment": [Function],
   "baseElement": <body>
     <div>
       <div
-        class="sc-bdfBwQ jGJVBi"
+        class="sc-bdfBwQ fRFzZh"
       >
-        <div
-          class="sc-gsTCUz ddLIQr"
+        <input
+          class="sc-dlfnbm fKzgnC"
+          id="radio"
+          name="radio"
+          type="radio"
+          value=""
+        />
+        <svg
+          height="20px"
+          viewBox="0 0 24 24"
+          width="20px"
+          xmlns="http://www.w3.org/2000/svg"
         >
-          <div
-            class="sc-dlfnbm dczYKs"
-          >
-            <div
-              class="sc-hKgILt kceAIk"
-            >
-              <p
-                class="sc-iBPRYJ iLmUsL"
-              >
-                MS
-              </p>
-            </div>
-          </div>
-          <div
-            class="sc-dlfnbm gHGDmf"
-          >
-            <div
-              class="sc-hKgILt kceAIk"
-            >
-              <p
-                class="sc-fubCfw bqJlVF"
-              >
-                SP
-              </p>
-            </div>
-          </div>
-        </div>
-        <div
-          class="sc-eCssSg"
-        >
-          <p
-            class="sc-pFZIQ wEQew"
+          <path
+            d="M0 0h24v24H0z"
+            fill="none"
           />
-        </div>
+          <path
+            d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+            fill="#B8B5C6"
+          />
+        </svg>
+        <label
+          class="sc-gsTCUz jVDlmF"
+        >
+          radio
+        </label>
       </div>
     </div>
   </body>,
   "container": <div>
     <div
-      class="sc-bdfBwQ jGJVBi"
+      class="sc-bdfBwQ fRFzZh"
     >
-      <div
-        class="sc-gsTCUz ddLIQr"
+      <input
+        class="sc-dlfnbm fKzgnC"
+        id="radio"
+        name="radio"
+        type="radio"
+        value=""
+      />
+      <svg
+        height="20px"
+        viewBox="0 0 24 24"
+        width="20px"
+        xmlns="http://www.w3.org/2000/svg"
       >
-        <div
-          class="sc-dlfnbm dczYKs"
-        >
-          <div
-            class="sc-hKgILt kceAIk"
-          >
-            <p
-              class="sc-iBPRYJ iLmUsL"
-            >
-              MS
-            </p>
-          </div>
-        </div>
-        <div
-          class="sc-dlfnbm gHGDmf"
-        >
-          <div
-            class="sc-hKgILt kceAIk"
-          >
-            <p
-              class="sc-fubCfw bqJlVF"
-            >
-              SP
-            </p>
-          </div>
-        </div>
-      </div>
-      <div
-        class="sc-eCssSg"
-      >
-        <p
-          class="sc-pFZIQ wEQew"
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
         />
-      </div>
+        <path
+          d="M12 7c-2.76 0-5 2.24-5 5s2.24 5 5 5 5-2.24 5-5-2.24-5-5-5zm0-5C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8z"
+          fill="#B8B5C6"
+        />
+      </svg>
+      <label
+        class="sc-gsTCUz jVDlmF"
+      >
+        radio
+      </label>
     </div>
   </div>,
   "debug": [Function],
