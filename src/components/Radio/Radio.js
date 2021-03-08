@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
@@ -13,13 +13,17 @@ const RadioComponent = ({
   name,
   value,
 }) => {
-  const [checked, setChecked] = useState(false)
+  const [checked, setChecked] = useState(true)
   const componentName = name ? name : id
 
   const handleRadioClick = () => {
     setChecked(!checked)
     onClickRadio && onClickRadio(checked)
   }
+
+  useEffect(() => {
+    setChecked(!value)
+  }, [value]);
 
   const handleRadioChange = () => {
     // Clear warnings

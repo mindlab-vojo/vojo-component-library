@@ -57,3 +57,8 @@ export const Label = styled.label`
   cursor: pointer;
   display: flex;
 `
+
+export const Radio = styled.div`
+  margin-top: 12px;
+  margin-bottom: 5px;
+`

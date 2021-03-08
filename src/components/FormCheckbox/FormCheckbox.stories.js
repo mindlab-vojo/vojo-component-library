@@ -46,11 +46,13 @@ export const formCheckbox = () => {
   const options = object('options', optionsList)
   const description = text('description', 'Breve descrição da pergunta')
   const title = text('title', 'Título da Pergunta')
+  const hasAllOptions = boolean('hasAllOptions', true)
 
   return (
     <FormCheckbox
       description={description}
       errorMessage={errorMessage}
+      hasAllOptions={hasAllOptions}
       hasError={hasError}
       hasToolTip={hasToolTip}
       onClickOption={onClickOption}
