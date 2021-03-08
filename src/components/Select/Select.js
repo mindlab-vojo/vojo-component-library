@@ -20,6 +20,7 @@ const useStyles = makeStyles((theme) => ({
 
 
 const SelectMenuComponent = ({
+  defaultValue,
   options,
   value,
   onChangeSelect,
@@ -34,6 +35,7 @@ const SelectMenuComponent = ({
         native
         value={value}
         onChange={onChangeSelect}
+        defaultValue={defaultValue}
       >
         <option aria-label="None" value="" />
         {options.map(item => (
@@ -56,6 +58,7 @@ SelectMenuComponent.propTypes = {
   onChangeSelect: PropTypes.func,
   inputLabel: PropTypes.string,
   variant: PropTypes.string,
-  terms: PropTypes.object
+  terms: PropTypes.object,
+  defaultValue: PropTypes.string
 }
 export default SelectMenuComponent

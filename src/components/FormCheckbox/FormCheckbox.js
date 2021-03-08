@@ -1,16 +1,19 @@
-import React,  { useState, useEffect } from 'react'
+import React, { useState, useEffect } from 'react'
 import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import * as FormCheckbox from './FormCheckbox.style'
 import IconManager from '../IconManager'
 import Typography from '../Typography'
+import Radio from '../Radio'
 
 const FormCheckboxComponent = ({
   description,
   errorMessage,
+  hasAllOptions,
   hasError,
   hasToolTip,
+  labelSelectAll,
   onClickOption,
   onClickToolTip,
   options,
@@ -29,17 +32,23 @@ const FormCheckboxComponent = ({
         options.find(option => option.id === preSelectedOption)
       )
     }
-    
+
     return newOptionsToState
   }
 
   const defaultOption = preSelectedOptions ? createPreselectedOptions() : []
   const [selectedOptions, setSelectedOptions] = useState(defaultOption)
+  const [selectAll, setSelectAll] = useState(false)
 
   const handleClickOption = (option) => {
     hasOptionOnSelectedOptions(option)
       ? removeOption(option)
       : addOption(option)
+  }
+
+  const handleSelectAllOptions = (chooseAll) => {
+    setSelectAll(chooseAll)
+    selectAllOptions(chooseAll)
   }
 
   const hasOptionOnSelectedOptions = (option) => {
@@ -49,10 +58,19 @@ const FormCheckboxComponent = ({
     return Boolean(searchForOptionResult)
   }
 
+  const selectAllOptions = (chooseAll) => {
+    const allOptions = chooseAll ? options.filter(item => item.code !== 'ALL') : []
+    setSelectedOptions(allOptions)
+    onClickOption && onClickOption(allOptions)
+  }
+
   const addOption = (option) => {
     const newSelectedOptions = [...selectedOptions]
     newSelectedOptions.push(option)
     setSelectedOptions(newSelectedOptions)
+    if (hasAllOptions && newSelectedOptions.length === options.filter(item => item.code !== 'ALL').length) {
+      setSelectAll(true)
+    }
     onClickOption && onClickOption(newSelectedOptions)
   }
 
@@ -60,6 +78,7 @@ const FormCheckboxComponent = ({
     const newSelectedOptions = selectedOptions.filter(
       selectedOption => selectedOption.id !== option.id
     )
+    setSelectAll(false)
     setSelectedOptions(newSelectedOptions)
     onClickOption && onClickOption(newSelectedOptions)
   }
@@ -85,15 +104,15 @@ const FormCheckboxComponent = ({
             htmlFor={option.id}
             onClick={() => handleClickOption(option)}>
             <FormCheckbox.CheckboxIcon>
-              <IconManager 
+              <IconManager
                 height="20px"
                 width="20px"
                 icon={
                   isSelected ?
-                    "CheckboxChecked" : 
+                    "CheckboxChecked" :
                     "CheckboxUnchecked"
                 }
-                fill={'#B8B5C6'}/>
+                fill={'#B8B5C6'} />
             </FormCheckbox.CheckboxIcon>
             <Typography
               color={'#4D4771'}
@@ -143,20 +162,24 @@ const FormCheckboxComponent = ({
             }
           </FormCheckbox.TitleWrapper>
           {
-            hasToolTip &&(
+            hasToolTip && (
               <FormCheckbox.Tooltip
                 onClick={handleClickToolTip}>
-                <IconManager 
+                <IconManager
                   height="20px"
                   width="20px"
                   icon="HelpCircle"
-                  fill={theme.colors.blackColor}/>
+                  fill={theme.colors.blackColor} />
               </FormCheckbox.Tooltip>
             )
           }
         </FormCheckbox.Header>
         <FormCheckbox.OptionsWrapper>
           <FormCheckbox.OptionsWrapper>
+            {hasAllOptions &&
+              <FormCheckbox.Radio>
+                <Radio value={selectAll} onClickRadio={() => handleSelectAllOptions(!selectAll)} label={labelSelectAll} />
+              </FormCheckbox.Radio>}
             {
               renderOptions(theme)
             }
@@ -176,10 +199,12 @@ const FormCheckboxComponent = ({
 FormCheckboxComponent.propTypes = {
   description: PropTypes.string,
   errorMessage: PropTypes.string,
+  hasAllOptions: PropTypes.bool,
   hasError: PropTypes.bool,
   hasToolTip: PropTypes.bool,
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,
+  labelSelectAll: PropTypes.string,
   options: PropTypes.array,
   preSelectedOptions: PropTypes.array,
   title: PropTypes.string,
@@ -190,7 +215,8 @@ FormCheckboxComponent.propTypes = {
 
 FormCheckboxComponent.defaultProps = {
   titleMarginBottom: "4px",
-  titleSize: "14px"
+  titleSize: "14px",
+  labelSelectAll: "Todos os dias"
 }
 
 export default FormCheckboxComponent
