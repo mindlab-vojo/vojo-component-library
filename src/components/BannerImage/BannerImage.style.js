@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   box-sizing: border-box;
-  height: 205px;
   position: relative;
   width: 100%;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
