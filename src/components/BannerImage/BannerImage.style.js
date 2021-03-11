@@ -2,7 +2,6 @@ import styled from 'styled-components'
 
 export const Wrapper = styled.div`
   box-sizing: border-box;
-  height: 205px;
   position: relative;
   width: 100%;
   @media only screen and (min-width: ${props => props.theme.breakpoints.desktop}) {
@@ -35,6 +34,7 @@ export const Image = styled.img`
   margin: 0 auto;
   height: auto;
   width: 100%;
+  background-color: red;
 `
 
 export const Title = styled.div`
