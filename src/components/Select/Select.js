@@ -8,16 +8,35 @@ import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-const useStyles = makeStyles((theme) => ({
+const useStyles = makeStyles({
   formControl: {
     minWidth: 120,
     width: '100%'
   },
-  selectEmpty: {
-    marginTop: theme.spacing(2),
-  },
-}));
+  label: {
+    backgroundColor: 'white'
+  }
+})
 
+const selectStyle = makeStyles({
+  select: {
+    backgroundColor: 'white',
+    '&:focus': {
+      backgroundColor: 'white'
+    }
+  },
+  outlined: {
+    border: '2px #666666 solid'
+  }
+}, { name: 'MuiSelect' })
+
+const label = makeStyles({
+  shrink: {
+    fontSize: '19px',
+    fontWeight: 'bold',
+    color: '#4d4771'
+  }
+}, { name: 'MuiInputLabel' })
 
 const SelectMenuComponent = ({
   defaultValue,
@@ -27,15 +46,19 @@ const SelectMenuComponent = ({
   inputLabel,
   variant
 }) => {
-  const classes = useStyles();
+  const classes = useStyles()
+  const classSelect = selectStyle()
+  const classInputLabel = label()
+
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>
-      <InputLabel>{inputLabel}</InputLabel>
+      <InputLabel className={classes.label}>{inputLabel}</InputLabel>
       <Select
         native
         value={value}
         onChange={onChangeSelect}
         defaultValue={defaultValue}
+        className={classSelect}
       >
         <option aria-label="None" value="" />
         {options.map(item => (
