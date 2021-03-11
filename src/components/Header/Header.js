@@ -81,7 +81,8 @@ HeaderComponent.propTypes = {
   menuTems: PropTypes.object,
   onClickLogo: PropTypes.func,
   goBack: PropTypes.bool,
-  onClickGoBack: PropTypes.func
+  onClickGoBack: PropTypes.func,
+  blockActions: PropTypes.bool
 }
 
 export default HeaderComponent
