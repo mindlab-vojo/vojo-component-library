@@ -34,7 +34,6 @@ export const Image = styled.img`
   margin: 0 auto;
   height: auto;
   width: 100%;
-  background-color: red;
 `
 
 export const Title = styled.div`
