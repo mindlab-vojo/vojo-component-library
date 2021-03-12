@@ -133,8 +133,9 @@ const FormCheckboxComponent = ({
             <FormCheckbox.Title titleMarginBottom={titleMarginBottom}>
               <Typography
                 color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
+                type={'title'}
                 fontSize={titleSize}
-                fontWeight="500">
+                fontWeight="700">
                 {title}
               </Typography>
             </FormCheckbox.Title>
