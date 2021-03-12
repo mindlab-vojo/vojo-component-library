@@ -42,7 +42,7 @@ export const selectStorie = () => {
       options={options}
       inputLabel={inputLabel} 
       defaultValue={defaultValue}
-      value={'value'}
+      value={'EMI'}
       variant={'outlined'}/>
   )
 }

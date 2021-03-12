@@ -19,23 +19,22 @@ export const Label = styled.label`
 
 export const InputBackground = styled.div`
   align-items: center;
-  border: 2px solid ${props => 
+  border: 1px solid ${props => 
     props.isValid ? 
       props.isFocused ? 
         props.theme.colors.primaryColor : 
-        props.theme.colors.greyColor:
+        '#4D4771':
       props.theme.colors.pinkColor
 };
   border-radius: 4px;
   display: flex;
   justify-content: center;
-  padding: 5px 10px 4px;
+  padding: 12px;
 `
 
 export const InputIcon = styled.div`
   cursor: pointer;
   margin: 0 5px;
-
   :first-child{
     margin-left: 0
   }
@@ -47,12 +46,24 @@ export const InputIcon = styled.div`
 
 export const Input = styled.input`
   border: 0;
-  color: ${props => props.isValid ? props.theme.colors.primaryColor : props.theme.colors.pinkColor};
-  font-size: 15px;
-  margin: 5px 0;
+  color: ${props => props.isValid ? '#4D4771' : props.theme.colors.pinkColor};
   width: 100%;
-
+  font-family: 'Rubik', sans-serif;
+  font-size: 16px;
+  letter-spacing: 0.25px;
+  font-weight: 400;
   :focus {
     outline: 0;
+  }
+  ::placeholder {
+    color: ${props => props.theme.colors.lightGreyColor};
+  }
+  
+  :-ms-input-placeholder {
+   color: ${props => props.theme.colors.lightGreyColor};
+  }
+  
+  ::-ms-input-placeholder {
+   color: ${props => props.theme.colors.lightGreyColor};
   }
 `
