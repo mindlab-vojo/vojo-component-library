@@ -73,7 +73,8 @@ const FormRadioComponent = ({
             </FormRadio.RadioIcon>
             <Typography
               color={'#4D4771'}
-              fontSize="14px">
+              fontSize="14px"
+              lineHeight={'18px'}>
               {option.title}
             </Typography>
           </FormRadio.Label>
@@ -92,7 +93,8 @@ const FormRadioComponent = ({
                 color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
                 type={'title'}
                 fontSize={titleSize}
-                fontWeight="700">
+                fontWeight="700"
+                lineHeight={'18px'}>
                 {title}
               </Typography>
             </FormRadio.Title>
