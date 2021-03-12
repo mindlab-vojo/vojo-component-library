@@ -43,7 +43,7 @@ const RadioComponent = ({
           height="20px"
           width="20px"
           icon={!checked ? "RadioChecked" : "RadioUnchecked"}
-          fill={'#B8B5C6'} />
+          fill={!checked ? theme.colors.primaryColor : '#B8B5C6'} />
         <Radio.Label >
           {label}
         </Radio.Label>

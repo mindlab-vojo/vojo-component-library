@@ -66,7 +66,7 @@ export const formCheckbox = () => {
 }
 
 export default {
-  title: categories.Radios,
+  title: categories.Checkbox,
   component: formCheckbox,
   decorators: [
     withKnobs, 

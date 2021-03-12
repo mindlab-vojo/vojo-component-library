@@ -112,7 +112,7 @@ const FormCheckboxComponent = ({
                     "CheckboxChecked" :
                     "CheckboxUnchecked"
                 }
-                fill={'#B8B5C6'} />
+                fill={isSelected ? theme.colors.primaryColor : '#B8B5C6'} />
             </FormCheckbox.CheckboxIcon>
             <Typography
               color={'#4D4771'}

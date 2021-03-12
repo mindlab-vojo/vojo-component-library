@@ -69,7 +69,7 @@ const FormRadioComponent = ({
                     "RadioChecked" :
                     "RadioUnchecked"
                 }
-                fill={'#B8B5C6'} />
+                fill={isSelected ? theme.colors.primaryColor : '#B8B5C6'} />
             </FormRadio.RadioIcon>
             <Typography
               color={'#4D4771'}

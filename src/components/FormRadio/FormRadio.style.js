@@ -39,6 +39,7 @@ export const OptionsWrapper = styled.div`
 export const Option = styled.div`
   display: flex;
   margin: 5px 0;
+  align-items: center;
 
   &:first-of-type { 
     margin-top: 12px;
@@ -51,9 +52,12 @@ export const HiddenRadio = styled.input`
 
 export const RadioIcon = styled.div`
   margin-right: 5px;
+  display: flex;
+  align-items: center;
 `
 
 export const Label = styled.label`
   cursor: pointer;
   display: flex;
+  align-items: center;
 `

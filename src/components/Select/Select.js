@@ -7,27 +7,6 @@ import { makeStyles, withStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
-const CssTextField = withStyles({
-  root: {
-    '& label.Mui-focused': {
-      color: 'green',
-    },
-    '& .MuiInput-underline:after': {
-      borderBottomColor: 'green',
-    },
-    '& .MuiOutlinedInput-root': {
-      '& fieldset': {
-        borderColor: 'red',
-      },
-      '&:hover fieldset': {
-        borderColor: 'yellow',
-      },
-      '&.Mui-focused fieldset': {
-        borderColor: 'green',
-      },
-    },
-  },
-})(Select);
 
 const useStyles = makeStyles((theme) => ({
   formControl: {
@@ -36,10 +15,6 @@ const useStyles = makeStyles((theme) => ({
     fontFamily: "'Rubik', sans-serif",
     fontSize: '16px',
     letterSpacing: '0.25px',
-    outline: 'none',
-    '&.Mui-focused fieldset': {
-      borderColor: 'green',
-    },
   },
   label: {
     fontFamily: "'Rubik', sans-serif",
@@ -57,13 +32,8 @@ const selectStyle = makeStyles({
     letterSpacing: '0.25px',
     color: '#4D4771',
     borderRadius: '4px',
-    outline: 'none',
     '&:focus': {
       backgroundColor: 'white',
-      outline: 'none'
-    },
-    '&.Mui-focused': {
-      borderColor: 'green',
     },
   },
   outlined: {
@@ -72,7 +42,6 @@ const selectStyle = makeStyles({
     fontFamily: "'Rubik', sans-serif",
     fontSize: '16px',
     letterSpacing: '0.25px',
-    outline: 'none'
   },
   icon: {
     color: '#391DDD'
@@ -89,21 +58,9 @@ const label = makeStyles({
     padding: '0 4px',
   },
   outlined: {
-    outline: 'none',
     transform: 'translate(14px, 14px) scale(1)'
   }
 }, { name: 'MuiInputLabel' })
-
-const inputStyle = makeStyles({
-  input: {
-    padding: '13px'
-  },
-  root: {
-    '&:focus': {
-      outline: 'none'
-    }
-  }
-}, { name: 'MuiOutlinedInput' })
 
 
 const SelectMenuComponent = ({
@@ -117,12 +74,12 @@ const SelectMenuComponent = ({
   const classes = useStyles()
   const classSelect = selectStyle()
   const classInputLabel = label()
-  const teste = inputStyle()
+
 
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>
       <InputLabel className={classes.label}>{inputLabel}</InputLabel>
-      <CssTextField
+      <Select
         native
         value={value}
         onChange={onChangeSelect}
@@ -133,7 +90,7 @@ const SelectMenuComponent = ({
         {options.map(item => (
           <option key={item.code} value={item.code}>{item.description}</option>
         ))}
-      </CssTextField>
+      </Select>
     </FormControl>
   )
 
