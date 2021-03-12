@@ -69,7 +69,7 @@ const FormRadioComponent = ({
                     "RadioChecked" :
                     "RadioUnchecked"
                 }
-                fill={'#B8B5C6'} />
+                fill={isSelected ? theme.colors.primaryColor : '#B8B5C6'} />
             </FormRadio.RadioIcon>
             <Typography
               color={'#4D4771'}
@@ -90,8 +90,9 @@ const FormRadioComponent = ({
             <FormRadio.Title titleMarginBottom={titleMarginBottom}>
               <Typography
                 color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
+                type={'title'}
                 fontSize={titleSize}
-                fontWeight="500">
+                fontWeight="700">
                 {title}
               </Typography>
             </FormRadio.Title>

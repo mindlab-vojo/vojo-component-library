@@ -3,40 +3,65 @@ import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles, withStyles } from '@material-ui/core/styles';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
 import Select from '@material-ui/core/Select';
 
-const useStyles = makeStyles({
+const useStyles = makeStyles((theme) => ({
   formControl: {
     minWidth: 120,
-    width: '100%'
+    width: '100%',
+    fontFamily: "'Rubik', sans-serif",
+    fontSize: '16px',
+    letterSpacing: '0.25px',
   },
   label: {
-    backgroundColor: 'white'
+    fontFamily: "'Rubik', sans-serif",
+    backgroundColor: 'white',
+    fontSize: '16px',
+    letterSpacing: '0.25px',
   }
-})
+}))
 
 const selectStyle = makeStyles({
   select: {
     backgroundColor: 'white',
+    fontFamily: "'Rubik', sans-serif",
+    fontSize: '16px',
+    letterSpacing: '0.25px',
+    color: '#4D4771',
+    borderRadius: '4px',
     '&:focus': {
-      backgroundColor: 'white'
-    }
+      backgroundColor: 'white',
+    },
   },
   outlined: {
-    border: '2px #666666 solid'
+    border: '1px #4D4771 solid',
+    borderRadius: '4px',
+    fontFamily: "'Rubik', sans-serif",
+    fontSize: '16px',
+    letterSpacing: '0.25px',
+  },
+  icon: {
+    color: '#391DDD'
   }
 }, { name: 'MuiSelect' })
 
 const label = makeStyles({
   shrink: {
     fontSize: '19px',
-    fontWeight: 'bold',
-    color: '#4d4771'
+    fontWeight: '500',
+    color: '#4d4771',
+    fontFamily: "'Rubik', sans-serif",
+    letterSpacing: '0.25px',
+    padding: '0 4px',
+  },
+  outlined: {
+    transform: 'translate(14px, 14px) scale(1)'
   }
 }, { name: 'MuiInputLabel' })
+
 
 const SelectMenuComponent = ({
   defaultValue,
@@ -49,6 +74,7 @@ const SelectMenuComponent = ({
   const classes = useStyles()
   const classSelect = selectStyle()
   const classInputLabel = label()
+
 
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>

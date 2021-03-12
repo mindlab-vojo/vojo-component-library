@@ -18,7 +18,7 @@ Object {
               class="sc-hKgILt iPKFzq"
             >
               <p
-                class="sc-bqyKva XcEKM"
+                class="sc-bqyKva hNnCmv"
               >
                 Título
               </p>
@@ -27,7 +27,7 @@ Object {
               class="sc-jSgupP cXdENn"
             >
               <p
-                class="sc-kstrdz hEmAAc"
+                class="sc-kstrdz gIJwLE"
               >
                 Este é um exemplo de descrição
               </p>
@@ -36,7 +36,7 @@ Object {
               class="sc-jSgupP cXdENn"
             >
               <p
-                class="sc-hBEYos jvBAUO"
+                class="sc-hBEYos coerre"
               >
                 Este é um erro
               </p>
@@ -69,7 +69,7 @@ Object {
             class="sc-gKsewC ehdtkM"
           >
             <div
-              class="sc-iBPRYJ joNmFh"
+              class="sc-iBPRYJ eDmJJP"
             >
               <input
                 class="sc-fubCfw ktfAJq"
@@ -78,11 +78,11 @@ Object {
                 value="leonardo"
               />
               <label
-                class="sc-jrAGrp dkvcnq"
+                class="sc-jrAGrp cWVEFM"
                 for="1"
               >
                 <div
-                  class="sc-pFZIQ bIGLcn"
+                  class="sc-pFZIQ fOiaqf"
                 >
                   <svg
                     height="20px"
@@ -101,14 +101,14 @@ Object {
                   </svg>
                 </div>
                 <p
-                  class="sc-fodVxV irimQf"
+                  class="sc-fodVxV bclUWL"
                 >
                   Opção 1
                 </p>
               </label>
             </div>
             <div
-              class="sc-iBPRYJ joNmFh"
+              class="sc-iBPRYJ eDmJJP"
             >
               <input
                 class="sc-fubCfw ktfAJq"
@@ -117,11 +117,11 @@ Object {
                 value="renata"
               />
               <label
-                class="sc-jrAGrp dkvcnq"
+                class="sc-jrAGrp cWVEFM"
                 for="2"
               >
                 <div
-                  class="sc-pFZIQ bIGLcn"
+                  class="sc-pFZIQ fOiaqf"
                 >
                   <svg
                     height="20px"
@@ -140,14 +140,14 @@ Object {
                   </svg>
                 </div>
                 <p
-                  class="sc-fFubgz kfMqys"
+                  class="sc-fFubgz iXFhGQ"
                 >
                   Opção 2
                 </p>
               </label>
             </div>
             <div
-              class="sc-iBPRYJ joNmFh"
+              class="sc-iBPRYJ eDmJJP"
             >
               <input
                 class="sc-fubCfw ktfAJq"
@@ -156,11 +156,11 @@ Object {
                 value="robson"
               />
               <label
-                class="sc-jrAGrp dkvcnq"
+                class="sc-jrAGrp cWVEFM"
                 for="3"
               >
                 <div
-                  class="sc-pFZIQ bIGLcn"
+                  class="sc-pFZIQ fOiaqf"
                 >
                   <svg
                     height="20px"
@@ -179,14 +179,14 @@ Object {
                   </svg>
                 </div>
                 <p
-                  class="sc-bkzZxe mhzVq"
+                  class="sc-bkzZxe ctpArW"
                 >
                   Opção 3
                 </p>
               </label>
             </div>
             <div
-              class="sc-iBPRYJ joNmFh"
+              class="sc-iBPRYJ eDmJJP"
             >
               <input
                 class="sc-fubCfw ktfAJq"
@@ -195,11 +195,11 @@ Object {
                 value="ana-carolina"
               />
               <label
-                class="sc-jrAGrp dkvcnq"
+                class="sc-jrAGrp cWVEFM"
                 for="4"
               >
                 <div
-                  class="sc-pFZIQ bIGLcn"
+                  class="sc-pFZIQ fOiaqf"
                 >
                   <svg
                     height="20px"
@@ -218,7 +218,7 @@ Object {
                   </svg>
                 </div>
                 <p
-                  class="sc-idOhPF hPFGPq"
+                  class="sc-idOhPF jnkEZq"
                 >
                   Opção 4
                 </p>
@@ -243,7 +243,7 @@ Object {
             class="sc-hKgILt iPKFzq"
           >
             <p
-              class="sc-bqyKva XcEKM"
+              class="sc-bqyKva hNnCmv"
             >
               Título
             </p>
@@ -252,7 +252,7 @@ Object {
             class="sc-jSgupP cXdENn"
           >
             <p
-              class="sc-kstrdz hEmAAc"
+              class="sc-kstrdz gIJwLE"
             >
               Este é um exemplo de descrição
             </p>
@@ -261,7 +261,7 @@ Object {
             class="sc-jSgupP cXdENn"
           >
             <p
-              class="sc-hBEYos jvBAUO"
+              class="sc-hBEYos coerre"
             >
               Este é um erro
             </p>
@@ -294,7 +294,7 @@ Object {
           class="sc-gKsewC ehdtkM"
         >
           <div
-            class="sc-iBPRYJ joNmFh"
+            class="sc-iBPRYJ eDmJJP"
           >
             <input
               class="sc-fubCfw ktfAJq"
@@ -303,11 +303,11 @@ Object {
               value="leonardo"
             />
             <label
-              class="sc-jrAGrp dkvcnq"
+              class="sc-jrAGrp cWVEFM"
               for="1"
             >
               <div
-                class="sc-pFZIQ bIGLcn"
+                class="sc-pFZIQ fOiaqf"
               >
                 <svg
                   height="20px"
@@ -326,14 +326,14 @@ Object {
                 </svg>
               </div>
               <p
-                class="sc-fodVxV irimQf"
+                class="sc-fodVxV bclUWL"
               >
                 Opção 1
               </p>
             </label>
           </div>
           <div
-            class="sc-iBPRYJ joNmFh"
+            class="sc-iBPRYJ eDmJJP"
           >
             <input
               class="sc-fubCfw ktfAJq"
@@ -342,11 +342,11 @@ Object {
               value="renata"
             />
             <label
-              class="sc-jrAGrp dkvcnq"
+              class="sc-jrAGrp cWVEFM"
               for="2"
             >
               <div
-                class="sc-pFZIQ bIGLcn"
+                class="sc-pFZIQ fOiaqf"
               >
                 <svg
                   height="20px"
@@ -365,14 +365,14 @@ Object {
                 </svg>
               </div>
               <p
-                class="sc-fFubgz kfMqys"
+                class="sc-fFubgz iXFhGQ"
               >
                 Opção 2
               </p>
             </label>
           </div>
           <div
-            class="sc-iBPRYJ joNmFh"
+            class="sc-iBPRYJ eDmJJP"
           >
             <input
               class="sc-fubCfw ktfAJq"
@@ -381,11 +381,11 @@ Object {
               value="robson"
             />
             <label
-              class="sc-jrAGrp dkvcnq"
+              class="sc-jrAGrp cWVEFM"
               for="3"
             >
               <div
-                class="sc-pFZIQ bIGLcn"
+                class="sc-pFZIQ fOiaqf"
               >
                 <svg
                   height="20px"
@@ -404,14 +404,14 @@ Object {
                 </svg>
               </div>
               <p
-                class="sc-bkzZxe mhzVq"
+                class="sc-bkzZxe ctpArW"
               >
                 Opção 3
               </p>
             </label>
           </div>
           <div
-            class="sc-iBPRYJ joNmFh"
+            class="sc-iBPRYJ eDmJJP"
           >
             <input
               class="sc-fubCfw ktfAJq"
@@ -420,11 +420,11 @@ Object {
               value="ana-carolina"
             />
             <label
-              class="sc-jrAGrp dkvcnq"
+              class="sc-jrAGrp cWVEFM"
               for="4"
             >
               <div
-                class="sc-pFZIQ bIGLcn"
+                class="sc-pFZIQ fOiaqf"
               >
                 <svg
                   height="20px"
@@ -443,7 +443,7 @@ Object {
                 </svg>
               </div>
               <p
-                class="sc-idOhPF hPFGPq"
+                class="sc-idOhPF jnkEZq"
               >
                 Opção 4
               </p>

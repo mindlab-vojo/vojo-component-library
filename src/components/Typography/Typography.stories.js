@@ -15,13 +15,15 @@ export const component = () => {
   const type = text('type', 'default')
   const isUnderlined = boolean('isUnderlined', false)
   const additionalProps = object('additionalProps', '')
+  const letterSpacing = text('letterSpacing', "1px")
 
   return (
     <Typography tag={tag}
       color={componentColor}
       type={type}
       isUnderlined={isUnderlined}
-      additionalProps={additionalProps}>
+      additionalProps={additionalProps}
+      letterSpacing={letterSpacing}>
       {children}
     </Typography>
   )

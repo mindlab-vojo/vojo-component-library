@@ -13,18 +13,16 @@ Object {
           for="vojo-test"
         >
           <span
-            class="sc-gKsewC jdNvSa"
+            class="sc-gKsewC hAXwwT"
           >
-            <strong>
-              teste
-            </strong>
+            teste
           </span>
         </label>
         <div
-          class="sc-dlfnbm fiZDiD Input__InputBackground"
+          class="sc-dlfnbm elwNbu Input__InputBackground"
         >
           <input
-            class="sc-eCssSg briTWu Input__Input"
+            class="sc-eCssSg bUnyOQ Input__Input"
             id="vojo-test"
             name="teste"
             placeholder="teste"
@@ -44,18 +42,16 @@ Object {
         for="vojo-test"
       >
         <span
-          class="sc-gKsewC jdNvSa"
+          class="sc-gKsewC hAXwwT"
         >
-          <strong>
-            teste
-          </strong>
+          teste
         </span>
       </label>
       <div
-        class="sc-dlfnbm fiZDiD Input__InputBackground"
+        class="sc-dlfnbm elwNbu Input__InputBackground"
       >
         <input
-          class="sc-eCssSg briTWu Input__Input"
+          class="sc-eCssSg bUnyOQ Input__Input"
           id="vojo-test"
           name="teste"
           placeholder="teste"

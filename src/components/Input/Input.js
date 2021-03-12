@@ -25,7 +25,7 @@ class InputComponent extends Component {
     type: PropTypes.string,
     value: PropTypes.string,
   }
-  
+
   state = {
     errorMessage: this.props.errorMessage,
     isValid: true,
@@ -36,7 +36,7 @@ class InputComponent extends Component {
     type: this.props.isPassword ? 'password' : this.props.type,
     value: this.props.value || '',
   }
-  
+
   validatorType = null
 
   componentDidMount() {
@@ -57,15 +57,15 @@ class InputComponent extends Component {
   }
 
   handleErrorMessagePropsChange = (prevErrorMessage, currentErrorMessage) => {
-    if (prevErrorMessage !== currentErrorMessage){
+    if (prevErrorMessage !== currentErrorMessage) {
       if (
         currentErrorMessage === "" ||
         currentErrorMessage === undefined ||
         currentErrorMessage === null
-      ){
+      ) {
         this.setState({ isValid: true })
       } else {
-        this.setState({ 
+        this.setState({
           errorMessage: currentErrorMessage,
           isValid: false
         })
@@ -113,7 +113,7 @@ class InputComponent extends Component {
   }
 
   handleErrorStyle = () => {
-    if(this.props.showError) {
+    if (this.props.showError) {
       return this.state.isValid
     }
     return true
@@ -140,7 +140,7 @@ class InputComponent extends Component {
         value={this.state.maskedValue}
         render={(ref, props) => (
           <Input.Input
-            className="Input__Input" 
+            className="Input__Input"
             ref={ref}
             {...props}
           />
@@ -148,7 +148,7 @@ class InputComponent extends Component {
       />
     ) : (
       <Input.Input
-        className="Input__Input" 
+        className="Input__Input"
         disabled={this.props.disabled}
         id={this.props.id}
         isValid={this.handleErrorStyle()}
@@ -164,7 +164,7 @@ class InputComponent extends Component {
     )
 
     const component = (theme) => (
-      <Input.Wrapper 
+      <Input.Wrapper
         className="Input"
         theme={theme}>
         <Input.Label
@@ -173,19 +173,18 @@ class InputComponent extends Component {
           htmlFor={this.props.id}
           isValid={this.handleErrorStyle()}
           theme={theme}>
-          <Typography 
+          <Typography
             color={
-              this.handleErrorStyle() ? 
+              this.handleErrorStyle() ?
                 this.state.isFocused ?
                   theme.colors.primaryColor :
-                  theme.colors.darkGreyColor : 
+                  theme.colors.darkGreyColor :
                 theme.colors.pinkColor
             }
             tag="span"
-            type="label">
-            <strong>
-              {this.props.label}
-            </strong>
+            type="label"
+            fontWeight="500">
+            {this.props.label}
           </Typography>
         </Input.Label>
         <Input.InputBackground
@@ -196,7 +195,7 @@ class InputComponent extends Component {
           {
             this.props.isPassword && (
               <Input.InputIcon>
-                <IconManager 
+                <IconManager
                   icon="Lock"
                   height="20"
                   width="20"
@@ -204,15 +203,15 @@ class InputComponent extends Component {
               </Input.InputIcon>
             )
           }
-          { inputRender(theme) }
+          {inputRender(theme)}
           {
             this.props.isPassword && (
               <Input.InputIcon
                 onClick={() => this.handleInputVisibility()}>
-                <IconManager 
+                <IconManager
                   icon={this.state.isVisible ? "VisibilityOff" : "VisibilityOn"}
                   height="20"
-                  width="20"/>
+                  width="20" />
               </Input.InputIcon>
             )
           }
@@ -220,7 +219,7 @@ class InputComponent extends Component {
         {
           this.props.showError &&
           !this.state.isValid && (
-            <Typography 
+            <Typography
               color={theme.colors.pinkColor}
               tag="span"
               type="label">
