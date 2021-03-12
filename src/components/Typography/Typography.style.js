@@ -49,11 +49,10 @@ export class Typography extends Component {
       ${fontStyle && `font-style: ${fontStyle};`}
       ${fontVariant && `font-variant: ${fontVariant};`}
       ${fontWeight && `font-weight: ${fontWeight};`}
-      ${fontSize && `font-size: ${fontSize};`}letterSpacing
+      ${fontSize && `font-size: ${fontSize};`}
       ${lineHeight && `line-height: ${lineHeight};`}
       ${letterSpacing && `letter-spacing: ${letterSpacing};`}
       ${fontFamily && `font-family: ${fontFamily};`}
-      }
     `
 
     return (

@@ -4,6 +4,7 @@ import PropTypes from 'prop-types'
 import * as Checkbox from './Checkbox.style'
 
 import IconManager from './../IconManager'
+import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 const CheckboxComponent = ({
   id,
@@ -25,15 +26,14 @@ const CheckboxComponent = ({
     // Clear warnings
   }
 
-  const renderCheckbox = () => checked ? (
-    <IconManager icon="CheckboxChecked"/>
+  const renderCheckbox = (theme) => checked ? (
+    <IconManager icon="CheckboxChecked" fill={theme.vojo.colors.primaryColor}/>
   ) : (
     <IconManager icon="CheckboxUnchecked"/>
   )
 
-  return (
-    <Checkbox.Wrapper
-      onClick={() => handleCheckboxClick()}>
+  const component = (theme) => (
+    <Checkbox.Wrapper>
       <Checkbox.Checkbox 
         checked={checked}
         id={id}
@@ -41,13 +41,20 @@ const CheckboxComponent = ({
         onChange={() => handleCheckboxChange()}
         type="checkbox"
         value={value}/>
-      {renderCheckbox()}
+      <Checkbox.Click onClick={() => handleCheckboxClick()}>
+      {renderCheckbox(theme)}
+      </Checkbox.Click>
       <Checkbox.Label >
         {label}
       </Checkbox.Label>
     </Checkbox.Wrapper>
   )
   
+  return (
+    <ThemeConsumer>
+      {({ theme }) => component(theme)}
+    </ThemeConsumer>
+  )
 }
 
 CheckboxComponent.propTypes = {

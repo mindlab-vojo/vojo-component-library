@@ -15,6 +15,7 @@ export const Button = styled.button`
   transition-duration: 0.3s;
   width: 100%;
   font-family: 'Rubik', sans-serif;
+  letter-spacing:  ${props => props.letterSpacing};
   :hover{
     background-color: ${props => props.hoverColor};
     border-color: ${props => props.hoverColor};
