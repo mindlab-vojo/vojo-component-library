@@ -15,7 +15,8 @@ function ButtonComponent({
   form,
   onButtonClick, 
   textColor,
-  type
+  type,
+  letterSpacing
 }) {
 
   const renderComponent = (theme) => (
@@ -31,7 +32,8 @@ function ButtonComponent({
       onClick={onButtonClick}
       theme={theme}
       textColor={textColor}
-      type={type}>
+      type={type}
+      letterSpacing={letterSpacing}>
       {children}
     </Button.Button>
   )
@@ -54,7 +56,8 @@ ButtonComponent.propTypes = {
   form: PropTypes.string,
   onButtonClick: PropTypes.func, 
   textColor: PropTypes.string,
-  type: PropTypes.string
+  type: PropTypes.string,
+  letterSpacing: PropTypes.string
 }
 
 ButtonComponent.defaultProps = {

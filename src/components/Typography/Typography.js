@@ -64,6 +64,7 @@ function TypographyComponent({
       fontWeight={fontWeight}
       fontSize={fontSize}
       lineHeight={lineHeight}
+      letterSpacing={letterSpacing}
       fontFamily={fontFamily}
     >
       {children}

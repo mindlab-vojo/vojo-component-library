@@ -19,6 +19,7 @@ export const component = () => {
   const onButtonClick = action('Clicked')
   const textColor = color('textColor', '#FFFFFF')
   const type = text('type', 'submit')
+  const letterSpacing = text('letterSpacing', "1px")
 
   return (
     <Button
@@ -31,7 +32,8 @@ export const component = () => {
       form={form}
       onButtonClick={onButtonClick}
       textColor={textColor}
-      type={type}>
+      type={type}
+      letterSpacing={letterSpacing}>
       {children}
     </Button>
   )

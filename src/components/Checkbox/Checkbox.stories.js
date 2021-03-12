@@ -12,12 +12,14 @@ export const component = () => {
   const label = text('label', 'Checkbox')
   const name = text('name', 'checkbox')
   const onClickCheckbox = action('onClickCheckbox')
+  const iconSize = text('iconSize', "24")
   
   return <Checkbox
     id={id}
     label={label}
     name={name}
     onClickCheckbox={onClickCheckbox}
+    iconSize={iconSize}
   />
 }
 
