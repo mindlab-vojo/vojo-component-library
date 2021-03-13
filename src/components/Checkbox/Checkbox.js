@@ -30,6 +30,7 @@ const CheckboxComponent = ({
   ) : (
     <IconManager
       icon="CheckboxUnchecked"
+      fill={theme.colors.lightGreyColor}
       width={iconSize}
       height={iconSize} />
   )
