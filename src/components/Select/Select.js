@@ -58,10 +58,15 @@ const label = makeStyles({
     padding: '0 4px',
   },
   outlined: {
-    transform: 'translate(14px, 14px) scale(1)'
+    transform: 'translate(14px, 16px) scale(1)'
   }
 }, { name: 'MuiInputLabel' })
 
+const outlinedInput = makeStyles({
+  input: {
+    padding: '13px 14px'
+  }
+}, { name: 'MuiOutlinedInput' })
 
 const SelectMenuComponent = ({
   defaultValue,
@@ -74,7 +79,7 @@ const SelectMenuComponent = ({
   const classes = useStyles()
   const classSelect = selectStyle()
   const classInputLabel = label()
-
+  const classOutlinedInput = outlinedInput()
 
   const renderComponent = (theme) => (
     <FormControl variant={variant} className={classes.formControl}>
