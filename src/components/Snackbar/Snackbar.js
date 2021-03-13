@@ -29,27 +29,25 @@ const SnackbarComponent = ({
 }) => {
 
   const renderComponent = (theme) => (
-    <Snackbar.ContainerTest>
-      <Snackbar.Container borderRadius={borderRadius} height={height} onClick={onClickSnackbar} backgroundColor={backgroundColor}>
-        {iconName && <Snackbar.Icon>
-          <IconManager
-            height={iconHeight}
-            fill={iconColor}
-            icon={iconName}
-            width={iconWidth} />
-        </Snackbar.Icon>}
-        <Snackbar.TextContainer justifyText={justifyText}>
-          {title && <Typography letterSpacing={'0.25px'} type={'h3'} color={titleColor} fontSize={titleSize}>{title}</Typography>}
-          {description && <Snackbar.Wrapper>
-            <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>
-          </Snackbar.Wrapper>}
-        </Snackbar.TextContainer>
-        {image ? <>{image}</> : <Snackbar.Button>
-          <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} >{buttonText}</Typography>
-        </Snackbar.Button>}
+    <Snackbar.Container borderRadius={borderRadius} height={height} onClick={onClickSnackbar} backgroundColor={backgroundColor}>
+      {iconName && <Snackbar.Icon>
+        <IconManager
+          height={iconHeight}
+          fill={iconColor}
+          icon={iconName}
+          width={iconWidth} />
+      </Snackbar.Icon>}
+      <Snackbar.TextContainer justifyText={justifyText}>
+        {title && <Typography letterSpacing={'0.25px'} type={'h3'} color={titleColor} fontSize={titleSize}>{title}</Typography>}
+        {description && <Snackbar.Wrapper>
+          <Typography type={'label'} color={descriptionColor} fontSize={descriptionFontSize}>{description}</Typography>
+        </Snackbar.Wrapper>}
+      </Snackbar.TextContainer>
+      {image ? <>{image}</> : <Snackbar.Button>
+        <Typography type={'default'} fontWeight={'500'} color={buttonTextColor} >{buttonText}</Typography>
+      </Snackbar.Button>}
 
-      </Snackbar.Container>
-    </Snackbar.ContainerTest>
+    </Snackbar.Container>
   )
 
   return (
