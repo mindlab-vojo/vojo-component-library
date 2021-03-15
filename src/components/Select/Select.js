@@ -2,101 +2,65 @@ import React from 'react'
 import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-
-import { makeStyles, withStyles } from '@material-ui/core/styles';
-import InputLabel from '@material-ui/core/InputLabel';
-import FormControl from '@material-ui/core/FormControl';
-import Select from '@material-ui/core/Select';
-
-const useStyles = makeStyles((theme) => ({
-  formControl: {
-    minWidth: 120,
-    width: '100%',
-    fontFamily: "'Rubik', sans-serif",
-    fontSize: '16px',
-    letterSpacing: '0.25px',
-  },
-  label: {
-    fontFamily: "'Rubik', sans-serif",
-    backgroundColor: 'white',
-    fontSize: '16px',
-    letterSpacing: '0.25px',
-  }
-}))
-
-const selectStyle = makeStyles({
-  select: {
-    backgroundColor: 'white',
-    fontFamily: "'Rubik', sans-serif",
-    fontSize: '16px',
-    letterSpacing: '0.25px',
-    color: '#4D4771',
-    borderRadius: '4px',
-    '&:focus': {
-      backgroundColor: 'white',
-    },
-  },
-  outlined: {
-    border: '1px #4D4771 solid',
-    borderRadius: '4px',
-    fontFamily: "'Rubik', sans-serif",
-    fontSize: '16px',
-    letterSpacing: '0.25px',
-  },
-  icon: {
-    color: '#391DDD'
-  }
-}, { name: 'MuiSelect' })
-
-const label = makeStyles({
-  shrink: {
-    fontSize: '19px',
-    fontWeight: '500',
-    color: '#4d4771',
-    fontFamily: "'Rubik', sans-serif",
-    letterSpacing: '0.25px',
-    padding: '0 4px',
-  },
-  outlined: {
-    transform: 'translate(14px, 16px) scale(1)'
-  }
-}, { name: 'MuiInputLabel' })
-
-const outlinedInput = makeStyles({
-  input: {
-    padding: '13px 14px'
-  }
-}, { name: 'MuiOutlinedInput' })
+import WindowedSelect from 'react-windowed-select'
 
 const SelectMenuComponent = ({
-  defaultValue,
   options,
-  value,
-  onChangeSelect,
-  inputLabel,
-  variant
+  placeholder,
+  onSelectChange,
+  name,
+  defaultInputValue
 }) => {
-  const classes = useStyles()
-  const classSelect = selectStyle()
-  const classInputLabel = label()
-  const classOutlinedInput = outlinedInput()
+
+  const styles = (theme) => {
+    return {
+      control: (styles, { isSelected, isFocused }) => ({
+        ...styles,
+        borderColor: isFocused ? theme.colors.primaryColor : isSelected ? theme.colors.primaryColor : 'white',
+        boxShadow: '0px 5px 10px rgba(101, 101, 101, 0.05), 0px 5px 10px rgba(61, 61, 61, 0.1)',
+        fontFamily: "'Rubik',sans-serif",
+        fontWeight: '500',
+        height: '48px',
+        borderRadius: '4px',
+        ':hover': {
+          borderColor: isFocused ? theme.colors.primaryColor : isSelected ? theme.colors.primaryColor : 'white',
+        }
+      }),
+      menu: (styles) => ({
+        fontFamily: "'Rubik',sans-serif",
+        fontSize: '14px',
+        color: '#4D4771'
+      }),
+      dropdownIndicator: (styles, { isSelected, isFocused }) => ({
+        ...styles,
+        color: theme.colors.primaryColor,
+        border: 'none',
+        ':hover': {
+          color: theme.colors.darkerPrimaryColor
+        }
+      }),
+      singleValue: (styles) => ({
+        color: '#4D4771'
+      }),
+      indicatorSeparator: (styles) => ({
+        border: 'none'
+      }),
+      placeholder: (styles) => ({
+        color: '#212121',
+        fontWeight: '500',
+        fontSize: '14px'
+      })
+    }
+  }
 
   const renderComponent = (theme) => (
-    <FormControl variant={variant} className={classes.formControl}>
-      <InputLabel className={classes.label}>{inputLabel}</InputLabel>
-      <Select
-        native
-        value={value}
-        onChange={onChangeSelect}
-        defaultValue={defaultValue}
-        className={classSelect}
-      >
-        <option aria-label="None" value="" />
-        {options.map(item => (
-          <option key={item.code} value={item.code}>{item.description}</option>
-        ))}
-      </Select>
-    </FormControl>
+    <WindowedSelect
+      options={options}
+      defaultInputValue={defaultInputValue}
+      onChange={onSelectChange}
+      name={name}
+      placeholder={placeholder}
+      styles={styles(theme)} />
   )
 
   return (
@@ -108,11 +72,9 @@ const SelectMenuComponent = ({
 
 SelectMenuComponent.propTypes = {
   options: PropTypes.any,
-  value: PropTypes.any,
-  onChangeSelect: PropTypes.func,
-  inputLabel: PropTypes.string,
-  variant: PropTypes.string,
-  terms: PropTypes.object,
-  defaultValue: PropTypes.string
+  placeholder: PropTypes.string,
+  onSelectChange: PropTypes.func,
+  name: PropTypes.string,
+  defaultInputValue: PropTypes.any,
 }
 export default SelectMenuComponent
