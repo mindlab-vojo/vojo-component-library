@@ -92,4 +92,9 @@ ModuleCardComponent.propTypes = {
   titleSize: PropTypes.string
 }
 
+ModuleCardComponent.defaultProps = {
+  iconCircleSize: "38px",
+  titleSize: "18px"
+}
+
 export default ModuleCardComponent
