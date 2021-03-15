@@ -16,6 +16,8 @@ export const moduleCard = () => {
   const onClickCard = action("onClickCard")
   const title = text("title", "Formulário de Inscrição")
   const time = text("time", "5min.")
+  const titleSize = text("titleSize", "18px")
+  const iconCircleSize = text("iconCircleSize", "38px")
 
   return (
     <ModuleCard
@@ -26,6 +28,8 @@ export const moduleCard = () => {
       onClickCard={onClickCard}
       title={title}
       time={time}
+      titleSize={titleSize}
+      iconCircleSize={iconCircleSize}
     />
   )
 }

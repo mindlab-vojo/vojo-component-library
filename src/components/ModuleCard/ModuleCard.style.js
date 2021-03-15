@@ -15,16 +15,18 @@ export const IconCircle = styled.div`
   background-color: ${props => props.backgroundColor};
   border-radius: 120px;
   display: flex;
-  height: 38px;
+  height: ${props => props.iconCircleSize};
   justify-content: center;
-  width: 38px;
+  width: ${props => props.iconCircleSize};
 `
 
 export const InfoWrapper = styled.div`
   line-height: ${props => props.lineHeight};
 `
 
-export const Title = styled.div``
+export const Title = styled.div`
+  margin-bottom: 5px
+`
 
 export const Description = styled.div``
 

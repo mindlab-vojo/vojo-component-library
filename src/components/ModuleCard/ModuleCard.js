@@ -16,6 +16,8 @@ const ModuleCardComponent = ({
   onClickCard,
   title,
   time,
+  titleSize,
+  iconCircleSize
 }) => {
 
   const renderComponent = (theme) => (
@@ -28,12 +30,13 @@ const ModuleCardComponent = ({
           className="ModuleCard__IconWrapper">
           <ModuleCard.IconCircle
             backgroundColor={iconBackgroundColor}
+            iconCircleSize= {iconCircleSize}
             className="ModuleCard__IconCircle">
             <IconManager
-              height="24px"
+              height={"24px"}
               fill={theme.colors.whiteColor}
               icon={iconName}
-              width="24px"
+              width={"24px"}
             />
           </ModuleCard.IconCircle>
         </ModuleCard.IconWrapper>
@@ -44,7 +47,7 @@ const ModuleCardComponent = ({
             className="ModuleCard__InfoWrapper__Title">
             <Typography
               color={theme.colors.darkBlueColor}
-              fontSize="18px"
+              fontSize={titleSize}
               fontWeight="bolder"
               fontFamily="'Montserrat', sans-serif">
               {title}
@@ -85,6 +88,8 @@ ModuleCardComponent.propTypes = {
   onClickCard: PropTypes.func,
   title: PropTypes.string,
   time: PropTypes.string,
+  iconCircleSize: PropTypes.string,
+  titleSize: PropTypes.string
 }
 
 export default ModuleCardComponent
