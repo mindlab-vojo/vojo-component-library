@@ -53,7 +53,9 @@ export const header = () => {
   const tems = object('menuTems', termsObject)
   const goBack = boolean('goBack', false)
   const onClickGoBack = action('onClickGoBack')
-  const blockActions = boolean('blockActions', false)
+  const blockLogo = boolean('blockLogo', false)
+  const blockMenu = boolean('blockMenu', false)
+
   return (
     <Header
       menuButtons={buttons}
@@ -62,7 +64,8 @@ export const header = () => {
       onClickGoBack={onClickGoBack}
       onClickLogo={onClickLogo}
       menuTems={tems}
-      blockActions={blockActions}
+      blockMenu={blockMenu}
+      blockLogo={blockLogo}
     />
   )
 }
