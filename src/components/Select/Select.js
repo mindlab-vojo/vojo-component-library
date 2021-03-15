@@ -27,6 +27,7 @@ const SelectMenuComponent = ({
         }
       }),
       menu: (styles) => ({
+        ...styles,
         fontFamily: "'Rubik',sans-serif",
         fontSize: '14px',
         color: '#4D4771'
@@ -40,15 +41,19 @@ const SelectMenuComponent = ({
         }
       }),
       singleValue: (styles) => ({
-        color: '#4D4771'
+        ...styles,
+        color: '#4D4771',
+        fontFamily: "'Rubik',sans-serif",
       }),
       indicatorSeparator: (styles) => ({
         border: 'none'
       }),
       placeholder: (styles) => ({
+        ...styles,
         color: '#212121',
         fontWeight: '500',
-        fontSize: '14px'
+        fontSize: '14px',
+        fontFamily: "'Rubik',sans-serif",
       })
     }
   }
