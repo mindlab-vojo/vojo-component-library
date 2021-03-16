@@ -17,13 +17,15 @@ const ModuleCardComponent = ({
   title,
   time,
   titleSize,
-  iconCircleSize
+  iconCircleSize,
+  cardPadding
 }) => {
 
   const renderComponent = (theme) => (
     <Card
       hasPointer
-      onClickCard={onClickCard}>
+      onClickCard={onClickCard}
+      padding={cardPadding}>
       <ModuleCard.Wrapper
         className="ModuleCard">
         <ModuleCard.IconWrapper
@@ -89,12 +91,14 @@ ModuleCardComponent.propTypes = {
   title: PropTypes.string,
   time: PropTypes.string,
   iconCircleSize: PropTypes.string,
-  titleSize: PropTypes.string
+  titleSize: PropTypes.string,
+  cardPadding: PropTypes.string
 }
 
 ModuleCardComponent.defaultProps = {
   iconCircleSize: "38px",
-  titleSize: "18px"
+  titleSize: "18px",
+  cardPadding: "14px 10px"
 }
 
 export default ModuleCardComponent

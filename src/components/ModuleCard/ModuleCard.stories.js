@@ -18,6 +18,7 @@ export const moduleCard = () => {
   const time = text("time", "5min.")
   const titleSize = text("titleSize", "18px")
   const iconCircleSize = text("iconCircleSize", "38px")
+  const cardPadding = text("cardPadding", "14px 10px")
 
   return (
     <ModuleCard
@@ -30,6 +31,7 @@ export const moduleCard = () => {
       time={time}
       titleSize={titleSize}
       iconCircleSize={iconCircleSize}
+      cardPadding={cardPadding}
     />
   )
 }

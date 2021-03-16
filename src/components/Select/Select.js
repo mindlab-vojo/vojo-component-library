@@ -9,7 +9,7 @@ const SelectMenuComponent = ({
   placeholder,
   onSelectChange,
   name,
-  defaultInputValue
+  defaultSelectValue
 }) => {
 
   const styles = (theme) => {
@@ -32,7 +32,7 @@ const SelectMenuComponent = ({
         fontSize: '14px',
         color: '#4D4771'
       }),
-      dropdownIndicator: (styles, { isSelected, isFocused }) => ({
+      dropdownIndicator: (styles) => ({
         ...styles,
         color: theme.colors.primaryColor,
         border: 'none',
@@ -61,7 +61,7 @@ const SelectMenuComponent = ({
   const renderComponent = (theme) => (
     <WindowedSelect
       options={options}
-      defaultInputValue={defaultInputValue}
+      defaultValue={defaultSelectValue}
       onChange={onSelectChange}
       name={name}
       placeholder={placeholder}
@@ -80,6 +80,6 @@ SelectMenuComponent.propTypes = {
   placeholder: PropTypes.string,
   onSelectChange: PropTypes.func,
   name: PropTypes.string,
-  defaultInputValue: PropTypes.any,
+  defaultSelectValue: PropTypes.any,
 }
 export default SelectMenuComponent

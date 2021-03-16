@@ -35,14 +35,7 @@ const options = [{
   label: "Ensino técnico completo ou equivalente",
   value: "ETC",
 },]
-const list = {
-  Filled: 'Filled',
-  Outlined: 'Outlined',
-  Standard: 'Standard'
-}
 const inputLabel = text('inputLabel', 'Grau')
-const variant = select('variant', list)
-const defaultValue = text('defaultValue', 'EMI')
 
 export const selectStorie = () => {
   return (
@@ -50,9 +43,7 @@ export const selectStorie = () => {
       <Select
         options={options}
         inputLabel={inputLabel}
-        defaultValue={defaultValue}
-        value={''}
-        variant={'outlined'} />
+        defaultSelectValue={options[3]}/>
     </div>
 
   )
