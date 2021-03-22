@@ -23,7 +23,7 @@ const ModuleCardComponent = ({
 
   const renderComponent = (theme) => (
     <Card
-      hasPointer
+      hasPointer={onClickCard}
       onClickCard={onClickCard}
       padding={cardPadding}>
       <ModuleCard.Wrapper
