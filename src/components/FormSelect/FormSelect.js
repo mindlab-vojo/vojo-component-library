@@ -9,7 +9,7 @@ import Typography from '../Typography'
 const FormSelectComponent = ({
   title,
   titleSize,
-  titleMarginBottom,
+  titleMargin,
   options,
   placeholder,
   onSelectChange,
@@ -19,9 +19,9 @@ const FormSelectComponent = ({
 
   const renderComponent = (theme) => (
     <FormSelect.Wrapper>
-        <FormSelect.Title titleMarginBottom={titleMarginBottom}>
+        <FormSelect.Title titleMargin={titleMargin}>
             <Typography
-            color={'#4D4771'}
+            color={'#666666'}
             type={'title'}
             fontSize={titleSize}
             fontWeight="700"
@@ -54,11 +54,11 @@ FormSelectComponent.propTypes = {
   defaultSelectValue: PropTypes.any,
   title: PropTypes.string,
   titleSize: PropTypes.string,
-  titleMarginBottom: PropTypes.string
+  titleMargin: PropTypes.string
 }
 
 FormSelectComponent.defaultProps = {
-    titleMarginBottom: "4px",
+    titleMargin: '0 0 4px 0',
     titleSize: "14px"
 }
 export default FormSelectComponent

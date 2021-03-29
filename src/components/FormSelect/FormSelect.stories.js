@@ -38,7 +38,7 @@ const options = [{
 
 const title = text('title', 'Título da Pergunta')
 const titleSize = text('titleSize', '14px')
-const titleMarginBottom = text('titleMarginBottom', '4px')
+const titleMargin = text('titleMargin', '0 0 4px 0')
 
 export const formSelect = () => {
   return (
@@ -47,7 +47,7 @@ export const formSelect = () => {
         options={options}
         title={title}
         titleSize={titleSize}
-        titlemarginBottom={titleMarginBottom}
+        titleMargin={titleMargin}
         defaultSelectValue={options[3]}/>
     </div>
 
