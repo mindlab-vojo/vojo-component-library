@@ -3,7 +3,7 @@ import { withKnobs, text, select, boolean, number } from '@storybook/addon-knobs
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
-import Select from '.';
+import FormSelect from '.';
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
@@ -36,11 +36,18 @@ const options = [{
   value: "ETC",
 },]
 
-export const selectStorie = () => {
+const title = text('title', 'Título da Pergunta')
+const titleSize = text('titleSize', '14px')
+const titleMarginBottom = text('titleMarginBottom', '4px')
+
+export const formSelect = () => {
   return (
     <div style={{ width: '218px' }}>
-      <Select
+      <FormSelect
         options={options}
+        title={title}
+        titleSize={titleSize}
+        titlemarginBottom={titleMarginBottom}
         defaultSelectValue={options[3]}/>
     </div>
 
@@ -49,8 +56,8 @@ export const selectStorie = () => {
 
 export default {
   title: categories.Selects,
-  name: 'Select',
-  component: selectStorie,
+  name: 'FormSelect',
+  component: formSelect,
   decorators: [
     withKnobs,
     withA11y,
