@@ -20,19 +20,19 @@ const FormSelectComponent = ({
   const renderComponent = (theme) => (
     <FormSelect.Wrapper>
         <FormSelect.Title titleMarginBottom={titleMarginBottom}>
-        <Typography
-        color={'#4D4771'}
-        type={'title'}
-        fontSize={titleSize}
-        fontWeight="700"
-        lineHeight={'18px'}>
-        {title}
-        </Typography>
+            <Typography
+            color={'#4D4771'}
+            type={'title'}
+            fontSize={titleSize}
+            fontWeight="700"
+            lineHeight={'18px'}>
+            {title}
+            </Typography>
         </FormSelect.Title>
         <Select
          options={options}
-         defaultValue={defaultSelectValue}
-         onChange={onSelectChange}
+         defaultSelectValue={defaultSelectValue}
+         onSelectChange={onSelectChange}
          name={name}
          placeholder={placeholder}
         />

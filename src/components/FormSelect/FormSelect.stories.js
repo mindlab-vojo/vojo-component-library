@@ -48,7 +48,7 @@ export const formSelect = () => {
         title={title}
         titleSize={titleSize}
         titlemarginBottom={titleMarginBottom}
-        />
+        defaultSelectValue={options[3]}/>
     </div>
 
   )

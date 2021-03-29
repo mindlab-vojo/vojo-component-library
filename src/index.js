@@ -17,6 +17,7 @@ import Footer from './components/Footer';
 import FormCheckbox from './components/FormCheckbox';
 import FormInput from './components/Input/FormInput';
 import FormRadio from './components/FormRadio';
+import FormSelect from './components/FormSelect';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
@@ -65,6 +66,7 @@ export {
   FormCheckbox,
   FormInput,
   FormRadio,
+  FormSelect,
   GenericCard,
   Header,
   IconManager,
