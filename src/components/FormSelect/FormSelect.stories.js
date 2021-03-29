@@ -35,7 +35,7 @@ const options = [{
   label: "Ensino técnico completo ou equivalente",
   value: "ETC",
 },]
-const inputLabel = text('inputLabel', 'Grau')
+
 const title = text('title', 'Título da Pergunta')
 const titleSize = text('titleSize', '14px')
 const titleMarginBottom = text('titleMarginBottom', '4px')
@@ -45,7 +45,6 @@ export const formSelect = () => {
     <div style={{ width: '218px' }}>
       <FormSelect
         options={options}
-        inputLabel={inputLabel}
         title={title}
         titleSize={titleSize}
         titlemarginBottom={titleMarginBottom}
