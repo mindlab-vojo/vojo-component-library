@@ -50,7 +50,7 @@ const SelectMenuComponent = ({
       }),
       placeholder: (styles) => ({
         ...styles,
-        color: '#212121',
+        color: theme.colors.primaryColor,
         fontWeight: '500',
         fontSize: '14px',
         fontFamily: "'Rubik',sans-serif",
