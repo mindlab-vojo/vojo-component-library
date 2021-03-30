@@ -33,4 +33,6 @@ export const Card = styled.div`
   padding: 24px;
   width: 100%;
   ${props => props.cardWidth && `max-width: ${props.cardWidth};`}
+  ${props => props.cardHeight && `max-height: ${props.cardHeight};`}
+
 `

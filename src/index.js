@@ -25,6 +25,7 @@ import Logo from './components/Logo';
 import MobileInput from './components/Input/MobileInput';
 import Modal from './components/Modal/Modal';
 import ModalActions from './components/ModalActions/ModalActions';
+import ModalDetails from './components/ModalDetails/ModalDetails';
 import ModalInformation from './components/ModalInformation/ModalInformation';
 import ModuleCard from './components/ModuleCard';
 import PasswordInput from './components/Input/PasswordInput';
@@ -75,6 +76,7 @@ export {
   MobileInput,
   Modal,
   ModalActions,
+  ModalDetails,
   ModalInformation,
   ModuleCard,
   PasswordInput,

@@ -19,6 +19,8 @@ import Hamburger from './Icons/Hamburger'
 import Heart from './Icons/Heart'
 import HelpCircle from './Icons/HelpCircle'
 import Lock from './Icons/Lock'
+import Location from './Icons/Location'
+import List from './Icons/List'
 import Pencil from './Icons/Pencil'
 import QuestionCircle from './Icons/QuestionCircle'
 import Question from './Icons/Question'
@@ -70,6 +72,8 @@ export const iconList = {
   Heart: Heart,
   HelpCircle: HelpCircle,
   Lock: Lock,
+  Location: Location,
+  List: List,
   Pencil: Pencil,
   Question: Question,
   QuestionCircle: QuestionCircle,
