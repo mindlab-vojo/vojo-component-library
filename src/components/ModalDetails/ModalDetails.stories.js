@@ -2,12 +2,12 @@ import React from 'react';
 import { withKnobs, text, array, boolean } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
-import ModalInformation from '.';
+import ModalDetails from '.';
 
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 import Button from '../Button'
-export const modalInformation = () => {
+export const modalDetails = () => {
   const modalWidth = text('modalWidth', "280px")
   const title = text('title', "Como funciona?")
   const description = text('description', "Nosso objetivo é te ajudar a chegar na renda.")
@@ -19,7 +19,7 @@ export const modalInformation = () => {
   const unorderedList = boolean('unorderedList', false)
 
   return (
-    <ModalInformation
+    <ModalDetails
       modalWidth={modalWidth}
       title={title}
       description={description}
@@ -27,14 +27,14 @@ export const modalInformation = () => {
       unorderedList={unorderedList}
       actions={<Button retangular={true}>OK!</Button>}
     >
-    </ModalInformation>
+    </ModalDetails>
   )
 }
 
 export default {
   title: categories.Modals,
-  name: 'ModalInformation',
-  component: modalInformation,
+  name: 'ModalDetails',
+  component: modalDetails,
   decorators: [
     withKnobs,
     withA11y,

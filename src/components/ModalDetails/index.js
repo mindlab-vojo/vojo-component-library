@@ -1,2 +1,2 @@
-import ModalInformation from './ModalInformation'
-export default ModalInformation
+import ModalDetails from './ModalDetails'
+export default ModalDetails

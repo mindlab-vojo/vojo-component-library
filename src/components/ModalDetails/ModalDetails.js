@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-import * as ModalInformation from './ModalInformation.style'
+import * as ModalDetails from './ModalDetails.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Modal from '../Modal'
 
-function ModalInformationComponent({
+function ModalDetailsComponent({
   icon,
   children,
   modalWidth,
@@ -19,37 +19,37 @@ function ModalInformationComponent({
 
   const renderList = (list) => (
     list.map((item, index) => {
-      return <ModalInformation.Item key={index}>
+      return <ModalDetails.Item key={index}>
         {unorderedList ? <span>•</span> : <span>{index + 1}.</span>}
         {item}
-      </ModalInformation.Item>
+      </ModalDetails.Item>
     })
   )
 
 
   const renderComponent = (theme) => (
     <Modal cardWidth={modalWidth}>
-      <ModalInformation.Content>
+      <ModalDetails.Content>
         {icon}
-        {title && <ModalInformation.Title>{title}</ModalInformation.Title>}
-        {description && <ModalInformation.Description>{description}</ModalInformation.Description>}
+        {title && <ModalDetails.Title>{title}</ModalDetails.Title>}
+        {description && <ModalDetails.Description>{description}</ModalDetails.Description>}
         {list &&
-          <ModalInformation.ListContainer>
+          <ModalDetails.ListContainer>
             {unorderedList ? (
-              <ModalInformation.UList
+              <ModalDetails.UList
                 theme={theme}>
                 {renderList(list)}
-              </ModalInformation.UList>
+              </ModalDetails.UList>
             ) : (
-              <ModalInformation.OList
+              <ModalDetails.OList
                 theme={theme}>
                 {renderList(list)}
-              </ModalInformation.OList>
+              </ModalDetails.OList>
             )}
-          </ModalInformation.ListContainer>}
+          </ModalDetails.ListContainer>}
         {children}
         {actions}
-      </ModalInformation.Content>
+      </ModalDetails.Content>
     </Modal>
   )
 
@@ -60,7 +60,7 @@ function ModalInformationComponent({
   )
 }
 
-ModalInformationComponent.propTypes = {
+ModalDetailsComponent.propTypes = {
   children: PropTypes.any,
   modalWidth: PropTypes.string,
   icon: PropTypes.any,
@@ -71,9 +71,9 @@ ModalInformationComponent.propTypes = {
   description: PropTypes.string
 }
 
-ModalInformationComponent.defaultProps = {
+ModalDetailsComponent.defaultProps = {
 
 }
 
-export default ModalInformationComponent
+export default ModalDetailsComponent
 
