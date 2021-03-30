@@ -5,12 +5,13 @@ import * as ModalDetails from './ModalDetails.style'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 import Modal from '../Modal'
+import Typography from '../Typography'
 import IconManager from '../IconManager'
 
 function ModalDetailsComponent({
   children,
-  modalWidth,
-  open,
+  cardWidth,
+  onClickClose,
   company,
   cities,
   details,
@@ -24,8 +25,8 @@ function ModalDetailsComponent({
   const renderIcon = (icon, theme) => {
     return {
       'location': <IconManager icon="Location" fill={theme.colors.lightGreyColor} width={"14px"} height={"20"} />,
-      'list': <IconManager icon="List" fill={theme.colors.lightGreyColor} width={"14px"} height={"20"} />,
-      'close': <IconManager icon="Close" fill={theme.colors.lightGreyColor} width={"14px"} height={"20"} />,
+      'list': <IconManager icon="List" fill={theme.colors.lightGreyColor} width={"18px"} height={"17px"} />,
+      'close': <IconManager icon="Close" fill={theme.colors.lightGreyColor} width={"20px"} height={"20px"} />,
     }[icon]
   }
 
@@ -34,11 +35,11 @@ function ModalDetailsComponent({
       <section>
         <ModalDetails.Subtitle theme={theme}>
           {renderIcon('location', theme)}
-          <h3>{cities.length} Cidades selecionadas</h3>
+          <Typography tag={'h3'}>{cities.length} Cidades selecionadas</Typography>
         </ModalDetails.Subtitle>
         <ModalDetails.Locations>
           {cities.map((item, index) => (
-            <ModalDetails.Cities key={index}>{item}</ModalDetails.Cities>
+            <ModalDetails.Cities theme={theme} key={index}>{item}</ModalDetails.Cities>
           ))}
         </ModalDetails.Locations>
       </section>
@@ -51,11 +52,11 @@ function ModalDetailsComponent({
       <section>
         <ModalDetails.Subtitle theme={theme}>
           {renderIcon('location', theme)}
-          <h3>{states.length} Estados selecionadas</h3>
+          <Typography tag={'h3'}>{states.length} Estados selecionadas</Typography>
         </ModalDetails.Subtitle>
         <ModalDetails.Locations>
           {states.map((item, index) => (
-            <ModalDetails.States key={index}>{item}</ModalDetails.States>
+            <ModalDetails.States theme={theme} key={index}>{item}</ModalDetails.States>
           ))}
         </ModalDetails.Locations>
       </section>
@@ -65,48 +66,84 @@ function ModalDetailsComponent({
 
   const renderDetails = (theme) => {
     return (
-      <>
+      <ModalDetails.Details theme={theme}>
         <ModalDetails.Subtitle theme={theme}>
           {renderIcon('list', theme)}
-          <h3>{details.length} Filtros</h3>
+          <Typography tag={'h3'}>{details.length} Filtros</Typography>
         </ModalDetails.Subtitle>
         {details &&
           details.map((item, index) => {
             return (
-              <div key={index}>
-                <h4>{item.label}</h4>
+              <section key={index}>
+                <Typography tag={'h4'}>{item.label}</Typography>
                 {Array.isArray(item.value)
                   ? item.value.map(value => (
-                    <span key={index}>{value}</span>
+                    <Typography tag={'span'} key={index}>{value}</Typography>
                   ))
-                  : <span>{item.value}</span>
+                  : <Typography tag={'span'}>{item.value}</Typography>
                 }
-              </div>
+              </section>
             )
           })
         }
-      </>
+      </ModalDetails.Details>
     )
   }
 
   const renderComponent = (theme) => (
     <Modal
-      cardWidth={'560px'}
+      cardWidth={cardWidth}
       cardHeight={'80vh'}>
       <ModalDetails.Header theme={theme}>
-        <h3>{title}</h3>
-        {renderIcon('close', theme)}
+        <Typography
+          fontWeight={"700"}
+          fontSize={"18px"}
+          lineHeight={'20px'}
+          letterSpacing={'0.25px'}
+          type="title">
+          {title}
+        </Typography>
+        <div onClick={onClickClose}>
+          {renderIcon('close', theme)}
+        </div>
       </ModalDetails.Header>
-      <ModalDetails.Content>
+      <ModalDetails.Content theme={theme}>
         <ModalDetails.Information>
-          <section>
-            <h1>{company} - {slug.split('_').slice(-2).join(' ').split('-').join('/')}</h1>
-            <span>{jobRole}</span>
-          </section>
-          <section>
-            <h1>{candidates}</h1>
-            <h3>{candidates > 1 ? 'Candidatos' : 'Candidato'}</h3>
-          </section>
+          <ModalDetails.FirstBlock>
+            <Typography
+              tag={'h3'}
+              fontSize={'16px'}
+              fontWeight={"700"}
+              lineHeight={'20px'}
+              letterSpacing={'0.25px'}>
+              {company} - {slug.split('_').slice(-2).join(' ').split('-').join('/')}
+            </Typography>
+            <Typography
+              fontSize={'12px'}
+              fontWeight={'500'}
+              letterSpacing={'0.2px'}
+              color={theme.colors.lightGreyColor}
+              tag={'span'}>
+              {jobRole}
+            </Typography>
+          </ModalDetails.FirstBlock>
+          <ModalDetails.SecondBlock>
+            <Typography
+              tag={'h1'}
+              fontSize={'42px'}
+              fontWeight={'700'}
+              color={theme.colors.primaryColor}>
+              {candidates}
+            </Typography>
+            <Typography
+              tag={'h3'}
+              color={theme.colors.lightGreyColor}
+              fontSize={'16px'}
+              fontWeight={'400'}
+              letterSpacing={'0.25px'}>
+              {candidates > 1 ? 'candidatos' : 'candidato'}
+            </Typography>
+          </ModalDetails.SecondBlock>
         </ModalDetails.Information>
         {states && renderStates(theme)}
         {cities && renderCities(theme)}
@@ -123,7 +160,7 @@ function ModalDetailsComponent({
 }
 
 ModalDetailsComponent.propTypes = {
-  open: PropTypes.bool,
+  onClickClose: PropTypes.func,
   company: PropTypes.string,
   details: PropTypes.array,
   jobRole: PropTypes.string,
@@ -133,11 +170,11 @@ ModalDetailsComponent.propTypes = {
   children: PropTypes.any,
   states: PropTypes.array,
   cities: PropTypes.array,
-  modalWidth: PropTypes.string,
+  cardWidth: PropTypes.string,
 }
 
 ModalDetailsComponent.defaultProps = {
-
+  cardWidth: '80vw'
 }
 
 export default ModalDetailsComponent

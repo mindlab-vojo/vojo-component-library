@@ -1,5 +1,6 @@
 import React from 'react';
 import { withKnobs, text, array, number } from '@storybook/addon-knobs';
+import { action } from '@storybook/addon-actions'
 import { withA11y } from '@storybook/addon-a11y';
 
 import ModalDetails from '.';
@@ -51,6 +52,7 @@ export const modalDetails = () => {
     { label: "Possui ferramentas adequadas para desempenhar a função?", value: "Sim" },
     { label: "Possui disponibilidade para trabalhar final de semana?", value: "Sim" },
   ])
+  const onClickClose = action('onClickClose')
 
   return (
     <ModalDetails
@@ -63,6 +65,7 @@ export const modalDetails = () => {
       company={company}
       jobRole={jobRole}
       candidates={candidates}
+      onClickClose={onClickClose}
     >
     </ModalDetails>
   )
