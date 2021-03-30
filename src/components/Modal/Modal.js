@@ -7,19 +7,18 @@ import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
 
 function ModalComponent({ 
   cardWidth,
+  cardHeight,
   children, 
   zIndex 
 }) {
 
   const renderComponent = (theme) => (
     <Modal.FixedWrapper
-      className="Modal"
       zIndex={zIndex}>
-      <Modal.Background 
-        className="Modal__Background">
+      <Modal.Background>
         <Modal.Card
-          className="Modal__Card"
           cardWidth={cardWidth}
+          cardHeight={cardHeight}
           theme={theme}>
           {children}
         </Modal.Card>
@@ -36,6 +35,7 @@ function ModalComponent({
 
 ModalComponent.propTypes ={
   cardWidth: PropTypes.string,
+  cardHeight: PropTypes.string,
   children: PropTypes.any,
   zIndex: PropTypes.number
 }
