@@ -1,61 +1,79 @@
 import styled from 'styled-components'
 
-export const Content = styled.div`
-  width:100%;   
-  display:flex;
-  flex-direction: column;
+export const Header = styled.div`
+  height: 10vh;
+  display: flex;
   align-items: center;
-  font-family: 'Rubik', sans-serif;
+  justify-content: space-between;
 `
 
-export const Title = styled.h1`
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 20px;
-  margin:0;
-`
-
-export const Description = styled.h3`
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 20px;
-  color: #9E9E9E;
-  text-align: center;
-  margin-top: 8px;
-  margin-bottom:23px
-`
-
-export const ListContainer = styled.div`
-  width:100%;
-  margin-bottom:24px
-`
-
-export const UList = styled.ul`
-  list-style: none;
-  font-size: 14px;
-  padding: 0;
-  margin:0;
-
-  span {
-    color: ${props => props.theme.colors.primaryColor};
-    letter-spacing: 5px;
+export const Information = styled.div`
+  width: 100%
+  display: flex
+  justify-content: space-between
+  align-items: center
+  margin-bottom: 20px
+  section {
+    display: flex
+    flex-direction: column
   }
 `
 
-export const OList = styled.ol`
-  list-style: none;
-  font-size: 14px;
-  padding: 0;
-  margin: 0;
-
-  span {
+export const Subtitle = styled.div`
+  display: flex;
+  align-items: center;
+  h3{
+    margin-left: 14px;
     color: ${props => props.theme.colors.primaryColor};
-    font-weight: bold;
-    letter-spacing: 0.2px;
-    margin-right: 2px;
+    background-color: ${props => props.theme.colors.lightPurpleColor};
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    border-radius: 100px;
+    display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 5px 8px;
   }
 `
 
-export const Item = styled.li`
-  margin: 3px 0;
+export const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  overflow: auto;
+  padding-right: 12px;
+  height: 60vh;
+`
+
+export const Locations = styled.div`
+  flex-wrap: wrap;
+  display: flex;
+  margin: 20px 0 30px 0;
+`
+
+export const Cities = styled.span`
+  box-sizing: border-box;
+  border: 1px #666666 solid;
+  padding: 4px 6px;
+  border-radius: 14px;
+  margin: 3px;
+  width: fit-content;
+  font-size: 12px;
+  letter-spacing: 0.2px;
+`
+
+export const States = styled.span`
+  box-sizing: border-box;
+  border: 1px #666666 solid;
+  padding: 4px;
+  border-radius: 14px;
+  margin: 3px;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+  justify-content: center;
+  letter-spacing: 0.2px;
 `
