@@ -111,17 +111,10 @@ function ModalDetailsComponent({
         <ModalDetails.Information>
           <ModalDetails.FirstBlock>
             <Typography
-              tag={'h3'}
-              fontSize={'16px'}
-              fontWeight={"700"}
-              lineHeight={'20px'}
-              letterSpacing={'0.25px'}>
+              tag={'h3'}>
               {company} - {slug.split('_').slice(-2).join(' ').split('-').join('/')}
             </Typography>
             <Typography
-              fontSize={'12px'}
-              fontWeight={'500'}
-              letterSpacing={'0.2px'}
               color={theme.colors.lightGreyColor}
               tag={'span'}>
               {jobRole}
@@ -130,17 +123,13 @@ function ModalDetailsComponent({
           <ModalDetails.SecondBlock>
             <Typography
               tag={'h1'}
-              fontSize={'42px'}
-              fontWeight={'700'}
               color={theme.colors.primaryColor}>
               {candidates}
             </Typography>
             <Typography
               tag={'h3'}
               color={theme.colors.lightGreyColor}
-              fontSize={'16px'}
-              fontWeight={'400'}
-              letterSpacing={'0.25px'}>
+            >
               {candidates > 1 ? 'candidatos' : 'candidato'}
             </Typography>
           </ModalDetails.SecondBlock>
