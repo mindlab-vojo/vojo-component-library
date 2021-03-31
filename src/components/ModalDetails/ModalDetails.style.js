@@ -125,11 +125,14 @@ export const Details = styled.div`
       font-size: 16px;
       line-height: 20px;
       margin-bottom: 10px;
+      width: 100%;
   }
 
   section {
     height: fit-content;
     margin-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
   }
 
   span {
@@ -137,7 +140,7 @@ export const Details = styled.div`
       width: fit-content;
       border-radius: 15px;
       padding: 5px 8px;
-      margin-right: 8px;
+      margin: 3px;
       font-size: 12px;
     }
 `
