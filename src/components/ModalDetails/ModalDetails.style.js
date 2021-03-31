@@ -39,6 +39,7 @@ export const FirstBlock = styled.div`
     font-size: 12px;
     line-height: 16px;
     margin-top: 8px;
+    letter-spacing: 0.2px;
   }
 `
 
@@ -53,8 +54,10 @@ export const SecondBlock = styled.div`
     letter-spacing: -1.5px;
   }
   h3 {
+    font-weight: 400;
     font-size: 16px;
     line-height: 20px;
+    letter-spacing: 0.25px;
   }
 `
 
@@ -118,10 +121,10 @@ export const Content = styled.div`
 export const Details = styled.div`
   h4 {
       color: #666666;
-      font-weight: 600;
+      font-weight: 500;
       font-size: 16px;
-      line-height: 32px;
-      margin-bottom: 4px;
+      line-height: 20px;
+      margin-bottom: 10px;
   }
 
   section {
@@ -133,8 +136,9 @@ export const Details = styled.div`
       border: 1px ${props => props.theme.colors.lightGreyColor} solid;
       width: fit-content;
       border-radius: 15px;
-      padding: 2px 8px;
+      padding: 5px 8px;
       margin-right: 8px;
+      font-size: 12px;
     }
 `
 
@@ -147,7 +151,7 @@ export const Locations = styled.div`
 export const Cities = styled.span`
   box-sizing: border-box;
   border: 1px ${props => props.theme.colors.lightGreyColor} solid;
-  padding: 4px 6px;
+  padding: 5px 8px;
   border-radius: 14px;
   margin: 3px;
   width: fit-content;
