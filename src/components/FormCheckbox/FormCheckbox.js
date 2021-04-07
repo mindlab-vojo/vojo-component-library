@@ -13,6 +13,7 @@ const FormCheckboxComponent = ({
   hasAllOptions,
   hasError,
   hasToolTip,
+  id,
   labelSelectAll,
   onClickOption,
   onClickToolTip,
@@ -128,7 +129,7 @@ const FormCheckboxComponent = ({
 
   const renderComponent = (theme) => {
     return (
-      <FormCheckbox.Wrapper>
+      <FormCheckbox.Wrapper id={id}>
         <FormCheckbox.Header>
           <FormCheckbox.TitleWrapper>
             <FormCheckbox.Title titleMarginBottom={titleMarginBottom}>
@@ -204,6 +205,7 @@ FormCheckboxComponent.propTypes = {
   errorMessage: PropTypes.string,
   hasAllOptions: PropTypes.bool,
   hasError: PropTypes.bool,
+  id: PropTypes.string,
   hasToolTip: PropTypes.bool,
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,
