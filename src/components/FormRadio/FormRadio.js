@@ -11,6 +11,7 @@ const FormRadioComponent = ({
   errorMessage,
   hasError,
   hasToolTip,
+  id,
   onClickOption,
   onClickToolTip,
   options,
@@ -85,7 +86,7 @@ const FormRadioComponent = ({
 
   const renderComponent = (theme) => {
     return (
-      <FormRadio.Wrapper>
+      <FormRadio.Wrapper id={id}>
         <FormRadio.Header>
           <FormRadio.TitleWrapper>
             <FormRadio.Title titleMarginBottom={titleMarginBottom}>
@@ -157,6 +158,7 @@ FormRadioComponent.propTypes = {
   errorMessage: PropTypes.string,
   hasError: PropTypes.bool,
   hasToolTip: PropTypes.bool,
+  id: PropTypes.string,
   onClickOption: PropTypes.func,
   onClickToolTip: PropTypes.func,
   options: PropTypes.array,

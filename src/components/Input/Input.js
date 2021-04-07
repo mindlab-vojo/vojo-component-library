@@ -219,12 +219,14 @@ class InputComponent extends Component {
         {
           this.props.showError &&
           !this.state.isValid && (
-            <Typography
-              color={theme.colors.pinkColor}
-              tag="span"
-              type="label">
-              {this.state.errorMessage}
-            </Typography>
+            <Input.ErrorMessage>
+              <Typography
+                color={theme.colors.pinkColor}
+                tag="span"
+                type="label">
+                {this.state.errorMessage}
+              </Typography>
+            </Input.ErrorMessage>
           )
         }
       </Input.Wrapper>
