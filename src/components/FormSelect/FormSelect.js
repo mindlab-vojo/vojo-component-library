@@ -8,6 +8,7 @@ import Typography from '../Typography'
 
 const FormSelectComponent = ({
   hasError,
+  id,
   description,
   errorMessage,
   title,
@@ -21,7 +22,7 @@ const FormSelectComponent = ({
 }) => {
 
   const renderComponent = (theme) => (
-    <FormSelect.Wrapper>
+    <FormSelect.Wrapper id={id}>
       <FormSelect.Title titleMargin={titleMargin}>
         <Typography
           color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
@@ -72,6 +73,7 @@ const FormSelectComponent = ({
 }
 
 FormSelectComponent.propTypes = {
+  id: PropTypes.string,
   hasError: PropTypes.bool,
   description: PropTypes.string,
   errorMessage: PropTypes.string,
