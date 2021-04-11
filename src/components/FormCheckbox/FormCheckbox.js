@@ -62,7 +62,7 @@ const FormCheckboxComponent = ({
   const selectAllOptions = (chooseAll) => {
     const allOptions = chooseAll ? options.filter(item => item.code !== 'ALL') : []
     setSelectedOptions(allOptions)
-    onClickOption && onClickOption(allOptions)
+    onClickOption && onClickOption({value: allOptions})
   }
 
   const addOption = (option) => {
@@ -72,7 +72,7 @@ const FormCheckboxComponent = ({
     if (hasAllOptions && newSelectedOptions.length === options.filter(item => item.code !== 'ALL').length) {
       setSelectAll(true)
     }
-    onClickOption && onClickOption(newSelectedOptions)
+    onClickOption && onClickOption({value: newSelectedOptions})
   }
 
   const removeOption = (option) => {
@@ -81,7 +81,7 @@ const FormCheckboxComponent = ({
     )
     setSelectAll(false)
     setSelectedOptions(newSelectedOptions)
-    onClickOption && onClickOption(newSelectedOptions)
+    onClickOption && onClickOption({value: newSelectedOptions})
   }
 
   const handleClickToolTip = () => {

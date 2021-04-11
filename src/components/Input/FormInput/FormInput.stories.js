@@ -21,6 +21,7 @@ export const formInput = () => {
   const type =  text('type', 'text')
   const validationType =  text('validationType', 'date')
   const value =  text('value', '')
+  const hasError = boolean('hasError', true)
 
   return (
     <FormInput 
@@ -31,6 +32,7 @@ export const formInput = () => {
       label={label}
       name={name}
       onInputBlur={onInputBlur}
+      hasError={hasError}
       onInputChange={onInputChange}
       placeholder={placeholder}
       showError={showError}
