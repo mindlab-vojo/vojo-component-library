@@ -7,6 +7,10 @@ import * as FormSelect from './FormSelect.style'
 import Typography from '../Typography'
 
 const FormSelectComponent = ({
+  hasError,
+  id,
+  description,
+  errorMessage,
   title,
   titleSize,
   titleMargin,
@@ -18,24 +22,46 @@ const FormSelectComponent = ({
 }) => {
 
   const renderComponent = (theme) => (
-    <FormSelect.Wrapper>
-        <FormSelect.Title titleMargin={titleMargin}>
+    <FormSelect.Wrapper id={id}>
+      <FormSelect.Title titleMargin={titleMargin}>
+        <Typography
+          color={hasError ? theme.colors.pinkColor : theme.colors.greyColor}
+          type={'title'}
+          fontSize={titleSize}
+          fontWeight="700"
+          lineHeight={'18px'}>
+          {title}
+        </Typography>
+      </FormSelect.Title>
+      {
+        description && (
+          <FormSelect.Description>
             <Typography
-            color={'#666666'}
-            type={'title'}
-            fontSize={titleSize}
-            fontWeight="700"
-            lineHeight={'18px'}>
-            {title}
+              color={hasError ? theme.colors.pinkColor : theme.colors.lightGreyColor}
+              fontSize="12px">
+              {description}
             </Typography>
-        </FormSelect.Title>
-        <Select
-         options={options}
-         defaultSelectValue={defaultSelectValue}
-         onSelectChange={onSelectChange}
-         name={name}
-         placeholder={placeholder}
-        />
+          </FormSelect.Description>
+        )
+      }
+      {
+        hasError && (
+          <FormSelect.Description>
+            <Typography
+              color={theme.colors.pinkColor}
+              fontSize="12px">
+              {errorMessage}
+            </Typography>
+          </FormSelect.Description>
+        )
+      }
+      <Select
+        options={options}
+        defaultSelectValue={defaultSelectValue}
+        onSelectChange={onSelectChange}
+        name={name}
+        placeholder={placeholder}
+      />
     </FormSelect.Wrapper>
   )
 
@@ -47,6 +73,10 @@ const FormSelectComponent = ({
 }
 
 FormSelectComponent.propTypes = {
+  id: PropTypes.string,
+  hasError: PropTypes.bool,
+  description: PropTypes.string,
+  errorMessage: PropTypes.string,
   options: PropTypes.any,
   placeholder: PropTypes.string,
   onSelectChange: PropTypes.func,
@@ -58,7 +88,7 @@ FormSelectComponent.propTypes = {
 }
 
 FormSelectComponent.defaultProps = {
-    titleMargin: '0 0 4px 0',
-    titleSize: "14px"
+  titleMargin: '0 0 4px 0',
+  titleSize: "14px"
 }
 export default FormSelectComponent

@@ -14,6 +14,7 @@ class InputComponent extends Component {
     disabled: PropTypes.bool,
     errorMessage: PropTypes.string,
     id: PropTypes.string,
+    hasError: PropTypes.bool,
     isPassword: PropTypes.bool,
     isRequired: PropTypes.bool,
     label: PropTypes.string,
@@ -113,6 +114,9 @@ class InputComponent extends Component {
   }
 
   handleErrorStyle = () => {
+    if (this.props.hasError) { 
+      return false  
+    }
     if (this.props.showError) {
       return this.state.isValid
     }
@@ -175,11 +179,9 @@ class InputComponent extends Component {
           theme={theme}>
           <Typography
             color={
-              this.handleErrorStyle() ?
-                this.state.isFocused ?
-                  theme.colors.primaryColor :
-                  theme.colors.darkGreyColor :
-                theme.colors.pinkColor
+              this.handleErrorStyle()
+                ? (this.state.isFocused ? theme.colors.primaryColor : theme.colors.darkGreyColor)
+                : (theme.colors.pinkColor)
             }
             tag="span"
             type="label"
@@ -217,14 +219,15 @@ class InputComponent extends Component {
           }
         </Input.InputBackground>
         {
-          this.props.showError &&
-          !this.state.isValid && (
-            <Typography
-              color={theme.colors.pinkColor}
-              tag="span"
-              type="label">
-              {this.state.errorMessage}
-            </Typography>
+          !this.handleErrorStyle() && (
+            <Input.ErrorMessage>
+              <Typography
+                color={theme.colors.pinkColor}
+                tag="span"
+                type="label">
+                {this.state.errorMessage}
+              </Typography>
+            </Input.ErrorMessage>
           )
         }
       </Input.Wrapper>

@@ -39,6 +39,9 @@ const options = [{
 const title = text('title', 'Título da Pergunta')
 const titleSize = text('titleSize', '14px')
 const titleMargin = text('titleMargin', '0 0 4px 0')
+const hasError = boolean('hasError', true)
+const description = text('description', 'Breve descrição da pergunta')
+const errorMessage = text('errorMessage', 'Este campo possui algum erro...')
 
 export const formSelect = () => {
   return (
@@ -48,6 +51,9 @@ export const formSelect = () => {
         title={title}
         titleSize={titleSize}
         titleMargin={titleMargin}
+        hasError={hasError}
+        description={description}
+        errorMessage={errorMessage}
         defaultSelectValue={options[3]}/>
     </div>
 

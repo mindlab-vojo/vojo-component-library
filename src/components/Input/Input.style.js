@@ -67,3 +67,7 @@ export const Input = styled.input`
    color: ${props => props.theme.colors.lightGreyColor};
   }
 `
+
+export const ErrorMessage = styled.div `
+
+`

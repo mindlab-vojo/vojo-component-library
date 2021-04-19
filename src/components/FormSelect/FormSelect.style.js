@@ -10,3 +10,7 @@ export const Title = styled.div`
   display: flex;
   margin: ${props => props.titleMargin};
 `
+
+export const Description = styled.div`
+  display: flex;
+`
