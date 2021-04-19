@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ bpfdlg Button"
+        class="sc-bdfBwQ dhtIn Button"
         form="formId"
         id="button-test"
         name="button-name"
@@ -18,7 +18,7 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ bpfdlg Button"
+      class="sc-bdfBwQ dhtIn Button"
       form="formId"
       id="button-test"
       name="button-name"
