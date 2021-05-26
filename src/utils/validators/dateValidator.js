@@ -1,7 +1,7 @@
 import moment from "moment"
 
 export const dateMaskRemover = (value) => {
-  const date = value.split('/').reverse().join('/')
+  const date = value.split('/').reverse().join('/').replace(/_/g, '')
   return date
 }
 
