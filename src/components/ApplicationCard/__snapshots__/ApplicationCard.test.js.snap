@@ -6,7 +6,7 @@ Object {
   "baseElement": <body>
     <div>
       <div
-        class="sc-fFubgz bwClvk"
+        class="sc-fFubgz cVtjEP"
         id="GenericCard-undefined"
       >
         <div
@@ -51,7 +51,7 @@ Object {
                 class="sc-hBEYos hpcRDQ"
               >
                 <p
-                  class="sc-idOhPF bfEEfR"
+                  class="sc-idOhPF ZfCFt"
                 >
                   Clique aqui para completar e finalizar a sua candidatura
                 </p>
@@ -64,7 +64,7 @@ Object {
   </body>,
   "container": <div>
     <div
-      class="sc-fFubgz bwClvk"
+      class="sc-fFubgz cVtjEP"
       id="GenericCard-undefined"
     >
       <div
@@ -109,7 +109,7 @@ Object {
               class="sc-hBEYos hpcRDQ"
             >
               <p
-                class="sc-idOhPF bfEEfR"
+                class="sc-idOhPF ZfCFt"
               >
                 Clique aqui para completar e finalizar a sua candidatura
               </p>
