@@ -10,6 +10,9 @@ const ApplicationCardComponent = ({
   imageUrl,
   onClickCard,
   totalSteps,
+  company,
+  companyColor, 
+  companyFontWeight
 }) => {
   const renderComponent = (theme) => (
     <GenericCard
@@ -17,11 +20,14 @@ const ApplicationCardComponent = ({
       title={jobTitle}
       titleColor={currentStep === totalSteps ? 'rgb(57, 224, 155)' : '#391DDD'}
       currentStep={currentStep}
+      subtitle={company}
       totalSteps={totalSteps}
       borderRadius={'500px'}
       imageOpacity={currentStep === totalSteps ? '25%' : '100%'}
       imageBackgroundColor={currentStep === totalSteps ? 'rgb(57, 224, 155)' : '#FFFFFF'}
       onClickCard={onClickCard}
+      subtitleColor={companyColor}
+      fontWeightSubtitle={companyFontWeight}
     />
   )
 
@@ -103,6 +109,9 @@ ApplicationCardComponent.propTypes = {
   onClickCard: PropTypes.func,
   stepTitle: PropTypes.string,
   totalSteps: PropTypes.string,
+  company: PropTypes.string,
+  companyColor: PropTypes.string,
+  companyFontWeight: PropTypes.string
 }
 
 export default ApplicationCardComponent
