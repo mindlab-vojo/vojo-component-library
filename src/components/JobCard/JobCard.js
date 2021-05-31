@@ -129,7 +129,8 @@ const JobCardComponent = ({
               {companyNumber && <JobCard.Companies>
                 <Typography
                   type={'label'}
-                  color={theme.colors.lightGreyColor}>
+                  color={theme.colors.greyColor}
+                  fontWeight={'500'}>
                   {`${companyNumber} ${companiesText}`}
                 </Typography>
               </JobCard.Companies>}
