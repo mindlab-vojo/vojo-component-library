@@ -37,7 +37,7 @@ export const Image = styled.img`
 `
 
 export const Title = styled.div`
-  bottom: 30px;
+  bottom: 40px;
   left: 18px;
   position: absolute;
 `
