@@ -13,7 +13,7 @@ export const Overlay = styled.div`
   background: linear-gradient(180deg, rgba(57, 29, 221, 0) 0%, #391DDD 100%);
   height: 100%;
   position: absolute;
-  opacity: 0.4;
+  opacity: 0.9;
   right: 0;
   top: 0;
   transform: matrix(-1, 0, 0, 1, 0, 0);
@@ -37,7 +37,7 @@ export const Image = styled.img`
 `
 
 export const Title = styled.div`
-  bottom: 30px;
+  bottom: 40px;
   left: 18px;
   position: absolute;
 `

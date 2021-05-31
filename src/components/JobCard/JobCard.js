@@ -10,6 +10,7 @@ import Typography from '../Typography'
 const JobCardComponent = ({
   borderRadius,
   companyNumber,
+  description,
   freelance,
   id,
   imageUrl,
@@ -129,8 +130,17 @@ const JobCardComponent = ({
               {companyNumber && <JobCard.Companies>
                 <Typography
                   type={'label'}
-                  color={theme.colors.lightGreyColor}>
+                  color={theme.colors.greyColor}
+                  fontWeight={'500'}>
                   {`${companyNumber} ${companiesText}`}
+                </Typography>
+              </JobCard.Companies>}
+              {description && <JobCard.Companies>
+                <Typography
+                  type={'label'}
+                  color={theme.colors.greyColor}
+                  fontWeight={'500'}>
+                  {description}
                 </Typography>
               </JobCard.Companies>}
               {locationsOn && locations[0] && <JobCard.Locations>
@@ -161,6 +171,7 @@ const JobCardComponent = ({
 JobCardComponent.propTypes = {
   borderRadius: PropTypes.string,
   companyNumber: PropTypes.number,
+  description: PropTypes.string,
   freelance: PropTypes.bool,
   id: PropTypes.string,
   imageUrl: PropTypes.string,

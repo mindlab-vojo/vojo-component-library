@@ -96,7 +96,9 @@ export const LocationCircle = styled.div`
   display: flex;
   height: 24px;
   justify-content: center;
-  margin: 3px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  margin-right: 6px;
   min-width: 24px;
   border: 1px solid #391DDD;
   padding: 2px;

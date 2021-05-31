@@ -14,6 +14,7 @@ export const jobCard = () => {
   }]
   const borderRadius = text('borderRadius', '50%')
   const companyNumber = number('companyNumber', 5)
+  const description = text('description', '')
   const freelance = boolean('freelance', false)
   const id = text('id', 'card-id')
   const imageUrl = text('imageUrl', 'https://cdnb.artstation.com/p/assets/images/images/011/745/187/large/emma-areum-kim-kiki10-01psd.jpg')
@@ -35,6 +36,7 @@ export const jobCard = () => {
     <JobCard
       borderRadius={borderRadius}
       companyNumber={companyNumber}
+      description={description}
       freelance={freelance}
       id={id}
       imageUrl={imageUrl}
