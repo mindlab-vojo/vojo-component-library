@@ -12,7 +12,8 @@ const ApplicationCardComponent = ({
   totalSteps,
   company,
   companyColor, 
-  companyFontWeight
+  companyFontWeight,
+  justifyContent
 }) => {
   const renderComponent = (theme) => (
     <GenericCard
@@ -28,6 +29,7 @@ const ApplicationCardComponent = ({
       onClickCard={onClickCard}
       subtitleColor={companyColor}
       fontWeightSubtitle={companyFontWeight}
+      justifyContent={justifyContent}
     />
   )
 
@@ -111,7 +113,8 @@ ApplicationCardComponent.propTypes = {
   totalSteps: PropTypes.string,
   company: PropTypes.string,
   companyColor: PropTypes.string,
-  companyFontWeight: PropTypes.string
+  companyFontWeight: PropTypes.string,
+  justifyContent: PropTypes.string
 }
 
 export default ApplicationCardComponent
