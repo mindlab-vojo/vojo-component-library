@@ -19,6 +19,7 @@ export const applicationCard = () => {
   const company = text("company", "Russel Service")
   const companyColor = text("companyColor", "#666666")
   const companyFontWeight = text("companyFontWeight", '500')
+  const justifyContent = text("justifyContent", "")
 
   return (
     <ApplicationCard
@@ -33,6 +34,7 @@ export const applicationCard = () => {
       company={company}
       companyColor={companyColor}
       companyFontWeight={companyFontWeight}
+      justifyContent={justifyContent}
     />
   )
 }
