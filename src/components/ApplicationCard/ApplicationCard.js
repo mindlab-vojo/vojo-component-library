@@ -33,68 +33,6 @@ const ApplicationCardComponent = ({
     />
   )
 
-  {/* Card legado
-  const renderComponent = (theme) => (
-    <Card
-      hasPointer
-      onClickCard={onClickCard}>
-      <ApplicationCard.Wrapper>
-        <ApplicationCard.ImageCropper>
-          <ApplicationCard.Image 
-            isClosed={isClosed}
-            src={imageUrl}
-          />
-        </ApplicationCard.ImageCropper>
-        <ApplicationCard.InfoWrapper>
-          {
-            isClosed ? (
-              <>
-                <ApplicationCard.InfoText>
-                  <Typography
-                    fontSize="14px"
-                    fontWeight="bolder">
-                Candidatura finalizada
-                  </Typography>
-                </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText>
-                  <Typography
-                    type={'h3'}>
-                    {jobTitle}
-                  </Typography>
-                </ApplicationCard.InfoText>
-              </>
-            ) : (
-              <>
-                <ApplicationCard.InfoText>
-                  <Typography
-                    fontSize="12px">
-                    {`Você está na etapa ${currentStep} de ${totalSteps}`}
-                  </Typography>
-                </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText>
-                  <Typography
-                    type={'h3'}
-                    fontWeight={'600'}>
-                    {stepTitle}
-                  </Typography>
-                </ApplicationCard.InfoText>
-                <ApplicationCard.InfoText>
-                  <Typography
-                    type={'subtitle'}
-                    tag={'h3'}
-                    fontWeight={fontWeightTitle}
-                    color={theme.colors.primaryColor}>
-                    {jobTitle}
-                  </Typography>
-                </ApplicationCard.InfoText>
-              </>
-            )
-          }
-        </ApplicationCard.InfoWrapper>
-      </ApplicationCard.Wrapper>
-    </Card>
-  )*/}
-
   return (
     <ThemeConsumer>
       {({ theme }) => renderComponent(theme)}
@@ -103,14 +41,14 @@ const ApplicationCardComponent = ({
 }
 
 ApplicationCardComponent.propTypes = {
-  currentStep: PropTypes.string,
+  currentStep: PropTypes.number,
   jobTitle: PropTypes.string,
   fontWeightTitle: PropTypes.string,
   imageUrl: PropTypes.string,
   isClosed: PropTypes.bool,
   onClickCard: PropTypes.func,
   stepTitle: PropTypes.string,
-  totalSteps: PropTypes.string,
+  totalSteps: PropTypes.number,
   company: PropTypes.string,
   companyColor: PropTypes.string,
   companyFontWeight: PropTypes.string,

@@ -76,6 +76,7 @@ const GenericCardComponent = ({
           </GenericCard.Title>}
           {subtitle && <GenericCard.Subtitle>
             <Typography
+              lineHeight="16px"
               fontSize="12px"
               fontWeight={fontWeightSubtitle}
               color={subtitleColor ? subtitleColor : theme.colors.lightGreyColor}>
