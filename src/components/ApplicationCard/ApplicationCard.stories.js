@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, text, boolean } from '@storybook/addon-knobs';
+import { withKnobs, text, boolean, number } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 import { action } from '@storybook/addon-actions'
 
@@ -8,13 +8,13 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 export const applicationCard = () => {
-  const currentStep = text("currentStep", "1")
+  const currentStep = number("currentStep", 1)
   const jobTitle = text("jobTitle", "Celetor de produtos para entrega (Shopper)")
   const imageUrl = text("imageUrl", "https://russelservicos.com.br/wp-content/uploads/2016/01/balconista1.jpg")  
   const isClosed = boolean("isClosed", false)  
   const onClickCard = action("onClickCard")
   const stepTitle = text("stepTitle", "Procurando empresas")
-  const totalSteps = text("totalSteps", "4")
+  const totalSteps = number("totalSteps", 4)
   const fontWeightTitle = text("fontWeightTitle", '700')
   const company = text("company", "Russel Service")
   const companyColor = text("companyColor", "#666666")
