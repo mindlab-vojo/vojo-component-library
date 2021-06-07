@@ -53,10 +53,10 @@ const GenericCardComponent = ({
             <GenericCard.ImageCropper
               imageBackgroundColor={imageBackgroundColor}
               borderRadius={borderRadius}>
-              {currentStep && totalSteps && 
-              <GenericCard.Icon>
-                {currentStep === totalSteps &&<IconManager width={'50px'} height={'50px'} fill={'white'} icon={'Check'} />}
-              </GenericCard.Icon>}
+              {currentStep && totalSteps &&
+                <GenericCard.Icon>
+                  {currentStep === totalSteps && <IconManager width={'50px'} height={'50px'} fill={'white'} icon={'Check'} />}
+                </GenericCard.Icon>}
               <GenericCard.Image
                 src={imageUrl}
                 alt={title}
@@ -119,7 +119,11 @@ const GenericCardComponent = ({
           </GenericCard.CoursesAvailable>}
           {totalSteps && currentStep && <GenericCard.Application>
             <GenericCard.ApplicationTag>
-              <Typography fontSize={'12px'} color={theme.colors.greyColor}>
+              <Typography
+                fontSize={'12px'}
+                color={theme.colors.greyColor}
+                lineHeight="16px"
+              >
                 {totalSteps === currentStep ? 'Candidatura finalizada! Fique atento(a) ao seu e-mail!' : 'Clique aqui para completar e finalizar a sua candidatura'}
               </Typography>
             </GenericCard.ApplicationTag>
