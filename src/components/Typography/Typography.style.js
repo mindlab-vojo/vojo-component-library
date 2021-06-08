@@ -18,6 +18,7 @@ export class Typography extends Component {
     lineHeight: PropTypes.string,
     letterSpacing: PropTypes.string,
     fontFamily: PropTypes.string,
+    className: PropTypes.string
   }
 
   render() {
@@ -56,7 +57,7 @@ export class Typography extends Component {
     `
 
     return (
-      <Component>
+      <Component className={this.props.className}>
         {children}
       </Component>
     )

@@ -16,7 +16,8 @@ function TypographyComponent({
   fontSize,
   letterSpacing,
   lineHeight,
-  fontFamily
+  fontFamily,
+  className
 }) {
 
   const typographyTypes = {
@@ -66,6 +67,7 @@ function TypographyComponent({
       lineHeight={lineHeight}
       letterSpacing={letterSpacing}
       fontFamily={fontFamily}
+      className={className}
     >
       {children}
     </Typography>
@@ -87,6 +89,7 @@ TypographyComponent.propTypes = {
   lineHeight: PropTypes.string,
   letterSpacing: PropTypes.string,
   fontFamily: PropTypes.string,
+  className: PropTypes.string
 }
 
 TypographyComponent.defaultProps = {
