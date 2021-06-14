@@ -50,7 +50,7 @@ const JobCardComponent = ({
           </Typography>
         </JobCard.LocationCircle>
       )
-    } else if (states) {
+    } else if (states <= 4) {
       return locations[0].states.map(state => (
         <JobCard.LocationCircle
           key={state}
@@ -65,6 +65,39 @@ const JobCardComponent = ({
           </Typography>
         </JobCard.LocationCircle>
       ))
+    } else if (states > 4) {
+      const lastStates = locations[0].states.slice(4).length
+      const firstStates = locations[0].states.slice(0,4).map(state => (
+        <JobCard.LocationCircle
+          key={state}
+          theme={theme}>
+          <Typography
+            type={'label'}
+            fontWeight="bolder"
+            color={theme.colors.primaryColor}
+            
+          >
+            {state}
+          </Typography>
+        </JobCard.LocationCircle>
+      ))
+      return (
+        <>
+          {firstStates}
+          <JobCard.LocationCircle
+            key={lastStates}
+            theme={theme}>
+            <Typography
+              type={'label'}
+              fontWeight="bolder"
+              color={theme.colors.primaryColor}
+            
+            >
+              { ` + ${lastStates}` }
+            </Typography>
+          </JobCard.LocationCircle>
+        </>
+      )
     }
   }
 
