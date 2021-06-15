@@ -26,20 +26,27 @@ const JobCardComponent = ({
   subtitleColor,
   title,
   titleColor,
-  titleSize
+  titleSize,
+  stateNumber
 }) => {
 
   const slotText = slots > 1 ? "VAGAS" : "VAGA"
   const companiesText = companyNumber > 1 ? "empresas disponíveis" : "empresa disponível"
 
   const renderLocations = (theme) => {
-    const states = locations[0].states ? locations[0].states.length : false
+    const { states, country } = locations[0]
+    const statesAmount = states ? states.length : false
+    const countryAbbreviation = country.toUpperCase() === 'BRASIL' ? 'BR' : country
+    const parseStates = (states, stateNumber) => { 
+      if (statesAmount > stateNumber)
+        return [...states.slice(0, 4), `+ ${states.slice(stateNumber).length}`]
+      return states
+    }
 
-    if (states === 27 || showCountry) {
-      const countryAbbreviation = locations[0].country.toUpperCase() === 'BRASIL' ? 'BR' : locations[0].country
+    if (statesAmount === 27 || showCountry) {
       return (
         <JobCard.LocationCircle
-          key={locations[0].country}
+          key={country}
           theme={theme}>
           <Typography
             type={'label'}
@@ -50,8 +57,10 @@ const JobCardComponent = ({
           </Typography>
         </JobCard.LocationCircle>
       )
-    } else if (states) {
-      return locations[0].states.map(state => (
+    } 
+
+    if (statesAmount) {
+      return parseStates(states, stateNumber).map(state => (
         <JobCard.LocationCircle
           key={state}
           theme={theme}>
@@ -59,7 +68,6 @@ const JobCardComponent = ({
             type={'label'}
             fontWeight="bolder"
             color={theme.colors.primaryColor}
-            
           >
             {state}
           </Typography>
@@ -187,12 +195,14 @@ JobCardComponent.propTypes = {
   subtitleColor: PropTypes.string,
   title: PropTypes.string,
   titleColor: PropTypes.string,
-  titleSize: PropTypes.string
+  titleSize: PropTypes.string,
+  stateNumber: PropTypes.number
 }
 
 JobCardComponent.defaultProps = {
   titleColor: "#391DDD", 
-  titleSize: '14px'
+  titleSize: '14px',
+  stateNumber: 4
 }
 
 export default JobCardComponent

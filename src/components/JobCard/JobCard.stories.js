@@ -31,6 +31,7 @@ export const jobCard = () => {
   const title = text('title', 'Entregador Mágico')
   const titleSize = text('titleSize', '14px')
   const titleColor = color('titleColor', '')
+  const stateNumber = number('stateNumber', 4)
 
   return (
     <JobCard
@@ -53,6 +54,7 @@ export const jobCard = () => {
       title={title}
       titleColor={titleColor}
       titleSize={titleSize}
+      stateNumber={stateNumber}
     />
   )
 }
