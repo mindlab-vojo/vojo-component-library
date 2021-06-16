@@ -39,7 +39,7 @@ const JobCardComponent = ({
     const countryAbbreviation = country.toUpperCase() === 'BRASIL' ? 'BR' : country
     const parseStates = (states, stateNumber) => { 
       if (statesAmount > stateNumber)
-        return [...states.slice(0, 4), `+ ${states.slice(stateNumber).length}`]
+        return [...states.slice(0, 4), `+${states.slice(stateNumber).length}`]
       return states
     }
 
