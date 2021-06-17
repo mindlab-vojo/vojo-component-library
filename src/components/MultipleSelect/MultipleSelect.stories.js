@@ -6,18 +6,19 @@ import Select from '.';
 import { ThemeProvider } from "../..";
 import categories from '../../../.storybook/categories';
 
-const options = [{
-  label: "São Paulo - SP",
-  value: "SP",
-},
-{
-  label: "Rio de Janeiro - RJ",
-  value: "RJ",
-},
-{
-  label: "Nenhuma das anteriores",
-  value: "NA",
-}
+const options = [
+  {
+    label: "São Paulo - SP",
+    value: "SP",
+  },
+  {
+    label: "Rio de Janeiro - RJ",
+    value: "RJ",
+  },
+  {
+    label: "Nenhuma das anteriores",
+    value: "NA",
+  }
 ]
 
 export const MultipleSelectStory = () => {
