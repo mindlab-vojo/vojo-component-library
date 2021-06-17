@@ -8,35 +8,20 @@ import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
 const options = [{
-  label: "Sem instrução",
-  value: "NDA",
+  label: "São Paulo - SP",
+  value: "SP",
 },
 {
-  label: "Ensino fundamental incompleto ou equivalente",
-  value: "EFI",
+  label: "Rio de Janeiro - RJ",
+  value: "RJ",
 },
 {
-  label: "Ensino fundamental completo ou equivalente",
-  value: "EFC",
-},
-{
-  label: "Ensino médio incompleto ou equivalente",
-  value: "EMI",
-},
-{
-  label: "Ensino médio completo ou equivalente",
-  value: "EMC",
-},
-{
-  label: "Ensino técnico incompleto ou equivalente",
-  value: "ETI",
-},
-{
-  label: "Ensino técnico completo ou equivalente",
-  value: "ETC",
-},]
+  label: "Nenhuma das anteriores",
+  value: "NA",
+}
+]
 
-export const selectStorie = () => {
+export const MultipleSelectStory = () => {
   return (
     <div style={{ width: '218px' }}>
       <Select
@@ -51,7 +36,7 @@ export const selectStorie = () => {
 export default {
   title: categories.Selects,
   name: 'Select',
-  component: selectStorie,
+  component: MultipleSelectStory,
   decorators: [
     withKnobs,
     withA11y,
