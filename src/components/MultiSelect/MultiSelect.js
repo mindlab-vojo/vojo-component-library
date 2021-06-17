@@ -2,7 +2,10 @@ import React, { useEffect, useState } from 'react'
 import PropTypes from 'prop-types'
 
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import { Input, CheckboxContainer } from './MultiSelect.styles'
+import { Input, CheckboxContainer, Container } from './MultiSelect.styles'
+import { useInput } from '../../hooks/useInput'
+import Typography from '../Typography'
+import { Checkbox } from '../Checkbox'
 
 const MultiSelect = ({
   initialValue = '',
@@ -14,6 +17,7 @@ const MultiSelect = ({
   className
 }) => {
   const [inputValue, setValue] = useState(initialValue)
+  const onInputChange = e => setValue(e.target.value)
 
   const compareOptionToInputValue = ({ label }) => {
     const lowerCaseInputValue = inputValue.toLowerCase()
@@ -24,23 +28,29 @@ const MultiSelect = ({
 
   const filteredOptions = options.filter(compareOptionToInputValue)
 
-  const renderComponent = (theme) => (
-    <div className={className}>
-      <Input value={inputValue} onChange={e => setValue(e.target.value)} />
+  const renderComponent = ({ colors }) => (
+    <Container className={className}>
+      <Input 
+        value={inputValue}
+        onChange={onInputChange} 
+        highlightColor={colors.primaryColor}
+      />
       <CheckboxContainer 
         multiple 
         onChange={onChange} 
         name={name}
         placeholder={placeholder}
       >
-        {inputValue && filteredOptions.map(({ value, label }) => 
-          <label key={value} htmlFor={value}>
-            <input type="checkbox" id={value} />
-            {label}
+        {filteredOptions.map(({ value, label }) => 
+          <label key={value} htmlFor={value} tabIndex='1'>
+            <input type="checkbox" id={value} value={value} /> 
+            <Typography type='default'>
+              {label}
+            </Typography>
           </label>
         )}
       </CheckboxContainer>
-    </div>
+    </Container>
   )
 
   return ( 

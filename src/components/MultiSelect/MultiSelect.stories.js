@@ -7,43 +7,38 @@ import MultiSelect from '.';
 import { ThemeProvider } from "../../../src";
 import categories from '../../../.storybook/categories';
 
-const options = [{
-  label: "Sem instrução",
-  value: "NDA",
-},
-{
-  label: "Ensino fundamental incompleto ou equivalente",
-  value: "EFI",
-},
-{
-  label: "Ensino fundamental completo ou equivalente",
-  value: "EFC",
-},
-{
-  label: "Ensino médio incompleto ou equivalente",
-  value: "EMI",
-},
-{
-  label: "Ensino médio completo ou equivalente",
-  value: "EMC",
-},
-{
-  label: "Ensino técnico incompleto ou equivalente",
-  value: "ETI",
-},
-{
-  label: "Ensino técnico completo ou equivalente",
-  value: "ETC",
-},]
+const options = [
+  {
+    label: "São Paulo - SP",
+    value: "SP",
+  },
+  {
+    label: "Rio de Janeiro - RJ",
+    value: "RJ",
+  },
+  {
+    label: "Nenhuma das opções",
+    value: "NA",
+  }
+]
 
 
 export const multiSelectStory = () => {
+
+
+  const onClick = e => {
+    const formData = document.querySelector(`form`)
+    e.preventDefault()
+    console.log(formData)
+  }
+
   return (
-    <div style={{ width: '218px' }}>
+    <form style={{ width: '218px' }} >
       <MultiSelect
         options={options}
         defaultSelectValue={options[3]}/>
-    </div>
+      <button onClick={onClick}>submit!</button>
+    </form>
 
   )
 }
