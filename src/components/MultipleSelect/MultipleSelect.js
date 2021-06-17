@@ -1,9 +1,8 @@
-import React from 'react'
+import React from 'react';
 import PropTypes from 'prop-types'
-
 import ThemeConsumer from '../../style/ThemeManager/ThemeProvider'
-import WindowedSelect from 'react-windowed-select'
 
+import Select, { components } from 'react-select';
 import {
   SortableContainer,
   SortableElement,
@@ -16,7 +15,7 @@ function arrayMove(array, from, to) {
   return array;
 }
 
-const SortableMultiValue = SortableElement(props => {
+const MultipleSelect = SortableElement(props => {
   // this prevents the menu from being opened/closed when the user clicks
   // on a value to begin dragging it. ideally, detecting a click (instead of
   // a drag) would still focus the control and toggle the menu, but that
@@ -29,13 +28,17 @@ const SortableMultiValue = SortableElement(props => {
   return <components.MultiValue {...props} innerProps={innerProps} />;
 });
 
-const SelectMenuComponent = ({
-  options,
-  placeholder,
-  onSelectChange,
-  name,
-  defaultSelectValue
-}) => {
+const SortableMultiValueLabel = sortableHandle(props => (
+  <components.MultiValueLabel {...props} />
+));
+
+const SortableSelect = SortableContainer(Select);
+
+export default function MultiSelectSort({ options, onSelectChange, value, setSelected }) {
+  const onSortEnd = ({ oldIndex, newIndex }) => {
+    const newValue = arrayMove(value, oldIndex, newIndex);
+    setSelected(newValue);
+  };
 
   const styles = (theme) => {
     return {
@@ -70,7 +73,7 @@ const SelectMenuComponent = ({
         color: '#4D4771',
         fontFamily: "'Rubik',sans-serif",
       }),
-      indicatorSeparator: (styles) => ({
+      indicatorSeparator: () => ({
         border: 'none'
       }),
       placeholder: (styles) => ({
@@ -83,16 +86,27 @@ const SelectMenuComponent = ({
     }
   }
 
-
-
   const renderComponent = (theme) => (
-    <WindowedSelect
+    <SortableSelect
+      useDragHandle
+      // react-sortable-hoc props:
+      axis="xy"
+      onSortEnd={onSortEnd}
+      distance={4}
+      // small fix for https://github.com/clauderic/react-sortable-hoc/pull/352:
+      getHelperDimensions={({ node }) => node.getBoundingClientRect()}
+      // react-select props:
+      isMulti
       options={options}
-      defaultValue={defaultSelectValue}
+      value={value}
       onChange={onSelectChange}
-      name={name}
-      placeholder={placeholder}
-      styles={styles(theme)} />
+      components={{
+        MultiValue: MultipleSelect,
+        MultiValueLabel: SortableMultiValueLabel,
+      }}
+      closeMenuOnSelect={false}
+      styles={styles(theme)}
+    />
   )
 
   return (
@@ -102,11 +116,14 @@ const SelectMenuComponent = ({
   )
 }
 
-SelectMenuComponent.propTypes = {
+
+
+MultiSelectSort.propTypes = {
   options: PropTypes.any,
   placeholder: PropTypes.string,
   onSelectChange: PropTypes.func,
   name: PropTypes.string,
   defaultSelectValue: PropTypes.any,
+  value: PropTypes.any,
+  setSelected: PropTypes.any
 }
-export default SelectMenuComponent

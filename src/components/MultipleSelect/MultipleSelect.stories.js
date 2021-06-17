@@ -1,10 +1,9 @@
 import React from 'react';
-import { withKnobs, text, select, boolean, number } from '@storybook/addon-knobs';
+import { withKnobs } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
-import { action } from '@storybook/addon-actions'
 
 import Select from '.';
-import { ThemeProvider } from "../../../src";
+import { ThemeProvider } from "../..";
 import categories from '../../../.storybook/categories';
 
 const options = [{
@@ -22,12 +21,25 @@ const options = [{
 ]
 
 export const MultipleSelectStory = () => {
+  const [selected, setSelected] = React.useState([]);
+
+  const onSelectChange = selectedOptions => {
+    if (selectedOptions?.length > 2 ) {
+      // error handling
+      return
+    }
+    setSelected(selectedOptions)
+  }
+
+  const selectProps = { 
+    value: selected, 
+    defaultSelectValue: options[3], 
+    options, onSelectChange, setSelected 
+  }
+
   return (
-    <div style={{ width: '218px' }}>
-      <Select
-        options={options}
-        defaultSelectValue={options[3]}
-      />
+    <div style={{ width: '600px' }}>
+      <Select {...selectProps}/>
     </div>
 
   )
