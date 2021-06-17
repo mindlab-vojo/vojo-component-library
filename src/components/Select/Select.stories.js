@@ -41,7 +41,8 @@ export const selectStorie = () => {
     <div style={{ width: '218px' }}>
       <Select
         options={options}
-        defaultSelectValue={options[3]}/>
+        defaultSelectValue={options[3]}
+      />
     </div>
 
   )

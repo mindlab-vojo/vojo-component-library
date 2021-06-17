@@ -45,7 +45,7 @@ const SelectMenuComponent = ({
         color: '#4D4771',
         fontFamily: "'Rubik',sans-serif",
       }),
-      indicatorSeparator: (styles) => ({
+      indicatorSeparator: () => ({
         border: 'none'
       }),
       placeholder: (styles) => ({
