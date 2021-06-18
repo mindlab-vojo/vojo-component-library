@@ -48,7 +48,6 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
         boxShadow: '0px 5px 10px rgba(101, 101, 101, 0.05), 0px 5px 10px rgba(61, 61, 61, 0.1)',
         fontFamily: "'Rubik',sans-serif",
         fontWeight: '500',
-        height: '48px',
         borderRadius: '4px',
         ':hover': {
           borderColor: isFocused ? theme.colors.primaryColor : isSelected ? theme.colors.primaryColor : 'white',
