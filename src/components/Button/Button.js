@@ -39,7 +39,8 @@ function ButtonComponent({
       padding={padding}
       letterSpacing={letterSpacing}
       width={width}
-      height={height}>
+      height={height}
+    >
       {children}
     </Button.Button>
   )
@@ -79,4 +80,3 @@ ButtonComponent.defaultProps = {
 }
 
 export default ButtonComponent
-
