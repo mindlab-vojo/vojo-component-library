@@ -19,6 +19,7 @@ import FormInput from './components/Input/FormInput';
 import FormRadio from './components/FormRadio';
 import FormSelect from './components/FormSelect';
 import MultipleSelect from './components/MultipleSelect';
+import FormMultiSelect from './components/FormMultiSelect';
 import Header from './components/Header';
 import IconManager from './components/IconManager';
 import JobCard from './components/JobCard';
@@ -69,6 +70,7 @@ export {
   FormInput,
   FormRadio,
   FormSelect,
+  FormMultiSelect,
   MultipleSelect,
   GenericCard,
   Header,
