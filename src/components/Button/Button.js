@@ -17,7 +17,9 @@ function ButtonComponent({
   textColor,
   type,
   letterSpacing,
-  padding
+  padding,
+  width,
+  height
 }) {
 
   const renderComponent = (theme) => (
@@ -35,7 +37,10 @@ function ButtonComponent({
       textColor={textColor}
       type={type}
       padding={padding}
-      letterSpacing={letterSpacing}>
+      letterSpacing={letterSpacing}
+      width={width}
+      height={height}
+    >
       {children}
     </Button.Button>
   )
@@ -60,7 +65,9 @@ ButtonComponent.propTypes = {
   textColor: PropTypes.string,
   type: PropTypes.string,
   padding: PropTypes.string,
-  letterSpacing: PropTypes.string
+  letterSpacing: PropTypes.string,
+  width: PropTypes.string,
+  height: PropTypes.string
 }
 
 ButtonComponent.defaultProps = {
@@ -68,8 +75,8 @@ ButtonComponent.defaultProps = {
   hoverColor: "#2f17b5",
   textColor: "#FFFFFF",
   type: 'button',
-  padding: '10px 25px'
+  padding: '10px 25px',
+  width: '100%'
 }
 
 export default ButtonComponent
-

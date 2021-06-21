@@ -6,11 +6,12 @@ Object {
   "baseElement": <body>
     <div>
       <button
-        class="sc-bdfBwQ dhtIn Button"
+        class="sc-bdfBwQ daresS Button"
         form="formId"
         id="button-test"
         name="button-name"
         type="button"
+        width="100%"
       >
         Hello Vojo
       </button>
@@ -18,11 +19,12 @@ Object {
   </body>,
   "container": <div>
     <button
-      class="sc-bdfBwQ dhtIn Button"
+      class="sc-bdfBwQ daresS Button"
       form="formId"
       id="button-test"
       name="button-name"
       type="button"
+      width="100%"
     >
       Hello Vojo
     </button>
