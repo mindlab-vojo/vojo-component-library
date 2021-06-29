@@ -107,6 +107,8 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
     }
   }
 
+  const onChange = newValue => onSelectChange(newValue === null ? undefined : newValue)
+
   const renderComponent = (theme) => (
     <SortableSelect
       useDragHandle
@@ -120,7 +122,7 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
       isMulti
       options={options}
       value={value}
-      onChange={onSelectChange}
+      onChange={onChange}
       components={{
         MultiValue: MultipleSelect,
         MultiValueLabel: SortableMultiValueLabel,
