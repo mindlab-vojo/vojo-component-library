@@ -7,33 +7,22 @@ import { ThemeProvider } from "../..";
 import categories from '../../../.storybook/categories';
 
 const options = [{
-  label: "Sem instrução",
+  label: "Nenhuma das anteriores",
   value: "NDA",
 },
 {
-  label: "Ensino fundamental incompleto ou equivalente",
-  value: "EFI",
+  label: "São Paulo - SP",
+  value: "SP",
 },
 {
-  label: "Ensino fundamental completo ou equivalente",
-  value: "EFC",
+  label: "Rio de Janeiro - RJ",
+  value: "MT",
 },
 {
-  label: "Ensino médio incompleto ou equivalente",
-  value: "EMI",
+  label: "Cuiabá - MT",
+  value: "MT",
 },
-{
-  label: "Ensino médio completo ou equivalente",
-  value: "EMC",
-},
-{
-  label: "Ensino técnico incompleto ou equivalente",
-  value: "ETI",
-},
-{
-  label: "Ensino técnico completo ou equivalente",
-  value: "ETC",
-},]
+]
 
 const title = text('title', 'Onde você teria disponibilidade para trabalhar?')
 const titleSize = text('titleSize', '14px')

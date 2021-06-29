@@ -81,6 +81,11 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
         fontWeight: '500',
         fontSize: '14px',
         fontFamily: "'Rubik',sans-serif",
+      }),
+      multiValue: () => ({
+        display: 'flex',
+        borderRadius: '100px',
+        background: '#F4F4F4'
       })
     }
   }
