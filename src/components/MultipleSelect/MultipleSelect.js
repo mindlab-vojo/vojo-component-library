@@ -34,7 +34,7 @@ const SortableMultiValueLabel = sortableHandle(props => (
 
 const SortableSelect = SortableContainer(Select);
 
-export default function MultiSelectSort({ options, onSelectChange, value, setSelected }) {
+export default function MultiSelectSort({ options, onSelectChange, value, setSelected, placeholder }) {
   const onSortEnd = ({ oldIndex, newIndex }) => {
     const newValue = arrayMove(value, oldIndex, newIndex);
     setSelected(newValue);
@@ -127,6 +127,7 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
       }}
       closeMenuOnSelect={false}
       styles={styles(theme)}
+      placeholder={placeholder}
     />
   )
 

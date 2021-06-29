@@ -39,6 +39,7 @@ export const formMultiSelect = () => {
         description={description}
         errorMessage={errorMessage}
         defaultSelectValue={options[3]}
+        placeholder='Selecione as cidades'
       />
     </form>
 
