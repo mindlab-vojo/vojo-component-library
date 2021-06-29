@@ -13,7 +13,7 @@ const FormMultiSelectComponent = ({
   errorMessage,
   title,
   titleSize,
-  titleMargin,
+  titleMargin = '0.5em',
   options,
   placeholder,
   onSelectChange,
