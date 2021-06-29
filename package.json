@@ -1,6 +1,6 @@
 {
   "name": "@mindlab-vojo/component-library",
-  "version": "1.6.5",
+  "version": "1.6.6",
   "main": "dist/index.js",
   "private": false,
   "license": "MIT",
