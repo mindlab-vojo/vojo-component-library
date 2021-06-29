@@ -83,9 +83,14 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
         fontFamily: "'Rubik',sans-serif",
       }),
       multiValue: () => ({
+        ...styles,
         display: 'flex',
         borderRadius: '100px',
         background: '#F4F4F4'
+      }),
+      multiValueRemove: styles => ({
+        ...styles,
+        borderRadius: '100px'
       })
     }
   }
