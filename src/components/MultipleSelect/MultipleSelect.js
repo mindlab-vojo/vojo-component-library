@@ -34,7 +34,7 @@ const SortableMultiValueLabel = sortableHandle(props => (
 
 const SortableSelect = SortableContainer(Select);
 
-export default function MultiSelectSort({ options, onSelectChange, value, setSelected }) {
+export default function MultiSelectSort({ options, onSelectChange, value, setSelected, placeholder }) {
   const onSortEnd = ({ oldIndex, newIndex }) => {
     const newValue = arrayMove(value, oldIndex, newIndex);
     setSelected(newValue);
@@ -81,6 +81,28 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
         fontWeight: '500',
         fontSize: '14px',
         fontFamily: "'Rubik',sans-serif",
+      }),
+      multiValue: () => ({
+        ...styles,
+        display: 'flex',
+        borderRadius: '100px',
+        background: '#F4F4F4',
+        margin: '0.2em',
+        padding: '0.1em'
+      }),
+      multiValueRemove: styles => ({
+        ...styles,
+        borderRadius: '100px',
+        color: '#9E9E9E',
+        ':hover': {
+          ...styles[':hover'],
+          color: "#DE350B"
+        }
+      }),
+      multiValueLabel: styles => ({
+        ...styles,
+        fontWeight: 400,
+        fontSize: '0.75rem'
       })
     }
   }
@@ -105,6 +127,7 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
       }}
       closeMenuOnSelect={false}
       styles={styles(theme)}
+      placeholder={placeholder}
     />
   )
 

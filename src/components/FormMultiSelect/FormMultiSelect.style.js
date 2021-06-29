@@ -8,11 +8,11 @@ export const Wrapper = styled.div`
 
 export const Title = styled.div`
   display: flex;
-  margin: ${props => props.titleMargin};
+  margin-bottom: 0.5em;
 `
 
 export const Description = styled.div`
   display: flex;
 
-  margin-bottom: 0.5em;
+  margin-bottom: 1em;
 `
