@@ -1,10 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { withKnobs, text } from '@storybook/addon-knobs';
 import { withA11y } from '@storybook/addon-a11y';
 
 import FormMultiSelect from '.';
 import { ThemeProvider } from "../..";
 import categories from '../../../.storybook/categories';
+import { useState } from 'react';
 
 const options = [{
   label: "Nenhuma das anteriores",
@@ -29,7 +30,11 @@ const titleSize = text('titleSize', '14px')
 const description = text('description', 'Essas são as atuais áreas de atuação da James. Se não encontrar a que deseja, selecione "Nenhuma das opções”.')
 const errorMessage = text('errorMessage', 'Este campo possui algum erro...')
 
-export const formMultiSelect = () => {
+export const FormMultiSelectStory = () => {
+  const [selected, setSelected] = useState([])
+
+  useEffect(() => console.log(selected), [selected])
+
   return (
     <form style={{ maxWidth: '328px' }}>
       <FormMultiSelect
@@ -38,8 +43,11 @@ export const formMultiSelect = () => {
         titleSize={titleSize}
         description={description}
         errorMessage={errorMessage}
-        defaultSelectValue={options[3]}
+        defaultSelectValue={undefined}
         placeholder='Selecione as cidades'
+        value={selected}
+        setSelected={setSelected}
+        onSelectChange={newVal => setSelected(newVal)}
       />
     </form>
 
@@ -49,7 +57,7 @@ export const formMultiSelect = () => {
 export default {
   title: categories.Selects,
   name: 'FormMultiSelect',
-  component: formMultiSelect,
+  component: FormMultiSelect,
   decorators: [
     withKnobs,
     withA11y,
