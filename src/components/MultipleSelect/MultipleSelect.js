@@ -86,11 +86,23 @@ export default function MultiSelectSort({ options, onSelectChange, value, setSel
         ...styles,
         display: 'flex',
         borderRadius: '100px',
-        background: '#F4F4F4'
+        background: '#F4F4F4',
+        margin: '0.2em',
+        padding: '0.1em'
       }),
       multiValueRemove: styles => ({
         ...styles,
-        borderRadius: '100px'
+        borderRadius: '100px',
+        color: '#9E9E9E',
+        ':hover': {
+          ...styles[':hover'],
+          color: "#DE350B"
+        }
+      }),
+      multiValueLabel: styles => ({
+        ...styles,
+        fontWeight: 400,
+        fontSize: '0.75rem'
       })
     }
   }
