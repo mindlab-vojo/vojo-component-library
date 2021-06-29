@@ -14,5 +14,8 @@ export const Title = styled.div`
 export const Description = styled.div`
   display: flex;
 
+
+  line-height: 1.1em;
+
   margin-bottom: 1em;
 `
