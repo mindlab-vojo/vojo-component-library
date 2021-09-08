@@ -22,7 +22,7 @@ class StringValidator {
   checkMinLength = () => {
     if (this.validatorPattern.minLength) {
       const isValid = Boolean(this.value.length >= this.validatorPattern.minLength)
-      const errorMessage = isValid ? '' : `O valor conter pelo menos ${this.validatorPattern.minLength} caracteres`
+      const errorMessage = isValid ? '' : `O valor deve conter pelo menos ${this.validatorPattern.minLength} caracteres`
       this.setValidationProps(isValid, errorMessage)
     }
   }
@@ -30,7 +30,7 @@ class StringValidator {
   checkMaxLength = () => {
     if (this.validatorPattern.maxLength) {
       const isValid = Boolean(this.value.length <= this.validatorPattern.maxLength)
-      const errorMessage = isValid ? '' : `O valor conter no máximo ${this.validatorPattern.maxLength} caracteres`
+      const errorMessage = isValid ? '' : `O valor deve conter no máximo ${this.validatorPattern.maxLength} caracteres`
       this.setValidationProps(isValid, errorMessage)
     }
   }
