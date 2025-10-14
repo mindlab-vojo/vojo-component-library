@@ -1,3 +1,5 @@
+# :warning::warning: **DESCONTINUADO** :warning::warning:
+
 # Vojo's Component Library
 
 **Biblioteca de componentes React para aplicações do Vojo.**
